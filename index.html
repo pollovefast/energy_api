@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <p>3333</p>
+    </head>
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" charset="utf-8"></script>
+        <script type="text/javascript">
+            var socket = io();
+            var result = Object;
+            socket.on('energy',function(data){
+                result = data.data.building
+                document.getElementById('idd').innerHTML += result
+            })
+        </script>
+        <h1 id="idd" >222</h1>
+    </body>
+</html>
