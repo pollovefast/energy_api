@@ -42,15 +42,6 @@ io.on('connection',function (socket){
 
     const CPE = mongoose.model('CPE', FileSchema);
     const EE = mongoose.model('EE', FileSchema);
-    const FF = mongoose.model('FF',FileSchema);
-
-    FF.findOne({},{},{sort: {'create': -1}},function(err,result){
-        if (result.length < 1 || err) {
-            socket.emit('FF', {success: true,msg: 'no data'});
-        }else{
-            socket.emit('FF', {success: true,data: result})
-        }
-    })
 
     CPE.findOne({},{},{sort: {'create': -1}},function(err,result){
         if (result.length < 1 || err) {
