@@ -7,6 +7,4 @@ const FileSchema = new Schema({
     create: Date
 });
 
-const File = mongoose.model('file', FileSchema);
-
-module.exports = File;
+module.exports = FileSchema;

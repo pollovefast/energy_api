@@ -7,7 +7,7 @@
         <script type="text/javascript">
             var socket = io();
             var result = Object;
-            socket.on('energy',function(data){
+            socket.on('EE',function(data){
                 result = data.data.building
                 document.getElementById('idd').innerHTML += result
             })
