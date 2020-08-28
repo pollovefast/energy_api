@@ -42,6 +42,15 @@ io.on('connection',function (socket){
 
     const CPE = mongoose.model('CPE', FileSchema);
     const EE = mongoose.model('EE', FileSchema);
+    const EN = mongoose.model('EN',FileSchema);
+
+    EN.findOne({},{},{sort: {'create': -1}},function(err,result){
+        if (result.length < 1 || err) {
+            socket.emit('EN',{success: true,msg: 'no data'})
+        } else {
+            socket.emit('EN',{success: true,data: result})
+        }
+    })
 
     CPE.findOne({},{},{sort: {'create': -1}},function(err,result){
         if (result.length < 1 || err) {
@@ -58,7 +67,7 @@ io.on('connection',function (socket){
             socket.emit('EE',{success: true,data: result})
         }
     })
-    
+
     socket.on('disconnect',function (){
         console.log('dis')
     })
