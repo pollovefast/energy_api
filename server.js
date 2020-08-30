@@ -143,7 +143,7 @@ app.get('/data', function(req,res) {
 
 app.post('/data',(req,res)=>{
     
-    var request_data = req.body;
+    var request_data = JSON.parse(req.body);
     var count = Object.keys(req.body).length;
 
     const File = mongoose.model(request_data.building + request_data.block, FileSchema);
