@@ -76,7 +76,7 @@ app.get('/building',function(req,res){
             num = 0;
             var lenname = i.name.slice(0,i.name.length-1)
             for (const iterator of array) {
-                if (lenname == iterator.toUpperCase()) {
+                if (lenname.toUpperCase() == iterator.toUpperCase()) {
                     num = 1;
                     break;
                 }
@@ -96,7 +96,7 @@ app.post('/meter',function(req,res){
     mongoose.connection.db.listCollections().toArray(function(err,names){
         var coun = 0;
         for (const i of names) {
-            if (i.name.slice(0,i.name.length-1) == request_data.building) {
+            if (i.name.slice(0,i.name.length-1) == request_data.building.toLowerCase()) {
                 coun += 1;
             }
         }
@@ -107,16 +107,19 @@ app.post('/meter',function(req,res){
 })
 
 app.post('/test', function(req,res){
-    const File = mongoose.model(req.body.building, FileSchema);
+    const File = mongoose.model(req.body.building+req.body.block, FileSchema);
     File.findOne({},{},{sort: {'create': -1}}, function(err,result){
         var resq = result.create
         var ress = new Date(req.body.date)
-        if (ress.getDate() == resq.getDate() && ress.getFullYear() == resq.getFullYear() && ress.getMonth() == resq.getMonth()) {
-            res.send(result)
-        } else {    
-            res.send("555")
-        }
-        // res.status(200).send(result)
+        // res.send(resq.getHours())
+        // if (ress.getDate() == resq.getDate() && ress.getFullYear() == resq.getFullYear() && ress.getMonth() == resq.getMonth()) {
+        //     res.send(result)
+        // } else {    
+        //     res.send(result)
+        // }
+        res.status(200).send({
+            name: resq.getHours() + ":" + resq.getMinutes()
+        })
     }).catch(err => {
         res.status(400).send({
             msg: "no data or type not support"
