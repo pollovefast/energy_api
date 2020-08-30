@@ -134,7 +134,7 @@ app.get('/data', function(req,res) {
         File.find({},{},{sort: {'create': -1}}, function(err,result){
             res.status(200).send(result)
             console.log('show data')
-        }).catch(err => {
+        }).limit(5).catch(err => {
             res.status(400).send({
                 msg: "no data or type not support"
             })
