@@ -58,7 +58,7 @@ io.on('connection',function (socket){
         }
     })
 
-    socker.emit("test",{success: true})
+    socket.emit("test",{success: true})
 
     socket.on('disconnect',function (){
         console.log('dis')
