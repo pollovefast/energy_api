@@ -76,14 +76,14 @@ app.get('/building',function(req,res){
             num = 0;
             var lenname = i.name.slice(0,i.name.length-1)
             for (const iterator of array) {
-                if (lenname == iterator) {
+                if (lenname == iterator.toUpperCase()) {
                     num = 1;
                     break;
                 }
             }
             if (num == 0) {
                 // console.log(i.name)
-                array.push(lenname)
+                array.push(lenname.toUpperCase())
             }
         }
         res.send(array)
