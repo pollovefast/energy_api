@@ -167,19 +167,19 @@ app.post('/data',(req,res)=>{
                     }
                 })
             }).catch(err => {
-                res.status(400).send({
+                res.status(200).send({
                     msg: err
                 })
             })
         } else {
-            res.status(400).send({
+            res.status(200).send({
                 success: false,
                 msg: 'bad_request',
                 detail: 'result not found'
             })
         }
     } else {
-        res.status(400).send({
+        res.status(200).send({
             success: false,
             msg: 'bad_request',
             detail: 'no body or type not support'
