@@ -58,6 +58,8 @@ io.on('connection',function (socket){
         }
     })
 
+    socker.emit("usit",{success: true})
+
     socket.on('disconnect',function (){
         console.log('dis')
     })
