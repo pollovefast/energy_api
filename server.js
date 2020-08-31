@@ -151,7 +151,7 @@ app.post('/data', (req, res) => {
     var request_data = req.body;
     var count = Object.keys(req.body).length;
     var date = new Date()
-    var res = {
+    var resw = {
         building: request_data.building.toUpperCase(),
         result: JSON.parse(request_data.result),
         block: request_data.block,
@@ -218,7 +218,7 @@ app.post('/data', (req, res) => {
                         io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
                         res.send({ success: false })
                     } else {
-                        io.sockets.emit(nameupper + request_data.block, { success: true, data: res })
+                        io.sockets.emit(nameupper + request_data.block, { success: true, data: resw })
                         res.send({ success: true })
                     }
                 }
