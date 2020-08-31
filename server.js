@@ -153,7 +153,7 @@ app.post('/data', (req, res) => {
     var date = new Date()
     var resw = {
         building: request_data.building.toUpperCase(),
-        result: JSON.parse(request_data.result),
+        result: [JSON.parse(request_data.result)],
         block: request_data.block,
         create: date
     }
