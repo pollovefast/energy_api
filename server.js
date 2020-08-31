@@ -162,7 +162,7 @@ app.post('/data',(req,res)=>{
                 create: new Date()
             }).save().then(() => {
                 File.findOne({},{},{sort: {'create': -1}},function(err,result){
-                    var nameupper = request_data.building.toUpperCase()
+                    var nameupper = request_data.building.toLowerCase()
                     if (result.length < 1 || err) {
                         io.sockets.emit(nameupper + request_data.block, {success: true,msg: 'no data'});
                         res.send({success: true})
