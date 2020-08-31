@@ -19,18 +19,18 @@ var option = {
 
 app.use(cors());
 
-app.use(function(req,res,next) {
-    res.header("Access-Control-Allow-Origin","*");
-    res.header("Access-Control-Allow-Headers","Origin, X-Requested-With, Content-Type, Accept");
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     res.header("Access-Control-Allow-Credentials", true);
     res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, PATCH, DELETE");
     next();
 })
 
 app.use(bodyPaser.json());
-app.use(bodyPaser.urlencoded({extended: false}));
+app.use(bodyPaser.urlencoded({ extended: false }));
 
-mongoose.connect('mongodb://127.0.0.1:27017/ploy',option, ()=>{
+mongoose.connect('mongodb://127.0.0.1:27017/ploy', option, () => {
     console.log('connect to mongodb')
 })
 
@@ -38,19 +38,19 @@ mongoose.connect('mongodb://127.0.0.1:27017/ploy',option, ()=>{
 //     console.log('connect to mongodb')
 // })
 
-io.on('connection',function (socket){
+io.on('connection', function (socket) {
     mongoose.connection.db.listCollections().toArray(function (err, names) {
         for (const i of names) {
-            const datas = mongoose.model(i.name,FileSchema)
-            datas.findOne({},{},{sort: {'create':-1}},function(err,result){
+            const datas = mongoose.model(i.name, FileSchema)
+            datas.findOne({}, {}, { sort: { 'create': -1 } }, function (err, result) {
                 var nameda = i.name
                 // var lengthda = nameda.length
                 var res = nameda.toLowerCase()
                 if (result.length < 1 || err) {
-                    socket.emit(res,{success: true,msg: 'no data'})
+                    socket.emit(res, { success: true, msg: 'no data' })
                 } else {
                     // console.log(result)
-                    socket.emit(res,{success: true,data: result})
+                    socket.emit(res, { success: true, data: result })
                 }
             }).catch(err => {
                 console.log("error")
@@ -58,25 +58,25 @@ io.on('connection',function (socket){
         }
     })
 
-    socket.emit("test",{success: true})
+    socket.emit("test", { success: true })
 
-    socket.on('disconnect',function (){
+    socket.on('disconnect', function () {
         console.log('dis')
     })
 
 })
 
-app.get('/', function(req,res){
+app.get('/', function (req, res) {
     res.sendfile('index.html')
 })
 
-app.get('/building',function(req,res){
-    mongoose.connection.db.listCollections().toArray(function(err,names){
+app.get('/building', function (req, res) {
+    mongoose.connection.db.listCollections().toArray(function (err, names) {
         var array = [];
         var num = 0;
         for (const i of names) {
             num = 0;
-            var lenname = i.name.slice(0,i.name.length-1)
+            var lenname = i.name.slice(0, i.name.length - 1)
             for (const iterator of array) {
                 if (lenname.toUpperCase() == iterator.toUpperCase()) {
                     num = 1;
@@ -92,13 +92,13 @@ app.get('/building',function(req,res){
     })
 })
 
-app.post('/meter',function(req,res){
+app.post('/meter', function (req, res) {
     var request_data = req.body
-    
-    mongoose.connection.db.listCollections().toArray(function(err,names){
+
+    mongoose.connection.db.listCollections().toArray(function (err, names) {
         var coun = 0;
         for (const i of names) {
-            if (i.name.slice(0,i.name.length-1) == request_data.building.toLowerCase()) {
+            if (i.name.slice(0, i.name.length - 1) == request_data.building.toLowerCase()) {
                 coun += 1;
             }
         }
@@ -108,9 +108,9 @@ app.post('/meter',function(req,res){
     })
 })
 
-app.post('/test', function(req,res){
-    const File = mongoose.model(req.body.building+req.body.block, FileSchema);
-    File.findOne({},{},{sort: {'create': -1}}, function(err,result){
+app.post('/test', function (req, res) {
+    const File = mongoose.model(req.body.building + req.body.block, FileSchema);
+    File.findOne({}, {}, { sort: { 'create': -1 } }, function (err, result) {
         var resq = result.create
         var ress = new Date(req.body.date)
         // res.send(resq.getHours())
@@ -125,15 +125,15 @@ app.post('/test', function(req,res){
     }).catch(err => {
         res.status(400).send({
             msg: "no data or type not support"
-            
+
         })
     })
 })
 
-app.get('/data', function(req,res) {
+app.get('/data', function (req, res) {
     if (req.body.building) {
-        const File = mongoose.model(req.body.building+req.body.block, FileSchema);
-        File.find({},{},{sort: {'create': -1}}, function(err,result){
+        const File = mongoose.model(req.body.building + req.body.block, FileSchema);
+        File.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
             res.status(200).send(result)
             console.log('show data')
         }).limit(5).catch(err => {
@@ -146,35 +146,78 @@ app.get('/data', function(req,res) {
     }
 })
 
-app.post('/data',(req,res)=>{
-    
+app.post('/data', (req, res) => {
+
     var request_data = req.body;
     var count = Object.keys(req.body).length;
+    var date = new Date()
 
     const File = mongoose.model(request_data.building + request_data.block, FileSchema);
-
+    // console.log(File)
     if (count != 0) {
         if (request_data) {
-            new File({
-                building: request_data.building.toUpperCase(),
-                result: JSON.parse(request_data.result),
-                block: request_data.block,
-                create: new Date()
-            }).save().then(() => {
-                File.findOne({},{},{sort: {'create': -1}},function(err,result){
+            File.find({}, {}, { sort: { 'create': -1 } }, function (err, data) {
+                if (data.length < 1) {
+                    console.log("000")
+                    new File({
+                        building: request_data.building.toUpperCase(),
+                        result: JSON.parse(request_data.result),
+                        block: request_data.block,
+                        create: date
+                    }).save().then(() => {
+                        File.findOne({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+                            var nameupper = request_data.building.toLowerCase()
+                            if (result.length < 1 || err) {
+                                io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
+                                res.send({ success: false })
+                            } else {
+                                io.sockets.emit(nameupper + request_data.block, { success: true, data: result })
+                                res.send({ success: true })
+                            }
+                        })
+                    }).catch(err => {
+                        res.status(200).send({
+                            msg: err
+                        })
+                    })
+                } else if (data[0].create.getMinutes() + 4 <= date.getMinutes()) {
+                    console.log("111")
+                    console.log(data[0].create.getMinutes() + 4)
+                    console.log(date.getMinutes())
+                    new File({
+                        building: request_data.building.toUpperCase(),
+                        result: JSON.parse(request_data.result),
+                        block: request_data.block,
+                        create: date
+                    }).save().then(() => {
+                        File.findOne({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+                            var nameupper = request_data.building.toLowerCase()
+                            if (result.length < 1 || err) {
+                                io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
+                                res.send({ success: false })
+                            } else {
+                                io.sockets.emit(nameupper + request_data.block, { success: true, data: result })
+                                res.send({ success: true })
+                            }
+                        })
+                    }).catch(err => {
+                        res.status(200).send({
+                            msg: err
+                        })
+                    })
+                } else {
+                    console.log("333")
                     var nameupper = request_data.building.toLowerCase()
-                    if (result.length < 1 || err) {
-                        io.sockets.emit(nameupper + request_data.block, {success: true,msg: 'no data'});
-                        res.send({success: true})
-                    }else{
-                        io.sockets.emit(nameupper + request_data.block, {success: true,data: result})
-                        res.send({success: true})
+                    if (JSON.parse(request_data.result).length < 1 || err) {
+                        io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
+                        res.send({ success: false })
+                    } else {
+                        io.sockets.emit(nameupper + request_data.block, { success: true, data: JSON.parse(request_data.result) })
+                        res.send({ success: true })
                     }
-                })
+                }
             }).catch(err => {
-                res.status(200).send({
-                    msg: err
-                })
+                console.log(err)
             })
         } else {
             res.status(200).send({
@@ -187,11 +230,11 @@ app.post('/data',(req,res)=>{
         res.status(200).send({
             success: false,
             msg: 'bad_request',
-            detail: 'no body or type not support'
+            detail: 'type or data not true'
         })
     }
 })
 
-server.listen(port,function(req,res){
+server.listen(port, function (req, res) {
     console.log("connect port 2000")
 })
