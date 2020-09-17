@@ -186,7 +186,7 @@ app.post('/data', (req, res) => {
                             msg: err
                         })
                     })
-                } else if (data[0].create.getMinutes() + 4 <= date.getMinutes() || data[0].create.getHours() != date.getHours()) {
+                } else if (data[0].create.getMinutes() + 4 <= date.getMinutes() || data[0].create.getHours() != date.getHours() || data[0].create.getMinutes() + 4 >= date.getMinutes()) {
                     console.log("111")
                     console.log(data[0].create.getMinutes() + 4)
                     console.log(date.getMinutes())
@@ -214,6 +214,8 @@ app.post('/data', (req, res) => {
                     })
                 } else {
                     console.log("333")
+                    console.log(date.getMinutes())
+                    console.log(data[0].create.getMinutes() + 4)
                     var nameupper = request_data.building.toLowerCase()
                     if (JSON.parse(request_data.result).length < 1 || err) {
                         io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
