@@ -186,10 +186,11 @@ app.post('/data', (req, res) => {
                             msg: err
                         })
                     })
-                } else if (data[0].create.getMinutes() + 4 <= date.getMinutes()) {
+                } else if (data[0].create.getMinutes() + 4 <= date.getMinutes() || data[0].create.getHours() != date.getHours()) {
                     console.log("111")
                     console.log(data[0].create.getMinutes() + 4)
                     console.log(date.getMinutes())
+                    console.log(date)
                     new File({
                         building: request_data.building.toUpperCase(),
                         result: JSON.parse(request_data.result),
