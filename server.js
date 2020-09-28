@@ -66,8 +66,13 @@ io.on('connection', function (socket) {
 
 })
 
+// app.post('/graph',function (req,res){
+//     var request_data = req.body
+
+// })
+
 app.get('/', function (req, res) {
-    res.sendfile('index.html')
+    // res.sendfile('index.html')
 })
 
 app.get('/building', function (req, res) {
@@ -89,6 +94,27 @@ app.get('/building', function (req, res) {
             }
         }
         res.send(array)
+    })
+})
+
+app.post('/history', function(req,res){
+    var request_data = req.body
+    const datas = mongoose.model(request_data.building, FileSchema)
+    datas.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+        var data = []
+        for (const key in result) {
+            if (key.create.getDate() === request_data.date.getDate()&& key.create.getFullYear() === request_data.date.getFullYear()&& key.create.getMonth() === request_data.date.getMonth()) {
+                data.push(key)
+            } else {
+                //end
+            }
+        }
+        res.status(200).send(data)
+    }).catch(err => {
+        res.status(400).send({
+            err: err
+        })
+        console.log("error")
     })
 })
 
@@ -164,7 +190,7 @@ app.post('/data', (req, res) => {
         if (request_data) {
             File.find({}, {}, { sort: { 'create': -1 } }, function (err, data) {
                 if (data.length < 1) {
-                    console.log("000")
+                    console.log("ข้อมูลแรก")
                     new File({
                         building: request_data.building.toUpperCase(),
                         result: JSON.parse(request_data.result),
@@ -186,8 +212,8 @@ app.post('/data', (req, res) => {
                             msg: err
                         })
                     })
-                } else if (data[0].create.getMinutes() + 4 <= date.getMinutes() || data[0].create.getHours() != date.getHours() || data[0].create.getMinutes()  >= date.getMinutes() + 4) {
-                    console.log("111")
+                } else if (data[0].create.getMinutes() + 4 <= date.getMinutes() || data[0].create.getHours() != date.getHours() || data[0].create.getMinutes() - 4 >= date.getMinutes()) {
+                    console.log("บันทึกข้อมูล")
                     console.log(data[0].create.getMinutes() + 4)
                     console.log(date.getMinutes())
                     console.log(date)
@@ -213,7 +239,7 @@ app.post('/data', (req, res) => {
                         })
                     })
                 } else {
-                    console.log("333")
+                    console.log("ไม่บันทึกข้อมูล")
                     console.log(date.getMinutes())
                     console.log(data[0].create.getMinutes() + 4)
                     var nameupper = request_data.building.toLowerCase()
