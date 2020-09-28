@@ -99,7 +99,7 @@ app.get('/building', function (req, res) {
 
 app.post('/history', function(req,res){
     var request_data = req.body
-    const datas = mongoose.model(request_data.building, FileSchema)
+    const datas = mongoose.model(request_data.building + request_data.block, FileSchema)
     datas.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
         var data = []
         for (const key in result) {
@@ -115,6 +115,9 @@ app.post('/history', function(req,res){
             err: err
         })
         console.log("error")
+    })
+    res.status(200).send({
+        msg: "error"
     })
 })
 
