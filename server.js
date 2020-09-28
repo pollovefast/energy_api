@@ -111,7 +111,7 @@ app.post('/history', function(req,res){
             // console.log()
             for (const key of result) {
                 console.log(key)
-                if (key.create.getDate() === request_data.date.getDate()&& key.create.getFullYear() === request_data.date.getFullYear()&& key.create.getMonth() === request_data.date.getMonth()) {
+                if (key.create.getDate() === request_data.date && key.create.getFullYear() === request_data.year && key.create.getMonth() === request_data.month) {
                     data.push(key)
                 } else {
                     //end
