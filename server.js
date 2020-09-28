@@ -99,26 +99,33 @@ app.get('/building', function (req, res) {
 
 app.post('/history', function(req,res){
     var request_data = req.body
-    const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema)
-    datas.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
-        var data = []
-        for (const key in result) {
-            if (key.create.getDate() === request_data.date.getDate()&& key.create.getFullYear() === request_data.date.getFullYear()&& key.create.getMonth() === request_data.date.getMonth()) {
-                data.push(key)
-            } else {
-                //end
-            }
-        }
-        res.status(200).send(data)
-    }).catch(err => {
-        res.status(400).send({
-            err: err
+    if (request_data.length < -1) {
+        res.send({
+            msg: request_data
         })
-        console.log("error")
-    })
-    res.status(200).send({
-        msg: request_data
-    })
+    } else {
+        const datas = mongoose.model(request_data.building.toLowerCase(), FileSchema)
+        datas.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+            var data = []
+            for (const key in result) {
+                if (key.create.getDate() === request_data.date.getDate()&& key.create.getFullYear() === request_data.date.getFullYear()&& key.create.getMonth() === request_data.date.getMonth()) {
+                    data.push(key)
+                } else {
+                    //end
+                }
+            }
+            res.status(200).send(data)
+        }).catch(err => {
+            res.status(400).send({
+                err: err
+            })
+            console.log("error")
+        })
+    }
+    
+    // res.status(200).send({
+    //     msg: request_data
+    // })
 })
 
 app.post('/meter', function (req, res) {
