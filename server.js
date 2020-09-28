@@ -117,7 +117,7 @@ app.post('/history', function(req,res){
         console.log("error")
     })
     res.status(200).send({
-        msg: "error"
+        msg: request_data
     })
 })
 
