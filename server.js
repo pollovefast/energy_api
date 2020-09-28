@@ -104,9 +104,11 @@ app.post('/history', function(req,res){
             msg: request_data
         })
     } else {
-        const datas = mongoose.model(request_data.building.toLowerCase(), FileSchema)
+        const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block , FileSchema)
+        console.log(request_data.building.toLowerCase() + request_data.block)
         datas.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
             var data = []
+            console.log("test")
             for (const key in result) {
                 if (key.create.getDate() === request_data.date.getDate()&& key.create.getFullYear() === request_data.date.getFullYear()&& key.create.getMonth() === request_data.date.getMonth()) {
                     data.push(key)
@@ -224,9 +226,9 @@ app.post('/data', (req, res) => {
                     })
                 } else if (data[0].create.getMinutes() + 4 <= date.getMinutes() || data[0].create.getHours() != date.getHours() || data[0].create.getMinutes() - 4 >= date.getMinutes()) {
                     console.log("บันทึกข้อมูล")
-                    console.log(data[0].create.getMinutes() + 4)
-                    console.log(date.getMinutes())
-                    console.log(date)
+                    // console.log(data[0].create.getMinutes() + 4)
+                    // console.log(date.getMinutes())
+                    // console.log(date)
                     new File({
                         building: request_data.building.toUpperCase(),
                         result: JSON.parse(request_data.result),
@@ -250,8 +252,8 @@ app.post('/data', (req, res) => {
                     })
                 } else {
                     console.log("ไม่บันทึกข้อมูล")
-                    console.log(date.getMinutes())
-                    console.log(data[0].create.getMinutes() + 4)
+                    // console.log(date.getMinutes())
+                    // console.log(data[0].create.getMinutes() + 4)
                     var nameupper = request_data.building.toLowerCase()
                     if (JSON.parse(request_data.result).length < 1 || err) {
                         io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
