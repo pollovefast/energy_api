@@ -108,8 +108,9 @@ app.post('/history', function(req,res){
         console.log(request_data.building.toLowerCase() + request_data.block)
         datas.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
             var data = []
-            console.log("test")
+            // console.log()
             for (const key in result) {
+                console.log(key)
                 if (key.create.getDate() === request_data.date.getDate()&& key.create.getFullYear() === request_data.date.getFullYear()&& key.create.getMonth() === request_data.date.getMonth()) {
                     data.push(key)
                 } else {
