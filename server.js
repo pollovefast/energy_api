@@ -110,11 +110,12 @@ app.post('/history', function(req,res){
             var data = []
             // console.log()
             var c = 0
+            var det = request_data.month + "/" + request_data.date + "/" + request_data.year
             for (const key of result) {
                 // console.log(key.result[0]['DateTime'])
                 var s = key.result[0]['DateTime'].split(" ")
                 console.log(s)
-                if (s[0] === request_data.localdate) {
+                if (s[0] === det) {
                     console.log(key.create.toLocaleDateString())
                     // console.log(request_data.localdate)
                     data.push(key)
