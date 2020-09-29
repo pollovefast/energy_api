@@ -109,16 +109,19 @@ app.post('/history', function(req,res){
         datas.find({}, {}, { sort: {} }, function (err, result) {
             var data = []
             // console.log()
+            var c = 0
             for (const key of result) {
                 // console.log(key.result[0]['DateTime'])
                 if (key.create.toLocaleDateString() === request_data.localdate) {
                     console.log(key.create.toLocaleDateString())
                     // console.log(request_data.localdate)
                     data.push(key)
+                    c += 1
                 } else {
                     //end
                 }
             }
+            console.log(c)
             res.status(200).send(data)
         }).catch(err => {
             res.status(400).send({
