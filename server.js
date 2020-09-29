@@ -106,11 +106,11 @@ app.post('/history', function(req,res){
     } else {
         const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block , FileSchema)
         console.log(request_data.building.toLowerCase() + request_data.block)
-        datas.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+        datas.find({}, {}, {}, function (err, result) {
             var data = []
             // console.log()
             for (const key of result) {
-                console.log(key)
+                // console.log(key)
                 if (key.create.getDate() === request_data.date && key.create.getFullYear() === request_data.year && key.create.getMonth() === request_data.month) {
                     data.push(key)
                 } else {
