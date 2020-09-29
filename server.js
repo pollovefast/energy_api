@@ -111,7 +111,7 @@ app.post('/history', function(req,res){
             // console.log()
             for (const key of result) {
                 // console.log(key.result[0]['DateTime'])
-                if (key.create.getDate() === request_data.date && key.create.getFullYear() === request_data.year && key.create.getMonth() === request_data.month) {
+                if (key.create.toLocaleDateString() === request_data.localdate) {
                     data.push(key)
                 } else {
                     //end
