@@ -113,7 +113,7 @@ app.post('/history', function(req,res){
                 // console.log(key.result[0]['DateTime'])
                 if (key.create.toLocaleDateString() === request_data.localdate) {
                     console.log(key.create.toLocaleDateString())
-                    console.log(request_data.localdate)
+                    // console.log(request_data.localdate)
                     data.push(key)
                 } else {
                     //end
