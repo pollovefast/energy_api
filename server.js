@@ -115,7 +115,7 @@ app.post('/history', function(req,res){
                 // console.log(key.result[0]['DateTime'])
                 var s = key.result[0]['DateTime'].split(" ")
                 // console.log(s[0] + "----" + det)
-                if (s[0] === det) {
+                if (s[0] === det && key.result[0]['POWER_1'] != '---' ) {
                     console.log(key.create.toLocaleDateString())
                     // console.log(request_data.localdate)
                     data.push(key)
