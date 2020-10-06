@@ -114,7 +114,7 @@ app.post('/history', function(req,res){
             for (const key of result) {
                 // console.log(key.result[0]['DateTime'])
                 var s = key.result[0]['DateTime'].split(" ")
-                console.log(s[0] + "----" + det)
+                // console.log(s[0] + "----" + det)
                 if (s[0] === det) {
                     console.log(key.create.toLocaleDateString())
                     // console.log(request_data.localdate)
@@ -233,7 +233,7 @@ app.post('/data', (req, res) => {
                             msg: err
                         })
                     })
-                } else if (data[0].create.getMinutes() + 4 <= date.getMinutes() || data[0].create.getHours() != date.getHours() || data[0].create.getMinutes() - 4 >= date.getMinutes()) {
+                } else if (data[0].create.getMinutes() + 1 <= date.getMinutes() || data[0].create.getHours() != date.getHours() || data[0].create.getMinutes() - 1 >= date.getMinutes()) {
                     console.log("บันทึกข้อมูล")
                     // console.log(data[0].create.getMinutes() + 4)
                     // console.log(date.getMinutes())
