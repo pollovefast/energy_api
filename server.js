@@ -303,6 +303,7 @@ app.get('/alldata', (req,res) => {
         // })
         var datass = []
         mongoose.connection.db.listCollections().toArray(function (err, names) {
+            sum = 0;
             for (const i of names) {
                 const datas = mongoose.model(i.name, FileSchema)
                 datas.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
@@ -310,13 +311,16 @@ app.get('/alldata', (req,res) => {
                         datass.push(result);
                     } else {
                         // console.log(result)
+                        sum += 1;
                         datass.push(result);
+                    }
+                    if (sum == 7) {
+                        res.send({success: true,data: datass})
                     }
                 }).catch(err => {
                     console.log("error")
                 })
             }
-            res.send({success: true,data: datass})
         })
 })
 
