@@ -292,36 +292,36 @@ app.post('/data', (req, res) => {
 })
 
 app.get('/alldata', (req,res) => {
-        // const File = mongoose.model(req.body.building + req.body.block, FileSchema);
-        // File.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
-        //     res.status(200).send(result)
-        //     console.log('show data')
-        // }).limit(5).catch(err => {
-        //     res.status(400).send({
-        //         msg: "no data or type not support"
-        //     })
-        // })
-        var datass = []
-        mongoose.connection.db.listCollections().toArray(function (err, names) {
-            sum = 0;
-            for (const i of names) {
-                const datas = mongoose.model(i.name, FileSchema)
-                datas.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
-                    if (result.length < 1 || err) {
-                        datass.push(result);
-                    } else {
-                        // console.log(result)
-                        sum += 1;
-                        datass.push(result);
-                    }
-                    if (sum == 7) {
-                        res.send({success: true,data: datass})
-                    }
-                }).catch(err => {
-                    console.log("error")
-                })
-            }
+        const File = mongoose.model(req.body.building + req.body.block, FileSchema);
+        File.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+            res.status(200).send(result)
+            console.log('show data')
+        }).limit(5).catch(err => {
+            res.status(400).send({
+                msg: "no data or type not support"
+            })
         })
+        // var datass = []
+        // mongoose.connection.db.listCollections().toArray(function (err, names) {
+        //     sum = 0;
+        //     for (const i of names) {
+        //         const datas = mongoose.model(i.name, FileSchema)
+        //         datas.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+        //             if (result.length < 1 || err) {
+        //                 datass.push(result);
+        //             } else {
+        //                 // console.log(result)
+        //                 sum += 1;
+        //                 datass.push(result);
+        //             }
+        //             if (sum == 7) {
+        //                 res.send({success: true,data: datass})
+        //             }
+        //         }).catch(err => {
+        //             console.log("error")
+        //         })
+        //     }
+        // })
 })
 
 server.listen(port, function (req, res) {
