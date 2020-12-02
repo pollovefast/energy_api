@@ -291,6 +291,35 @@ app.post('/data', (req, res) => {
     }
 })
 
+app.get('/alldata', (req,res) => {
+        // const File = mongoose.model(req.body.building + req.body.block, FileSchema);
+        // File.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+        //     res.status(200).send(result)
+        //     console.log('show data')
+        // }).limit(5).catch(err => {
+        //     res.status(400).send({
+        //         msg: "no data or type not support"
+        //     })
+        // })
+        var datass = []
+        mongoose.connection.db.listCollections().toArray(function (err, names) {
+            for (const i of names) {
+                const datas = mongoose.model(i.name, FileSchema)
+                datas.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+                    if (result.length < 1 || err) {
+                        datass.push(result);
+                    } else {
+                        // console.log(result)
+                        datass.push(result);
+                    }
+                }).catch(err => {
+                    console.log("error")
+                })
+            }
+            res.send({success: true,data: datass})
+        })
+})
+
 server.listen(port, function (req, res) {
     console.log("connect port 2000")
 })
