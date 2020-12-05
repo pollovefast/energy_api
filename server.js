@@ -355,11 +355,12 @@ app.post('/dateTOdate',(req,res) => {
                 //end
             } 
             else {
+                    console.log("else")
                     for (const key of result) {
                         var s = key.result[0]['DateTime'].split(" ")
                         var de = s[0].split("/");
-                        
                         if (parseInt(de[2]) === parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
+                            console.log("year === year2")
                             if (parseInt(de[1]) === parseInt(det2[1])) {
                                 if (parseInt(de[0]) <= parseInt(det2[0])) {
                                     data.push(key)
@@ -371,7 +372,10 @@ app.post('/dateTOdate',(req,res) => {
                         }else if(parseInt(de[2]) < parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])){
                             data.push(key)
                         }else if(parseInt(de[2]) === parseInt(det[2])){
+                            console.log("year === year1")
+                            // console.log("k")
                             if (parseInt(de[1]) === parseInt(det[1])) {
+                                console.log("k2")
                                 if (parseInt(de[0]) >= parseInt(det[0])) {
                                     data.push(key)
                                 }
