@@ -383,7 +383,7 @@ app.post('/dateTOdate',(req,res) => {
                                 if (parseInt(de[0]) >= parseInt(det[0])) {
                                     data.push(key)
                                 }
-                            }else if(de[1] > parseInt(det[1])){
+                            }else if(parseInt(de[1]) > parseInt(det[1])){
                                 data.push(key)
                             }
                         }
