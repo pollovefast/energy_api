@@ -359,6 +359,8 @@ app.post('/dateTOdate',(req,res) => {
                     for (const key of result) {
                         var s = key.result[0]['DateTime'].split(" ")
                         var de = s[0].split("/");
+                        console.log(de[2])
+                        console.log(parseInt(de[2]) + 1000)
                         if (parseInt(de[2]) === parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
                             console.log("year === year2")
                             if (parseInt(de[1]) === parseInt(det2[1])) {
