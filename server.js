@@ -378,14 +378,35 @@ app.post('/dateTOdate',(req,res) => {
                         }else if(parseInt(de[2]) === parseInt(det[2])){
                             console.log("year === year1")
                             // console.log("k")
-                            if (parseInt(de[1]) === parseInt(det[1])) {
-                                console.log("k2")
-                                if (parseInt(de[0]) >= parseInt(det[0])) {
+                            if (parseInt(det[2]) != parseInt(det2[2])) {
+                                if (parseInt(de[1]) === parseInt(det[1])) {
+                                    console.log("k2")
+                                    if (parseInt(de[0]) >= parseInt(det[0])) {
+                                        data.push(key)
+                                    }
+                                }else if(parseInt(de[1]) > parseInt(det[1])){
                                     data.push(key)
                                 }
-                            }else if(parseInt(de[1]) > parseInt(det[1])){
-                                data.push(key)
+                            } else if(parseInt(det[2]) === parseInt(det2[2])){
+                                if (parseInt(det[1]) === parseInt(det2[1])) {
+                                    if (parseInt(de[0]) >= parseInt(det[0]) && parseInt(de[0]) <= parseInt(det2[0])) {
+                                        data.push(key)
+                                    }
+                                }else if(parseInt(det[1] != parseInt(det2[1]))){
+                                    if (parseInt(de[1]) === parseInt(det[1]) ) {
+                                        if (parseInt(de[0]) >= parseInt(det[0])) {
+                                            data.push(key)
+                                        }
+                                    }else if(parseInt(de[1]) > parseInt(det[1]) && parseInt(de[1]) < parseInt(det2[1]) ){
+                                        data.push(key)
+                                    }else if(parseInt(de[1]) === parseInt(det2[1])){
+                                        if (parseInt(de[0]) <= parseInt(det2[0])) {
+                                            data.push(key)
+                                        }
+                                    }
+                                }
                             }
+                            
                         }
                     }
                 // for (const key of result) {
