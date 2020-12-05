@@ -324,6 +324,90 @@ app.get('/alldata', (req,res) => {
         // })
 })
 
+app.post('/dateTOdate',(req,res) => {
+    var request_data = req.body
+    if (request_data.length < -1) {
+        res.send({
+            msg: request_data
+        })
+    } else {
+        const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block , FileSchema)
+        console.log(request_data.building.toLowerCase() + request_data.block)
+        datas.find({}, {}, {sort: { 'create': -1 }}, function (err, result) {
+            var data = []
+            // console.log()
+            var c = 0
+            var det = request_data.date + "/" + request_data.month + "/" + request_data.year
+            var det2 = request_data.date2 + "/" + request_data.month2 + "/" + request_data.year2
+            if (request_data.present === "true") {
+                for (const key of result) {
+                    // console.log(key.result[0]['DateTime'])
+                    var s = key.result[0]['DateTime'].split(" ")
+                    // console.log(s[0] + "----" + det)
+                    if (s[0] === det && key.result[0]['Power_1'] != '---' ) {
+                        console.log(key.create.toLocaleDateString())
+                        // console.log(request_data.localdate)
+                        data.push(key)
+                        c += 1
+                    }
+                }
+            }else if(det === det2){
+                //end
+            } 
+            else {
+                    for (const key of result) {
+                        var s = key.result[0]['DateTime'].split(" ")
+                        var de = s[0].split("/");
+                        
+                        if (parseInt(de[2]) === parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
+                            if (parseInt(de[1]) === parseInt(det2[1])) {
+                                if (parseInt(de[0]) <= parseInt(det2[0])) {
+                                    data.push(key)
+                                }
+                            }else if(parseInt(de[1]) < parseInt(det2[1])){
+                                data.push(key)
+                            }
+                            // data.push(key)
+                        }else if(parseInt(de[2]) < parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])){
+                            data.push(key)
+                        }else if(parseInt(de[2]) === parseInt(det[2])){
+                            if (parseInt(de[1]) === parseInt(det[1])) {
+                                if (parseInt(de[0]) >= parseInt(det[0])) {
+                                    data.push(key)
+                                }
+                            }else if(de[1] > parseInt(det[1])){
+                                data.push(key)
+                            }
+                        }
+                    }
+                // for (const key of result) {
+                //     var s = key.result[0]['DateTime'].split(" ")
+                //     var de = s[0].split("/");
+
+                //     if (det[2] < parseInt(det2[2]) && de[2] >= det[2]) {
+                //         data.push(key)
+                //     }else if(det[2] === det2[2] && de[2] === det[2]){
+                //         if (det[1] < det2[1] && de[1] >= det[1]) {
+                //             data.push(key)
+                //         }else if(det[1] === det2[1] && de[1] === det[1]){
+                //             if (det[0] <= det2[0] && de[0] >= det[0]) {
+                //                 data.push(key)
+                //             }
+                //         }
+                //     }
+                // }
+            }
+            // console.log(c)
+            res.status(200).send(data)
+        }).catch(err => {
+            res.status(400).send({
+                err: err
+            })
+            console.log("error")
+        })
+    }
+})
+
 server.listen(port, function (req, res) {
     console.log("connect port 2000")
 })
