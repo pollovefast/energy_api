@@ -193,103 +193,103 @@ app.get('/data', function (req, res) {
     }
 })
 
-app.post('/data', (req, res) => {
+// app.post('/data', (req, res) => {
 
-    var request_data = req.body;
-    var count = Object.keys(req.body).length;
-    var date = new Date()
-    var resw = {
-        building: request_data.building.toUpperCase(),
-        result: [JSON.parse(request_data.result)],
-        block: request_data.block,
-        create: date
-    }
+//     var request_data = req.body;
+//     var count = Object.keys(req.body).length;
+//     var date = new Date()
+//     var resw = {
+//         building: request_data.building.toUpperCase(),
+//         result: [JSON.parse(request_data.result)],
+//         block: request_data.block,
+//         create: date
+//     }
 
-    const File = mongoose.model(request_data.building + request_data.block, FileSchema);
-    // console.log(File)
-    if (count != 0) {
-        if (request_data) {
-            File.find({}, {}, { sort: { 'create': -1 } }, function (err, data) {
-                if (data.length < 1) {
-                    console.log("ข้อมูลแรก")
-                    new File({
-                        building: request_data.building.toUpperCase(),
-                        result: JSON.parse(request_data.result),
-                        block: request_data.block,
-                        create: date
-                    }).save().then(() => {
-                        File.findOne({}, {}, { sort: { 'create': -1 } }, function (err, result) {
-                            var nameupper = request_data.building.toLowerCase()
-                            if (result.length < 1 || err) {
-                                io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
-                                res.send({ success: false })
-                            } else {
-                                io.sockets.emit(nameupper + request_data.block, { success: true, data: result })
-                                res.send({ success: true })
-                            }
-                        })
-                    }).catch(err => {
-                        res.status(200).send({
-                            msg: err
-                        })
-                    })
-                } else if (data[0].create.getMinutes() + 1 <= date.getMinutes() || data[0].create.getHours() != date.getHours() || data[0].create.getMinutes() - 1 >= date.getMinutes()) {
-                    console.log("บันทึกข้อมูล")
-                    // console.log(data[0].create.getMinutes() + 4)
-                    // console.log(date.getMinutes())
-                    // console.log(date)
-                    new File({
-                        building: request_data.building.toUpperCase(),
-                        result: JSON.parse(request_data.result),
-                        block: request_data.block,
-                        create: date
-                    }).save().then(() => {
-                        File.findOne({}, {}, { sort: { 'create': -1 } }, function (err, result) {
-                            var nameupper = request_data.building.toLowerCase()
-                            if (result.length < 1 || err) {
-                                io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
-                                res.send({ success: false })
-                            } else {
-                                io.sockets.emit(nameupper + request_data.block, { success: true, data: result })
-                                res.send({ success: true })
-                            }
-                        })
-                    }).catch(err => {
-                        res.status(200).send({
-                            msg: err
-                        })
-                    })
-                } else {
-                    console.log("ไม่บันทึกข้อมูล")
-                    // console.log(date.getMinutes())
-                    // console.log(data[0].create.getMinutes() + 4)
-                    var nameupper = request_data.building.toLowerCase()
-                    if (JSON.parse(request_data.result).length < 1 || err) {
-                        io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
-                        res.send({ success: false })
-                    } else {
-                        io.sockets.emit(nameupper + request_data.block, { success: true, data: resw })
-                        res.send({ success: true })
-                    }
-                }
-            }).catch(err => {
-                console.log(err)
-            })
-        } else {
-            res.status(200).send({
-                success: false,
-                msg: 'bad_request',
-                detail: 'result not found'
-            })
-        }
-    } else {
-        res.status(200).send({
-            success: false,
-            msg: 'bad_request',
-            detail: 'type or data not true'
-        })
-    }
-})
+//     const File = mongoose.model(request_data.building + request_data.block, FileSchema);
+//     // console.log(File)
+//     if (count != 0) {
+//         if (request_data) {
+//             File.find({}, {}, { sort: { 'create': -1 } }, function (err, data) {
+//                 if (data.length < 1) {
+//                     console.log("ข้อมูลแรก")
+//                     new File({
+//                         building: request_data.building.toUpperCase(),
+//                         result: JSON.parse(request_data.result),
+//                         block: request_data.block,
+//                         create: date
+//                     }).save().then(() => {
+//                         File.findOne({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+//                             var nameupper = request_data.building.toLowerCase()
+//                             if (result.length < 1 || err) {
+//                                 io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
+//                                 res.send({ success: false })
+//                             } else {
+//                                 io.sockets.emit(nameupper + request_data.block, { success: true, data: result })
+//                                 res.send({ success: true })
+//                             }
+//                         })
+//                     }).catch(err => {
+//                         res.status(200).send({
+//                             msg: err
+//                         })
+//                     })
+//                 } else if (data[0].create.getMinutes() + 1 <= date.getMinutes() || data[0].create.getHours() != date.getHours() || data[0].create.getMinutes() - 1 >= date.getMinutes()) {
+//                     console.log("บันทึกข้อมูล")
+//                     // console.log(data[0].create.getMinutes() + 4)
+//                     // console.log(date.getMinutes())
+//                     // console.log(date)
+//                     new File({
+//                         building: request_data.building.toUpperCase(),
+//                         result: JSON.parse(request_data.result),
+//                         block: request_data.block,
+//                         create: date
+//                     }).save().then(() => {
+//                         File.findOne({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+//                             var nameupper = request_data.building.toLowerCase()
+//                             if (result.length < 1 || err) {
+//                                 io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
+//                                 res.send({ success: false })
+//                             } else {
+//                                 io.sockets.emit(nameupper + request_data.block, { success: true, data: result })
+//                                 res.send({ success: true })
+//                             }
+//                         })
+//                     }).catch(err => {
+//                         res.status(200).send({
+//                             msg: err
+//                         })
+//                     })
+//                 } else {
+//                     console.log("ไม่บันทึกข้อมูล")
+//                     // console.log(date.getMinutes())
+//                     // console.log(data[0].create.getMinutes() + 4)
+//                     var nameupper = request_data.building.toLowerCase()
+//                     if (JSON.parse(request_data.result).length < 1 || err) {
+//                         io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
+//                         res.send({ success: false })
+//                     } else {
+//                         io.sockets.emit(nameupper + request_data.block, { success: true, data: resw })
+//                         res.send({ success: true })
+//                     }
+//                 }
+//             }).catch(err => {
+//                 console.log(err)
+//             })
+//         } else {
+//             res.status(200).send({
+//                 success: false,
+//                 msg: 'bad_request',
+//                 detail: 'result not found'
+//             })
+//         }
+//     } else {
+//         res.status(200).send({
+//             success: false,
+//             msg: 'bad_request',
+//             detail: 'type or data not true'
+//         })
+//     }
+// })
 
 app.get('/alldata', (req,res) => {
         const File = mongoose.model(req.body.building + req.body.block, FileSchema);
@@ -333,7 +333,7 @@ app.post('/dateTOdate',(req,res) => {
     } else {
         const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block , FileSchema)
         console.log(request_data.building.toLowerCase() + request_data.block)
-        datas.find({}, {}, {sort: { 'create': -1 }}, function (err, result) {
+        datas.find({}, {}, {sort: { 'create': 1 }}, function (err, result) {
             var data = []
             // console.log()
             var c = 0
