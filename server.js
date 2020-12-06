@@ -542,17 +542,22 @@ app.post('/dateTOdateGraph',(req,res) => {
                     if (restdata.length % 2 != 0) {
                         jo -= 1;
                     }
-                    for (let index = 0; index < 24; index++) {
-                        console.log("test")
-                        console.log(data.length)
-                        if (index === 0 && restdata[index] != null) {
-                            data.push(restdata[index])
-                        }else if(index === 23 && restdata[index] != null){
-                            data.push(restdata[restdata.length - 1])
-                        }else{
-                            data.push(request_data[index * jo])
+                    if (jo <= 24) {
+                        data = restdata;
+                    } else {
+                        for (let index = 0; index < 24; index++) {
+                            console.log("test")
+                            console.log(data.length)
+                            if (index === 0 && restdata[index] != null) {
+                                data.push(restdata[index])
+                            }else if(index === 23 && restdata[index] != null){
+                                data.push(restdata[restdata.length - 1])
+                            }else{
+                                data.push(request_data[index * jo])
+                            }
                         }
                     }
+                    
                 // for (const key of result) {
                 //     var s = key.result[0]['DateTime'].split(" ")
                 //     var de = s[0].split("/");
