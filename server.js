@@ -602,14 +602,14 @@ app.post('/dateTOdateGraph', (req, res) => {
                 if (restdata.length <= 24) {
                     data = restdata;
                 } else {
+                    console.log(restdata.length)
                     for (let index = 0; index < 24; index++) {
-                        console.log("test")
-                        console.log(data.length)
                         if (index === 0 && restdata[index] != null) {
                             data.push(restdata[index])
                         } else if (index === 23 && restdata[index] != null) {
                             data.push(restdata[restdata.length - 1])
                         } else if(restdata[index] != null){
+                            console.log(index * jo)
                             data.push(restdata[index * jo])
                             // console.log(restdata[index * jo])
                         }
