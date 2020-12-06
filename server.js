@@ -543,6 +543,8 @@ app.post('/dateTOdateGraph',(req,res) => {
                         jo -= 1;
                     }
                     for (let index = 0; index < 24; index++) {
+                        console.log("test")
+                        console.log(data.length)
                         if (index === 0) {
                             data.push(restdata[index])
                         }else if(index === jo - 1){
