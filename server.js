@@ -482,6 +482,7 @@ app.post('/dateTOdateGraph',(req,res) => {
                         }
                     }
                 }
+                console.log(reste.length)
                 var jo = reste.length / 22
                     jo = Math.ceil(jo)
                     console.log(jo)
