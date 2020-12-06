@@ -470,6 +470,7 @@ app.post('/dateTOdateGraph',(req,res) => {
                     //keep data in variable
                 for (const key of result) {
                     var before = 0;
+                    var reste = []
                     // console.log(key.result[0]['DateTime'])
                     var s = key.result[0]['DateTime'].split(" ")
                     var time = s[1].split(":")
@@ -477,10 +478,35 @@ app.post('/dateTOdateGraph',(req,res) => {
                     if (s[0] === det && key.result[0]['Power_1'] != '---' ) {
                         if (parseInt(time[0]) >= request_data.hour && parseInt(time[0]) <= request_data.hour2 && before != parseInt(time[0])) {
                             before = parseInt(time[0])
-                            data.push(key)
+                            reste.push(key)
                         }
                     }
                 }
+                var jo = reste.length / 22
+                    jo = Math.ceil(jo)
+                    console.log(jo)
+                    // console.log(reste.length)
+                    // console.log(reste[1])
+                    // console.log(request_data[1 * jo])
+                    if (reste.length % 2 != 0) {
+                        jo -= 1;
+                    }
+                    if (reste.length <= 24) {
+                        data = reste;
+                    } else {
+                        for (let index = 0; index < 24; index++) {
+                            console.log("test")
+                            console.log(data.length)
+                            if (index === 0 && reste[index] != null) {
+                                data.push(reste[index])
+                            }else if(index === 23 && reste[index] != null){
+                                data.push(reste[reste.length - 1])
+                            }else{
+                                data.push(reste[index * jo])
+                                // console.log(restdata[index * jo])
+                            }
+                        }
+                    }
             } 
             else {
                     console.log("else")
