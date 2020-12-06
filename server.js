@@ -554,6 +554,7 @@ app.post('/dateTOdateGraph',(req,res) => {
                                 data.push(restdata[restdata.length - 1])
                             }else{
                                 data.push(request_data[index * jo])
+                                console.log(request_data[index * jo])
                             }
                         }
                     }
