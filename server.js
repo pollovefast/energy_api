@@ -515,7 +515,7 @@ app.post('/dateTOdateGraph', (req, res) => {
                             data.push(reste[index])
                         } else if (index === 23 && reste[index] != null) {
                             data.push(reste[reste.length - 1])
-                        } else {
+                        } else if(reste[index] != null){
                             data.push(reste[index * jo])
                             // console.log(restdata[index * jo])
                         }
@@ -609,7 +609,7 @@ app.post('/dateTOdateGraph', (req, res) => {
                             data.push(restdata[index])
                         } else if (index === 23 && restdata[index] != null) {
                             data.push(restdata[restdata.length - 1])
-                        } else {
+                        } else if(restdata[index] != null){
                             data.push(restdata[index * jo])
                             // console.log(restdata[index * jo])
                         }
