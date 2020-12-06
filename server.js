@@ -353,7 +353,20 @@ app.post('/dateTOdate', (req, res) => {
                     }
                 }
             } else if (det === det2) {
-                //end
+                // var reste = []
+                for (const key of result) {
+                    var before = 0;
+                    // console.log(key.result[0]['DateTime'])
+                    var s = key.result[0]['DateTime'].split(" ")
+                    var time = s[1].split(":")
+                    // console.log(s[0] + "----" + det)
+                    if (s[0] === det && key.result[0]['Power_1'] != '---') {
+                        if (parseInt(time[0]) >= request_data.hour && parseInt(time[0]) <= request_data.hour2) {
+                            before = parseInt(time[0])
+                            data.push(key)
+                        }
+                    }
+                }
             }
             else {
                 console.log("else")
