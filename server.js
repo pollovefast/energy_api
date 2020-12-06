@@ -545,11 +545,11 @@ app.post('/dateTOdateGraph',(req,res) => {
                     for (let index = 0; index < 24; index++) {
                         console.log("test")
                         console.log(data.length)
-                        if (index === 0) {
+                        if (index === 0 && restdata[index] != null) {
                             data.push(restdata[index])
-                        }else if(index === jo - 1){
+                        }else if(index === jo - 1 && restdata[index] != null){
                             data.push(restdata[restdata.length - 1])
-                        }else{
+                        }else if(restdata[index] != null){
                             data.push(request_data[index + jo])
                         }
                     }
