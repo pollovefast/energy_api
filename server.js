@@ -474,7 +474,7 @@ app.post('/dateTOdateGraph',(req,res) => {
                     var time = s[1].split(":")
                     // console.log(s[0] + "----" + det)
                     if (s[0] === det && key.result[0]['Power_1'] != '---' ) {
-                        if (parseInt(time[0]) >= request_data.hour && parseInt(time[0]) <= request_data.hour) {
+                        if (parseInt(time[0]) >= request_data.hour && parseInt(time[0]) <= request_data.hour2) {
                             data.push(key)
                         }
                     }
