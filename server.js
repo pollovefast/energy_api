@@ -209,7 +209,7 @@ app.get('/data', function (req, res) {
 //     // console.log(File)
 //     if (count != 0) {
 //         if (request_data) {
-//             File.find({}, {}, { sort: { 'create': -1 } }, function (err, data) {
+//             File.find({}, {}, { sort: { 'create': 1 } }, function (err, data) {
 //                 if (data.length < 1) {
 //                     console.log("ข้อมูลแรก")
 //                     new File({
@@ -218,7 +218,7 @@ app.get('/data', function (req, res) {
 //                         block: request_data.block,
 //                         create: date
 //                     }).save().then(() => {
-//                         File.findOne({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+//                         File.findOne({}, {}, { sort: { 'create': 1 } }, function (err, result) {
 //                             var nameupper = request_data.building.toLowerCase()
 //                             if (result.length < 1 || err) {
 //                                 io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
@@ -244,7 +244,7 @@ app.get('/data', function (req, res) {
 //                         block: request_data.block,
 //                         create: date
 //                     }).save().then(() => {
-//                         File.findOne({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+//                         File.findOne({}, {}, { sort: { 'create': 1 } }, function (err, result) {
 //                             var nameupper = request_data.building.toLowerCase()
 //                             if (result.length < 1 || err) {
 //                                 io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
@@ -293,7 +293,7 @@ app.get('/data', function (req, res) {
 
 app.get('/alldata', (req,res) => {
         const File = mongoose.model(req.body.building + req.body.block, FileSchema);
-        File.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+        File.find({}, {}, { sort: { 'create': 1 } }, function (err, result) {
             res.status(200).send(result)
             console.log('show data')
         }).catch(err => {
@@ -333,7 +333,7 @@ app.post('/dateTOdate',(req,res) => {
     } else {
         const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block , FileSchema)
         console.log(request_data.building.toLowerCase() + request_data.block)
-        datas.find({}, {}, {sort: { 'create': 1 }}, function (err, result) {
+        datas.find({}, {}, {sort: { 'result.0.DateTime': 1 }}, function (err, result) {
             var data = []
             // console.log()
             var c = 0
