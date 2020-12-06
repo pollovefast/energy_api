@@ -482,7 +482,6 @@ app.post('/dateTOdateGraph',(req,res) => {
                         // split day in database
                         var time = s[1].split(":");
                         var de = s[0].split("/");
-                        if (checkdate != beforedate) {
                             // console.log(parseInt(de[2]) + " === " + parseInt(det[2]))
                             if (parseInt(de[2]) === parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2]) && (parseInt(time) >= 7 && parseInt(time) <= 17)) {
                                 console.log("year === year2")
@@ -536,7 +535,6 @@ app.post('/dateTOdateGraph',(req,res) => {
                                     }
                                 }
                             }
-                        }
                     }
                     var jo = restdata.length / 22
                     if (restdata.length % 2 != 0) {
