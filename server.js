@@ -466,7 +466,19 @@ app.post('/dateTOdateGraph',(req,res) => {
                     }
                 }
             }else if(det === det2){
-                //end
+                // check body more than start then body less end
+                    //keep data in variable
+                for (const key of result) {
+                    // console.log(key.result[0]['DateTime'])
+                    var s = key.result[0]['DateTime'].split(" ")
+                    var time = s[1].split(":")
+                    // console.log(s[0] + "----" + det)
+                    if (s[0] === det && key.result[0]['Power_1'] != '---' ) {
+                        if (parseInt(time[0]) >= request_data.hour && parseInt(time[0]) <= request_data.hour) {
+                            data.push(key)
+                        }
+                    }
+                }
             } 
             else {
                     console.log("else")
