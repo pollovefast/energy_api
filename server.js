@@ -539,6 +539,9 @@ app.post('/dateTOdateGraph',(req,res) => {
                     var jo = restdata.length / 22
                     jo = Math.ceil(jo)
                     console.log(jo)
+                    // console.log(restdata.length)
+                    // console.log(restdata[1])
+                    // console.log(request_data[1 * jo])
                     if (restdata.length % 2 != 0) {
                         jo -= 1;
                     }
@@ -553,8 +556,8 @@ app.post('/dateTOdateGraph',(req,res) => {
                             }else if(index === 23 && restdata[index] != null){
                                 data.push(restdata[restdata.length - 1])
                             }else{
-                                data.push(request_data[index * jo])
-                                console.log(request_data[index * jo])
+                                data.push(restdata[index * jo])
+                                // console.log(restdata[index * jo])
                             }
                         }
                     }
