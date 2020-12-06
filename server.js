@@ -97,14 +97,14 @@ app.get('/building', function (req, res) {
     })
 })
 
-app.post('/history', function(req,res){
+app.post('/history', function (req, res) {
     var request_data = req.body
     if (request_data.length < -1) {
         res.send({
             msg: request_data
         })
     } else {
-        const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block , FileSchema)
+        const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema)
         console.log(request_data.building.toLowerCase() + request_data.block)
         datas.find({}, {}, {}, function (err, result) {
             var data = []
@@ -115,7 +115,7 @@ app.post('/history', function(req,res){
                 // console.log(key.result[0]['DateTime'])
                 var s = key.result[0]['DateTime'].split(" ")
                 // console.log(s[0] + "----" + det)
-                if (s[0] === det && key.result[0]['Power_1'] != '---' ) {
+                if (s[0] === det && key.result[0]['Power_1'] != '---') {
                     console.log(key.create.toLocaleDateString())
                     // console.log(request_data.localdate)
                     data.push(key)
@@ -133,7 +133,7 @@ app.post('/history', function(req,res){
             console.log("error")
         })
     }
-    
+
     // res.status(200).send({
     //     msg: request_data
     // })
@@ -291,49 +291,49 @@ app.get('/data', function (req, res) {
 //     }
 // })
 
-app.get('/alldata', (req,res) => {
-        const File = mongoose.model(req.body.building + req.body.block, FileSchema);
-        File.find({}, {}, { sort: { 'create': 1 } }, function (err, result) {
-            res.status(200).send(result)
-            console.log('show data')
-        }).catch(err => {
-            res.status(400).send({
-                msg: "no data or type not support"
-            })
+app.get('/alldata', (req, res) => {
+    const File = mongoose.model(req.body.building + req.body.block, FileSchema);
+    File.find({}, {}, { sort: { 'create': 1 } }, function (err, result) {
+        res.status(200).send(result)
+        console.log('show data')
+    }).catch(err => {
+        res.status(400).send({
+            msg: "no data or type not support"
         })
-        // var datass = []
-        // mongoose.connection.db.listCollections().toArray(function (err, names) {
-        //     sum = 0;
-        //     for (const i of names) {
-        //         const datas = mongoose.model(i.name, FileSchema)
-        //         datas.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
-        //             if (result.length < 1 || err) {
-        //                 datass.push(result);
-        //             } else {
-        //                 // console.log(result)
-        //                 sum += 1;
-        //                 datass.push(result);
-        //             }
-        //             if (sum == 7) {
-        //                 res.send({success: true,data: datass})
-        //             }
-        //         }).catch(err => {
-        //             console.log("error")
-        //         })
-        //     }
-        // })
+    })
+    // var datass = []
+    // mongoose.connection.db.listCollections().toArray(function (err, names) {
+    //     sum = 0;
+    //     for (const i of names) {
+    //         const datas = mongoose.model(i.name, FileSchema)
+    //         datas.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+    //             if (result.length < 1 || err) {
+    //                 datass.push(result);
+    //             } else {
+    //                 // console.log(result)
+    //                 sum += 1;
+    //                 datass.push(result);
+    //             }
+    //             if (sum == 7) {
+    //                 res.send({success: true,data: datass})
+    //             }
+    //         }).catch(err => {
+    //             console.log("error")
+    //         })
+    //     }
+    // })
 })
 
-app.post('/dateTOdate',(req,res) => {
+app.post('/dateTOdate', (req, res) => {
     var request_data = req.body
     if (request_data.length < -1) {
         res.send({
             msg: request_data
         })
     } else {
-        const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block , FileSchema)
+        const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema)
         console.log(request_data.building.toLowerCase() + request_data.block)
-        datas.find({}, {}, {sort: { 'result.0.DateTime': 1 }}, function (err, result) {
+        datas.find({}, {}, { sort: { 'result.0.DateTime': 1 } }, function (err, result) {
             var data = []
             // console.log()
             var c = 0
@@ -345,70 +345,70 @@ app.post('/dateTOdate',(req,res) => {
                     // console.log(key.result[0]['DateTime'])
                     var s = key.result[0]['DateTime'].split(" ")
                     // console.log(s[0] + "----" + det)
-                    if (s[0] === det && key.result[0]['Power_1'] != '---' ) {
+                    if (s[0] === det && key.result[0]['Power_1'] != '---') {
                         console.log(key.create.toLocaleDateString())
                         // console.log(request_data.localdate)
                         data.push(key)
                         c += 1
                     }
                 }
-            }else if(det === det2){
+            } else if (det === det2) {
                 //end
-            } 
+            }
             else {
-                    console.log("else")
-                    det = det.split("/")
-                    det2 = det2.split("/")
-                    for (const key of result) {
-                        var s = key.result[0]['DateTime'].split(" ")
-                        var de = s[0].split("/");
-                        // console.log(parseInt(de[2]) + " === " + parseInt(det[2]))
-                        if (parseInt(de[2]) === parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
-                            console.log("year === year2")
-                            if (parseInt(de[1]) === parseInt(det2[1])) {
-                                if (parseInt(de[0]) <= parseInt(det2[0])) {
-                                    data.push(key)
-                                }
-                            }else if(parseInt(de[1]) < parseInt(det2[1])){
+                console.log("else")
+                det = det.split("/")
+                det2 = det2.split("/")
+                for (const key of result) {
+                    var s = key.result[0]['DateTime'].split(" ")
+                    var de = s[0].split("/");
+                    // console.log(parseInt(de[2]) + " === " + parseInt(det[2]))
+                    if (parseInt(de[2]) === parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
+                        console.log("year === year2")
+                        if (parseInt(de[1]) === parseInt(det2[1])) {
+                            if (parseInt(de[0]) <= parseInt(det2[0])) {
                                 data.push(key)
                             }
-                            // data.push(key)
-                        }else if(parseInt(de[2]) < parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])){
+                        } else if (parseInt(de[1]) < parseInt(det2[1])) {
                             data.push(key)
-                        }else if(parseInt(de[2]) === parseInt(det[2])){
-                            console.log("year === year1")
-                            // console.log("k")
-                            if (parseInt(det[2]) != parseInt(det2[2])) {
+                        }
+                        // data.push(key)
+                    } else if (parseInt(de[2]) < parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
+                        data.push(key)
+                    } else if (parseInt(de[2]) === parseInt(det[2])) {
+                        console.log("year === year1")
+                        // console.log("k")
+                        if (parseInt(det[2]) != parseInt(det2[2])) {
+                            if (parseInt(de[1]) === parseInt(det[1])) {
+                                console.log("k2")
+                                if (parseInt(de[0]) >= parseInt(det[0])) {
+                                    data.push(key)
+                                }
+                            } else if (parseInt(de[1]) > parseInt(det[1])) {
+                                data.push(key)
+                            }
+                        } else if (parseInt(det[2]) === parseInt(det2[2])) {
+                            if (parseInt(det[1]) === parseInt(det2[1])) {
+                                if (parseInt(de[0]) >= parseInt(det[0]) && parseInt(de[0]) <= parseInt(det2[0])) {
+                                    data.push(key)
+                                }
+                            } else if (parseInt(det[1]) != parseInt(det2[1])) {
                                 if (parseInt(de[1]) === parseInt(det[1])) {
-                                    console.log("k2")
                                     if (parseInt(de[0]) >= parseInt(det[0])) {
                                         data.push(key)
                                     }
-                                }else if(parseInt(de[1]) > parseInt(det[1])){
+                                } else if (parseInt(de[1]) > parseInt(det[1]) && parseInt(de[1]) < parseInt(det2[1])) {
                                     data.push(key)
-                                }
-                            } else if(parseInt(det[2]) === parseInt(det2[2])){
-                                if (parseInt(det[1]) === parseInt(det2[1])) {
-                                    if (parseInt(de[0]) >= parseInt(det[0]) && parseInt(de[0]) <= parseInt(det2[0])) {
+                                } else if (parseInt(de[1]) === parseInt(det2[1])) {
+                                    if (parseInt(de[0]) <= parseInt(det2[0])) {
                                         data.push(key)
-                                    }
-                                }else if(parseInt(det[1]) != parseInt(det2[1])){
-                                    if (parseInt(de[1]) === parseInt(det[1]) ) {
-                                        if (parseInt(de[0]) >= parseInt(det[0])) {
-                                            data.push(key)
-                                        }
-                                    }else if(parseInt(de[1]) > parseInt(det[1]) && parseInt(de[1]) < parseInt(det2[1]) ){
-                                        data.push(key)
-                                    }else if(parseInt(de[1]) === parseInt(det2[1])){
-                                        if (parseInt(de[0]) <= parseInt(det2[0])) {
-                                            data.push(key)
-                                        }
                                     }
                                 }
                             }
-                            
                         }
+
                     }
+                }
                 // for (const key of result) {
                 //     var s = key.result[0]['DateTime'].split(" ")
                 //     var de = s[0].split("/");
@@ -437,16 +437,16 @@ app.post('/dateTOdate',(req,res) => {
     }
 })
 
-app.post('/dateTOdateGraph',(req,res) => {
+app.post('/dateTOdateGraph', (req, res) => {
     var request_data = req.body
     if (request_data.length < -1) {
         res.send({
             msg: request_data
         })
     } else {
-        const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block , FileSchema)
+        const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema)
         console.log(request_data.building.toLowerCase() + request_data.block)
-        datas.find({}, {}, {sort: { 'result.0.DateTime': 1 }}, function (err, result) {
+        datas.find({}, {}, { sort: { 'result.0.DateTime': 1 } }, function (err, result) {
             var data = []
             // console.log()
             var c = 0
@@ -458,24 +458,24 @@ app.post('/dateTOdateGraph',(req,res) => {
                     // console.log(key.result[0]['DateTime'])
                     var s = key.result[0]['DateTime'].split(" ")
                     // console.log(s[0] + "----" + det)
-                    if (s[0] === det && key.result[0]['Power_1'] != '---' ) {
+                    if (s[0] === det && key.result[0]['Power_1'] != '---') {
                         console.log(key.create.toLocaleDateString())
                         // console.log(request_data.localdate)
                         data.push(key)
                         c += 1
                     }
                 }
-            }else if(det === det2){
+            } else if (det === det2) {
                 // check body more than start then body less end
-                    //keep data in variable
+                //keep data in variable
+                var reste = []
                 for (const key of result) {
                     var before = 0;
-                    var reste = []
                     // console.log(key.result[0]['DateTime'])
                     var s = key.result[0]['DateTime'].split(" ")
                     var time = s[1].split(":")
                     // console.log(s[0] + "----" + det)
-                    if (s[0] === det && key.result[0]['Power_1'] != '---' ) {
+                    if (s[0] === det && key.result[0]['Power_1'] != '---') {
                         if (parseInt(time[0]) >= request_data.hour && parseInt(time[0]) <= request_data.hour2) {
                             before = parseInt(time[0])
                             reste.push(key)
@@ -484,125 +484,125 @@ app.post('/dateTOdateGraph',(req,res) => {
                 }
                 console.log(reste.length)
                 var jo = reste.length / 22
-                    jo = Math.ceil(jo)
-                    console.log(jo)
-                    // console.log(reste.length)
-                    // console.log(reste[1])
-                    // console.log(request_data[1 * jo])
-                    if (reste.length % 2 != 0) {
-                        jo -= 1;
-                    }
-                    if (reste.length <= 24) {
-                        data = reste;
-                    } else {
-                        for (let index = 0; index < 24; index++) {
-                            console.log("test")
-                            console.log(data.length)
-                            if (index === 0 && reste[index] != null) {
-                                data.push(reste[index])
-                            }else if(index === 23 && reste[index] != null){
-                                data.push(reste[reste.length - 1])
-                            }else{
-                                data.push(reste[index * jo])
-                                // console.log(restdata[index * jo])
-                            }
+                jo = Math.ceil(jo)
+                console.log(jo)
+                // console.log(reste.length)
+                // console.log(reste[1])
+                // console.log(request_data[1 * jo])
+                if (reste.length % 2 != 0) {
+                    jo -= 1;
+                }
+                if (reste.length <= 24) {
+                    data = reste;
+                } else {
+                    for (let index = 0; index < 24; index++) {
+                        console.log("test")
+                        console.log(data.length)
+                        if (index === 0 && reste[index] != null) {
+                            data.push(reste[index])
+                        } else if (index === 23 && reste[index] != null) {
+                            data.push(reste[reste.length - 1])
+                        } else {
+                            data.push(reste[index * jo])
+                            // console.log(restdata[index * jo])
                         }
                     }
-            } 
+                }
+            }
             else {
-                    console.log("else")
-                    det = det.split("/")
-                    det2 = det2.split("/")
-                    // var num = 24;
-                    var checkdate = "";
-                    var beforedate = "";
-                    var restdata = [];
-                    for (const key of result) {
-                        var s = key.result[0]['DateTime'].split(" ")
-                        checkdate = s[0];
-                        // split day in database
-                        var time = s[1].split(":");
-                        var de = s[0].split("/");
-                            // console.log(parseInt(de[2]) + " === " + parseInt(det[2]))
-                            if (parseInt(de[2]) === parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
-                                console.log("year === year2")
-                                if (parseInt(de[1]) === parseInt(det2[1])) {
+                console.log("else")
+                det = det.split("/")
+                det2 = det2.split("/")
+                // var num = 24;
+                var checkdate = "";
+                var beforedate = "";
+                var restdata = [];
+                for (const key of result) {
+                    var s = key.result[0]['DateTime'].split(" ")
+                    checkdate = s[0];
+                    // split day in database
+                    var time = s[1].split(":");
+                    var de = s[0].split("/");
+                    // console.log(parseInt(de[2]) + " === " + parseInt(det[2]))
+                    if (parseInt(de[2]) === parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
+                        console.log("year === year2")
+                        if (parseInt(de[1]) === parseInt(det2[1])) {
+                            if (parseInt(de[0]) <= parseInt(det2[0])) {
+                                beforedate = checkdate
+                                restdata.push(key)
+                            }
+                        } else if (parseInt(de[1]) < parseInt(det2[1])) {
+                            beforedate = checkdate
+                            restdata.push(key)
+                        }
+                        // restdata.push(key)
+                    } else if (parseInt(de[2]) < parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
+                        beforedate = checkdate
+                        restdata.push(key)
+                    } else if (parseInt(de[2]) === parseInt(det[2])) {
+                        // console.log("k")
+                        if (parseInt(det[2]) != parseInt(det2[2])) {
+                            if (parseInt(de[1]) === parseInt(det[1])) {
+                                console.log("k2")
+                                if (parseInt(de[0]) >= parseInt(det[0])) {
+                                    beforedate = checkdate
+                                    restdata.push(key)
+                                }
+                            } else if (parseInt(de[1]) > parseInt(det[1])) {
+                                beforedate = checkdate
+                                restdata.push(key)
+                            }
+                        } else if (parseInt(det[2]) === parseInt(det2[2])) {
+                            if (parseInt(det[1]) === parseInt(det2[1])) {
+                                if (parseInt(de[0]) >= parseInt(det[0]) && parseInt(de[0]) <= parseInt(det2[0])) {
+                                    beforedate = checkdate
+                                    restdata.push(key)
+                                }
+                            } else if (parseInt(det[1]) != parseInt(det2[1])) {
+                                if (parseInt(de[1]) === parseInt(det[1])) {
+                                    if (parseInt(de[0]) >= parseInt(det[0])) {
+                                        beforedate = checkdate
+                                        restdata.push(key)
+                                    }
+                                } else if (parseInt(de[1]) > parseInt(det[1]) && parseInt(de[1]) < parseInt(det2[1])) {
+                                    beforedate = checkdate
+                                    restdata.push(key)
+                                } else if (parseInt(de[1]) === parseInt(det2[1])) {
                                     if (parseInt(de[0]) <= parseInt(det2[0])) {
                                         beforedate = checkdate
                                         restdata.push(key)
                                     }
-                                }else if(parseInt(de[1]) < parseInt(det2[1])){
-                                    beforedate = checkdate
-                                    restdata.push(key)
                                 }
-                                // restdata.push(key)
-                            }else if(parseInt(de[2]) < parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])){
-                                beforedate = checkdate
-                                restdata.push(key)
-                            }else if(parseInt(de[2]) === parseInt(det[2]) ){
-                                // console.log("k")
-                                if (parseInt(det[2]) != parseInt(det2[2])) {
-                                    if (parseInt(de[1]) === parseInt(det[1])) {
-                                        console.log("k2")
-                                        if (parseInt(de[0]) >= parseInt(det[0])) {
-                                            beforedate = checkdate
-                                            restdata.push(key)
-                                        }
-                                    }else if(parseInt(de[1]) > parseInt(det[1])){
-                                        beforedate = checkdate
-                                        restdata.push(key)
-                                    }
-                                } else if(parseInt(det[2]) === parseInt(det2[2])){
-                                    if (parseInt(det[1]) === parseInt(det2[1])) {
-                                        if (parseInt(de[0]) >= parseInt(det[0]) && parseInt(de[0]) <= parseInt(det2[0])) {
-                                            beforedate = checkdate
-                                            restdata.push(key)
-                                        }
-                                    }else if(parseInt(det[1]) != parseInt(det2[1])){
-                                        if (parseInt(de[1]) === parseInt(det[1]) ) {
-                                            if (parseInt(de[0]) >= parseInt(det[0])) {
-                                                beforedate = checkdate
-                                                restdata.push(key)
-                                            }
-                                        }else if(parseInt(de[1]) > parseInt(det[1]) && parseInt(de[1]) < parseInt(det2[1]) ){
-                                            beforedate = checkdate
-                                            restdata.push(key)
-                                        }else if(parseInt(de[1]) === parseInt(det2[1])){
-                                            if (parseInt(de[0]) <= parseInt(det2[0])) {
-                                                beforedate = checkdate
-                                                restdata.push(key)
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                    }
-                    var jo = restdata.length / 22
-                    jo = Math.ceil(jo)
-                    console.log(jo)
-                    // console.log(restdata.length)
-                    // console.log(restdata[1])
-                    // console.log(request_data[1 * jo])
-                    if (restdata.length % 2 != 0) {
-                        jo -= 1;
-                    }
-                    if (restdata.length <= 24) {
-                        data = restdata;
-                    } else {
-                        for (let index = 0; index < 24; index++) {
-                            console.log("test")
-                            console.log(data.length)
-                            if (index === 0 && restdata[index] != null) {
-                                data.push(restdata[index])
-                            }else if(index === 23 && restdata[index] != null){
-                                data.push(restdata[restdata.length - 1])
-                            }else{
-                                data.push(restdata[index * jo])
-                                // console.log(restdata[index * jo])
                             }
                         }
                     }
-                    
+                }
+                var jo = restdata.length / 22
+                jo = Math.ceil(jo)
+                console.log(jo)
+                // console.log(restdata.length)
+                // console.log(restdata[1])
+                // console.log(request_data[1 * jo])
+                if (restdata.length % 2 != 0) {
+                    jo -= 1;
+                }
+                if (restdata.length <= 24) {
+                    data = restdata;
+                } else {
+                    for (let index = 0; index < 24; index++) {
+                        console.log("test")
+                        console.log(data.length)
+                        if (index === 0 && restdata[index] != null) {
+                            data.push(restdata[index])
+                        } else if (index === 23 && restdata[index] != null) {
+                            data.push(restdata[restdata.length - 1])
+                        } else {
+                            data.push(restdata[index * jo])
+                            // console.log(restdata[index * jo])
+                        }
+                    }
+                }
+
                 // for (const key of result) {
                 //     var s = key.result[0]['DateTime'].split(" ")
                 //     var de = s[0].split("/");
