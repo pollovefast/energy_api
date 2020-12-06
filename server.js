@@ -483,7 +483,7 @@ app.post('/dateTOdateGraph',(req,res) => {
                         var time = s[1].split(":");
                         var de = s[0].split("/");
                             // console.log(parseInt(de[2]) + " === " + parseInt(det[2]))
-                            if (parseInt(de[2]) === parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2]) && (parseInt(time) >= 7 && parseInt(time) <= 17)) {
+                            if (parseInt(de[2]) === parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
                                 console.log("year === year2")
                                 if (parseInt(de[1]) === parseInt(det2[1])) {
                                     if (parseInt(de[0]) <= parseInt(det2[0])) {
@@ -495,10 +495,10 @@ app.post('/dateTOdateGraph',(req,res) => {
                                     restdata.push(key)
                                 }
                                 // restdata.push(key)
-                            }else if(parseInt(de[2]) < parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2]) && (parseInt(time) >= 7 && parseInt(time) <= 17)){
+                            }else if(parseInt(de[2]) < parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])){
                                 beforedate = checkdate
                                 restdata.push(key)
-                            }else if(parseInt(de[2]) === parseInt(det[2]) && (parseInt(time) >= 7 && parseInt(time) <= 17)){
+                            }else if(parseInt(de[2]) === parseInt(det[2]) ){
                                 // console.log("k")
                                 if (parseInt(det[2]) != parseInt(det2[2])) {
                                     if (parseInt(de[1]) === parseInt(det[1])) {
@@ -537,6 +537,8 @@ app.post('/dateTOdateGraph',(req,res) => {
                             }
                     }
                     var jo = restdata.length / 22
+                    jo = Math.ceil(jo)
+                    console.log(jo)
                     if (restdata.length % 2 != 0) {
                         jo -= 1;
                     }
@@ -545,10 +547,10 @@ app.post('/dateTOdateGraph',(req,res) => {
                         console.log(data.length)
                         if (index === 0 && restdata[index] != null) {
                             data.push(restdata[index])
-                        }else if(index === jo - 1 && restdata[index] != null){
+                        }else if(index === 23 && restdata[index] != null){
                             data.push(restdata[restdata.length - 1])
-                        }else if(restdata[index] != null){
-                            data.push(request_data[index + jo])
+                        }else{
+                            data.push(request_data[index * jo])
                         }
                     }
                 // for (const key of result) {
