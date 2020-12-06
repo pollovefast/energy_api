@@ -545,7 +545,7 @@ app.post('/dateTOdateGraph',(req,res) => {
                     if (restdata.length % 2 != 0) {
                         jo -= 1;
                     }
-                    if (jo <= 24) {
+                    if (restdata.length <= 24) {
                         data = restdata;
                     } else {
                         for (let index = 0; index < 24; index++) {
