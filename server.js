@@ -392,7 +392,7 @@ app.post('/dateTOdate', (req, res) => {
                     } else if (parseInt(de[2]) < parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
                         data.push(key)
                     } else if (parseInt(de[2]) === parseInt(det[2])) {
-                        console.log("year === year1")
+                        // console.log("year === year1")
                         // console.log("k")
                         if (parseInt(det[2]) != parseInt(det2[2])) {
                             if (parseInt(de[1]) === parseInt(det[1])) {
