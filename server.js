@@ -354,13 +354,14 @@ app.post('/dateTOdate', (req, res) => {
                 }
             } else if (det === det2) {
                 // var reste = []
+                console.log("date == date")
                 for (const key of result) {
                     var before = 0;
                     // console.log(key.result[0]['DateTime'])
                     var s = key.result[0]['DateTime'].split(" ")
                     var time = s[1].split(":")
-                    // console.log(s[0] + "----" + det)
-                    if (s[0] === det && key.result[0]['Power_1'] != '---') {
+                    console.log(s[0] + "----" + det)
+                    if (s[0] === det) {
                         console.log(time[0] + 1)
                         console.log(request_data.hour + 1)
                         if (time[0] >= request_data.hour && time[0] <= request_data.hour2) {
