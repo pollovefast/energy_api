@@ -361,6 +361,8 @@ app.post('/dateTOdate', (req, res) => {
                     var time = s[1].split(":")
                     // console.log(s[0] + "----" + det)
                     if (s[0] === det && key.result[0]['Power_1'] != '---') {
+                        console.log(time[0] + 1)
+                        console.log(request_data.hour + 1)
                         if (time[0] >= request_data.hour && time[0] <= request_data.hour2) {
                             before = parseInt(time[0])
                             data.push(key)
