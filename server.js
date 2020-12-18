@@ -406,6 +406,7 @@ app.post('/dateTOdate', (req, res) => {
                         } else if (parseInt(det[2]) === parseInt(det2[2])) {
                             
                             if (parseInt(det[1]) === parseInt(det2[1])) {
+                                console.log(det[1] + "||||||||" + det2[1])
                                 if (parseInt(de[0]) >= parseInt(det[0]) && parseInt(de[0]) <= parseInt(det2[0])) {
                                     console.log(s[0] + "----" + det)
                                     data.push(key)
