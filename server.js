@@ -394,7 +394,7 @@ app.post('/dateTOdate', (req, res) => {
 
                     // check if data_db in the range of data_request_1 and data_request_2.
                     // if data_db is in the range of the data_request_1 and request_2
-                    if (date_db >= date_request_1 && date_db <= date_request_2 && key.result[0]['Power_1'] != '---') {
+                    if (date_db >= date_request_1 && date_db <= date_request_2 && keys.result[0]['Power_1'] != '---') {
 
                         // put data in data to be send
                         data.push(keys)
