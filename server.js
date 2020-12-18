@@ -411,7 +411,7 @@ app.post('/dateTOdate', (req, res) => {
                                     data.push(key)
                                 }
                             } else if (parseInt(det[1]) != parseInt(det2[1])) {
-                                var xg = new Date(result['result'][0]['DateTime'])
+                                var xg = new Date(key.result[0]['DateTime'])
                                 console.log(xg)
                                 if (parseInt(de[1]) === parseInt(det[1])) {
                                     if (parseInt(de[0]) >= parseInt(det[0])) {
