@@ -341,12 +341,7 @@ app.post('/dateTOdate', (req, res) => {
             var c = 0
             var det = request_data.date + "/" + request_data.month + "/" + request_data.year
             var det2 = request_data.date2 + "/" + request_data.month2 + "/" + request_data.year2
-            det = det.split("/")
-            det2 = det2.split("/")
-
-            // create date because check date of request === date of mongodb :)
-            var date_request_1 = new Date(det[2],det[1],det[0]);
-            var date_request_2 = new Date(det2[2],det2[1],det2[0]);
+            
             
             if (request_data.present === "true") {
                 for (const key of result) {
@@ -381,14 +376,20 @@ app.post('/dateTOdate', (req, res) => {
             }
             else {
                 console.log("else")
+                det = det.split("/")
+                det2 = det2.split("/")
+
+                // create date because check date of request === date of mongodb :)
+                var date_request_1 = new Date(det[2],det[1],det[0]);
+                var date_request_2 = new Date(det2[2],det2[1],det2[0]);
                 
                 // loop data in database for put in variable array type
                 for (const keys of result) {
 
                     // notice variable to keep date in database
                     let s = ley.result[0]['DateTime'].split(" ")
-                    let date_db = s[0].split("/")
-                    let date_db = new Date(date_db[2],date_db[1],date_db[0])
+                    let date_b = s[0].split("/")
+                    let date_db = new Date(date_b[2],date_b[1],date_b[0])
 
                     // check if data_db in the range of data_request_1 and data_request_2.
                     // if data_db is in the range of the data_request_1 and request_2
