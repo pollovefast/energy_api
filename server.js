@@ -364,7 +364,7 @@ app.post('/dateTOdate', (req, res) => {
                     if (date_db === now && key.result[0]['Power_1'] != '---') data.push(key);
 
                 }
-            } else if (date_request_1 === date_request_2) {
+            } else if (det === det2) {
                 // var reste = []
                 // console.log("date == date")
                 for (const key of result) {
