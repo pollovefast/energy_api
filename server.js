@@ -341,7 +341,13 @@ app.post('/dateTOdate', (req, res) => {
             var c = 0
             var det = request_data.date + "/" + request_data.month + "/" + request_data.year
             var det2 = request_data.date2 + "/" + request_data.month2 + "/" + request_data.year2
-            // console.log(det2)
+            det = det.split("/")
+            det2 = det2.split("/")
+
+            // create date because check date of request === date of mongodb :)
+            var date_request_1 = new Date(det[2],det[1],det[0]);
+            var date_request_2 = new Date(det2[2],det2[1],det2[0]);
+            
             if (request_data.present === "true") {
                 for (const key of result) {
                     // console.log(key.result[0]['DateTime'])
@@ -375,65 +381,81 @@ app.post('/dateTOdate', (req, res) => {
             }
             else {
                 console.log("else")
-                det = det.split("/")
-                det2 = det2.split("/")
-                for (const key of result) {
-                    var s = key.result[0]['DateTime'].split(" ")
-                    var de = s[0].split("/");
-                    // console.log(parseInt(de[2]) + " === " + parseInt(det[2]))
-                    if (parseInt(de[2]) === parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
-                        console.log("year === year2")
-                        if (parseInt(de[1]) === parseInt(det2[1])) {
-                            if (parseInt(de[0]) <= parseInt(det2[0])) {
-                                data.push(key)
-                            }
-                        } else if (parseInt(de[1]) < parseInt(det2[1])) {
-                            data.push(key)
-                        }
-                        // data.push(key)
-                    } else if (parseInt(de[2]) < parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
-                        data.push(key)
-                    } else if (parseInt(de[2]) === parseInt(det[2])) {
-                        // console.log("year === year1")
-                        // console.log("k")
-                        if (parseInt(det[2]) != parseInt(det2[2])) {
-                            if (parseInt(de[1]) === parseInt(det[1])) {
-                                console.log("k2")
-                                if (parseInt(de[0]) >= parseInt(det[0])) {
-                                    data.push(key)
-                                }
-                            } else if (parseInt(de[1]) > parseInt(det[1])) {
-                                data.push(key)
-                            }
-                        } else if (parseInt(det[2]) === parseInt(det2[2])) {
-                            
-                            if (parseInt(det[1]) === parseInt(det2[1])) {
-                                if (parseInt(de[0]) >= parseInt(det[0]) && parseInt(de[0]) <= parseInt(det2[0])) {
-                                    // console.log(s[0] + "----" + det)
-                                    data.push(key)
-                                }
-                            } else if (parseInt(det[1]) != parseInt(det2[1])) {
-                                var xg = new Date(key.result[0]['DateTime'])
-                                console.log(xg)
-                                if (parseInt(de[1]) === parseInt(det[1])) {
-                                    if (parseInt(de[0]) >= parseInt(det[0])) {
-                                        // console.log(s[0] + "----" + det)
-                                        data.push(key)
-                                    }
-                                } else if (parseInt(de[1]) > parseInt(det[1]) && parseInt(de[1]) < parseInt(det2[1])) {
-                                    // console.log(s[0] + "----" + det)
-                                    data.push(key)
-                                } else if (parseInt(de[1]) === parseInt(det2[1])) {
-                                    if (parseInt(de[0]) <= parseInt(det2[0])) {
-                                        // console.log(s[0] + "----" + det)
-                                        data.push(key)
-                                    }
-                                }
-                            }
-                        }
+                
+                // loop data in database for put in variable array type
+                for (const keys of result) {
 
+                    // notice variable to keep date in database
+                    let s = ley.result[0]['DateTime'].split(" ")
+                    let date_db = s[0].split("/")
+                    let date_db = new Date(date_db[2],date_db[1],date_db[0])
+
+                    // check if data_db in the range of data_request_1 and data_request_2.
+                    // if data_db is in the range of the data_request_1 and request_2
+                    if (date_db >= date_request_1 && date_db <= date_request_2) {
+
+                        // put data in data to be send
+                        data.push(keys)
                     }
+
                 }
+                // for (const key of result) {
+                //     var s = key.result[0]['DateTime'].split(" ")
+                //     var de = s[0].split("/");
+                //     // console.log(parseInt(de[2]) + " === " + parseInt(det[2]))
+                //     if (parseInt(de[2]) === parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
+                //         console.log("year === year2")
+                //         if (parseInt(de[1]) === parseInt(det2[1])) {
+                //             if (parseInt(de[0]) <= parseInt(det2[0])) {
+                //                 data.push(key)
+                //             }
+                //         } else if (parseInt(de[1]) < parseInt(det2[1])) {
+                //             data.push(key)
+                //         }
+                //         // data.push(key)
+                //     } else if (parseInt(de[2]) < parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
+                //         data.push(key)
+                //     } else if (parseInt(de[2]) === parseInt(det[2])) {
+                //         // console.log("year === year1")
+                //         // console.log("k")
+                //         if (parseInt(det[2]) != parseInt(det2[2])) {
+                //             if (parseInt(de[1]) === parseInt(det[1])) {
+                //                 console.log("k2")
+                //                 if (parseInt(de[0]) >= parseInt(det[0])) {
+                //                     data.push(key)
+                //                 }
+                //             } else if (parseInt(de[1]) > parseInt(det[1])) {
+                //                 data.push(key)
+                //             }
+                //         } else if (parseInt(det[2]) === parseInt(det2[2])) {
+                            
+                //             if (parseInt(det[1]) === parseInt(det2[1])) {
+                //                 if (parseInt(de[0]) >= parseInt(det[0]) && parseInt(de[0]) <= parseInt(det2[0])) {
+                //                     // console.log(s[0] + "----" + det)
+                //                     data.push(key)
+                //                 }
+                //             } else if (parseInt(det[1]) != parseInt(det2[1])) {
+                //                 var xg = new Date(key.result[0]['DateTime'])
+                //                 console.log(xg)
+                //                 if (parseInt(de[1]) === parseInt(det[1])) {
+                //                     if (parseInt(de[0]) >= parseInt(det[0])) {
+                //                         // console.log(s[0] + "----" + det)
+                //                         data.push(key)
+                //                     }
+                //                 } else if (parseInt(de[1]) > parseInt(det[1]) && parseInt(de[1]) < parseInt(det2[1])) {
+                //                     // console.log(s[0] + "----" + det)
+                //                     data.push(key)
+                //                 } else if (parseInt(de[1]) === parseInt(det2[1])) {
+                //                     if (parseInt(de[0]) <= parseInt(det2[0])) {
+                //                         // console.log(s[0] + "----" + det)
+                //                         data.push(key)
+                //                     }
+                //                 }
+                //             }
+                //         }
+
+                //     }
+                // }
                 // for (const key of result) {
                 //     var s = key.result[0]['DateTime'].split(" ")
                 //     var de = s[0].split("/");
