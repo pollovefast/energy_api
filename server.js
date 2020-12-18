@@ -333,7 +333,7 @@ app.post('/dateTOdate', (req, res) => {
     } else {
         const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema)
         console.log(request_data.building.toLowerCase() + request_data.block)
-        datas.find({}, {}, { sort: { 'result.0.DateTime': 1 } }, function (err, result) {
+        datas.find({}, {}, { sort:  'result.0.DateTime'  }, function (err, result) {
             var data = []
             // console.log()
             var c = 0
