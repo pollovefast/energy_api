@@ -387,7 +387,7 @@ app.post('/dateTOdate', (req, res) => {
                 for (const keys of result) {
 
                     // notice variable to keep date in database
-                    let s = ley.result[0]['DateTime'].split(" ")
+                    let s = keys.result[0]['DateTime'].split(" ")
                     let date_b = s[0].split("/")
                     let date_db = new Date(date_b[2],date_b[1],date_b[0])
 
