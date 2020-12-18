@@ -383,7 +383,7 @@ app.post('/dateTOdate', (req, res) => {
             }
             else {
                 console.log("else")
-                
+                console.log(date_request_1 + " ---- " + date_request_2)
                 // loop data in database for put in variable array type
                 for (const keys of result) {
 
