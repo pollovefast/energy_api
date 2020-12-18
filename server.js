@@ -333,7 +333,7 @@ app.post('/dateTOdate', (req, res) => {
     } else {
         const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema)
         console.log(request_data.building.toLowerCase() + request_data.block)
-        datas.find({}, {}, { sort: { 'create': 0 } }, function (err, result) {
+        datas.find({}, {}, { sort: { 'result.0.DateTime': 0 } }, function (err, result) {
             var data = []
             // console.log()
             var c = 0
@@ -406,23 +406,24 @@ app.post('/dateTOdate', (req, res) => {
                         } else if (parseInt(det[2]) === parseInt(det2[2])) {
                             
                             if (parseInt(det[1]) === parseInt(det2[1])) {
-                                console.log(det[1] + "||||||||" + det2[1])
                                 if (parseInt(de[0]) >= parseInt(det[0]) && parseInt(de[0]) <= parseInt(det2[0])) {
-                                    console.log(s[0] + "----" + det)
+                                    // console.log(s[0] + "----" + det)
                                     data.push(key)
                                 }
                             } else if (parseInt(det[1]) != parseInt(det2[1])) {
+                                var xg = new Date(result['result'][0]['DateTime'])
+                                console.log(xg)
                                 if (parseInt(de[1]) === parseInt(det[1])) {
                                     if (parseInt(de[0]) >= parseInt(det[0])) {
-                                        console.log(s[0] + "----" + det)
+                                        // console.log(s[0] + "----" + det)
                                         data.push(key)
                                     }
                                 } else if (parseInt(de[1]) > parseInt(det[1]) && parseInt(de[1]) < parseInt(det2[1])) {
-                                    console.log(s[0] + "----" + det)
+                                    // console.log(s[0] + "----" + det)
                                     data.push(key)
                                 } else if (parseInt(de[1]) === parseInt(det2[1])) {
                                     if (parseInt(de[0]) <= parseInt(det2[0])) {
-                                        console.log(s[0] + "----" + det)
+                                        // console.log(s[0] + "----" + det)
                                         data.push(key)
                                     }
                                 }
