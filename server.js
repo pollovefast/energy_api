@@ -342,32 +342,39 @@ app.post('/dateTOdate', (req, res) => {
             var det = request_data.date + "/" + request_data.month + "/" + request_data.year
             var det2 = request_data.date2 + "/" + request_data.month2 + "/" + request_data.year2
             
-            
-            if (request_data.present === "true") {
+            det = det.split("/")
+            det2 = det2.split("/")
+
+            // create date because check date of request === date of mongodb :)
+            var date_request_1 = new Date(det[2],det[1],det[0]);
+            var date_request_2 = new Date(det2[2],det2[1],det2[0]);
+
+            var today = new Date()
+            var now = new Date(today.getFullYear(),today.getMonth(),today.getDate())
+
+            if (now === date_request_1 && now === date_request_2) {
                 for (const key of result) {
-                    // console.log(key.result[0]['DateTime'])
-                    var s = key.result[0]['DateTime'].split(" ")
-                    // console.log(s[0] + "----" + det)
-                    if (s[0] === det && key.result[0]['Power_1'] != '---') {
-                        console.log(key.create.toLocaleDateString())
-                        // console.log(request_data.localdate)
-                        data.push(key)
-                        c += 1
-                    }
+
+                    // notice variable to keep date in database
+                    let s = key.result[0]['DateTime'].split(" ")
+                    let date_b = s[0].split("/")
+                    let date_db = new Date(date_b[2],date_b[1],date_b[0])
+
+                    // if date_db euqal now then put data in dabase in data to be send
+                    if (date_db === now && key.result[0]['Power_1'] != '---') data.push(key);
+
                 }
-            } else if (det === det2) {
+            } else if (date_request_1 === date_request_2) {
                 // var reste = []
-                console.log("date == date")
+                // console.log("date == date")
                 for (const key of result) {
-                    var before = 0;
-                    // console.log(key.result[0]['DateTime'])
                     var s = key.result[0]['DateTime'].split(" ")
                     var time = s[1].split(":")
                     console.log(s[0] + "----" + det)
                     if (s[0] === det) {
                         console.log(time[0] + 1)
                         console.log(request_data.hour + 1)
-                        if (time[0] >= request_data.hour && time[0] <= request_data.hour2) {
+                        if (time[0] >= request_data.hour && time[0] <= request_data.hour2 && key.result[0]['Power_1'] != '---') {
                             before = parseInt(time[0])
                             data.push(key)
                         }
@@ -376,12 +383,6 @@ app.post('/dateTOdate', (req, res) => {
             }
             else {
                 console.log("else")
-                det = det.split("/")
-                det2 = det2.split("/")
-
-                // create date because check date of request === date of mongodb :)
-                var date_request_1 = new Date(det[2],det[1],det[0]);
-                var date_request_2 = new Date(det2[2],det2[1],det2[0]);
                 
                 // loop data in database for put in variable array type
                 for (const keys of result) {
@@ -393,12 +394,11 @@ app.post('/dateTOdate', (req, res) => {
 
                     // check if data_db in the range of data_request_1 and data_request_2.
                     // if data_db is in the range of the data_request_1 and request_2
-                    if (date_db >= date_request_1 && date_db <= date_request_2) {
+                    if (date_db >= date_request_1 && date_db <= date_request_2 && key.result[0]['Power_1'] != '---') {
 
                         // put data in data to be send
                         data.push(keys)
                     }
-
                 }
                 // for (const key of result) {
                 //     var s = key.result[0]['DateTime'].split(" ")
