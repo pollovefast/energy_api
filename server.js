@@ -377,11 +377,10 @@ app.post('/dateTOdate', (req, res) => {
                     let date_db = new Date(date_b[2],date_b[1],date_b[0])
                     var time = s[1].split(":")
                     console.log(s[0] + "----" + det)
-                    if (date_db === date_request_1 && date_db === date_request_2) {
+                    if (date_db >= date_request_1 && date_db <= date_request_2) {
                         console.log(time[0] + 1)
                         console.log(request_data.hour + 1)
                         if (time[0] >= request_data.hour && time[0] <= request_data.hour2 && key.result[0]['Power_1'] != '---') {
-                            before = parseInt(time[0])
                             data.push(key)
                         }
                     }
