@@ -342,6 +342,9 @@ app.post('/dateTOdate', (req, res) => {
             var det = request_data.date + "/" + request_data.month + "/" + request_data.year
             var det2 = request_data.date2 + "/" + request_data.month2 + "/" + request_data.year2
             
+            var checkeuqal = request_data.date + "/" + request_data.month + "/" + request_data.year
+            var checkeuqal2 = request_data.date2 + "/" + request_data.month2 + "/" + request_data.year2
+
             det = det.split("/")
             det2 = det2.split("/")
 
@@ -365,14 +368,17 @@ app.post('/dateTOdate', (req, res) => {
 
                 }
             } 
-            else if (date_request_1 == date_request_2) {
+            else if(checkeuqal === checkeuqal2) {
                 // var reste = []
                 // console.log("date == date")
                 for (const key of result) {
                     var s = key.result[0]['DateTime'].split(" ")
+                    let s = keys.result[0]['DateTime'].split(" ")
+                    let date_b = s[0].split("/")
+                    let date_db = new Date(date_b[2],date_b[1],date_b[0])
                     var time = s[1].split(":")
                     console.log(s[0] + "----" + det)
-                    if (s[0] === det) {
+                    if (date_db === date_request_1 && date_db === date_request_2) {
                         console.log(time[0] + 1)
                         console.log(request_data.hour + 1)
                         if (time[0] >= request_data.hour && time[0] <= request_data.hour2 && key.result[0]['Power_1'] != '---') {
