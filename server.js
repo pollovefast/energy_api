@@ -464,22 +464,6 @@ app.post('/dateTOdate', (req, res) => {
 
                 //     }
                 // }
-                // for (const key of result) {
-                //     var s = key.result[0]['DateTime'].split(" ")
-                //     var de = s[0].split("/");
-
-                //     if (det[2] < parseInt(det2[2]) && de[2] >= det[2]) {
-                //         data.push(key)
-                //     }else if(det[2] === det2[2] && de[2] === det[2]){
-                //         if (det[1] < det2[1] && de[1] >= det[1]) {
-                //             data.push(key)
-                //         }else if(det[1] === det2[1] && de[1] === det[1]){
-                //             if (det[0] <= det2[0] && de[0] >= det[0]) {
-                //                 data.push(key)
-                //             }
-                //         }
-                //     }
-                // }
             }
             // console.log(c)
             res.status(200).send(data)
@@ -501,138 +485,85 @@ app.post('/dateTOdateGraph', (req, res) => {
     } else {
         const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema)
         console.log(request_data.building.toLowerCase() + request_data.block)
-        datas.find({}, {}, { sort: { 'result.0.DateTime': 1 } }, function (err, result) {
+        datas.find({}, {}, {}, function (err, result) {
+            // new Date(key.result[0]['DateTime'])
+            // result.0.DateTime
             var data = []
+            var restdata = []
             // console.log()
             var c = 0
             var det = request_data.date + "/" + request_data.month + "/" + request_data.year
             var det2 = request_data.date2 + "/" + request_data.month2 + "/" + request_data.year2
-            // console.log(det2)
-            if (request_data.present === "true") {
+            
+            var checkeuqal = request_data.date + "/" + request_data.month + "/" + request_data.year
+            var checkeuqal2 = request_data.date2 + "/" + request_data.month2 + "/" + request_data.year2
+
+            det = det.split("/")
+            det2 = det2.split("/")
+
+            // create date because check date of request === date of mongodb :)
+            var date_request_1 = new Date(det[2],det[1],det[0]);
+            var date_request_2 = new Date(det2[2],det2[1],det2[0]);
+
+            var today = new Date()
+            var now = new Date(today.getFullYear(),today.getMonth(),today.getDate())
+
+            if (now === date_request_1 && now === date_request_2) {
                 for (const key of result) {
-                    // console.log(key.result[0]['DateTime'])
-                    var s = key.result[0]['DateTime'].split(" ")
-                    // console.log(s[0] + "----" + det)
-                    if (s[0] === det && key.result[0]['Power_1'] != '---') {
-                        console.log(key.create.toLocaleDateString())
-                        // console.log(request_data.localdate)
-                        data.push(key)
-                        c += 1
-                    }
+
+                    // notice variable to keep date in database
+                    let s = key.result[0]['DateTime'].split(" ")
+                    let date_b = s[0].split("/")
+                    let date_db = new Date(date_b[2],date_b[1],date_b[0])
+
+                    // if date_db euqal now then put data in dabase in data to be send
+                    if (date_db === now && key.result[0]['Power_1'] != '---') restdata.push(key);
+
                 }
-            } else if (det === det2) {
-                // check body more than start then body less end
-                //keep data in variable
-                var reste = []
+            } 
+            else if(checkeuqal === checkeuqal2) {
+                // var reste = []
+                // console.log("date == date")
                 for (const key of result) {
-                    var before = 0;
-                    // console.log(key.result[0]['DateTime'])
                     var s = key.result[0]['DateTime'].split(" ")
+                    let s = keys.result[0]['DateTime'].split(" ")
+                    let date_b = s[0].split("/")
+                    let date_db = new Date(date_b[2],date_b[1],date_b[0])
                     var time = s[1].split(":")
-                    // console.log(s[0] + "----" + det)
-                    if (s[0] === det && key.result[0]['Power_1'] != '---') {
-                        if (time[0] >= request_data.hour && time[0] <= request_data.hour2) {
+                    console.log(s[0] + "----" + det)
+                    if (date_db === date_request_1 && date_db === date_request_2) {
+                        console.log(time[0] + 1)
+                        console.log(request_data.hour + 1)
+                        if (time[0] >= request_data.hour && time[0] <= request_data.hour2 && key.result[0]['Power_1'] != '---') {
                             before = parseInt(time[0])
-                            reste.push(key)
-                        }
-                    }
-                }
-                console.log(reste.length)
-                var jo = reste.length / 22
-                jo = Math.ceil(jo)
-                console.log(jo)
-                // console.log(reste.length)
-                // console.log(reste[1])
-                // console.log(request_data[1 * jo])
-                if (reste.length % 2 != 0) {
-                    jo -= 1;
-                }
-                if (reste.length <= 24) {
-                    data = reste;
-                } else {
-                    for (let index = 0; index < 24; index++) {
-                        console.log("test")
-                        console.log(data.length)
-                        if (index === 0 && reste[index] != null) {
-                            data.push(reste[index])
-                        } else if (index === 23 && reste[index] != null) {
-                            data.push(reste[reste.length - 1])
-                        } else if(reste[index] != null){
-                            data.push(reste[index * jo])
-                            // console.log(restdata[index * jo])
+                            restdata.push(key)
                         }
                     }
                 }
             }
             else {
                 console.log("else")
-                det = det.split("/")
-                det2 = det2.split("/")
-                // var num = 24;
-                var checkdate = "";
-                var beforedate = "";
-                var restdata = [];
-                for (const key of result) {
-                    var s = key.result[0]['DateTime'].split(" ")
-                    checkdate = s[0];
-                    // split day in database
-                    var time = s[1].split(":");
-                    var de = s[0].split("/");
-                    // console.log(parseInt(de[2]) + " === " + parseInt(det[2]))
-                    if (parseInt(de[2]) === parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
-                        console.log("year === year2")
-                        if (parseInt(de[1]) === parseInt(det2[1])) {
-                            if (parseInt(de[0]) <= parseInt(det2[0])) {
-                                beforedate = checkdate
-                                restdata.push(key)
-                            }
-                        } else if (parseInt(de[1]) < parseInt(det2[1])) {
-                            beforedate = checkdate
-                            restdata.push(key)
-                        }
-                        // restdata.push(key)
-                    } else if (parseInt(de[2]) < parseInt(det2[2]) && parseInt(de[2]) > parseInt(det[2])) {
-                        beforedate = checkdate
-                        restdata.push(key)
-                    } else if (parseInt(de[2]) === parseInt(det[2])) {
-                        // console.log("k")
-                        if (parseInt(det[2]) != parseInt(det2[2])) {
-                            if (parseInt(de[1]) === parseInt(det[1])) {
-                                console.log("k2")
-                                if (parseInt(de[0]) >= parseInt(det[0])) {
-                                    beforedate = checkdate
-                                    restdata.push(key)
-                                }
-                            } else if (parseInt(de[1]) > parseInt(det[1])) {
-                                beforedate = checkdate
-                                restdata.push(key)
-                            }
-                        } else if (parseInt(det[2]) === parseInt(det2[2])) {
-                            if (parseInt(det[1]) === parseInt(det2[1])) {
-                                if (parseInt(de[0]) >= parseInt(det[0]) && parseInt(de[0]) <= parseInt(det2[0])) {
-                                    beforedate = checkdate
-                                    restdata.push(key)
-                                }
-                            } else if (parseInt(det[1]) != parseInt(det2[1])) {
-                                if (parseInt(de[1]) === parseInt(det[1])) {
-                                    if (parseInt(de[0]) >= parseInt(det[0])) {
-                                        beforedate = checkdate
-                                        restdata.push(key)
-                                    }
-                                } else if (parseInt(de[1]) > parseInt(det[1]) && parseInt(de[1]) < parseInt(det2[1])) {
-                                    beforedate = checkdate
-                                    restdata.push(key)
-                                } else if (parseInt(de[1]) === parseInt(det2[1])) {
-                                    if (parseInt(de[0]) <= parseInt(det2[0])) {
-                                        beforedate = checkdate
-                                        restdata.push(key)
-                                    }
-                                }
-                            }
-                        }
+                console.log(date_request_1 + " ---- " + date_request_2)
+                // loop data in database for put in variable array type
+                for (const keys of result) {
+
+                    // notice variable to keep date in database
+                    let s = keys.result[0]['DateTime'].split(" ")
+                    let date_b = s[0].split("/")
+                    let date_db = new Date(date_b[2],date_b[1],date_b[0])
+
+                    // check if data_db in the range of data_request_1 and data_request_2.
+                    // if data_db is in the range of the data_request_1 and request_2
+                    if (date_db >= date_request_1 && date_db <= date_request_2 && keys.result[0]['Power_1'] != '---') {
+
+                        // put data in data to be send
+                        restdata.push(keys)
                     }
                 }
-                var jo = restdata.length / 22
+
+            }
+
+            var jo = restdata.length / 22
                 jo = Math.ceil(jo)
                 console.log(jo)
                 // console.log(restdata.length)
@@ -657,24 +588,6 @@ app.post('/dateTOdateGraph', (req, res) => {
                         }
                     }
                 }
-
-                // for (const key of result) {
-                //     var s = key.result[0]['DateTime'].split(" ")
-                //     var de = s[0].split("/");
-
-                //     if (det[2] < parseInt(det2[2]) && de[2] >= det[2]) {
-                //         data.push(key)
-                //     }else if(det[2] === det2[2] && de[2] === det[2]){
-                //         if (det[1] < det2[1] && de[1] >= det[1]) {
-                //             data.push(key)
-                //         }else if(det[1] === det2[1] && de[1] === det[1]){
-                //             if (det[0] <= det2[0] && de[0] >= det[0]) {
-                //                 data.push(key)
-                //             }
-                //         }
-                //     }
-                // }
-            }
             // console.log(c)
             res.status(200).send(data)
         }).catch(err => {
