@@ -523,7 +523,6 @@ app.post('/dateTOdateGraph', (req, res) => {
                 // var reste = []
                 // console.log("date == date")
                 for (const key of result) {
-                    var s = key.result[0]['DateTime'].split(" ")
                     let s = key.result[0]['DateTime'].split(" ")
                     let date_b = s[0].split("/")
                     let date_db = new Date(date_b[2],date_b[1],date_b[0])
