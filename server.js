@@ -355,7 +355,7 @@ app.post('/dateTOdate', (req, res) => {
             var today = new Date()
             var now = new Date(today.getFullYear(),today.getMonth(),today.getDate())
 
-            if (now === date_request_1 && now === date_request_2) {
+            if (now >= date_request_1 && now <= date_request_2) {
                 for (const key of result) {
 
                     // notice variable to keep date in database
@@ -506,7 +506,7 @@ app.post('/dateTOdateGraph', (req, res) => {
             var today = new Date()
             var now = new Date(today.getFullYear(),today.getMonth(),today.getDate())
 
-            if (now === date_request_1 && now === date_request_2) {
+            if (now >= date_request_1 && now <= date_request_2) {
                 for (const key of result) {
 
                     // notice variable to keep date in database
@@ -524,12 +524,12 @@ app.post('/dateTOdateGraph', (req, res) => {
                 // console.log("date == date")
                 for (const key of result) {
                     var s = key.result[0]['DateTime'].split(" ")
-                    let s = keys.result[0]['DateTime'].split(" ")
+                    let s = key.result[0]['DateTime'].split(" ")
                     let date_b = s[0].split("/")
                     let date_db = new Date(date_b[2],date_b[1],date_b[0])
                     var time = s[1].split(":")
                     console.log(s[0] + "----" + det)
-                    if (date_db === date_request_1 && date_db === date_request_2) {
+                    if (date_db >= date_request_1 && date_db <= date_request_2) {
                         console.log(time[0] + 1)
                         console.log(request_data.hour + 1)
                         if (time[0] >= request_data.hour && time[0] <= request_data.hour2 && key.result[0]['Power_1'] != '---') {
