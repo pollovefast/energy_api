@@ -659,6 +659,7 @@ app.post('/energy',(req,res) => {
                 // }
                 if (det[2] == year[2]) {
                     // console.log("show me")
+                    console.log(date_data[1])
                     month[date_data[1]] = parseInt(key.result[0]['Energy_Ex'])
                 }
             }
