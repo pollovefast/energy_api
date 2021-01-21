@@ -640,6 +640,7 @@ app.post('/energy',(req,res) => {
             var c = 0
             var det = request_data.date + "/" + request_data.month + "/" + request_data.year
             det = det.split("/")
+            var before_det = parseInt(det[2]) - 1
             var dett = new Date(det[2])
             var today = new Date()
             var now = new Date(today.getFullYear())
@@ -665,7 +666,7 @@ app.post('/energy',(req,res) => {
                     month[date_data] = parseInt(key.result[0]['Energy_Ex'])
                 }
                 console.log(before_year.toString() + "==" + det[2])
-                if(det[2] == before_year.toString() && year[1] == "12"){
+                if(before_det == year[2] && year[1] == "12"){
                     month["0"] = parseInt(key.result[0]['Energy_Ex'])
                 }
             }
