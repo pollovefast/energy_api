@@ -643,7 +643,7 @@ app.post('/energy',(req,res) => {
             var dett = new Date(det[2])
             var today = new Date()
             var now = new Date(today.getFullYear())
-            var month = request_data.month
+            // var month = request_data.month
             var month_if_yearnotpresent = 12
 
             for (const key of result) {
