@@ -650,7 +650,7 @@ app.post('/energy',(req,res) => {
                 // console.log(key.result[0]['DateTime'])
                 var s = key.result[0]['DateTime'].split(" ")
                 var year = s[0].split("/")
-                var date_data = new Date(year[2])
+                var date_data = year[2]
                 // console.log(s[0] + "----" + det)
                 // if (now != dett) {
                 //     if (det[2] == date_data[2]) {
