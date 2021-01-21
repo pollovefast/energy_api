@@ -367,7 +367,7 @@ app.post('/dateTOdate', (req, res) => {
                     if (date_db === now && key.result[0]['Power_1'] != '---') data.push(key);
 
                 }
-            } 
+            }
             else if(checkeuqal === checkeuqal2) {
                 // var reste = []
                 // console.log("date == date")
@@ -585,6 +585,91 @@ app.post('/dateTOdateGraph', (req, res) => {
                         }
                     }
                 }
+            // console.log(c)
+            res.status(200).send(data)
+        }).catch(err => {
+            res.status(400).send({
+                err: err
+            })
+            console.log("error")
+        })
+    }
+})
+
+app.post('/energy',(req,res) => {
+    request_data = req.body
+    if (request_data.length < -1) {
+        res.send({
+            msg: request_data
+        })
+    } else {
+        const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema)
+        // console.log(request_data.building.toLowerCase() + request_data.block)
+        datas.find({}, {}, {}, function (err, result) {
+            var data = []
+            var month = {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0,
+                "10": 0,
+                "11": 0,
+                "12": 0
+            }
+            var month1 = {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0,
+                "10": 0,
+                "11": 0,
+                "12": 0
+            }
+            var c = 0
+            var det = request_data.date + "/" + request_data.month + "/" + request_data.year
+            det = det.split("/")
+            var dett = new Date(det[2])
+            var today = new Date()
+            var now = new Date(today.getFullYear())
+            var month = request_data.month
+            var month_if_yearnotpresent = 12
+
+            for (const key of result) {
+                // console.log(key.result[0]['DateTime'])
+                var s = key.result[0]['DateTime'].split(" ")
+                var date_data = s[0]
+                // console.log(s[0] + "----" + det)
+                // if (now != dett) {
+                //     if (det[2] == date_data[2]) {
+                         
+                //     }
+                // }
+                if (det[2] == date_data[2]) {
+                    month[date_data[1]] = parseInt(key.result[0]['Energy_Ex'])
+                }
+            }
+            for (const ke in month) {
+                if (ke == "0") {
+                    continue
+                }
+                else{
+                    ket = parseInt(ke) - 1
+                    month1[ke] = month[ke] - month[toString(ket)]
+                }
+            }
+            data.push(month1)
             // console.log(c)
             res.status(200).send(data)
         }).catch(err => {
