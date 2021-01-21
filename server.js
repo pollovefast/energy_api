@@ -649,14 +649,15 @@ app.post('/energy',(req,res) => {
             for (const key of result) {
                 // console.log(key.result[0]['DateTime'])
                 var s = key.result[0]['DateTime'].split(" ")
-                var date_data = s[0]
+                var date_data = new Date(s[0][2])
                 // console.log(s[0] + "----" + det)
                 // if (now != dett) {
                 //     if (det[2] == date_data[2]) {
                          
                 //     }
                 // }
-                if (det[2] == date_data[2]) {
+                if (dett == date_data) {
+                    console.log("show me")
                     month[date_data[1]] = parseInt(key.result[0]['Energy_Ex'])
                 }
             }
