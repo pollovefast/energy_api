@@ -650,7 +650,7 @@ app.post('/energy',(req,res) => {
                 // console.log(key.result[0]['DateTime'])
                 var s = key.result[0]['DateTime'].split(" ")
                 var year = s[0].split("/")
-                console.log(year)
+                // console.log(year)
                 var date_data = year[1]
                 // console.log(s[0] + "----" + det)
                 // if (now != dett) {
@@ -660,7 +660,7 @@ app.post('/energy',(req,res) => {
                 // }
                 if (det[2] == year[2]) {
                     // console.log("show me")
-                    console.log(date_data)
+                    // console.log(date_data)
                     month[date_data] = parseInt(key.result[0]['Energy_Ex'])
                 }
             }
@@ -671,6 +671,8 @@ app.post('/energy',(req,res) => {
                 }
                 else{
                     ket = parseInt(ke) - 1
+                    console.log(ke + "------" + ket)
+                    // console.log("------")
                     month1[ke] = month[ke] - month[toString(ket)]
                 }
             }
