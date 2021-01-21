@@ -679,7 +679,11 @@ app.post('/energy',(req,res) => {
                     ket = parseInt(ke) - 1
                     console.log(ke + "------" + ket)
                     // console.log("------")
-                    month1[ke] = month[ke] - month[ket.toString()]
+                    if (month[ke] - month[ket.toString()] < 0) {
+                        continue
+                    } else {
+                        month1[ke] = month[ke] - month[ket.toString()]
+                    }
                 }
             }
             data.push(month1)
