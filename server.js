@@ -665,7 +665,7 @@ app.post('/energy',(req,res) => {
                     // console.log(date_data)
                     month[date_data] = parseInt(key.result[0]['Energy_Ex'])
                 }
-                console.log(before_year.toString() + "==" + det[2])
+                // console.log(before_year.toString() + "==" + det[2])
                 if(before_det == year[2] && year[1] == "12"){
                     month["0"] = parseInt(key.result[0]['Energy_Ex'])
                 }
@@ -696,6 +696,10 @@ app.post('/energy',(req,res) => {
             console.log("error")
         })
     }
+})
+
+app.post('/backup', function(req,res) {
+    
 })
 
 server.listen(port, function (req, res) {
