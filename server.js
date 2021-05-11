@@ -1,12 +1,13 @@
-const express = require('express');
+﻿const express = require('express');
 const bodyPaser = require('body-parser');
 const mongoose = require('mongoose');
-const port = 2000;
+const port = process.env.PORT || 80;
 const FileSchema = require('./File')
 const app = express();
 const cors = require('cors');
 const server = require('http').Server(app)
 const io = require('socket.io')(server);
+const path = require('path')
 // var io = socket(server);
 
 var option = {
@@ -29,6 +30,8 @@ app.use(function (req, res, next) {
 
 app.use(bodyPaser.json());
 app.use(bodyPaser.urlencoded({ extended: false }));
+
+app.use(express.static(path.join(__dirname, 'Energy')));
 
 mongoose.connect('mongodb://127.0.0.1:27017/ploy', option, () => {
     console.log('connect to mongodb')
@@ -71,9 +74,11 @@ io.on('connection', function (socket) {
 
 // })
 
-app.get('/', function (req, res) {
-    // res.sendfile('index.html')
-})
+//app.get('/', function (req, res) {
+//    res.sendfile('index.html')
+//})
+
+app.get('/', function (req, res){  res.sendfile(path.join(__dirname, 'Energy/index.html')) })
 
 app.get('/building', function (req, res) {
     mongoose.connection.db.listCollections().toArray(function (err, names) {
@@ -699,5 +704,5 @@ app.post('/energy',(req,res) => {
 })
 
 server.listen(port, function (req, res) {
-    console.log("connect port 2000")
+    console.log("connect port 80")
 })
