@@ -206,7 +206,7 @@ app.post('/data', (req, res) => {
     var date = new Date()
     var resw = {
         building: request_data.building.toUpperCase(),
-        result: [JSON.parse(request_data.result)],
+        result: JSON.parse(request_data.result),
         block: request_data.block,
         create: date
     }
@@ -274,7 +274,7 @@ app.post('/data', (req, res) => {
                     var nameupper = request_data.building.toLowerCase()
                     if (JSON.parse(request_data.result).length < 1 || err) {
                         io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
-                        console.log("show_data_realtime")
+                        // console.log("show_data_realtime")
                         res.send({ success: false })
                     } else {
                         io.sockets.emit(nameupper + request_data.block, { success: true, data: resw })
