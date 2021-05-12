@@ -201,6 +201,14 @@ app.get('/data', function (req, res) {
 
 app.post('/data', (req, res) => {
 
+    var fs = require('fs')
+    fs.appendFile('log_of_data.txt', 'check data time =  ' + date.toISOString() + "\n", function (err) {
+        if (err) {
+            // append failed
+        } else {
+            // done
+        }
+    })
     console.log("update_data")
     var request_data = req.body;
     var count = Object.keys(req.body).length;
