@@ -253,9 +253,11 @@ app.post('/data', (req, res) => {
                             var nameupper = request_data.building.toLowerCase()
                             if (result.length < 1 || err) {
                                 io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
+                                console.log("err_save_data")
                                 res.send({ success: false })
                             } else {
                                 io.sockets.emit(nameupper + request_data.block, { success: true, data: result })
+                                console.log("save_data_success")
                                 res.send({ success: true })
                             }
                         })
