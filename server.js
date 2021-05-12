@@ -286,6 +286,7 @@ app.post('/data', (req, res) => {
                 console.log(err)
             })
         } else {
+            console.log("count == 0")
             res.status(200).send({
                 success: false,
                 msg: 'bad_request',
