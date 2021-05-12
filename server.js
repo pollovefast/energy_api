@@ -45,7 +45,7 @@ io.on('connection', function (socket) {
     mongoose.connection.db.listCollections().toArray(function (err, names) {
         for (const i of names) {
             const datas = mongoose.model(i.name, FileSchema)
-            datas.findOne({}, {}, { sort: -1 }, function (err, result) {
+            datas.findOne({}, {}, { sort: { 'create': -1 } }, function (err, result) {
                 var nameda = i.name
                 // var lengthda = nameda.length
                 var res = nameda.toLowerCase()
