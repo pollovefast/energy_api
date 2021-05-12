@@ -259,18 +259,16 @@ app.post('/data', (req, res) => {
                         block: request_data.block,
                         create: date
                     }).save().then(() => {
-                        File.findOne({}, {}, { sort: { 'create': 1 } }, function (err, result) {
-                            var nameupper = request_data.building.toLowerCase()
-                            if (result.length < 1 || err) {
-                                io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
-                                console.log("err_save_data")
-                                res.send({ success: false })
-                            } else {
-                                io.sockets.emit(nameupper + request_data.block, { success: true, data: result })
-                                console.log("save_data_success")
-                                res.send({ success: true })
-                            }
-                        })
+                        var nameupper = request_data.building.toLowerCase()
+                        if (JSON.parse(request_data.result).length < 1 || err) {
+                            io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
+                            // console.log("show_data_realtime")
+                            res.send({ success: false })
+                        } else {
+                            io.sockets.emit(nameupper + request_data.block, { success: true, data: resw })
+                            console.log("show_data_realtime")
+                            res.send({ success: true })
+                        }
                     }).catch(err => {
                         res.status(200).send({
                             msg: err
