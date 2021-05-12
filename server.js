@@ -200,6 +200,7 @@ app.get('/data', function (req, res) {
 
 app.post('/data', (req, res) => {
 
+    console.log("update_data")
     var request_data = req.body;
     var count = Object.keys(req.body).length;
     var date = new Date()
