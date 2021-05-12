@@ -7,7 +7,8 @@ const app = express();
 const cors = require('cors');
 const server = require('http').Server(app)
 const io = require('socket.io')(server);
-const path = require('path')
+const path = require('path');
+const { strict } = require('assert');
 // var io = socket(server);
 
 var option = {
@@ -269,6 +270,16 @@ app.post('/data', (req, res) => {
                     })
                 } else {
                     console.log("ไม่บันทึกข้อมูล")
+
+                    var fs = require('fs')
+                    fs.appendFile('log.txt', 'check data time =  ' + date.toISOString() + "\n", function (err) {
+                        if (err) {
+                            // append failed
+                        } else {
+                            // done
+                        }
+                    })
+
                     // console.log(date.getMinutes())
                     // console.log(data[0].create.getMinutes() + 4)
                     var nameupper = request_data.building.toLowerCase()

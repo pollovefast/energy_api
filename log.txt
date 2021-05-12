@@ -1,0 +1,10 @@
+new dataokok 
+ok 
+ok 
+ok 
+ok 
+function toISOString() { [native code] }
+function toString() { [native code] }
+function toString() { [native code] }
+Wed May 12 2021 13:37:29 GMT+0700 (Indochina Time)
+2021-05-12T06:37:42.713Z
