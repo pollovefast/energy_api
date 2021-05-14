@@ -381,7 +381,7 @@ app.post('/dateTOdate2', (req,res) => {
         const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema)
         var date_1 = request_data.year + "-" + request_data.month + "-" + request_data.date + "T" + request_data.hour + ":00:00.000+07:00"
         var date_2 = request_data.year2 + "-" + request_data.month2 + "-" + request_data.date2 + "T" + request_data.hour2 + ":59:59.000+07:00"
-        datas.find({"create": {"gte": new Date(date_1), "lte": new Date(date_2)}},{},{}, function(err,result){
+        datas.find({"create": {$gte: new Date(date_1), $lte: new Date(date_2)}},{},{}, function(err,result){
             res.status(200).send(result)
         }).catch(err => {
             res.send({
