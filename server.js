@@ -225,16 +225,16 @@ app.post('/data', (req, res) => {
                         block: request_data.block,
                         create: date
                     }).save().then(() => {
-                        File.findOne({}, {}, { sort: { 'create': 1 } }, function (err, result) {
-                            var nameupper = request_data.building.toLowerCase()
-                            if (result.length < 1 || err) {
-                                io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
-                                res.send({ success: false })
-                            } else {
-                                io.sockets.emit(nameupper + request_data.block, { success: true, data: result })
-                                res.send({ success: true })
-                            }
-                        })
+                        var nameupper = request_data.building.toLowerCase()
+                        if (JSON.parse(request_data.result).length < 1 || err) {
+                            io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
+                            // console.log("show_data_realtime")
+                            res.send({ success: false })
+                        } else {
+                            io.sockets.emit(nameupper + request_data.block, { success: true, data: resw })
+                            console.log("show_data_realtime")
+                            res.send({ success: true })
+                        }
                     }).catch(err => {
                         res.status(200).send({
                             msg: err
@@ -342,6 +342,32 @@ app.get('/alldata', (req, res) => {
     //         })
     //     }
     // })
+})
+
+app.post('/testdate', (req,res) => {
+    var request_data = req.body
+    if (request_data < -1) {
+        res.send({
+            msg: request_data
+        })
+    } else {
+        const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema);
+        const date_1 = request_data.date + "/" + request_data.month + "/" + request_data.year
+        const date_2 = request_data.date2 + "/" + request_data.month2 + "/" + request_data.year2
+        datas.find({"create": {$gte: ISODate(date_1), $lte: ISODate(date_2)}},{},{}, function(err,result){
+            var data = []
+            data.push(result)
+            res.send({
+                success: true,
+                msg: data
+            })
+        }).catch(err => {
+            res,send({
+                success: false,
+                msg: err
+            })
+        })
+    }
 })
 
 app.post('/dateTOdate', (req, res) => {
