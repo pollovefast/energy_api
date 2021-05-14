@@ -352,9 +352,9 @@ app.post('/testdate', (req,res) => {
         })
     } else {
         const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema);
-        const date_1 = request_data.year + "-" + request_data.month + "-" + request_data.date 
-        const date_2 = request_data.year2 + "-" + request_data.month2 + "-" + request_data.date2
-        datas.find({"create": {$gte: new Date(date_1), $lte: new Date(date_2)}},{},{}, function(err,result){
+        const date_1 = request_data.date + "-" + request_data.month + "-" + request_data.year
+        const date_2 = request_data.date2 + "-" + request_data.month2 + "-" + request_data.year2
+        datas.find({"create": {$gte: Date(date_1), $lte: Date(date_2)}},{},{}, function(err,result){
             var data = []
             data.push(result)
             res.send({
