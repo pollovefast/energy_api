@@ -344,7 +344,7 @@ app.get('/alldata', (req, res) => {
     // })
 })
 
-app.post('/testdate', (req,res) => {
+app.post('/testdate', (req, res) => {
     var request_data = req.body
     if (request_data < -1) {
         res.send({
@@ -359,12 +359,13 @@ app.post('/testdate', (req,res) => {
         datas.find({"create": {$gte: new Date(date_1), $lte: new Date(date_2)}},{},{}, function(err,result){
             var data = []
             data.push(result)
+            console.log(result)
             res.send({
                 success: true,
                 msg: data
             })
         }).catch(err => {
-            res,send({
+            res.send({
                 success: false,
                 msg: err
             })
