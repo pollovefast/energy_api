@@ -201,7 +201,6 @@ app.get('/data', function (req, res) {
 
 app.post('/data', (req, res) => {
 
-    console.log("update_data")
     var request_data = req.body;
     var count = Object.keys(req.body).length;
     var date = new Date()
@@ -381,11 +380,18 @@ app.post('/dateTOdate2', (req,res) => {
         const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema)
         var date_1 = request_data.year + "-" + request_data.month + "-" + request_data.date + "T" + request_data.hour + ":00:00.000+07:00"
         var date_2 = request_data.year2 + "-" + request_data.month2 + "-" + request_data.date2 + "T" + request_data.hour2 + ":59:59.000+07:00"
-        datas.find({"create": {$gte: new Date(date_1), $lte: new Date(date_2)}},{},{}, function(err,result){
+        datas.count({"create": {$gte: new Date(date_1), $lte: new Date(date_2)}}, function(err,result){
+            console.log(result)
+        }).catch(err => {
+            res.send({
+                msg: err
+            })
+        })
+        datas.find({"create": {$gte: new Date(date_1), $lte: new Date(date_2)} },{},{}, function(err,result){
             var data = []
             data.push(result)
             res.status(200).send(data)
-        }).catch(err => {
+        }).limit(10).catch(err => {
             res.send({
                 msg: err
             })
