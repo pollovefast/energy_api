@@ -8,8 +8,6 @@ const cors = require('cors');
 const server = require('http').Server(app)
 const io = require('socket.io')(server);
 const path = require('path');
-const fastcsv = require('fast-csv')
-const fs = require('fs')
 const { strict } = require('assert');
 // var io = socket(server);
 
@@ -353,16 +351,13 @@ app.post('/testdate', (req,res) => {
         })
     } else {
         const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema);
-        const date_1 = request_data.year + "-" + request_data.month + "-" + request_data.date + "T00:00:00.000+07:00"
-        const date_2 = request_data.year2 + "-" + request_data.month2 + "-" + request_data.date2 + "T23:59:59.00+07:00"
+        var date_1 = request_data.year + "-" + request_data.month + "-" + request_data.date + "T" + request_data.hour + ":00:00.000+07:00"
+        var date_2 = request_data.year2 + "-" + request_data.month2 + "-" + request_data.date2 + "T" + request_data.hour2 + ":59:59.000+07:00"
         console.log(new Date(date_1))
         datas.find({"create": {$gte: new Date(date_1), $lte: new Date(date_2)}},{},{}, function(err,result){
             var data = []
             data.push(result)
-            res.send({
-                success: true,
-                msg: data
-            })
+            res.send(data)
         }).catch(err => {
             res.send({
                 success: false,
@@ -370,30 +365,6 @@ app.post('/testdate', (req,res) => {
             })
         })
     }
-})
-
-app.get('/testf', (req,res) => {
-    var data = [{
-        "id": 1,
-        "name": "Adnan",
-        "age": 29
-    }, {
-        "id": 2,
-        "name": "Ali",
-        "age": 31
-    }, {
-        "id": 3,
-        "name": "Ahmad",
-        "age": 33
-    }];
-
-    var ws = fs.createWriteStream("data.csv");
-        fastcsv
-            .write(data, { headers: true })
-            .on("finish", function() {
-                res.send("<a href='data.csv' download='data.csv' id='download-link'></a><script>document.getElementById('download-link').click();</script>");
-            })
-            .pipe(ws);
 })
 
 app.post('/dateTOdate2', (req,res) => {
@@ -406,18 +377,26 @@ app.post('/dateTOdate2', (req,res) => {
         const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema)
         var date_1 = request_data.year + "-" + request_data.month + "-" + request_data.date + "T" + request_data.hour + ":00:00.000+07:00"
         var date_2 = request_data.year2 + "-" + request_data.month2 + "-" + request_data.date2 + "T" + request_data.hour2 + ":59:59.000+07:00"
+        var skip_res = 0
+
+        // count data to skip data
         datas.count({"create": {$gte: new Date(date_1), $lte: new Date(date_2)}}, function(err,result){
             console.log(result)
+            skip_res = result
         }).catch(err => {
             res.send({
                 msg: err
             })
         })
+        // find doc in dbs limit 50 doc
         datas.find({"create": {$gte: new Date(date_1), $lte: new Date(date_2)} },{},{}, function(err,result){
             var data = []
             data.push(result)
-            res.status(200).send(data)
-        }).limit(2).catch(err => {
+            res.status(200).send({
+                size: skip_res,
+                data: data
+            })
+        }).limit(50).skip(50 * request_data.page).catch(err => {
             res.send({
                 msg: err
             })
