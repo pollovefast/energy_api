@@ -394,7 +394,7 @@ app.post('/dateTOdate2', (req,res) => {
             data.push(result)
             res.status(200).send({
                 size: skip_res,
-                data: data
+                data: data[0]
             })
         }).limit(50).skip(50 * request_data.page).catch(err => {
             res.send({
@@ -551,6 +551,46 @@ app.post('/dateTOdate', (req, res) => {
             })
             console.log("error")
         })
+    }
+})
+
+ap.post('/dateTOdateGraph2', (req,res) => {
+    var request_data = req.body
+    if (request_data.length < -1) {
+        res.send({
+            msg: "no request"
+        })
+    } else {
+        const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema)
+        var date_1 = request_data.year + "-" + request_data.month + "-" + request_data.date + "T" + request_data.hour + ":00:00.000+07:00"
+        var date_2 = request_data.year2 + "-" + request_data.month2 + "-" + request_data.date2 + "T" + request_data.hour2 + ":59:59.000+07:00"
+        
+        datas.find({'create': {$gte: new Date(date_1),$lte: new Date(date_2)}},{},{}, function (err, result) {
+            var restdata = result
+            var data = []
+            var jo = restdata.length / 24
+            jo = Math.ceil(jo)
+            if (restdata.length % 2 != 0) {
+                jo -= 1;
+            }
+            if (restdata.length <= 24) {
+                data = restdata;
+            } else {
+                console.log(restdata.length)
+                for (let index = 0; index < 25; index++) {
+                    if (index === 0 && restdata[index] != null) {
+                        data.push(restdata[index])
+                    } else if (index === 24 && restdata[index] != null) {
+                        data.push(restdata[restdata.length - 1])
+                    } else if(restdata[index] != null && index * jo < restdata.length){
+                        data.push(restdata[index * jo])
+                    }
+                }
+            }
+
+            res.status(200).send(data)
+        })
+        
     }
 })
 
