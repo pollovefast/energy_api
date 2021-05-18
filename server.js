@@ -384,20 +384,20 @@ app.post('/dateTOdate2', (req,res) => {
         datas.count({"create": {$gte: new Date(date_1), $lte: new Date(date_2)}}, function(err,result){
             console.log(result)
             skip_res = result
+            // find doc in dbs limit 50 doc
+            datas.find({"create": {$gte: new Date(date_1), $lte: new Date(date_2)} },{},{}, function(err,result){
+                var data = []
+                data.push(result)
+                res.status(200).send({
+                    size: skip_res,
+                    data: data[0]
+                })
+            }).limit(50).skip(50 * request_data.page).catch(err => {
+                res.send({
+                    msg: err
+                })
+            })
         }).catch(err => {
-            res.send({
-                msg: err
-            })
-        })
-        // find doc in dbs limit 50 doc
-        datas.find({"create": {$gte: new Date(date_1), $lte: new Date(date_2)} },{},{}, function(err,result){
-            var data = []
-            data.push(result)
-            res.status(200).send({
-                size: skip_res,
-                data: data[0]
-            })
-        }).limit(50).skip(50 * request_data.page).catch(err => {
             res.send({
                 msg: err
             })
