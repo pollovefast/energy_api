@@ -387,13 +387,11 @@ app.get('/testf', (req,res) => {
         "age": 33
     }];
 
-    var ws = fs.createWriteStream("data.csv");
         fastcsv
             .write(data, { headers: true })
             .on("finish", function() {
                 res.send("<a href='data.csv' download='data.csv' id='download-link'></a><script>document.getElementById('download-link').click();</script>");
             })
-            .pipe(ws);
 })
 
 app.post('/dateTOdate2', (req,res) => {
