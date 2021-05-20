@@ -355,12 +355,7 @@ app.post('/testdate', (req, res) => {
     }
 })
 
-<<<<<<< HEAD
-
 app.post('/dateTOdate2', (req,res) => {
-=======
-app.post('/dateTOdate2', (req, res) => {
->>>>>>> 565a07db47d67409412cf9bfb6a5045e3f5b4e94
     var request_data = req.body
     if (request_data < -1) {
         res.send({
