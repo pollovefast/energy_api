@@ -46,19 +46,15 @@ io.on('connection', function (socket) {
     mongoose.connection.db.listCollections().toArray(function (err, names) {
         for (const i of names) {
             const datas = mongoose.model(i.name, FileSchema)
-            datas.findOne({}, {}, { sort: { 'create': -1 } }, function (err, result) {
-                var nameda = i.name
-                // var lengthda = nameda.length
-                var res = nameda.toLowerCase()
-                if (result.length < 1 || err) {
-                    socket.emit(res, { success: true, msg: 'no data' })
-                } else {
-                    // console.log(result)
-                    socket.emit(res, { success: true, data: result })
-                }
-            }).catch(err => {
-                console.log("error")
-            })
+            var nameda = i.name
+            // var lengthda = nameda.length
+            var res = nameda.toLowerCase()
+            if (result.length < 1 || err) {
+                socket.emit(res, { success: true, msg: 'no data' })
+            } else {
+                // console.log(result)
+                socket.emit(res, { success: true, data: result })
+            }
         }
     })
 
@@ -79,7 +75,7 @@ io.on('connection', function (socket) {
 //    res.sendfile('index.html')
 //})
 
-app.get('/', function (req, res){  res.sendfile(path.join(__dirname, 'Energy/index.html')) })
+app.get('/', function (req, res) { res.sendfile(path.join(__dirname, 'Energy/index.html')) })
 
 app.get('/building', function (req, res) {
     mongoose.connection.db.listCollections().toArray(function (err, names) {
@@ -215,7 +211,8 @@ app.post('/data', (req, res) => {
     // console.log(File)
     if (count != 0) {
         if (request_data) {
-            File.find({}, {}, { sort: { 'create': 1 } }, function (err, data) {
+            File.findOne({}, {}, { sort: { 'create': 1 } }, function (err, data) {
+                console.log(data[0].create)
                 if (data.length < 1) {
                     console.log("ข้อมูลแรก")
                     new File({
@@ -240,7 +237,7 @@ app.post('/data', (req, res) => {
                         })
                     })
                 } else if (data[0].create.getMinutes() + 1 <= date.getMinutes() || data[0].create.getHours() != date.getHours() || data[0].create.getMinutes() - 1 >= date.getMinutes()) {
-                    console.log("บันทึกข้อมูล")
+                    console.log("Save_data")
                     // console.log(data[0].create.getMinutes() + 4)
                     // console.log(date.getMinutes())
                     // console.log(date)
@@ -266,16 +263,7 @@ app.post('/data', (req, res) => {
                         })
                     })
                 } else {
-                    console.log("ไม่บันทึกข้อมูล")
-
-                    var fs = require('fs')
-                    fs.appendFile('log.txt', 'check data time =  ' + date.toISOString() + "\n", function (err) {
-                        if (err) {
-                            // append failed
-                        } else {
-                            // done
-                        }
-                    })
+                    console.log("No_save_data")
 
                     // console.log(date.getMinutes())
                     // console.log(data[0].create.getMinutes() + 4)
@@ -343,7 +331,7 @@ app.get('/alldata', (req, res) => {
     // })
 })
 
-app.post('/testdate', (req,res) => {
+app.post('/testdate', (req, res) => {
     var request_data = req.body
     if (request_data < -1) {
         res.send({
@@ -354,7 +342,7 @@ app.post('/testdate', (req,res) => {
         var date_1 = request_data.year + "-" + request_data.month + "-" + request_data.date + "T" + request_data.hour + ":00:00.000+07:00"
         var date_2 = request_data.year2 + "-" + request_data.month2 + "-" + request_data.date2 + "T" + request_data.hour2 + ":59:59.000+07:00"
         console.log(new Date(date_1))
-        datas.find({"create": {$gte: new Date(date_1), $lte: new Date(date_2)}},{},{}, function(err,result){
+        datas.find({ "create": { $gte: new Date(date_1), $lte: new Date(date_2) } }, {}, {}, function (err, result) {
             var data = []
             data.push(result)
             res.send(data)
@@ -367,7 +355,7 @@ app.post('/testdate', (req,res) => {
     }
 })
 
-app.post('/dateTOdate2', (req,res) => {
+app.post('/dateTOdate2', (req, res) => {
     var request_data = req.body
     if (request_data < -1) {
         res.send({
@@ -380,11 +368,11 @@ app.post('/dateTOdate2', (req,res) => {
         var skip_res = 0
 
         // count data to skip data
-        datas.count({"create": {$gte: new Date(date_1), $lte: new Date(date_2)}}, function(err,result){
+        datas.count({ "create": { $gte: new Date(date_1), $lte: new Date(date_2) } }, function (err, result) {
             console.log(result)
             skip_res = result
             // find doc in dbs limit 50 doc
-            datas.find({"create": {$gte: new Date(date_1), $lte: new Date(date_2)} },{},{}, function(err,result){
+            datas.find({ "create": { $gte: new Date(date_1), $lte: new Date(date_2) } }, {}, {}, function (err, result) {
                 var data = []
                 data.push(result)
                 res.status(200).send({
@@ -421,7 +409,7 @@ app.post('/dateTOdate', (req, res) => {
             var c = 0
             var det = request_data.date + "/" + request_data.month + "/" + request_data.year
             var det2 = request_data.date2 + "/" + request_data.month2 + "/" + request_data.year2
-            
+
             var checkeuqal = request_data.date + "/" + request_data.month + "/" + request_data.year
             var checkeuqal2 = request_data.date2 + "/" + request_data.month2 + "/" + request_data.year2
 
@@ -429,11 +417,11 @@ app.post('/dateTOdate', (req, res) => {
             det2 = det2.split("/")
 
             // create date because check date of request === date of mongodb :)
-            var date_request_1 = new Date(det[2],det[1],det[0]);
-            var date_request_2 = new Date(det2[2],det2[1],det2[0]);
+            var date_request_1 = new Date(det[2], det[1], det[0]);
+            var date_request_2 = new Date(det2[2], det2[1], det2[0]);
 
             var today = new Date()
-            var now = new Date(today.getFullYear(),today.getMonth(),today.getDate())
+            var now = new Date(today.getFullYear(), today.getMonth(), today.getDate())
 
             if (now >= date_request_1 && now <= date_request_2) {
                 for (const key of result) {
@@ -441,20 +429,20 @@ app.post('/dateTOdate', (req, res) => {
                     // notice variable to keep date in database
                     let s = key.result[0]['DateTime'].split(" ")
                     let date_b = s[0].split("/")
-                    let date_db = new Date(date_b[2],date_b[1],date_b[0])
+                    let date_db = new Date(date_b[2], date_b[1], date_b[0])
 
                     // if date_db euqal now then put data in dabase in data to be send
                     if (date_db === now && key.result[0]['Power_1'] != '---') data.push(key);
 
                 }
             }
-            else if(checkeuqal === checkeuqal2) {
+            else if (checkeuqal === checkeuqal2) {
                 // var reste = []
                 // console.log("date == date")
                 for (const key of result) {
                     var s = key.result[0]['DateTime'].split(" ")
                     let date_b = s[0].split("/")
-                    let date_db = new Date(date_b[2],date_b[1],date_b[0])
+                    let date_db = new Date(date_b[2], date_b[1], date_b[0])
                     var time = s[1].split(":")
                     console.log(s[0] + "----" + det)
                     if (date_db >= date_request_1 && date_db <= date_request_2) {
@@ -475,7 +463,7 @@ app.post('/dateTOdate', (req, res) => {
                     // notice variable to keep date in database
                     let s = keys.result[0]['DateTime'].split(" ")
                     let date_b = s[0].split("/")
-                    let date_db = new Date(date_b[2],date_b[1],date_b[0])
+                    let date_db = new Date(date_b[2], date_b[1], date_b[0])
 
                     // check if data_db in the range of data_request_1 and data_request_2.
                     // if data_db is in the range of the data_request_1 and request_2
@@ -514,7 +502,7 @@ app.post('/dateTOdate', (req, res) => {
                 //                 data.push(key)
                 //             }
                 //         } else if (parseInt(det[2]) === parseInt(det2[2])) {
-                            
+
                 //             if (parseInt(det[1]) === parseInt(det2[1])) {
                 //                 if (parseInt(de[0]) >= parseInt(det[0]) && parseInt(de[0]) <= parseInt(det2[0])) {
                 //                     // console.log(s[0] + "----" + det)
@@ -554,7 +542,7 @@ app.post('/dateTOdate', (req, res) => {
     }
 })
 
-app.post('/dateTOdateGraph2', (req,res) => {
+app.post('/dateTOdateGraph2', (req, res) => {
     var request_data = req.body
     if (request_data.length < -1) {
         res.send({
@@ -564,8 +552,8 @@ app.post('/dateTOdateGraph2', (req,res) => {
         const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema)
         var date_1 = request_data.year + "-" + request_data.month + "-" + request_data.date + "T" + request_data.hour + ":00:00.000+07:00"
         var date_2 = request_data.year2 + "-" + request_data.month2 + "-" + request_data.date2 + "T" + request_data.hour2 + ":59:59.000+07:00"
-        
-        datas.find({'create': {$gte: new Date(date_1),$lte: new Date(date_2)}},{},{}, function (err, result) {
+
+        datas.find({ 'create': { $gte: new Date(date_1), $lte: new Date(date_2) } }, {}, {}, function (err, result) {
             var restdata = result
             var data = []
             var jo = restdata.length / 24
@@ -582,7 +570,7 @@ app.post('/dateTOdateGraph2', (req,res) => {
                         data.push(restdata[index])
                     } else if (index === 24 && restdata[index] != null) {
                         data.push(restdata[restdata.length - 1])
-                    } else if(restdata[index] != null && index * jo < restdata.length){
+                    } else if (restdata[index] != null && index * jo < restdata.length) {
                         data.push(restdata[index * jo])
                     }
                 }
@@ -590,7 +578,7 @@ app.post('/dateTOdateGraph2', (req,res) => {
 
             res.status(200).send(data)
         })
-        
+
     }
 })
 
@@ -612,7 +600,7 @@ app.post('/dateTOdateGraph', (req, res) => {
             var c = 0
             var det = request_data.date + "/" + request_data.month + "/" + request_data.year
             var det2 = request_data.date2 + "/" + request_data.month2 + "/" + request_data.year2
-            
+
             var checkeuqal = request_data.date + "/" + request_data.month + "/" + request_data.year
             var checkeuqal2 = request_data.date2 + "/" + request_data.month2 + "/" + request_data.year2
 
@@ -620,11 +608,11 @@ app.post('/dateTOdateGraph', (req, res) => {
             det2 = det2.split("/")
 
             // create date because check date of request === date of mongodb :)
-            var date_request_1 = new Date(det[2],det[1],det[0]);
-            var date_request_2 = new Date(det2[2],det2[1],det2[0]);
+            var date_request_1 = new Date(det[2], det[1], det[0]);
+            var date_request_2 = new Date(det2[2], det2[1], det2[0]);
 
             var today = new Date()
-            var now = new Date(today.getFullYear(),today.getMonth(),today.getDate())
+            var now = new Date(today.getFullYear(), today.getMonth(), today.getDate())
 
             if (now >= date_request_1 && now <= date_request_2) {
                 for (const key of result) {
@@ -632,20 +620,20 @@ app.post('/dateTOdateGraph', (req, res) => {
                     // notice variable to keep date in database
                     let s = key.result[0]['DateTime'].split(" ")
                     let date_b = s[0].split("/")
-                    let date_db = new Date(date_b[2],date_b[1],date_b[0])
+                    let date_db = new Date(date_b[2], date_b[1], date_b[0])
 
                     // if date_db euqal now then put data in dabase in data to be send
                     if (date_db === now && key.result[0]['Power_1'] != '---') restdata.push(key);
 
                 }
-            } 
-            else if(checkeuqal === checkeuqal2) {
+            }
+            else if (checkeuqal === checkeuqal2) {
                 // var reste = []
                 // console.log("date == date")
                 for (const key of result) {
                     let s = key.result[0]['DateTime'].split(" ")
                     let date_b = s[0].split("/")
-                    let date_db = new Date(date_b[2],date_b[1],date_b[0])
+                    let date_db = new Date(date_b[2], date_b[1], date_b[0])
                     var time = s[1].split(":")
                     console.log(s[0] + "----" + det)
                     if (date_db >= date_request_1 && date_db <= date_request_2) {
@@ -667,7 +655,7 @@ app.post('/dateTOdateGraph', (req, res) => {
                     // notice variable to keep date in database
                     let s = keys.result[0]['DateTime'].split(" ")
                     let date_b = s[0].split("/")
-                    let date_db = new Date(date_b[2],date_b[1],date_b[0])
+                    let date_db = new Date(date_b[2], date_b[1], date_b[0])
 
                     // check if data_db in the range of data_request_1 and data_request_2.
                     // if data_db is in the range of the data_request_1 and request_2
@@ -681,30 +669,30 @@ app.post('/dateTOdateGraph', (req, res) => {
             }
 
             var jo = restdata.length / 22
-                jo = Math.ceil(jo)
-                console.log(jo)
-                // console.log(restdata.length)
-                // console.log(restdata[1])
-                // console.log(request_data[1 * jo])
-                if (restdata.length % 2 != 0) {
-                    jo -= 1;
-                }
-                if (restdata.length <= 24) {
-                    data = restdata;
-                } else {
-                    console.log(restdata.length)
-                    for (let index = 0; index < 24; index++) {
-                        if (index === 0 && restdata[index] != null) {
-                            data.push(restdata[index])
-                        } else if (index === 23 && restdata[index] != null) {
-                            data.push(restdata[restdata.length - 1])
-                        } else if(restdata[index] != null && index * jo < restdata.length){
-                            console.log(index * jo)
-                            data.push(restdata[index * jo])
-                            // console.log(restdata[index * jo])
-                        }
+            jo = Math.ceil(jo)
+            console.log(jo)
+            // console.log(restdata.length)
+            // console.log(restdata[1])
+            // console.log(request_data[1 * jo])
+            if (restdata.length % 2 != 0) {
+                jo -= 1;
+            }
+            if (restdata.length <= 24) {
+                data = restdata;
+            } else {
+                console.log(restdata.length)
+                for (let index = 0; index < 24; index++) {
+                    if (index === 0 && restdata[index] != null) {
+                        data.push(restdata[index])
+                    } else if (index === 23 && restdata[index] != null) {
+                        data.push(restdata[restdata.length - 1])
+                    } else if (restdata[index] != null && index * jo < restdata.length) {
+                        console.log(index * jo)
+                        data.push(restdata[index * jo])
+                        // console.log(restdata[index * jo])
                     }
                 }
+            }
             // console.log(c)
             res.status(200).send(data)
         }).catch(err => {
@@ -716,7 +704,7 @@ app.post('/dateTOdateGraph', (req, res) => {
     }
 })
 
-app.post('/energy',(req,res) => {
+app.post('/energy', (req, res) => {
     request_data = req.body
     if (request_data.length < -1) {
         res.send({
@@ -777,7 +765,7 @@ app.post('/energy',(req,res) => {
                 // console.log(s[0] + "----" + det)
                 // if (now != dett) {
                 //     if (det[2] == date_data[2]) {
-                         
+
                 //     }
                 // }
                 if (det[2] == year[2]) {
@@ -786,7 +774,7 @@ app.post('/energy',(req,res) => {
                     month[date_data] = parseInt(key.result[0]['Energy_Ex'])
                 }
                 // console.log(before_year.toString() + "==" + det[2])
-                if(before_det == year[2] && year[1] == "12"){
+                if (before_det == year[2] && year[1] == "12") {
                     month["0"] = parseInt(key.result[0]['Energy_Ex'])
                 }
             }
@@ -795,7 +783,7 @@ app.post('/energy',(req,res) => {
                 if (ke == "0") {
                     continue
                 }
-                else{
+                else {
                     ket = parseInt(ke) - 1
                     console.log(ke + "------" + ket)
                     // console.log("------")
@@ -818,8 +806,8 @@ app.post('/energy',(req,res) => {
     }
 })
 
-app.post('/backup', function(req,res) {
-    
+app.post('/backup', function (req, res) {
+
 })
 
 server.listen(port, function (req, res) {
