@@ -45,21 +45,20 @@ mongoose.connect('mongodb://127.0.0.1:27017/ploy', option, () => {
 io.on('connection', function (socket) {
     mongoose.connection.db.listCollections().toArray(function (err, names) {
         for (const i of names) {
-            var nameda = i.name
-            var res = nameda.toLowerCase()
-            socket.on(res, function(result){
-                socket.emit(res, { success: true, data: result})
+            const datas = mongoose.model(i.name, FileSchema)
+            datas.findOne({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+                var nameda = i.name
+                // var lengthda = nameda.length
+                var res = nameda.toLowerCase()
+                if (result.length < 1 || err) {
+                    socket.emit(res, { success: true, msg: 'no data' })
+                } else {
+                    // console.log(result)
+                    socket.emit(res, { success: true, data: result })
+                }
+            }).catch(err => {
+                console.log("error")
             })
-            // const datas = mongoose.model(i.name, FileSchema)
-            // var nameda = i.name
-            // // var lengthda = nameda.length
-            // var res = nameda.toLowerCase()
-            // if (result.length < 1 || err) {
-            //     socket.emit(res, { success: true, msg: 'no data' })
-            // } else {
-            //     // console.log(result)
-            //     socket.emit(res, { success: true, data: result })
-            // }
         }
     })
 
