@@ -46,7 +46,8 @@ io.on('connection', function (socket) {
     mongoose.connection.db.listCollections().toArray(function (err, names) {
         for (const i of names) {
             const datas = mongoose.model(i.name, FileSchema)
-            datas.findOne({}, {}, { sort: { 'create': -1 } }, function (err, result) {
+
+            datas.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
                 var nameda = i.name
                 // var lengthda = nameda.length
                 var res = nameda.toLowerCase()
@@ -54,9 +55,10 @@ io.on('connection', function (socket) {
                     socket.emit(res, { success: true, msg: 'no data' })
                 } else {
                     // console.log(result)
-                    socket.emit(res, { success: true, data: result })
+
+                    socket.emit(res, { success: 'check', data: result })
                 }
-            }).catch(err => {
+            }).limit(1).catch(err => {
                 console.log("error")
             })
         }
@@ -204,19 +206,19 @@ app.post('/data', (req, res) => {
     var request_data = req.body;
     var count = Object.keys(req.body).length;
     var date = new Date()
-    var resw = {
+    var resw = [{
         building: request_data.building.toUpperCase(),
-        result: JSON.parse(request_data.result),
+        result: [JSON.parse(request_data.result)],
         block: request_data.block,
         create: date
-    }
+    }]
 
     const File = mongoose.model(request_data.building + request_data.block, FileSchema);
-    // console.log(File)
+   // console.log(File)
     if (count != 0) {
         if (request_data) {
-            File.findOne({}, {}, { sort: { 'create': 1 } }, function (err, data) {
-                console.log(data[0].create)
+            File.find({}, {}, { sort: { 'create': -1 } }, function (err, data) {
+                console.log(data[0].result[0]["DateTime"])
                 if (data.length < 1) {
                     console.log("ข้อมูลแรก")
                     new File({
@@ -257,7 +259,7 @@ app.post('/data', (req, res) => {
                             // console.log("show_data_realtime")
                             res.send({ success: false })
                         } else {
-                            io.sockets.emit(nameupper + request_data.block, { success: true, data: resw })
+                            io.sockets.emit(nameupper + request_data.block, {success: true,data: resw})
                             console.log("show_data_realtime")
                             res.send({ success: true })
                         }
@@ -282,7 +284,7 @@ app.post('/data', (req, res) => {
                         res.send({ success: true })
                     }
                 }
-            }).catch(err => {
+            }).limit(1).catch(err => {
                 console.log(err)
             })
         } else {
