@@ -1133,7 +1133,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var _enviroment_enviroment_component__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(
     /*! ./enviroment/enviroment.component */
-    "./src/app/enviroment/enviroment.component.ts"); // // import { MatSliderModule } from '@angular/material/slider';
+    "./src/app/enviroment/enviroment.component.ts");
+    /* harmony import */
+
+
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(
+    /*! @ng-bootstrap/ng-bootstrap */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js"); // // import { MatSliderModule } from '@angular/material/slider';
     // import {MatDatepickerModule} from '@angular/material/datepicker';
     // import {MatIconModule} from '@angular/material/icon';
     // import {MatInputModule} from '@angular/material/input';
@@ -1157,15 +1163,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         provide: _angular_common__WEBPACK_IMPORTED_MODULE_1__["LocationStrategy"],
         useClass: _angular_common__WEBPACK_IMPORTED_MODULE_1__["HashLocationStrategy"]
       }],
-      imports: [[_angular_cdk_portal__WEBPACK_IMPORTED_MODULE_8__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_9__["ScrollingModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_5__["A11yModule"], _angular_cdk_clipboard__WEBPACK_IMPORTED_MODULE_6__["ClipboardModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_10__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_11__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_12__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_7__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_13__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_14__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_15__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_16__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_17__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_18__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_19__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_20__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_21__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_22__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_23__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_24__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_25__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_26__["MatGridListModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_27__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_28__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_29__["MatListModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_30__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_31__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_32__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_33__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_34__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_35__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_31__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_36__["MatSelectModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_37__["MatSidenavModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_38__["MatSliderModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_39__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_40__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_41__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_42__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_43__["MatTabsModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_44__["MatToolbarModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_45__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_46__["MatTreeModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_47__["OverlayModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_48__["AppRoutingModule"], // RoutingMainModule,
-      _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], angular_gauge_chart__WEBPACK_IMPORTED_MODULE_4__["GaugeChartModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_57__["BrowserAnimationsModule"]]]
+      imports: [[_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_63__["NgbPaginationModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_63__["NgbAlertModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_8__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_9__["ScrollingModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_5__["A11yModule"], _angular_cdk_clipboard__WEBPACK_IMPORTED_MODULE_6__["ClipboardModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_10__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_11__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_12__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_7__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_13__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_14__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_15__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_16__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_17__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_18__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_19__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_20__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_21__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_22__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_23__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_24__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_25__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_26__["MatGridListModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_27__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_28__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_29__["MatListModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_30__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_31__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_32__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_33__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_34__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_35__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_31__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_36__["MatSelectModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_37__["MatSidenavModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_38__["MatSliderModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_39__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_40__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_41__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_42__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_43__["MatTabsModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_44__["MatToolbarModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_45__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_46__["MatTreeModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_47__["OverlayModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_48__["AppRoutingModule"], // RoutingMainModule,
+      _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], angular_gauge_chart__WEBPACK_IMPORTED_MODULE_4__["GaugeChartModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_57__["BrowserAnimationsModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_63__["NgbModule"]]]
     });
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵsetNgModuleScope"](AppModule, {
         declarations: [_app_component__WEBPACK_IMPORTED_MODULE_49__["AppComponent"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_50__["DashboardComponent"], _main_main_component__WEBPACK_IMPORTED_MODULE_51__["MainComponent"], _graph_graph_component__WEBPACK_IMPORTED_MODULE_52__["GraphComponent"], _detail_detail_component__WEBPACK_IMPORTED_MODULE_53__["DetailComponent"], _selec_selec_component__WEBPACK_IMPORTED_MODULE_54__["SelecComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_55__["LoginComponent"], _selecmiter_selecmiter_component__WEBPACK_IMPORTED_MODULE_56__["SelecmiterComponent"], _history_history_component__WEBPACK_IMPORTED_MODULE_58__["HistoryComponent"], _graphfour_graphfour_component__WEBPACK_IMPORTED_MODULE_59__["GraphfourComponent"], _logfour_logfour_component__WEBPACK_IMPORTED_MODULE_60__["LogfourComponent"], _detailenvi_detailenvi_component__WEBPACK_IMPORTED_MODULE_61__["DetailenviComponent"], _enviroment_enviroment_component__WEBPACK_IMPORTED_MODULE_62__["EnviromentComponent"]],
-        imports: [_angular_cdk_portal__WEBPACK_IMPORTED_MODULE_8__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_9__["ScrollingModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_5__["A11yModule"], _angular_cdk_clipboard__WEBPACK_IMPORTED_MODULE_6__["ClipboardModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_10__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_11__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_12__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_7__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_13__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_14__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_15__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_16__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_17__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_18__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_19__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_20__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_21__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_22__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_23__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_24__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_25__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_26__["MatGridListModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_27__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_28__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_29__["MatListModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_30__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_31__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_32__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_33__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_34__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_35__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_31__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_36__["MatSelectModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_37__["MatSidenavModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_38__["MatSliderModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_39__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_40__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_41__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_42__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_43__["MatTabsModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_44__["MatToolbarModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_45__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_46__["MatTreeModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_47__["OverlayModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_48__["AppRoutingModule"], // RoutingMainModule,
-        _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], angular_gauge_chart__WEBPACK_IMPORTED_MODULE_4__["GaugeChartModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_57__["BrowserAnimationsModule"]]
+        imports: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_63__["NgbPaginationModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_63__["NgbAlertModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_8__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_9__["ScrollingModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_5__["A11yModule"], _angular_cdk_clipboard__WEBPACK_IMPORTED_MODULE_6__["ClipboardModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_10__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_11__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_12__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_7__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_13__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_14__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_15__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_16__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_17__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_18__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_19__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_20__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_21__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_22__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_23__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_24__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_25__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_26__["MatGridListModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_27__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_28__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_29__["MatListModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_30__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_31__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_32__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_33__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_34__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_35__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_31__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_36__["MatSelectModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_37__["MatSidenavModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_38__["MatSliderModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_39__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_40__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_41__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_42__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_43__["MatTabsModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_44__["MatToolbarModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_45__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_46__["MatTreeModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_47__["OverlayModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_48__["AppRoutingModule"], // RoutingMainModule,
+        _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], angular_gauge_chart__WEBPACK_IMPORTED_MODULE_4__["GaugeChartModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_57__["BrowserAnimationsModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_63__["NgbModule"]]
       });
     })();
     /*@__PURE__*/
@@ -1176,8 +1182,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         type: _angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"],
         args: [{
           declarations: [_app_component__WEBPACK_IMPORTED_MODULE_49__["AppComponent"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_50__["DashboardComponent"], _main_main_component__WEBPACK_IMPORTED_MODULE_51__["MainComponent"], _graph_graph_component__WEBPACK_IMPORTED_MODULE_52__["GraphComponent"], _detail_detail_component__WEBPACK_IMPORTED_MODULE_53__["DetailComponent"], _selec_selec_component__WEBPACK_IMPORTED_MODULE_54__["SelecComponent"], _login_login_component__WEBPACK_IMPORTED_MODULE_55__["LoginComponent"], _selecmiter_selecmiter_component__WEBPACK_IMPORTED_MODULE_56__["SelecmiterComponent"], _history_history_component__WEBPACK_IMPORTED_MODULE_58__["HistoryComponent"], _graphfour_graphfour_component__WEBPACK_IMPORTED_MODULE_59__["GraphfourComponent"], _logfour_logfour_component__WEBPACK_IMPORTED_MODULE_60__["LogfourComponent"], _detailenvi_detailenvi_component__WEBPACK_IMPORTED_MODULE_61__["DetailenviComponent"], _enviroment_enviroment_component__WEBPACK_IMPORTED_MODULE_62__["EnviromentComponent"]],
-          imports: [_angular_cdk_portal__WEBPACK_IMPORTED_MODULE_8__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_9__["ScrollingModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_5__["A11yModule"], _angular_cdk_clipboard__WEBPACK_IMPORTED_MODULE_6__["ClipboardModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_10__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_11__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_12__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_7__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_13__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_14__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_15__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_16__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_17__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_18__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_19__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_20__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_21__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_22__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_23__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_24__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_25__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_26__["MatGridListModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_27__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_28__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_29__["MatListModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_30__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_31__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_32__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_33__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_34__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_35__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_31__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_36__["MatSelectModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_37__["MatSidenavModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_38__["MatSliderModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_39__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_40__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_41__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_42__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_43__["MatTabsModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_44__["MatToolbarModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_45__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_46__["MatTreeModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_47__["OverlayModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_48__["AppRoutingModule"], // RoutingMainModule,
-          _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], angular_gauge_chart__WEBPACK_IMPORTED_MODULE_4__["GaugeChartModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_57__["BrowserAnimationsModule"]],
+          imports: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_63__["NgbPaginationModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_63__["NgbAlertModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_8__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_9__["ScrollingModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_5__["A11yModule"], _angular_cdk_clipboard__WEBPACK_IMPORTED_MODULE_6__["ClipboardModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_10__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_11__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_12__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_7__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_13__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_14__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_15__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_16__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_17__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_18__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_19__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_20__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_21__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_22__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_23__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_24__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_25__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_26__["MatGridListModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_27__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_28__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_29__["MatListModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_30__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_31__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_32__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_33__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_34__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_35__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_31__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_36__["MatSelectModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_37__["MatSidenavModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_38__["MatSliderModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_39__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_40__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_41__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_42__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_43__["MatTabsModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_44__["MatToolbarModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_45__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_46__["MatTreeModule"], _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_47__["OverlayModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_48__["AppRoutingModule"], // RoutingMainModule,
+          _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"], angular_gauge_chart__WEBPACK_IMPORTED_MODULE_4__["GaugeChartModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_57__["BrowserAnimationsModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_63__["NgbModule"]],
           providers: [{
             provide: _angular_common__WEBPACK_IMPORTED_MODULE_1__["LocationStrategy"],
             useClass: _angular_common__WEBPACK_IMPORTED_MODULE_1__["HashLocationStrategy"]
@@ -1724,7 +1730,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @ng-bootstrap/ng-bootstrap */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
@@ -1875,110 +1887,108 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                                 this.VA = [];
                                 this.VAR = [];
                                 this.PF = [];
-                                this.block = parseInt(result.data['block']);
+                                this.block = parseInt(result.data[0]['block']);
                                 console.log(result);
                                 _context.next = 11;
-                                return this.Volt.push(result.data.result[0]["Volt_1"]);
+                                return this.Volt.push(result.data[0].result[0]["Volt_1"]);
 
                               case 11:
                                 _context.next = 13;
-                                return this.Volt.push(result.data.result[0]["Volt_2"]);
+                                return this.Volt.push(result.data[0].result[0]["Volt_2"]);
 
                               case 13:
                                 _context.next = 15;
-                                return this.Volt.push(result.data.result[0]["Volt_3"]);
+                                return this.Volt.push(result.data[0].result[0]["Volt_3"]);
 
                               case 15:
                                 _context.next = 17;
-                                return this.Current.push(result.data.result[0]["Current_1"]);
+                                return this.Current.push(result.data[0].result[0]["Current_1"]);
 
                               case 17:
                                 _context.next = 19;
-                                return this.Current.push(result.data.result[0]["Current_2"]);
+                                return this.Current.push(result.data[0].result[0]["Current_2"]);
 
                               case 19:
                                 _context.next = 21;
-                                return this.Current.push(result.data.result[0]["Current_3"]);
+                                return this.Current.push(result.data[0].result[0]["Current_3"]);
 
                               case 21:
                                 _context.next = 23;
-                                return this.Power.push(result.data.result[0]["Power_1"]);
+                                return this.Power.push(result.data[0].result[0]["Power_1"]);
 
                               case 23:
                                 _context.next = 25;
-                                return this.Power.push(result.data.result[0]["Power_2"]);
+                                return this.Power.push(result.data[0].result[0]["Power_2"]);
 
                               case 25:
                                 _context.next = 27;
-                                return this.Power.push(result.data.result[0]["Power_3"]);
+                                return this.Power.push(result.data[0].result[0]["Power_3"]);
 
                               case 27:
                                 _context.next = 29;
-                                return this.VA.push(result.data.result[0]["VA_1"]);
+                                return this.VA.push(result.data[0].result[0]["VA_1"]);
 
                               case 29:
                                 _context.next = 31;
-                                return this.VA.push(result.data.result[0]["VA_2"]);
+                                return this.VA.push(result.data[0].result[0]["VA_2"]);
 
                               case 31:
                                 _context.next = 33;
-                                return this.VA.push(result.data.result[0]["VA_3"]);
+                                return this.VA.push(result.data[0].result[0]["VA_3"]);
 
                               case 33:
                                 _context.next = 35;
-                                return this.VAR.push(result.data.result[0]["VAR_1"]);
+                                return this.VAR.push(result.data[0].result[0]["VAR_1"]);
 
                               case 35:
                                 _context.next = 37;
-                                return this.VAR.push(result.data.result[0]["VAR_2"]);
+                                return this.VAR.push(result.data[0].result[0]["VAR_2"]);
 
                               case 37:
                                 _context.next = 39;
-                                return this.VAR.push(result.data.result[0]["VAR_3"]);
+                                return this.VAR.push(result.data[0].result[0]["VAR_3"]);
 
                               case 39:
                                 _context.next = 41;
-                                return this.PF.push(result.data.result[0]["PF_1"]);
+                                return this.PF.push(result.data[0].result[0]["PF_1"]);
 
                               case 41:
                                 _context.next = 43;
-                                return this.PF.push(result.data.result[0]["PF_2"]);
+                                return this.PF.push(result.data[0].result[0]["PF_2"]);
 
                               case 43:
                                 _context.next = 45;
-                                return this.PF.push(result.data.result[0]["PF_3"]);
+                                return this.PF.push(result.data[0].result[0]["PF_3"]);
 
                               case 45:
-                                this.powertotal = result.data.result[0]["PowerSum"];
-                                a = result.data.result[0]["Energy_Ex"];
+                                this.powertotal = result.data[0].result[0]["PowerSum"];
+                                a = result.data[0].result[0]["Energy_Ex"];
                                 this.energy = a;
                                 _context.next = 50;
-                                return result.data.result[0]["Frequency"];
+                                return result.data[0].result[0]["Frequency"];
 
                               case 50:
                                 this.freq = _context.sent;
                                 _context.next = 53;
-                                return result.data.result[0]["Pyranometer"];
+                                return result.data[0].result[0]["Pyranometer"];
 
                               case 53:
                                 this.pyra = _context.sent;
                                 _context.next = 56;
-                                return result.data.result[0]["Temperature"];
+                                return result.data[0].result[0]["Temperature"];
 
                               case 56:
                                 this.tem = _context.sent;
                                 _context.next = 59;
-                                return result.data.result[0]["Humidity"];
+                                return result.data[0].result[0]["Humidity"];
 
                               case 59:
                                 this.hum = _context.sent;
                                 console.log(this.Volt);
                                 console.log(this.CV);
                                 console.log(this.datee);
-                                _context.next = 65;
-                                return this.delay(1000);
 
-                              case 65:
+                              case 63:
                               case "end":
                                 return _context.stop();
                             }
@@ -2063,7 +2073,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["app-detail"]],
       decls: 145,
       vars: 28,
-      consts: [[1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "rgba(104, 104, 104, 0.413)"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler", 3, "click"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse", 3, "ngClass"], [1, "navbar-nav", "mr-auto", "mt-2", "mt-lg-0"], [1, "nav-item", "active"], ["href", "#", 1, "nav-link"], [1, "sr-only"], ["href", "#/selecm", 1, "nav-link"], [1, "nav-item", "dropdown"], ["id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "true", 1, "nav-link", "dropdown-toggle"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "click"], ["href", "#/envi", 1, "nav-link"], [2, "background-color", "black", "width", "100vw", "height", "2px"], [2, "margin-left", "1vw", "margin-top", "1vh"], ["align", "center", 2, "margin-top", "0px"], ["src", "../../assets/osis.png", 2, "width", "150px"], ["src", "https://firebasestorage.googleapis.com/v0/b/solarpower-466f6.appspot.com/o/m.png?alt=media&token=3b4af2de-cd57-41f3-ab2d-28bde512a2d5", 2, "width", "250px", "margin-bottom", "30px"], ["src", "../../assets/nu.png", 2, "width", "150px"], ["src", "https://firebasestorage.googleapis.com/v0/b/solarpower-466f6.appspot.com/o/j.png?alt=media&token=cce5938e-ae9d-4973-9b9b-9c2a41be6cad", 2, "width", "250px"], ["align", "center", 2, "width", "100vw", "margin-top", "2vh", "font-size", "30px"], [2, "margin-top", "20px"], ["type", "button", 1, "btn", "ca_1"], ["src", "../../assets/das.png", 2, "width", "4vw"], [1, "fon_1"], ["type", "button", 1, "btn", "ca_1", 3, "click"], ["src", "../../assets/graphp.png", 2, "width", "4vw"], ["src", "../../assets/hist.png", 2, "width", "4vw"], [1, "row", "block_2"], [1, "block_4"], ["align", "left", "class", "fon", 4, "ngFor", "ngForOf"], [1, "block_3"], [1, "ener"], [1, "total"], [1, "block_1"], [2, "margin-top", "60px", "border-width", "10px", "border", "solid"], [1, "scroo"], ["align", "center", 1, "table"], ["scope", "col"], ["scope", "row"], ["align", "left", 1, "fon"]],
+      consts: [[1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "rgba(104, 104, 104, 0.413)"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler", 3, "click"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse", 3, "ngClass"], [1, "navbar-nav", "mr-auto", "mt-2", "mt-lg-0"], [1, "nav-item", "active"], ["href", "#", 1, "nav-link"], [1, "sr-only"], ["href", "#/selecm", 1, "nav-link"], [1, "nav-item", "dropdown"], ["id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "true", 1, "nav-link", "dropdown-toggle"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "click"], ["href", "#/envi", 1, "nav-link"], [2, "background-color", "black", "width", "100vw", "height", "2px"], [2, "margin-left", "1vw", "margin-top", "1vh"], ["align", "center", 2, "margin-top", "0px"], ["src", "../../assets/osis.png", 2, "width", "150px"], ["src", "../../assets/m.png", 2, "width", "250px", "margin-bottom", "30px"], ["src", "../../assets/nu.png", 2, "width", "150px"], ["src", "../../assets/j.png", 2, "width", "250px"], ["align", "center", 2, "width", "100vw", "margin-top", "2vh", "font-size", "30px"], [2, "margin-top", "20px"], ["type", "button", 1, "btn", "ca_1"], ["src", "../../assets/das.png", 2, "width", "4vw"], [1, "fon_1"], ["type", "button", 1, "btn", "ca_1", 3, "click"], ["src", "../../assets/graphp.png", 2, "width", "4vw"], ["src", "../../assets/hist.png", 2, "width", "4vw"], [1, "row", "block_2"], [1, "block_4"], ["align", "left", "class", "fon", 4, "ngFor", "ngForOf"], [1, "block_3"], [1, "ener"], [1, "total"], [1, "block_1"], [2, "margin-top", "60px", "border-width", "10px", "border", "solid"], [1, "scroo"], ["align", "center", 1, "table"], ["scope", "col"], ["scope", "row"], ["align", "left", 1, "fon"]],
       template: function DetailComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "html");
@@ -2667,7 +2677,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](ctx.PF[2]);
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"]],
+      directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbNavbar"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgForOf"]],
       styles: ["html[_ngcontent-%COMP%], body[_ngcontent-%COMP%] {\n  background-size: cover;\n  width: 100vw;\n  height: 100vh;\n}\n\n.ca_1[_ngcontent-%COMP%] {\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  width: 15vw;\n  margin-left: 1vw;\n  margin-right: 1vw;\n}\n\n.block_1[_ngcontent-%COMP%] {\n  width: 90vw;\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  height: 50vh;\n  margin-top: 5vh;\n}\n\n.block_2[_ngcontent-%COMP%] {\n  width: 90vw;\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  justify-content: space-around;\n  margin-top: 7vh;\n}\n\n.ener[_ngcontent-%COMP%] {\n  margin-top: 5vh;\n  color: blue;\n}\n\n.total[_ngcontent-%COMP%] {\n  margin-top: 5vh;\n  color: yellowgreen;\n}\n\n.fon_1[_ngcontent-%COMP%] {\n  margin-top: 1vh;\n}\n\n.fon[_ngcontent-%COMP%] {\n  font-size: 15px;\n  justify-content: space-around;\n}\n\n.scroo[_ngcontent-%COMP%] {\n  margin-top: -10px;\n  width: 90vw;\n  height: 42vh;\n  overflow-y: scroll;\n}\n\n.fon[_ngcontent-%COMP%] {\n  font-size: 20px;\n  width: 30vw;\n}\n\n@media only screen and (max-width: 900px) {\n  .ca_1[_ngcontent-%COMP%] {\n    width: 30vw;\n  }\n\n  .block_3[_ngcontent-%COMP%] {\n    width: 90vw;\n    margin-top: 5vh;\n  }\n\n  .fon[_ngcontent-%COMP%] {\n    width: 85vw;\n  }\n\n  .block_4[_ngcontent-%COMP%] {\n    margin-top: 1vh;\n    width: 90vw;\n  }\n\n  .ener[_ngcontent-%COMP%] {\n    margin-top: 3vh;\n  }\n\n  .total[_ngcontent-%COMP%] {\n    margin-top: 3vh;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYXRpbnlhL0Rlc2t0b3AvU29sYXJjZWxsL0VuZXJneS9zcmMvYXBwL2RldGFpbC9kZXRhaWwuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2RldGFpbC9kZXRhaWwuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFHSSxzQkFBQTtFQUNBLFlBQUE7RUFDQSxhQUFBO0FDQUo7O0FES0E7RUFDSSx1QkFBQTtFQUVBLDRFQUFBO0VBQ0EsV0FBQTtFQUNBLGdCQUFBO0VBQ0EsaUJBQUE7QUNISjs7QURNQTtFQUNJLFdBQUE7RUFDQSx1QkFBQTtFQUNBLDRFQUFBO0VBQ0EsWUFBQTtFQUNBLGVBQUE7QUNISjs7QURPQTtFQUNJLFdBQUE7RUFDQSx1QkFBQTtFQUNBLDRFQUFBO0VBRUEsNkJBQUE7RUFDQSxlQUFBO0FDTEo7O0FEUUE7RUFFRSxlQUFBO0VBQ0EsV0FBQTtBQ05GOztBRFNBO0VBQ0UsZUFBQTtFQUNBLGtCQUFBO0FDTkY7O0FEU0E7RUFHRSxlQUFBO0FDUkY7O0FEV0E7RUFDRSxlQUFBO0VBQ0EsNkJBQUE7QUNSRjs7QURXQTtFQUNFLGlCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtBQ1JGOztBRFlBO0VBQ0UsZUFBQTtFQUNBLFdBQUE7QUNURjs7QURZRTtFQUNFO0lBQ0UsV0FBQTtFQ1RKOztFRFdFO0lBQ0UsV0FBQTtJQUNBLGVBQUE7RUNSSjs7RURVRTtJQUNFLFdBQUE7RUNQSjs7RURTRTtJQUNFLGVBQUE7SUFDQSxXQUFBO0VDTko7O0VEUUU7SUFDRSxlQUFBO0VDTEo7O0VET0U7SUFDRSxlQUFBO0VDSko7QUFDRiIsImZpbGUiOiJzcmMvYXBwL2RldGFpbC9kZXRhaWwuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJodG1sLGJvZHl7XG4gICAgLy8gYmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50KHRvIHJpZ2h0LCAjQTMyODJBICwgI0QwOEY5MCk7XG4gICAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgd2lkdGg6IDEwMHZ3O1xuICAgIGhlaWdodDogMTAwdmg7XG59XG5cbi8vIHN0eWxlPVwiYm9yZGVyLXJhZGl1czogMTAwcHg7YmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XCJcblxuLmNhXzF7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgLy8gYm9yZGVyLXJhZGl1czogMTAwcHg7XG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgICB3aWR0aDogMTV2dztcbiAgICBtYXJnaW4tbGVmdDogMXZ3O1xuICAgIG1hcmdpbi1yaWdodDogMXZ3O1xufVxuXG4uYmxvY2tfMXtcbiAgICB3aWR0aDogOTB2dztcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICAgIGhlaWdodDogNTB2aDtcbiAgICBtYXJnaW4tdG9wOiA1dmg7XG4gICAgLy8gYm9yZGVyLXJhZGl1czogNTBweDtcbn1cblxuLmJsb2NrXzJ7XG4gICAgd2lkdGg6IDkwdnc7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgICAvLyBoZWlnaHQ6IDUwdmg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICAgbWFyZ2luLXRvcDogN3ZoO1xufVxuXG4uZW5lcntcbiAgLy8gc3R5bGU9XCJtYXJnaW4tdG9wOiAzdmg7Y29sb3I6IGJsdWU7XCJcbiAgbWFyZ2luLXRvcDogNXZoO1xuICBjb2xvcjogYmx1ZTtcbn1cblxuLnRvdGFse1xuICBtYXJnaW4tdG9wOiA1dmg7XG4gIGNvbG9yOiB5ZWxsb3dncmVlbjtcbn1cblxuLmZvbl8xe1xuICAvLyBtYXJnaW4tbGVmdDogMXZ3O1xuICAvLyBtYXJnaW4tcmlnaHQ6IDIuNXZ3O1xuICBtYXJnaW4tdG9wOiAxdmg7XG59XG5cbi5mb257XG4gIGZvbnQtc2l6ZTogMTVweDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG59XG5cbi5zY3Jvb3tcbiAgbWFyZ2luLXRvcDogLTEwcHg7XG4gIHdpZHRoOiA5MHZ3O1xuICBoZWlnaHQ6IDQydmg7XG4gIG92ZXJmbG93LXk6IHNjcm9sbDtcbn1cblxuLy8gZm9udC1zaXplOiAyMHB4O3dpZHRoOiAzMHZ3O1xuLmZvbntcbiAgZm9udC1zaXplOiAyMHB4O1xuICB3aWR0aDogMzB2dztcbn1cblxuICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDkwMHB4KSB7XG4gICAgLmNhXzF7XG4gICAgICB3aWR0aDogMzB2dztcbiAgICB9XG4gICAgLmJsb2NrXzN7XG4gICAgICB3aWR0aDogOTB2dztcbiAgICAgIG1hcmdpbi10b3A6IDV2aDtcbiAgICB9XG4gICAgLmZvbntcbiAgICAgIHdpZHRoOiA4NXZ3O1xuICAgIH1cbiAgICAuYmxvY2tfNHtcbiAgICAgIG1hcmdpbi10b3A6IDF2aDtcbiAgICAgIHdpZHRoOiA5MHZ3O1xuICAgIH1cbiAgICAuZW5lcntcbiAgICAgIG1hcmdpbi10b3A6IDN2aDtcbiAgICB9XG4gICAgLnRvdGFse1xuICAgICAgbWFyZ2luLXRvcDogM3ZoO1xuICAgIH1cbiAgfVxuXG4gIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi1oZWlnaHQ6IDEwMDBweCl7XG4gICAgLy8gICAuaGlfMXtcbiAgICAvLyAgICAgICBtYXJnaW4tbGVmdDogLTEwdnc7XG4gICAgLy8gICB9XG4gIH0iLCJodG1sLCBib2R5IHtcbiAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG59XG5cbi5jYV8xIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gIHdpZHRoOiAxNXZ3O1xuICBtYXJnaW4tbGVmdDogMXZ3O1xuICBtYXJnaW4tcmlnaHQ6IDF2dztcbn1cblxuLmJsb2NrXzEge1xuICB3aWR0aDogOTB2dztcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gIGhlaWdodDogNTB2aDtcbiAgbWFyZ2luLXRvcDogNXZoO1xufVxuXG4uYmxvY2tfMiB7XG4gIHdpZHRoOiA5MHZ3O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gIG1hcmdpbi10b3A6IDd2aDtcbn1cblxuLmVuZXIge1xuICBtYXJnaW4tdG9wOiA1dmg7XG4gIGNvbG9yOiBibHVlO1xufVxuXG4udG90YWwge1xuICBtYXJnaW4tdG9wOiA1dmg7XG4gIGNvbG9yOiB5ZWxsb3dncmVlbjtcbn1cblxuLmZvbl8xIHtcbiAgbWFyZ2luLXRvcDogMXZoO1xufVxuXG4uZm9uIHtcbiAgZm9udC1zaXplOiAxNXB4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbn1cblxuLnNjcm9vIHtcbiAgbWFyZ2luLXRvcDogLTEwcHg7XG4gIHdpZHRoOiA5MHZ3O1xuICBoZWlnaHQ6IDQydmg7XG4gIG92ZXJmbG93LXk6IHNjcm9sbDtcbn1cblxuLmZvbiB7XG4gIGZvbnQtc2l6ZTogMjBweDtcbiAgd2lkdGg6IDMwdnc7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTAwcHgpIHtcbiAgLmNhXzEge1xuICAgIHdpZHRoOiAzMHZ3O1xuICB9XG5cbiAgLmJsb2NrXzMge1xuICAgIHdpZHRoOiA5MHZ3O1xuICAgIG1hcmdpbi10b3A6IDV2aDtcbiAgfVxuXG4gIC5mb24ge1xuICAgIHdpZHRoOiA4NXZ3O1xuICB9XG5cbiAgLmJsb2NrXzQge1xuICAgIG1hcmdpbi10b3A6IDF2aDtcbiAgICB3aWR0aDogOTB2dztcbiAgfVxuXG4gIC5lbmVyIHtcbiAgICBtYXJnaW4tdG9wOiAzdmg7XG4gIH1cblxuICAudG90YWwge1xuICAgIG1hcmdpbi10b3A6IDN2aDtcbiAgfVxufSJdfQ== */"]
     });
     /*@__PURE__*/
@@ -2748,25 +2758,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @ng-bootstrap/ng-bootstrap */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
     /* harmony import */
 
 
-    var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @angular/material/form-field */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/form-field.js");
     /* harmony import */
 
 
-    var _angular_material_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _angular_material_input__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! @angular/material/input */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/input.js");
     /* harmony import */
 
 
-    var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! @angular/material/datepicker */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/datepicker.js"); // import { Router } from '@angular/router';
 
@@ -3141,9 +3157,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
     }
 
-    function DetailenviComponent_div_113_td_6_Template(rf, ctx) {
+    function DetailenviComponent_div_113_td_7_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 69);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 70);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Frequency");
 
@@ -3151,9 +3167,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
     }
 
-    function DetailenviComponent_div_113_td_7_Template(rf, ctx) {
+    function DetailenviComponent_div_113_td_8_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 69);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 70);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Solar Irradiance");
 
@@ -3161,9 +3177,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
     }
 
-    function DetailenviComponent_div_113_td_8_Template(rf, ctx) {
+    function DetailenviComponent_div_113_td_9_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 69);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 70);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Temperature");
 
@@ -3171,9 +3187,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
     }
 
-    function DetailenviComponent_div_113_td_9_Template(rf, ctx) {
+    function DetailenviComponent_div_113_td_10_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 69);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 70);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Humidity");
 
@@ -3181,7 +3197,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
     }
 
-    function DetailenviComponent_div_113_tr_11_td_3_Template(rf, ctx) {
+    function DetailenviComponent_div_113_tr_12_td_3_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td");
 
@@ -3191,15 +3207,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
 
       if (rf & 2) {
-        var i_r40 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
+        var i_r41 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r40["result"][0]["Frequency"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r41["result"][0]["Frequency"]);
       }
     }
 
-    function DetailenviComponent_div_113_tr_11_td_4_Template(rf, ctx) {
+    function DetailenviComponent_div_113_tr_12_td_4_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td");
 
@@ -3209,15 +3225,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
 
       if (rf & 2) {
-        var i_r40 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
+        var i_r41 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r40["result"][0]["Pyranometer"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r41["result"][0]["Pyranometer"]);
       }
     }
 
-    function DetailenviComponent_div_113_tr_11_td_5_Template(rf, ctx) {
+    function DetailenviComponent_div_113_tr_12_td_5_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td");
 
@@ -3227,15 +3243,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
 
       if (rf & 2) {
-        var i_r40 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
+        var i_r41 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r40["result"][0]["Temperature"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r41["result"][0]["Temperature"]);
       }
     }
 
-    function DetailenviComponent_div_113_tr_11_td_6_Template(rf, ctx) {
+    function DetailenviComponent_div_113_tr_12_td_6_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td");
 
@@ -3245,93 +3261,115 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
 
       if (rf & 2) {
-        var i_r40 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
+        var i_r41 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r40["result"][0]["Humidity"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r41["result"][0]["Humidity"]);
       }
     }
 
-    function DetailenviComponent_div_113_tr_11_Template(rf, ctx) {
+    function DetailenviComponent_div_113_tr_12_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "tr");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "td", 72);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "td", 74);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, DetailenviComponent_div_113_tr_11_td_3_Template, 2, 1, "td", 73);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, DetailenviComponent_div_113_tr_12_td_3_Template, 2, 1, "td", 75);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, DetailenviComponent_div_113_tr_11_td_4_Template, 2, 1, "td", 73);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, DetailenviComponent_div_113_tr_12_td_4_Template, 2, 1, "td", 75);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, DetailenviComponent_div_113_tr_11_td_5_Template, 2, 1, "td", 73);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, DetailenviComponent_div_113_tr_12_td_5_Template, 2, 1, "td", 75);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](6, DetailenviComponent_div_113_tr_11_td_6_Template, 2, 1, "td", 73);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](6, DetailenviComponent_div_113_tr_12_td_6_Template, 2, 1, "td", 75);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
       }
 
       if (rf & 2) {
-        var i_r40 = ctx.$implicit;
+        var i_r41 = ctx.$implicit;
 
-        var ctx_r39 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
+        var ctx_r40 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r40["result"][0]["DateTime"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r41["result"][0]["DateTime"]);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r39.freq);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r40.freq);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r39.solar);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r40.solar);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r39.tem);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r40.tem);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r39.hum);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r40.hum);
       }
     }
 
     function DetailenviComponent_div_113_Template(rf, ctx) {
       if (rf & 1) {
+        var _r52 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 40);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 67);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 67, 68);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "table", 68);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "table", 69);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "thead");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "thead");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "tr");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](5, "td", 69);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](6, "td", 70);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](6, DetailenviComponent_div_113_td_6_Template, 2, 0, "td", 70);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](7, DetailenviComponent_div_113_td_7_Template, 2, 0, "td", 71);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](7, DetailenviComponent_div_113_td_7_Template, 2, 0, "td", 70);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](8, DetailenviComponent_div_113_td_8_Template, 2, 0, "td", 71);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](8, DetailenviComponent_div_113_td_8_Template, 2, 0, "td", 70);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](9, DetailenviComponent_div_113_td_9_Template, 2, 0, "td", 71);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](9, DetailenviComponent_div_113_td_9_Template, 2, 0, "td", 70);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](10, DetailenviComponent_div_113_td_10_Template, 2, 0, "td", 71);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "tbody");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](12, DetailenviComponent_div_113_tr_12_Template, 7, 5, "tr", 72);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](10, "tbody");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](13, "ngb-pagination", 73);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](11, DetailenviComponent_div_113_tr_11_Template, 7, 5, "tr", 71);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("pageChange", function DetailenviComponent_div_113_Template_ngb_pagination_pageChange_13_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r52);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          var ctx_r51 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+
+          return ctx_r51.page = $event;
+        })("pageChange", function DetailenviComponent_div_113_Template_ngb_pagination_pageChange_13_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r52);
+
+          var _r35 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](2);
+
+          var ctx_r53 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+
+          return ctx_r53.pageCh(_r35);
+        });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -3343,7 +3381,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       if (rf & 2) {
         var ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](7);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r14.freq);
 
@@ -3362,6 +3400,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r14.hitem);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("collectionSize", ctx_r14.colsize)("page", ctx_r14.page)("pageSize", 50)("maxSize", 5)("boundaryLinks", true);
       }
     }
 
@@ -3384,7 +3426,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
         this.numbere = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
         this.hourS = 0;
-        this.hourE = 24;
+        this.hourE = 23;
         this.timeshow = false;
         this.myCanvas = document.querySelector("#lineChart");
         this.hpic = new Date();
@@ -3393,18 +3435,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.htimeshow = false;
         this.hLoading = false;
         this.hhourS = 0;
-        this.hhourE = 24;
+        this.hhourE = 23;
         this.freq = false;
         this.tem = false;
         this.solar = false;
         this.hum = false;
         this.navbarOpen = false;
         this.lineChart = []; //ประกาศตัวแปรเก็บค่า
+        //------------------- history ----------------------//
+
+        this.page = 1;
 
         try {
           this.main = localStorage.getItem('meter');
           this.namemeter = localStorage.getItem('namemeter');
-          this.block = "1";
+          this.block = "0";
           console.log(this.block);
           console.log(this.main);
           console.log(this.namemeter);
@@ -3534,7 +3579,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.date1 = date.getDate();
           this.month1 = date.getMonth() + 1;
-          this.year1 = date.getFullYear() + 543; //  var all = this.date1 + this.month1 + this.year1
+          this.year1 = date.getFullYear(); //  var all = this.date1 + this.month1 + this.year1
 
           if (this.date2 == this.date1) {
             this.timeshow = true;
@@ -3548,16 +3593,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             var postda = {
               building: this.name,
               block: this.block,
-              date: this.date1,
-              month: this.month1,
-              year: this.year1,
-              date2: this.date2,
-              month2: this.month2,
-              year2: this.year2,
-              hour: this.hourS,
-              hour2: this.hourE
+              date: ('0' + this.date1).slice(-2).toString(),
+              month: ('0' + this.month1).slice(-2).toString(),
+              year: this.year1.toString(),
+              date2: ('0' + this.date2).slice(-2).toString(),
+              month2: ('0' + this.month2).slice(-2).toString(),
+              year2: this.year2.toString(),
+              hour: ('0' + this.hourS).slice(-2).toString(),
+              hour2: ('0' + this.hourE).slice(-2).toString()
             };
-            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph', postda).subscribe(function (data) {
+            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph2', postda).subscribe(function (data) {
               return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this6, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee3() {
                 var labelx, labely, labely2, labely3, dae, er, index, volt, hour, datee, year, dat, month, datw, year1, dat1, month1, fileTitle;
                 return regeneratorRuntime.wrap(function _callee3$(_context3) {
@@ -3589,7 +3634,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                         console.log(labelx);
                         datee = this.date1;
                         console.log(datee);
-                        year = this.year1 - 543;
+                        year = this.year1;
                         dat = this.date1;
 
                         if (dat < 10) {
@@ -3605,7 +3650,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                         datw = this.date2;
                         console.log(datw);
-                        year1 = this.year2 - 543;
+                        year1 = this.year2;
                         dat1 = this.date2;
 
                         if (dat1 < 10) {
@@ -3678,9 +3723,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.date2 = date.getDate();
           this.month2 = date.getMonth() + 1;
-          this.year2 = date.getFullYear() + 543;
+          this.year2 = date.getFullYear();
           var noe = this.date2.toString() + this.month2.toString() + this.year2.toString();
-          var eon = nw.getDate().toString() + (nw.getMonth() + 1).toString() + (nw.getFullYear() + 543).toString();
+          var eon = nw.getDate().toString() + (nw.getMonth() + 1).toString() + nw.getFullYear().toString();
 
           if (this.date2 == this.date1 && noe != eon) {
             this.timeshow = true;
@@ -3695,16 +3740,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             var postda = {
               building: this.name,
               block: this.block,
-              date: this.date1,
-              month: this.month1,
-              year: this.year1,
-              date2: this.date2,
-              month2: this.month2,
-              year2: this.year2,
-              hour: this.hourS,
-              hour2: this.hourE
+              date: ('0' + this.date1).slice(-2).toString(),
+              month: ('0' + this.month1).slice(-2).toString(),
+              year: this.year1.toString(),
+              date2: ('0' + this.date2).slice(-2).toString(),
+              month2: ('0' + this.month2).slice(-2).toString(),
+              year2: this.year2.toString(),
+              hour: ('0' + this.hourS).slice(-2).toString(),
+              hour2: ('0' + this.hourE).slice(-2).toString()
             };
-            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph', postda).subscribe(function (data) {
+            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph2', postda).subscribe(function (data) {
               return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this7, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee4() {
                 var labelx, labely, labely2, labely3, dae, er, index, volt, hour, datee, year, dat, month, datw, year1, dat1, month1, fileTitle;
                 return regeneratorRuntime.wrap(function _callee4$(_context4) {
@@ -3735,7 +3780,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                         console.log(labelx);
                         datee = this.date1;
                         console.log(datee);
-                        year = this.year1 - 543;
+                        year = this.year1;
                         dat = this.date1;
 
                         if (dat < 10) {
@@ -3751,7 +3796,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                         datw = this.date2;
                         console.log(datw);
-                        year1 = this.year2 - 543;
+                        year1 = this.year2;
                         dat1 = this.date2;
 
                         if (dat1 < 10) {
@@ -3851,16 +3896,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var postda = {
             building: this.name,
             block: this.block,
-            date: this.date1,
-            month: this.month1,
-            year: this.year1,
-            date2: this.date2,
-            month2: this.month2,
-            year2: this.year2,
-            hour: this.hourS,
-            hour2: this.hourE
+            date: ('0' + this.date1).slice(-2).toString(),
+            month: ('0' + this.month1).slice(-2).toString(),
+            year: this.year1.toString(),
+            date2: ('0' + this.date2).slice(-2).toString(),
+            month2: ('0' + this.month2).slice(-2).toString(),
+            year2: this.year2.toString(),
+            hour: ('0' + this.hourS).slice(-2).toString(),
+            hour2: ('0' + this.hourE).slice(-2).toString()
           };
-          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph', postda).subscribe(function (data) {
+          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph2', postda).subscribe(function (data) {
             return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this8, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee5() {
               var labelx, labely, labely2, labely3, dae, er, index, volt, hour, datee, year, dat, month, datw, year1, dat1, month1, fileTitle;
               return regeneratorRuntime.wrap(function _callee5$(_context5) {
@@ -3891,7 +3936,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       console.log(labelx);
                       datee = this.date1;
                       console.log(datee);
-                      year = this.year1 - 543;
+                      year = this.year1;
                       dat = this.date1;
 
                       if (dat < 10) {
@@ -3907,7 +3952,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                       datw = this.date2;
                       console.log(datw);
-                      year1 = this.year2 - 543;
+                      year1 = this.year2;
                       dat1 = this.date2;
 
                       if (dat1 < 10) {
@@ -3980,16 +4025,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var postda = {
             building: this.name,
             block: this.block,
-            date: this.date1,
-            month: this.month1,
-            year: this.year1,
-            date2: this.date2,
-            month2: this.month2,
-            year2: this.year2,
-            hour: this.hourS,
-            hour2: this.hourE
+            date: ('0' + this.date1).slice(-2).toString(),
+            month: ('0' + this.month1).slice(-2).toString(),
+            year: this.year1.toString(),
+            date2: ('0' + this.date2).slice(-2).toString(),
+            month2: ('0' + this.month2).slice(-2).toString(),
+            year2: this.year2.toString(),
+            hour: ('0' + this.hourS).slice(-2).toString(),
+            hour2: ('0' + this.hourE).slice(-2).toString()
           };
-          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph', postda).subscribe(function (data) {
+          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph2', postda).subscribe(function (data) {
             return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this9, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee6() {
               var labelx, labely, labely2, labely3, dae, er, index, volt, hour, datee, year, dat, month, datw, year1, dat1, month1, fileTitle;
               return regeneratorRuntime.wrap(function _callee6$(_context6) {
@@ -4020,7 +4065,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       console.log(labelx);
                       datee = this.date1;
                       console.log(datee);
-                      year = this.year1 - 543;
+                      year = this.year1;
                       dat = this.date1;
 
                       if (dat < 10) {
@@ -4036,7 +4081,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                       datw = this.date2;
                       console.log(datw);
-                      year1 = this.year2 - 543;
+                      year1 = this.year2;
                       dat1 = this.date2;
 
                       if (dat1 < 10) {
@@ -4112,8 +4157,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           // const a = document.createElement("a");
           // document.body.appendChild(a);
           // a.href = myCan.toDataURL();
-        } //------------------- history ----------------------//
-
+        }
       }, {
         key: "hdownload_csv",
         value: function hdownload_csv() {
@@ -4134,9 +4178,83 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           hiddenElement.click();
         }
       }, {
+        key: "pageCh",
+        value: function pageCh(el) {
+          var _this10 = this;
+
+          this.Loading = true;
+          var to = 0;
+          var duration = 1000;
+          var start = el.scrollTop,
+              change = to - start,
+              currentTime = 0,
+              increment = 20;
+
+          var easeInOutQuad = function easeInOutQuad(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+          };
+
+          var animateScroll = function animateScroll() {
+            currentTime += increment;
+            var val = easeInOutQuad(currentTime, start, change, duration);
+            el.scrollTop = val;
+
+            if (currentTime < duration) {
+              setTimeout(animateScroll, increment);
+            }
+          };
+
+          animateScroll(); // rest = 
+
+          var postda = {
+            building: this.name,
+            block: this.block,
+            date: ('0' + this.hdate1).slice(-2).toString(),
+            month: ('0' + this.hmonth1).slice(-2).toString(),
+            year: this.hyear1.toString(),
+            date2: ('0' + this.hdate2).slice(-2).toString(),
+            month2: ('0' + this.hmonth2).slice(-2).toString(),
+            year2: this.hyear2.toString(),
+            hour: ('0' + this.hhourS).slice(-2).toString(),
+            hour2: ('0' + this.hhourE).slice(-2).toString(),
+            page: this.page
+          };
+          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate2', postda).subscribe(function (data) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this10, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee7() {
+              var a;
+              return regeneratorRuntime.wrap(function _callee7$(_context7) {
+                while (1) {
+                  switch (_context7.prev = _context7.next) {
+                    case 0:
+                      a = [];
+                      console.log(data); // var z = this.bubble_Sort(data)
+                      // for (const iterator of data) {
+                      //   var dae = iterator['create']
+                      //   var er = new Date(dae)
+                      //   console.log(er.toLocaleDateString())
+                      // }
+
+                      a.push(data);
+                      this.hitem = a[0]['data'];
+                      this.hcheck = 1;
+                      this.Loading = false;
+
+                    case 6:
+                    case "end":
+                      return _context7.stop();
+                  }
+                }
+              }, _callee7, this);
+            }));
+          });
+        }
+      }, {
         key: "haddDate",
         value: function haddDate(event) {
-          var _this10 = this;
+          var _this11 = this;
 
           var date = event.value;
           var nw = new Date();
@@ -4144,9 +4262,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.hdate1 = date.getDate();
           this.hmonth1 = date.getMonth() + 1;
-          this.hyear1 = date.getFullYear() + 543;
+          this.hyear1 = date.getFullYear();
           var noe = this.hdate2.toString() + this.hmonth2.toString() + this.hyear2.toString();
-          var eon = nw.getDate().toString() + (nw.getMonth() + 1).toString() + (nw.getFullYear() + 543).toString();
+          var eon = nw.getDate().toString() + (nw.getMonth() + 1).toString() + nw.getFullYear().toString();
 
           if (this.hdate2 == this.hdate1 && noe != eon) {
             this.htimeshow = true;
@@ -4161,33 +4279,34 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             var postda = {
               building: this.name,
               block: this.block,
-              date: this.hdate1,
-              month: this.hmonth1,
-              year: this.hyear1,
-              date2: this.hdate2,
-              month2: this.hmonth2,
-              year2: this.hyear2,
-              hour: this.hhourS,
-              hour2: this.hhourE
+              date: ('0' + this.hdate1).slice(-2).toString(),
+              month: ('0' + this.hmonth1).slice(-2).toString(),
+              year: this.hyear1.toString(),
+              date2: ('0' + this.hdate2).slice(-2).toString(),
+              month2: ('0' + this.hmonth2).slice(-2).toString(),
+              year2: this.hyear2.toString(),
+              hour: ('0' + this.hhourS).slice(-2).toString(),
+              hour2: ('0' + this.hhourE).slice(-2).toString(),
+              page: this.page
             };
-            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe(function (data) {
-              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this10, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee7() {
-                var a, z;
-                return regeneratorRuntime.wrap(function _callee7$(_context7) {
+            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate2', postda).subscribe(function (data) {
+              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this11, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee8() {
+                var a;
+                return regeneratorRuntime.wrap(function _callee8$(_context8) {
                   while (1) {
-                    switch (_context7.prev = _context7.next) {
+                    switch (_context8.prev = _context8.next) {
                       case 0:
                         a = [];
-                        console.log(data);
-                        z = this.bubble_Sort(data); // for (const iterator of data) {
+                        console.log(data); // for (const iterator of data) {
                         //   var dae = iterator['create']
                         //   var er = new Date(dae)
                         //   console.log(er.toLocaleDateString())
                         // }
 
-                        a.push(z);
+                        a.push(data);
                         console.log(a);
-                        this.hitem = a[0];
+                        this.colsize = a[0]['size'];
+                        this.hitem = a[0]['data'];
                         this.hcheck = 1; //  console.log(data)
                         //  this.item = data
 
@@ -4195,10 +4314,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                       case 8:
                       case "end":
-                        return _context7.stop();
+                        return _context8.stop();
                     }
                   }
-                }, _callee7, this);
+                }, _callee8, this);
               }));
             });
           } else {//end
@@ -4207,7 +4326,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "haddD",
         value: function haddD(event) {
-          var _this11 = this;
+          var _this12 = this;
 
           var date = event.value;
           var nw = new Date();
@@ -4215,9 +4334,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           console.log(date);
           this.hdate2 = date.getDate();
           this.hmonth2 = date.getMonth() + 1;
-          this.hyear2 = date.getFullYear() + 543;
+          this.hyear2 = date.getFullYear();
           var noe = this.hdate2.toString() + this.hmonth2.toString() + this.hyear2.toString();
-          var eon = nw.getDate().toString() + (nw.getMonth() + 1).toString() + (nw.getFullYear() + 543).toString();
+          var eon = nw.getDate().toString() + (nw.getMonth() + 1).toString() + nw.getFullYear().toString();
 
           if (this.hdate2 == this.hdate1 && noe != eon) {
             this.htimeshow = true;
@@ -4232,32 +4351,33 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             var postda = {
               building: this.name,
               block: this.block,
-              date: this.hdate1,
-              month: this.hmonth1,
-              year: this.hyear1,
-              date2: this.hdate2,
-              month2: this.hmonth2,
-              year2: this.hyear2,
-              hour: this.hhourS,
-              hour2: this.hhourE
+              date: ('0' + this.hdate1).slice(-2).toString(),
+              month: ('0' + this.hmonth1).slice(-2).toString(),
+              year: this.hyear1.toString(),
+              date2: ('0' + this.hdate2).slice(-2).toString(),
+              month2: ('0' + this.hmonth2).slice(-2).toString(),
+              year2: this.hyear2.toString(),
+              hour: ('0' + this.hhourS).slice(-2).toString(),
+              hour2: ('0' + this.hhourE).slice(-2).toString(),
+              page: this.page
             };
-            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe(function (data) {
-              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this11, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee8() {
-                var a, z;
-                return regeneratorRuntime.wrap(function _callee8$(_context8) {
+            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate2', postda).subscribe(function (data) {
+              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this12, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee9() {
+                var a;
+                return regeneratorRuntime.wrap(function _callee9$(_context9) {
                   while (1) {
-                    switch (_context8.prev = _context8.next) {
+                    switch (_context9.prev = _context9.next) {
                       case 0:
-                        a = [];
-                        z = this.bubble_Sort(data); // for (const iterator of data) {
+                        a = []; // for (const iterator of data) {
                         //   var dae = iterator['create']
                         //   var er = new Date(dae)
                         //   console.log(er.toLocaleDateString())
                         // }
 
-                        a.push(z);
+                        a.push(data);
                         console.log(a);
-                        this.hitem = a[0];
+                        this.colsize = a[0]['size'];
+                        this.hitem = a[0]['data'];
                         this.hcheck = 1; //  console.log(data)
                         //  this.item = data
 
@@ -4265,10 +4385,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                       case 7:
                       case "end":
-                        return _context8.stop();
+                        return _context9.stop();
                     }
                   }
-                }, _callee8, this);
+                }, _callee9, this);
               }));
             });
           } else {//end
@@ -4335,7 +4455,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "hexportCsv",
         value: function hexportCsv() {
-          var _this12 = this;
+          var _this13 = this;
 
           var header = {
             DateTime: 'DateTime',
@@ -4344,7 +4464,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var itemNotFormat = this.hitem;
           var datee = this.hdate1;
           console.log(datee);
-          var year = this.hyear1 - 543;
+          var year = this.hyear1;
           var dat = this.hdate1;
 
           if (dat < 10) {
@@ -4360,7 +4480,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           var datw = this.hdate2;
           console.log(datw);
-          var year1 = this.hyear2 - 543;
+          var year1 = this.hyear2;
           var dat1 = this.hdate2;
 
           if (dat1 < 10) {
@@ -4380,7 +4500,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           itemNotFormat.forEach(function (item) {
             itemFomat.push({
               DateTime: item['result'][0]['DateTime'],
-              Tit: item['result'][0][_this12.nameen]
+              Tit: item['result'][0][_this13.nameen]
             });
           });
           this.exportCSVFile(header, itemFomat, fileTitle);
@@ -4388,7 +4508,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "honPercentChange",
         value: function honPercentChange(percent) {
-          var _this13 = this;
+          var _this14 = this;
 
           console.log('here');
           this.hourS = percent;
@@ -4406,11 +4526,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             hour: this.hhourS,
             hour2: this.hhourE
           };
-          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this13, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee9() {
-              return regeneratorRuntime.wrap(function _callee9$(_context9) {
+          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate2', postda).subscribe(function (data) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this14, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee10() {
+              return regeneratorRuntime.wrap(function _callee10$(_context10) {
                 while (1) {
-                  switch (_context9.prev = _context9.next) {
+                  switch (_context10.prev = _context10.next) {
                     case 0:
                       // var dae = data[0]['create']
                       this.hitem = data;
@@ -4418,17 +4538,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                     case 2:
                     case "end":
-                      return _context9.stop();
+                      return _context10.stop();
                   }
                 }
-              }, _callee9, this);
+              }, _callee10, this);
             }));
           });
         }
       }, {
         key: "honPer",
         value: function honPer(percent) {
-          var _this14 = this;
+          var _this15 = this;
 
           console.log('here');
           this.hhourE = percent;
@@ -4446,11 +4566,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             hour: this.hhourS,
             hour2: this.hhourE
           };
-          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this14, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee10() {
-              return regeneratorRuntime.wrap(function _callee10$(_context10) {
+          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate2', postda).subscribe(function (data) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this15, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee11() {
+              return regeneratorRuntime.wrap(function _callee11$(_context11) {
                 while (1) {
-                  switch (_context10.prev = _context10.next) {
+                  switch (_context11.prev = _context11.next) {
                     case 0:
                       // var dae = data[0]['create']
                       this.hitem = data;
@@ -4458,10 +4578,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                     case 2:
                     case "end":
-                      return _context10.stop();
+                      return _context11.stop();
                   }
                 }
-              }, _callee10, this);
+              }, _callee11, this);
             }));
           });
         }
@@ -4523,7 +4643,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["app-detailenvi"]],
       decls: 114,
       vars: 26,
-      consts: [[1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "rgba(104, 104, 104, 0.413)"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler", 3, "click"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse", 3, "ngClass"], [1, "navbar-nav", "mr-auto", "mt-2", "mt-lg-0"], [1, "nav-item", "active"], ["href", "#", 1, "nav-link"], [1, "sr-only"], ["href", "#/selecm", 1, "nav-link"], [1, "nav-item", "dropdown"], ["id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "true", 1, "nav-link", "dropdown-toggle"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "click"], ["href", "#/envi", 1, "nav-link"], [2, "background-color", "black", "width", "100vw", "height", "2px"], ["class", "spinner-grow text-dark test", "role", "status", 4, "ngIf"], ["class", "spinner-grow text-dark test1", "role", "status", 4, "ngIf"], ["class", "spinner-grow text-dark test2", "role", "status", 4, "ngIf"], [2, "margin-left", "1vw", "margin-top", "1vh"], ["align", "center", 2, "margin-top", "0px"], ["src", "../../assets/osis.png", 2, "width", "150px"], ["src", "https://firebasestorage.googleapis.com/v0/b/solarpower-466f6.appspot.com/o/m.png?alt=media&token=3b4af2de-cd57-41f3-ab2d-28bde512a2d5", 2, "width", "250px", "margin-bottom", "30px"], ["src", "../../assets/nu.png", 2, "width", "150px"], ["src", "https://firebasestorage.googleapis.com/v0/b/solarpower-466f6.appspot.com/o/j.png?alt=media&token=cce5938e-ae9d-4973-9b9b-9c2a41be6cad", 2, "width", "250px"], ["align", "center", 2, "width", "100vw", "margin-top", "3vh"], ["style", "font-size: 30px;", 4, "ngIf"], [1, "block_1"], [2, "margin-top", "60px", "border-width", "10px", "border", "solid", "font-size", "30px"], [1, "block_2"], [1, "bloc"], [1, "row", 2, "justify-content", "space-around"], ["appearance", "fill", 2, "width", "15vw"], ["matInput", "", 3, "matDatepicker", "max", "dateInput"], ["matSuffix", "", 3, "for"], ["picker", ""], ["pick", ""], ["class", "row", "style", "justify-content: space-around;", "align", "center", 4, "ngIf"], [1, "chart"], ["id", "lineChart"], ["href", "#", 3, "click"], ["align", "center"], ["align", "center", 1, "block_11"], [1, "row", "block_2"], [1, "row", "bloc"], ["matInput", "", 3, "matDatepicker", "dateInput"], ["pic", ""], ["pi", ""], ["class", "row", "style", "justify-content: space-around;margin-top: 2vh;", "align", "center", 4, "ngIf"], ["class", "btn btn-outline-primary my-element", "style", "height: 10vh;", 3, "click", 4, "ngIf"], ["align", "center", 4, "ngIf"], ["role", "status", 1, "spinner-grow", "text-dark", "test"], ["role", "status", 1, "spinner-grow", "text-dark", "test1"], ["role", "status", 1, "spinner-grow", "text-dark", "test2"], [2, "font-size", "30px"], ["align", "center", 1, "row", 2, "justify-content", "space-around"], [1, "row"], [1, "form-control", 2, "width", "4vw", "margin-left", "10px", 3, "change"], ["mySelect", ""], [3, "value", 4, "ngFor", "ngForOf"], [2, "font-size", "15px", "margin-top", "13px"], ["mySelec", ""], [3, "value", "selected", 4, "ngFor", "ngForOf"], [3, "value"], [3, "value", "selected"], ["align", "center", 1, "row", 2, "justify-content", "space-around", "margin-top", "2vh"], [2, "margin-left", "5vw"], [1, "btn", "btn-outline-primary", "my-element", 2, "height", "10vh", 3, "click"], [1, "scroo"], [1, "table", "ca_3", 2, "margin-top", "0px"], ["scope", "col"], ["scope", "col", 4, "ngIf"], [4, "ngFor", "ngForOf"], ["scope", "row"], [4, "ngIf"]],
+      consts: [[1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "rgba(104, 104, 104, 0.413)"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler", 3, "click"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse", 3, "ngClass"], [1, "navbar-nav", "mr-auto", "mt-2", "mt-lg-0"], [1, "nav-item", "active"], ["href", "#", 1, "nav-link"], [1, "sr-only"], ["href", "#/selecm", 1, "nav-link"], [1, "nav-item", "dropdown"], ["id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "true", 1, "nav-link", "dropdown-toggle"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "click"], ["href", "#/envi", 1, "nav-link"], [2, "background-color", "black", "width", "100vw", "height", "2px"], ["class", "spinner-grow text-dark test", "role", "status", 4, "ngIf"], ["class", "spinner-grow text-dark test1", "role", "status", 4, "ngIf"], ["class", "spinner-grow text-dark test2", "role", "status", 4, "ngIf"], [2, "margin-left", "1vw", "margin-top", "1vh"], ["align", "center", 2, "margin-top", "0px"], ["src", "../../assets/osis.png", 2, "width", "150px"], ["src", "../../assets/m.png", 2, "width", "250px", "margin-bottom", "30px"], ["src", "../../assets/nu.png", 2, "width", "150px"], ["src", "../../assets/j.png", 2, "width", "250px"], ["align", "center", 2, "width", "100vw", "margin-top", "3vh"], ["style", "font-size: 30px;", 4, "ngIf"], [1, "block_1"], [2, "margin-top", "60px", "border-width", "10px", "border", "solid", "font-size", "30px"], [1, "block_2"], [1, "bloc"], [1, "row", 2, "justify-content", "space-around"], ["appearance", "fill", 2, "width", "15vw"], ["matInput", "", 3, "matDatepicker", "max", "dateInput"], ["matSuffix", "", 3, "for"], ["picker", ""], ["pick", ""], ["class", "row", "style", "justify-content: space-around;", "align", "center", 4, "ngIf"], [1, "chart"], ["id", "lineChart"], ["href", "#", 3, "click"], ["align", "center"], ["align", "center", 1, "block_11"], [1, "row", "block_2"], [1, "row", "bloc"], ["matInput", "", 3, "matDatepicker", "dateInput"], ["pic", ""], ["pi", ""], ["class", "row", "style", "justify-content: space-around;margin-top: 2vh;", "align", "center", 4, "ngIf"], ["class", "btn btn-outline-primary my-element", "style", "height: 10vh;", 3, "click", 4, "ngIf"], ["align", "center", 4, "ngIf"], ["role", "status", 1, "spinner-grow", "text-dark", "test"], ["role", "status", 1, "spinner-grow", "text-dark", "test1"], ["role", "status", 1, "spinner-grow", "text-dark", "test2"], [2, "font-size", "30px"], ["align", "center", 1, "row", 2, "justify-content", "space-around"], [1, "row"], [1, "form-control", 2, "width", "4vw", "margin-left", "10px", 3, "change"], ["mySelect", ""], [3, "value", 4, "ngFor", "ngForOf"], [2, "font-size", "15px", "margin-top", "13px"], ["mySelec", ""], [3, "value", "selected", 4, "ngFor", "ngForOf"], [3, "value"], [3, "value", "selected"], ["align", "center", 1, "row", 2, "justify-content", "space-around", "margin-top", "2vh"], [2, "margin-left", "5vw"], [1, "btn", "btn-outline-primary", "my-element", 2, "height", "10vh", 3, "click"], [1, "scroo"], ["container", ""], [1, "table", "ca_3", 2, "margin-top", "0px"], ["scope", "col"], ["scope", "col", 4, "ngIf"], [4, "ngFor", "ngForOf"], [3, "collectionSize", "page", "pageSize", "maxSize", "boundaryLinks", "pageChange"], ["scope", "row"], [4, "ngIf"]],
       template: function DetailenviComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "html");
@@ -4910,7 +5030,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](113, DetailenviComponent_div_113_Template, 12, 5, "div", 49);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](113, DetailenviComponent_div_113_Template, 14, 10, "div", 49);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -5015,8 +5135,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.hcheck == 1);
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerToggle"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatSuffix"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepicker"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgForOf"]],
-      styles: ["html[_ngcontent-%COMP%], body[_ngcontent-%COMP%] {\n  background-size: cover;\n  width: 100vw;\n  height: 100vh;\n}\n\n.ca_1[_ngcontent-%COMP%] {\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  width: 15vw;\n  margin-left: 1vw;\n  margin-right: 1vw;\n}\n\n.block_1[_ngcontent-%COMP%] {\n  width: 95vw;\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  height: 65vh;\n  margin-top: 5vh;\n}\n\n.block_11[_ngcontent-%COMP%] {\n  width: 95vw;\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  height: 30vh;\n  margin-top: 5vh;\n}\n\n.fon_1[_ngcontent-%COMP%] {\n  margin-top: 1vh;\n}\n\n.block_2[_ngcontent-%COMP%] {\n  justify-content: space-around;\n  margin-top: 30px;\n}\n\n.bloc[_ngcontent-%COMP%] {\n  width: 40vw;\n  height: 45vh;\n  justify-content: space-around;\n}\n\n.bloc2[_ngcontent-%COMP%] {\n  width: 40vw;\n  height: 45vh;\n}\n\n.mat-form-field[_ngcontent-%COMP%] {\n  width: 35vw;\n}\n\n.test[_ngcontent-%COMP%] {\n  position: absolute;\n  left: 50vw;\n  top: 50vh;\n}\n\n.test1[_ngcontent-%COMP%] {\n  position: absolute;\n  left: 45vw;\n  top: 50vh;\n}\n\n.test2[_ngcontent-%COMP%] {\n  position: absolute;\n  left: 55vw;\n  top: 50vh;\n}\n\n.scroo[_ngcontent-%COMP%] {\n  width: 90vw;\n  height: 42vh;\n  overflow-y: scroll;\n}\n\n.chart[_ngcontent-%COMP%] {\n  width: 40vw;\n}\n\n@media only screen and (max-width: 900px) {\n  .ca_1[_ngcontent-%COMP%] {\n    width: 30vw;\n  }\n\n  .bloc[_ngcontent-%COMP%] {\n    width: 90vw;\n  }\n\n  .bloc2[_ngcontent-%COMP%] {\n    width: 100vw;\n    height: 50vh;\n  }\n\n  .block_1[_ngcontent-%COMP%] {\n    width: 95vw;\n    background-color: white;\n    height: 60vh;\n    margin-top: 5vh;\n  }\n\n  .chart[_ngcontent-%COMP%] {\n    width: 90vw;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYXRpbnlhL0Rlc2t0b3AvU29sYXJjZWxsL0VuZXJneS9zcmMvYXBwL2RldGFpbGVudmkvZGV0YWlsZW52aS5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvZGV0YWlsZW52aS9kZXRhaWxlbnZpLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBR0ksc0JBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtBQ0FKOztBREdBO0VBQ0ksdUJBQUE7RUFFQSw0RUFBQTtFQUNBLFdBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0FDREo7O0FESUE7RUFDSSxXQUFBO0VBQ0EsdUJBQUE7RUFDQSw0RUFBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0FDREo7O0FES0E7RUFDSSxXQUFBO0VBQ0EsdUJBQUE7RUFDQSw0RUFBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0FDRko7O0FETUE7RUFHSSxlQUFBO0FDTEo7O0FEUUE7RUFDSSw2QkFBQTtFQUNBLGdCQUFBO0FDTEo7O0FEUUE7RUFDSSxXQUFBO0VBQ0EsWUFBQTtFQUNBLDZCQUFBO0FDTEo7O0FEUUE7RUFDSSxXQUFBO0VBQ0EsWUFBQTtBQ0xKOztBRFNBO0VBQ0ksV0FBQTtBQ05KOztBRFVBO0VBQ0ksa0JBQUE7RUFDQSxVQUFBO0VBQ0EsU0FBQTtBQ1BKOztBRFVBO0VBQ0ksa0JBQUE7RUFDQSxVQUFBO0VBQ0EsU0FBQTtBQ1BKOztBRFVBO0VBQ0ksa0JBQUE7RUFDQSxVQUFBO0VBQ0EsU0FBQTtBQ1BKOztBRFVBO0VBRUksV0FBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtBQ1JKOztBRFVFO0VBQ0ksV0FBQTtBQ1BOOztBRFVFO0VBQ0U7SUFDSSxXQUFBO0VDUE47O0VEU0k7SUFDSSxXQUFBO0VDTlI7O0VEUUk7SUFDRSxZQUFBO0lBQ0EsWUFBQTtFQ0xOOztFRFFFO0lBQ0ksV0FBQTtJQUNBLHVCQUFBO0lBQ0EsWUFBQTtJQUNBLGVBQUE7RUNMTjs7RURRRTtJQUNJLFdBQUE7RUNMTjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvZGV0YWlsZW52aS9kZXRhaWxlbnZpLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaHRtbCxib2R5e1xuICAgIC8vIGJhY2tncm91bmQtY29sb3I6ICMxNzE3MTc7XG4gICAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgd2lkdGg6IDEwMHZ3O1xuICAgIGhlaWdodDogMTAwdmg7XG59XG5cbi5jYV8xe1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIC8vIGJvcmRlci1yYWRpdXM6IDEwMHB4O1xuICAgIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gICAgd2lkdGg6IDE1dnc7XG4gICAgbWFyZ2luLWxlZnQ6IDF2dztcbiAgICBtYXJnaW4tcmlnaHQ6IDF2dztcbn1cblxuLmJsb2NrXzF7XG4gICAgd2lkdGg6IDk1dnc7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgICBoZWlnaHQ6IDY1dmg7XG4gICAgbWFyZ2luLXRvcDogNXZoO1xuICAgIC8vIGJvcmRlci1yYWRpdXM6IDUwcHg7XG59XG5cbi5ibG9ja18xMXtcbiAgICB3aWR0aDogOTV2dztcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICAgIGhlaWdodDogMzB2aDtcbiAgICBtYXJnaW4tdG9wOiA1dmg7XG4gICAgLy8gYm9yZGVyLXJhZGl1czogNTBweDtcbn1cblxuLmZvbl8xe1xuICAgIC8vIG1hcmdpbi1sZWZ0OiAxdnc7XG4gICAgLy8gbWFyZ2luLXJpZ2h0OiAyLjV2dztcbiAgICBtYXJnaW4tdG9wOiAxdmg7XG4gIH1cblxuLmJsb2NrXzJ7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICAgbWFyZ2luLXRvcDogMzBweDtcbn1cblxuLmJsb2N7XG4gICAgd2lkdGg6IDQwdnc7XG4gICAgaGVpZ2h0OiA0NXZoO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xufVxuXG4uYmxvYzJ7XG4gICAgd2lkdGg6IDQwdnc7XG4gICAgaGVpZ2h0OiA0NXZoO1xuICAgIC8vIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xufVxuXG4ubWF0LWZvcm0tZmllbGR7XG4gICAgd2lkdGg6IDM1dnc7XG4gICAgLy8gaGVpZ2h0OiAwcHg7XG59XG5cbi50ZXN0e1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBsZWZ0OiA1MHZ3O1xuICAgIHRvcDogNTB2aDtcbn1cblxuLnRlc3Qxe1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBsZWZ0OiA0NXZ3O1xuICAgIHRvcDogNTB2aDtcbn1cblxuLnRlc3Qye1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBsZWZ0OiA1NXZ3O1xuICAgIHRvcDogNTB2aDtcbn1cblxuLnNjcm9ve1xuICAgIC8vIG1hcmdpbi10b3A6IC0xMHB4O1xuICAgIHdpZHRoOiA5MHZ3O1xuICAgIGhlaWdodDogNDJ2aDtcbiAgICBvdmVyZmxvdy15OiBzY3JvbGw7XG4gIH1cbiAgLmNoYXJ0e1xuICAgICAgd2lkdGg6IDQwdnc7XG4gIH1cblxuICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDkwMHB4KXtcbiAgICAuY2FfMXtcbiAgICAgICAgd2lkdGg6IDMwdnc7XG4gICAgICB9XG4gICAgICAuYmxvY3tcbiAgICAgICAgICB3aWR0aDogOTB2dztcbiAgICAgIH1cbiAgICAgIC5ibG9jMntcbiAgICAgICAgd2lkdGg6IDEwMHZ3O1xuICAgICAgICBoZWlnaHQ6IDUwdmg7XG4gICAgICAgIC8vIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIH1cbiAgICAuYmxvY2tfMXtcbiAgICAgICAgd2lkdGg6IDk1dnc7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgICAgICBoZWlnaHQ6IDYwdmg7XG4gICAgICAgIG1hcmdpbi10b3A6IDV2aDtcbiAgICAgICAgLy8gYm9yZGVyLXJhZGl1czogNTBweDtcbiAgICB9XG4gICAgLmNoYXJ0e1xuICAgICAgICB3aWR0aDogOTB2dztcbiAgICB9XG4gIH0iLCJodG1sLCBib2R5IHtcbiAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG59XG5cbi5jYV8xIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gIHdpZHRoOiAxNXZ3O1xuICBtYXJnaW4tbGVmdDogMXZ3O1xuICBtYXJnaW4tcmlnaHQ6IDF2dztcbn1cblxuLmJsb2NrXzEge1xuICB3aWR0aDogOTV2dztcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gIGhlaWdodDogNjV2aDtcbiAgbWFyZ2luLXRvcDogNXZoO1xufVxuXG4uYmxvY2tfMTEge1xuICB3aWR0aDogOTV2dztcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gIGhlaWdodDogMzB2aDtcbiAgbWFyZ2luLXRvcDogNXZoO1xufVxuXG4uZm9uXzEge1xuICBtYXJnaW4tdG9wOiAxdmg7XG59XG5cbi5ibG9ja18yIHtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gIG1hcmdpbi10b3A6IDMwcHg7XG59XG5cbi5ibG9jIHtcbiAgd2lkdGg6IDQwdnc7XG4gIGhlaWdodDogNDV2aDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG59XG5cbi5ibG9jMiB7XG4gIHdpZHRoOiA0MHZ3O1xuICBoZWlnaHQ6IDQ1dmg7XG59XG5cbi5tYXQtZm9ybS1maWVsZCB7XG4gIHdpZHRoOiAzNXZ3O1xufVxuXG4udGVzdCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogNTB2dztcbiAgdG9wOiA1MHZoO1xufVxuXG4udGVzdDEge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGxlZnQ6IDQ1dnc7XG4gIHRvcDogNTB2aDtcbn1cblxuLnRlc3QyIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBsZWZ0OiA1NXZ3O1xuICB0b3A6IDUwdmg7XG59XG5cbi5zY3JvbyB7XG4gIHdpZHRoOiA5MHZ3O1xuICBoZWlnaHQ6IDQydmg7XG4gIG92ZXJmbG93LXk6IHNjcm9sbDtcbn1cblxuLmNoYXJ0IHtcbiAgd2lkdGg6IDQwdnc7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTAwcHgpIHtcbiAgLmNhXzEge1xuICAgIHdpZHRoOiAzMHZ3O1xuICB9XG5cbiAgLmJsb2Mge1xuICAgIHdpZHRoOiA5MHZ3O1xuICB9XG5cbiAgLmJsb2MyIHtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiA1MHZoO1xuICB9XG5cbiAgLmJsb2NrXzEge1xuICAgIHdpZHRoOiA5NXZ3O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGhlaWdodDogNjB2aDtcbiAgICBtYXJnaW4tdG9wOiA1dmg7XG4gIH1cblxuICAuY2hhcnQge1xuICAgIHdpZHRoOiA5MHZ3O1xuICB9XG59Il19 */"]
+      directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbNavbar"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_8__["MatInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_9__["MatDatepickerInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_9__["MatDatepickerToggle"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__["MatSuffix"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_9__["MatDatepicker"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgForOf"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbPagination"]],
+      styles: ["html[_ngcontent-%COMP%], body[_ngcontent-%COMP%] {\n  background-size: cover;\n  width: 100vw;\n  height: 100vh;\n}\n\n.ca_1[_ngcontent-%COMP%] {\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  width: 15vw;\n  margin-left: 1vw;\n  margin-right: 1vw;\n}\n\n.block_1[_ngcontent-%COMP%] {\n  width: 95vw;\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  height: 65vh;\n  margin-top: 5vh;\n}\n\n.block_11[_ngcontent-%COMP%] {\n  width: 95vw;\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  height: 30vh;\n  margin-top: 5vh;\n}\n\n.fon_1[_ngcontent-%COMP%] {\n  margin-top: 1vh;\n}\n\n.block_2[_ngcontent-%COMP%] {\n  justify-content: space-around;\n  margin-top: 30px;\n}\n\n.bloc[_ngcontent-%COMP%] {\n  width: 40vw;\n  height: 45vh;\n  justify-content: space-around;\n}\n\n.bloc2[_ngcontent-%COMP%] {\n  width: 40vw;\n  height: 45vh;\n}\n\n.mat-form-field[_ngcontent-%COMP%] {\n  width: 35vw;\n}\n\n.test[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 50vw;\n  top: 50vh;\n}\n\n.test1[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 45vw;\n  top: 50vh;\n}\n\n.test2[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 55vw;\n  top: 50vh;\n}\n\n.scroo[_ngcontent-%COMP%] {\n  width: 90vw;\n  height: 42vh;\n  overflow-y: scroll;\n}\n\n.chart[_ngcontent-%COMP%] {\n  width: 40vw;\n}\n\n@media only screen and (max-width: 900px) {\n  .ca_1[_ngcontent-%COMP%] {\n    width: 30vw;\n  }\n\n  .bloc[_ngcontent-%COMP%] {\n    width: 90vw;\n  }\n\n  .bloc2[_ngcontent-%COMP%] {\n    width: 100vw;\n    height: 50vh;\n  }\n\n  .block_1[_ngcontent-%COMP%] {\n    width: 95vw;\n    background-color: white;\n    height: 80vh;\n    margin-top: 5vh;\n  }\n\n  .chart[_ngcontent-%COMP%] {\n    width: 90vw;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYXRpbnlhL0Rlc2t0b3AvU29sYXJjZWxsL0VuZXJneS9zcmMvYXBwL2RldGFpbGVudmkvZGV0YWlsZW52aS5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvZGV0YWlsZW52aS9kZXRhaWxlbnZpLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBR0ksc0JBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtBQ0FKOztBREdBO0VBQ0ksdUJBQUE7RUFFQSw0RUFBQTtFQUNBLFdBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0FDREo7O0FESUE7RUFDSSxXQUFBO0VBQ0EsdUJBQUE7RUFDQSw0RUFBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0FDREo7O0FES0E7RUFDSSxXQUFBO0VBQ0EsdUJBQUE7RUFDQSw0RUFBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0FDRko7O0FETUE7RUFHSSxlQUFBO0FDTEo7O0FEUUE7RUFDSSw2QkFBQTtFQUNBLGdCQUFBO0FDTEo7O0FEUUE7RUFDSSxXQUFBO0VBQ0EsWUFBQTtFQUNBLDZCQUFBO0FDTEo7O0FEUUE7RUFDSSxXQUFBO0VBQ0EsWUFBQTtBQ0xKOztBRFNBO0VBQ0ksV0FBQTtBQ05KOztBRFVBO0VBQ0ksZUFBQTtFQUNBLFVBQUE7RUFDQSxTQUFBO0FDUEo7O0FEVUE7RUFDSSxlQUFBO0VBQ0EsVUFBQTtFQUNBLFNBQUE7QUNQSjs7QURVQTtFQUNJLGVBQUE7RUFDQSxVQUFBO0VBQ0EsU0FBQTtBQ1BKOztBRFVBO0VBRUksV0FBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtBQ1JKOztBRFVFO0VBQ0ksV0FBQTtBQ1BOOztBRFVFO0VBQ0U7SUFDSSxXQUFBO0VDUE47O0VEU0k7SUFDSSxXQUFBO0VDTlI7O0VEUUk7SUFDRSxZQUFBO0lBQ0EsWUFBQTtFQ0xOOztFRFFFO0lBQ0ksV0FBQTtJQUNBLHVCQUFBO0lBQ0EsWUFBQTtJQUNBLGVBQUE7RUNMTjs7RURRRTtJQUNJLFdBQUE7RUNMTjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvZGV0YWlsZW52aS9kZXRhaWxlbnZpLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaHRtbCxib2R5e1xuICAgIC8vIGJhY2tncm91bmQtY29sb3I6ICMxNzE3MTc7XG4gICAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgd2lkdGg6IDEwMHZ3O1xuICAgIGhlaWdodDogMTAwdmg7XG59XG5cbi5jYV8xe1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIC8vIGJvcmRlci1yYWRpdXM6IDEwMHB4O1xuICAgIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gICAgd2lkdGg6IDE1dnc7XG4gICAgbWFyZ2luLWxlZnQ6IDF2dztcbiAgICBtYXJnaW4tcmlnaHQ6IDF2dztcbn1cblxuLmJsb2NrXzF7XG4gICAgd2lkdGg6IDk1dnc7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgICBoZWlnaHQ6IDY1dmg7XG4gICAgbWFyZ2luLXRvcDogNXZoO1xuICAgIC8vIGJvcmRlci1yYWRpdXM6IDUwcHg7XG59XG5cbi5ibG9ja18xMXtcbiAgICB3aWR0aDogOTV2dztcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICAgIGhlaWdodDogMzB2aDtcbiAgICBtYXJnaW4tdG9wOiA1dmg7XG4gICAgLy8gYm9yZGVyLXJhZGl1czogNTBweDtcbn1cblxuLmZvbl8xe1xuICAgIC8vIG1hcmdpbi1sZWZ0OiAxdnc7XG4gICAgLy8gbWFyZ2luLXJpZ2h0OiAyLjV2dztcbiAgICBtYXJnaW4tdG9wOiAxdmg7XG4gIH1cblxuLmJsb2NrXzJ7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICAgbWFyZ2luLXRvcDogMzBweDtcbn1cblxuLmJsb2N7XG4gICAgd2lkdGg6IDQwdnc7XG4gICAgaGVpZ2h0OiA0NXZoO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xufVxuXG4uYmxvYzJ7XG4gICAgd2lkdGg6IDQwdnc7XG4gICAgaGVpZ2h0OiA0NXZoO1xuICAgIC8vIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xufVxuXG4ubWF0LWZvcm0tZmllbGR7XG4gICAgd2lkdGg6IDM1dnc7XG4gICAgLy8gaGVpZ2h0OiAwcHg7XG59XG5cbi50ZXN0e1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBsZWZ0OiA1MHZ3O1xuICAgIHRvcDogNTB2aDtcbn1cblxuLnRlc3Qxe1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBsZWZ0OiA0NXZ3O1xuICAgIHRvcDogNTB2aDtcbn1cblxuLnRlc3Qye1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBsZWZ0OiA1NXZ3O1xuICAgIHRvcDogNTB2aDtcbn1cblxuLnNjcm9ve1xuICAgIC8vIG1hcmdpbi10b3A6IC0xMHB4O1xuICAgIHdpZHRoOiA5MHZ3O1xuICAgIGhlaWdodDogNDJ2aDtcbiAgICBvdmVyZmxvdy15OiBzY3JvbGw7XG4gIH1cbiAgLmNoYXJ0e1xuICAgICAgd2lkdGg6IDQwdnc7XG4gIH1cblxuICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDkwMHB4KXtcbiAgICAuY2FfMXtcbiAgICAgICAgd2lkdGg6IDMwdnc7XG4gICAgICB9XG4gICAgICAuYmxvY3tcbiAgICAgICAgICB3aWR0aDogOTB2dztcbiAgICAgIH1cbiAgICAgIC5ibG9jMntcbiAgICAgICAgd2lkdGg6IDEwMHZ3O1xuICAgICAgICBoZWlnaHQ6IDUwdmg7XG4gICAgICAgIC8vIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIH1cbiAgICAuYmxvY2tfMXtcbiAgICAgICAgd2lkdGg6IDk1dnc7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgICAgICBoZWlnaHQ6IDgwdmg7XG4gICAgICAgIG1hcmdpbi10b3A6IDV2aDtcbiAgICAgICAgLy8gYm9yZGVyLXJhZGl1czogNTBweDtcbiAgICB9XG4gICAgLmNoYXJ0e1xuICAgICAgICB3aWR0aDogOTB2dztcbiAgICB9XG4gIH0iLCJodG1sLCBib2R5IHtcbiAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG59XG5cbi5jYV8xIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gIHdpZHRoOiAxNXZ3O1xuICBtYXJnaW4tbGVmdDogMXZ3O1xuICBtYXJnaW4tcmlnaHQ6IDF2dztcbn1cblxuLmJsb2NrXzEge1xuICB3aWR0aDogOTV2dztcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gIGhlaWdodDogNjV2aDtcbiAgbWFyZ2luLXRvcDogNXZoO1xufVxuXG4uYmxvY2tfMTEge1xuICB3aWR0aDogOTV2dztcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gIGhlaWdodDogMzB2aDtcbiAgbWFyZ2luLXRvcDogNXZoO1xufVxuXG4uZm9uXzEge1xuICBtYXJnaW4tdG9wOiAxdmg7XG59XG5cbi5ibG9ja18yIHtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gIG1hcmdpbi10b3A6IDMwcHg7XG59XG5cbi5ibG9jIHtcbiAgd2lkdGg6IDQwdnc7XG4gIGhlaWdodDogNDV2aDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG59XG5cbi5ibG9jMiB7XG4gIHdpZHRoOiA0MHZ3O1xuICBoZWlnaHQ6IDQ1dmg7XG59XG5cbi5tYXQtZm9ybS1maWVsZCB7XG4gIHdpZHRoOiAzNXZ3O1xufVxuXG4udGVzdCB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgbGVmdDogNTB2dztcbiAgdG9wOiA1MHZoO1xufVxuXG4udGVzdDEge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGxlZnQ6IDQ1dnc7XG4gIHRvcDogNTB2aDtcbn1cblxuLnRlc3QyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBsZWZ0OiA1NXZ3O1xuICB0b3A6IDUwdmg7XG59XG5cbi5zY3JvbyB7XG4gIHdpZHRoOiA5MHZ3O1xuICBoZWlnaHQ6IDQydmg7XG4gIG92ZXJmbG93LXk6IHNjcm9sbDtcbn1cblxuLmNoYXJ0IHtcbiAgd2lkdGg6IDQwdnc7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTAwcHgpIHtcbiAgLmNhXzEge1xuICAgIHdpZHRoOiAzMHZ3O1xuICB9XG5cbiAgLmJsb2Mge1xuICAgIHdpZHRoOiA5MHZ3O1xuICB9XG5cbiAgLmJsb2MyIHtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiA1MHZoO1xuICB9XG5cbiAgLmJsb2NrXzEge1xuICAgIHdpZHRoOiA5NXZ3O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGhlaWdodDogODB2aDtcbiAgICBtYXJnaW4tdG9wOiA1dmg7XG4gIH1cblxuICAuY2hhcnQge1xuICAgIHdpZHRoOiA5MHZ3O1xuICB9XG59Il19 */"]
     });
     /*@__PURE__*/
 
@@ -5096,25 +5216,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @ng-bootstrap/ng-bootstrap */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
     /* harmony import */
 
 
-    var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @angular/material/form-field */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/form-field.js");
     /* harmony import */
 
 
-    var _angular_material_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _angular_material_input__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! @angular/material/input */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/input.js");
     /* harmony import */
 
 
-    var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! @angular/material/datepicker */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/datepicker.js"); // import { Router } from '@angular/router';
 
@@ -5433,9 +5559,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
     }
 
-    function EnviromentComponent_div_119_td_6_Template(rf, ctx) {
+    function EnviromentComponent_div_119_td_7_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 74);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 75);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Frequency");
 
@@ -5443,9 +5569,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
     }
 
-    function EnviromentComponent_div_119_td_7_Template(rf, ctx) {
+    function EnviromentComponent_div_119_td_8_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 74);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 75);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Solar Irradiance");
 
@@ -5453,9 +5579,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
     }
 
-    function EnviromentComponent_div_119_td_8_Template(rf, ctx) {
+    function EnviromentComponent_div_119_td_9_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 74);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 75);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Temperature");
 
@@ -5463,9 +5589,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
     }
 
-    function EnviromentComponent_div_119_td_9_Template(rf, ctx) {
+    function EnviromentComponent_div_119_td_10_Template(rf, ctx) {
       if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 74);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td", 75);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](1, "Humidity");
 
@@ -5473,7 +5599,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
     }
 
-    function EnviromentComponent_div_119_tr_11_td_3_Template(rf, ctx) {
+    function EnviromentComponent_div_119_tr_12_td_3_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td");
 
@@ -5483,15 +5609,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
 
       if (rf & 2) {
-        var i_r36 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
+        var i_r37 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r36["result"][0]["Frequency"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r37["result"][0]["Frequency"]);
       }
     }
 
-    function EnviromentComponent_div_119_tr_11_td_4_Template(rf, ctx) {
+    function EnviromentComponent_div_119_tr_12_td_4_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td");
 
@@ -5501,15 +5627,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
 
       if (rf & 2) {
-        var i_r36 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
+        var i_r37 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r36["result"][0]["Pyranometer"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r37["result"][0]["Pyranometer"]);
       }
     }
 
-    function EnviromentComponent_div_119_tr_11_td_5_Template(rf, ctx) {
+    function EnviromentComponent_div_119_tr_12_td_5_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td");
 
@@ -5519,15 +5645,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
 
       if (rf & 2) {
-        var i_r36 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
+        var i_r37 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r36["result"][0]["Temperature"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r37["result"][0]["Temperature"]);
       }
     }
 
-    function EnviromentComponent_div_119_tr_11_td_6_Template(rf, ctx) {
+    function EnviromentComponent_div_119_tr_12_td_6_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "td");
 
@@ -5537,93 +5663,115 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }
 
       if (rf & 2) {
-        var i_r36 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
+        var i_r37 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]().$implicit;
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r36["result"][0]["Humidity"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r37["result"][0]["Humidity"]);
       }
     }
 
-    function EnviromentComponent_div_119_tr_11_Template(rf, ctx) {
+    function EnviromentComponent_div_119_tr_12_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "tr");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "td", 77);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "td", 79);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, EnviromentComponent_div_119_tr_11_td_3_Template, 2, 1, "td", 78);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](3, EnviromentComponent_div_119_tr_12_td_3_Template, 2, 1, "td", 80);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, EnviromentComponent_div_119_tr_11_td_4_Template, 2, 1, "td", 78);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](4, EnviromentComponent_div_119_tr_12_td_4_Template, 2, 1, "td", 80);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, EnviromentComponent_div_119_tr_11_td_5_Template, 2, 1, "td", 78);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](5, EnviromentComponent_div_119_tr_12_td_5_Template, 2, 1, "td", 80);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](6, EnviromentComponent_div_119_tr_11_td_6_Template, 2, 1, "td", 78);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](6, EnviromentComponent_div_119_tr_12_td_6_Template, 2, 1, "td", 80);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
       }
 
       if (rf & 2) {
-        var i_r36 = ctx.$implicit;
+        var i_r37 = ctx.$implicit;
 
-        var ctx_r35 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
+        var ctx_r36 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"](2);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r36["result"][0]["DateTime"]);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](i_r37["result"][0]["DateTime"]);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r35.freq);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r36.freq);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r35.solar);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r36.solar);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r35.tem);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r36.tem);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r35.hum);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r36.hum);
       }
     }
 
     function EnviromentComponent_div_119_Template(rf, ctx) {
       if (rf & 1) {
+        var _r48 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 45);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 72);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 72, 73);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](2, "table", 73);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "table", 74);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](3, "thead");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "thead");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](4, "tr");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](5, "tr");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](5, "td", 74);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](6, "td", 75);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](6, EnviromentComponent_div_119_td_6_Template, 2, 0, "td", 75);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](7, EnviromentComponent_div_119_td_7_Template, 2, 0, "td", 76);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](7, EnviromentComponent_div_119_td_7_Template, 2, 0, "td", 75);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](8, EnviromentComponent_div_119_td_8_Template, 2, 0, "td", 76);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](8, EnviromentComponent_div_119_td_8_Template, 2, 0, "td", 75);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](9, EnviromentComponent_div_119_td_9_Template, 2, 0, "td", 76);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](9, EnviromentComponent_div_119_td_9_Template, 2, 0, "td", 75);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](10, EnviromentComponent_div_119_td_10_Template, 2, 0, "td", 76);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](11, "tbody");
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](12, EnviromentComponent_div_119_tr_12_Template, 7, 5, "tr", 77);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](10, "tbody");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](13, "ngb-pagination", 78);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](11, EnviromentComponent_div_119_tr_11_Template, 7, 5, "tr", 76);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("pageChange", function EnviromentComponent_div_119_Template_ngb_pagination_pageChange_13_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r48);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+          var ctx_r47 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+
+          return ctx_r47.page = $event;
+        })("pageChange", function EnviromentComponent_div_119_Template_ngb_pagination_pageChange_13_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r48);
+
+          var _r31 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵreference"](2);
+
+          var ctx_r49 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+
+          return ctx_r49.pageCh(_r31);
+        });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -5635,7 +5783,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       if (rf & 2) {
         var ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](7);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx_r10.freq);
 
@@ -5654,6 +5802,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r10.hitem);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("collectionSize", ctx_r10.colsize)("page", ctx_r10.page)("pageSize", 50)("maxSize", 5)("boundaryLinks", true);
       }
     }
 
@@ -5665,7 +5817,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var EnviromentComponent = /*#__PURE__*/function () {
       function EnviromentComponent(router, api) {
-        var _this15 = this;
+        var _this16 = this;
 
         _classCallCheck(this, EnviromentComponent);
 
@@ -5673,19 +5825,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.api = api;
         this.Loading = false;
         this.pic = new Date();
-        this.number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
-        this.numbere = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
+        this.number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
+        this.numbere = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
         this.hourS = 0;
-        this.hourE = 24;
+        this.hourE = 23;
         this.timeshow = false;
         this.myCanvas = document.querySelector("#lineChart");
         this.hpic = new Date();
-        this.hnumber = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
+        this.hnumber = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
         this.hcheck = 0;
         this.htimeshow = false;
         this.hLoading = false;
         this.hhourS = 0;
-        this.hhourE = 24;
+        this.hhourE = 23;
         this.freq = false;
         this.tem = false;
         this.solar = false;
@@ -5694,16 +5846,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.lineChart = []; //ประกาศตัวแปรเก็บค่า
 
         this.lineChart2 = [];
-        this.lineChart3 = [];
+        this.lineChart3 = []; //------------------- history ----------------------//
+
+        this.page = 1;
 
         try {
-          this.main = localStorage.getItem('meter');
+          this.main = localStorage.getItem('meter').slice(0, -1);
           this.namemeter = localStorage.getItem('namemeter');
-          this.block = "1";
+          this.block = "0";
           console.log(this.block);
           console.log(this.main);
           console.log(this.namemeter);
-          this.name = this.main.slice(0, this.main.length - 1); // this.num = parseInt(this.main.slice(this.main.length-1,this.main.length)) 
+          this.name = this.main; // this.num = parseInt(this.main.slice(this.main.length-1,this.main.length)) 
 
           this.nameen = localStorage.getItem('nameen');
           this.hum = true;
@@ -5716,7 +5870,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         setInterval(function () {
           var wmo = new Date();
-          _this15.now = wmo.toLocaleString();
+          _this16.now = wmo.toLocaleString();
         });
       }
 
@@ -5767,8 +5921,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             localStorage.setItem('detail', JSON.stringify({
               detail: ["1 phase 2.5 kW Hybrid PV-Battery system : phase 1 is on-grid and phase 2 is emergency"]
             }));
-          } else if (i == "9") {
-            localStorage.setItem('namemeter', "");
           }
 
           this.router.navigate(["detail"]);
@@ -5866,13 +6018,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addDate",
         value: function addDate(event) {
-          var _this16 = this;
+          var _this17 = this;
 
           var date = event.value; //  console.log(this.date.getDate())
 
           this.date1 = date.getDate();
           this.month1 = date.getMonth() + 1;
-          this.year1 = date.getFullYear() + 543; //  var all = this.date1 + this.month1 + this.year1
+          this.year1 = date.getFullYear(); //  var all = this.date1 + this.month1 + this.year1
 
           if (this.date2 == this.date1) {
             this.timeshow = true;
@@ -5886,21 +6038,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             var postda = {
               building: this.name,
               block: this.block,
-              date: this.date1,
-              month: this.month1,
-              year: this.year1,
-              date2: this.date2,
-              month2: this.month2,
-              year2: this.year2,
-              hour: this.hourS,
-              hour2: this.hourE
+              date: ('0' + this.date1).slice(-2).toString(),
+              month: ('0' + this.month1).slice(-2).toString(),
+              year: this.year1.toString(),
+              date2: ('0' + this.date2).slice(-2).toString(),
+              month2: ('0' + this.month2).slice(-2).toString(),
+              year2: this.year2.toString(),
+              hour: ('0' + this.hourS).slice(-2).toString(),
+              hour2: ('0' + this.hourE).slice(-2).toString()
             };
-            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph', postda).subscribe(function (data) {
-              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this16, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee11() {
+            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph2', postda).subscribe(function (data) {
+              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this17, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee12() {
                 var labelx, labely, labely2, labely3, dae, er, index, volt, tem, hum, hour, datee, year, dat, month, datw, year1, dat1, month1, fileTitle;
-                return regeneratorRuntime.wrap(function _callee11$(_context11) {
+                return regeneratorRuntime.wrap(function _callee12$(_context12) {
                   while (1) {
-                    switch (_context11.prev = _context11.next) {
+                    switch (_context12.prev = _context12.next) {
                       case 0:
                         // var dae = data[0]['create']
                         this.item = data;
@@ -5930,7 +6082,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                         console.log(labelx);
                         datee = this.date1;
                         console.log(datee);
-                        year = this.year1 - 543;
+                        year = this.year1;
                         dat = this.date1;
 
                         if (dat < 10) {
@@ -5946,7 +6098,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                         datw = this.date2;
                         console.log(datw);
-                        year1 = this.year2 - 543;
+                        year1 = this.year2;
                         dat1 = this.date2;
 
                         if (dat1 < 10) {
@@ -6054,10 +6206,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                       case 34:
                       case "end":
-                        return _context11.stop();
+                        return _context12.stop();
                     }
                   }
-                }, _callee11, this);
+                }, _callee12, this);
               }));
             }); // console.log(this.item)
           } else {//end
@@ -6066,16 +6218,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addD",
         value: function addD(event) {
-          var _this17 = this;
+          var _this18 = this;
 
           var date = event.value;
           var nw = new Date(); // console.log(this.date.getDate())
 
           this.date2 = date.getDate();
           this.month2 = date.getMonth() + 1;
-          this.year2 = date.getFullYear() + 543;
+          this.year2 = date.getFullYear();
           var noe = this.date2.toString() + this.month2.toString() + this.year2.toString();
-          var eon = nw.getDate().toString() + (nw.getMonth() + 1).toString() + (nw.getFullYear() + 543).toString();
+          var eon = nw.getDate().toString() + (nw.getMonth() + 1).toString() + nw.getFullYear().toString();
 
           if (this.date2 == this.date1 && noe != eon) {
             this.timeshow = true;
@@ -6090,23 +6242,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             var postda = {
               building: this.name,
               block: this.block,
-              date: this.date1,
-              month: this.month1,
-              year: this.year1,
-              date2: this.date2,
-              month2: this.month2,
-              year2: this.year2,
-              hour: this.hourS,
-              hour2: this.hourE
+              date: ('0' + this.date1).slice(-2).toString(),
+              month: ('0' + this.month1).slice(-2).toString(),
+              year: this.year1.toString(),
+              date2: ('0' + this.date2).slice(-2).toString(),
+              month2: ('0' + this.month2).slice(-2).toString(),
+              year2: this.year2.toString(),
+              hour: ('0' + this.hourS).slice(-2).toString(),
+              hour2: ('0' + this.hourE).slice(-2).toString()
             };
-            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph', postda).subscribe(function (data) {
-              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this17, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee12() {
+            console.log(postda);
+            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph2', postda).subscribe(function (data) {
+              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this18, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee13() {
                 var labelx, labely, labely2, labely3, dae, er, index, volt, tem, hum, hour, datee, year, dat, month, datw, year1, dat1, month1, fileTitle;
-                return regeneratorRuntime.wrap(function _callee12$(_context12) {
+                return regeneratorRuntime.wrap(function _callee13$(_context13) {
                   while (1) {
-                    switch (_context12.prev = _context12.next) {
+                    switch (_context13.prev = _context13.next) {
                       case 0:
                         // console.log(data)
+                        console.log(data);
                         this.item = data;
                         labelx = [];
                         labely = [];
@@ -6134,7 +6288,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                         console.log(labelx);
                         datee = this.date1;
                         console.log(datee);
-                        year = this.year1 - 543;
+                        year = this.year1;
                         dat = this.date1;
 
                         if (dat < 10) {
@@ -6150,7 +6304,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                         datw = this.date2;
                         console.log(datw);
-                        year1 = this.year2 - 543;
+                        year1 = this.year2;
                         dat1 = this.date2;
 
                         if (dat1 < 10) {
@@ -6256,12 +6410,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                         });
                         this.Loading = false;
 
-                      case 34:
+                      case 35:
                       case "end":
-                        return _context12.stop();
+                        return _context13.stop();
                     }
                   }
-                }, _callee12, this);
+                }, _callee13, this);
               }));
             }); // console.log(this.item)
           } else {//end
@@ -6295,7 +6449,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "onPercentChange",
         value: function onPercentChange(percent) {
-          var _this18 = this;
+          var _this19 = this;
 
           console.log('here');
           this.hourS = percent;
@@ -6304,203 +6458,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var postda = {
             building: this.name,
             block: this.block,
-            date: this.date1,
-            month: this.month1,
-            year: this.year1,
-            date2: this.date2,
-            month2: this.month2,
-            year2: this.year2,
-            hour: this.hourS,
-            hour2: this.hourE
+            date: ('0' + this.date1).slice(-2).toString(),
+            month: ('0' + this.month1).slice(-2).toString(),
+            year: this.year1.toString(),
+            date2: ('0' + this.date2).slice(-2).toString(),
+            month2: ('0' + this.month2).slice(-2).toString(),
+            year2: this.year2.toString(),
+            hour: ('0' + this.hourS).slice(-2).toString(),
+            hour2: ('0' + this.hourE).slice(-2).toString()
           };
-          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph', postda).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this18, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee13() {
-              var labelx, labely, labely2, labely3, dae, er, index, volt, tem, hum, hour, datee, year, dat, month, datw, year1, dat1, month1, fileTitle;
-              return regeneratorRuntime.wrap(function _callee13$(_context13) {
-                while (1) {
-                  switch (_context13.prev = _context13.next) {
-                    case 0:
-                      // var dae = data[0]['create']
-                      this.item = data;
-                      labelx = [];
-                      labely = [];
-                      labely2 = [];
-                      labely3 = []; // console.log(data[0]['result'][0][this.nameen])
-
-                      dae = data[0]['result'];
-                      er = new Date(dae);
-                      console.log(er.getHours());
-
-                      for (index = 0; index < data.length; index++) {
-                        dae = data[index]['result'][0]["DateTime"]; // var er = new Date(dae)
-
-                        volt = data[index]['result'][0]["Pyranometer"];
-                        tem = data[index]['result'][0]["Temperature"];
-                        hum = data[index]['result'][0]["Humidity"]; // console.log(volt)
-
-                        hour = er.getHours().toString() + ":" + er.getMinutes().toString();
-                        labelx.push(dae);
-                        labely.push(volt);
-                        labely2.push(tem);
-                        labely3.push(hum); // console.log(hour)
-                      }
-
-                      console.log(labelx);
-                      datee = this.date1;
-                      console.log(datee);
-                      year = this.year1 - 543;
-                      dat = this.date1;
-
-                      if (dat < 10) {
-                        dat = "0" + dat;
-                      }
-
-                      month = this.month1;
-                      console.log(month);
-
-                      if (month < 10) {
-                        month = "0" + month;
-                      }
-
-                      datw = this.date2;
-                      console.log(datw);
-                      year1 = this.year2 - 543;
-                      dat1 = this.date2;
-
-                      if (dat1 < 10) {
-                        dat1 = "0" + dat1;
-                      }
-
-                      month1 = this.month2;
-                      console.log(month1);
-
-                      if (month1 < 10) {
-                        month1 = "0" + month1;
-                      }
-
-                      fileTitle = String(year) + String(month) + String(dat) + "_" + String(year1) + String(month1) + String(dat1) + "_enviroment" + ".png";
-                      this.downloa = fileTitle; // console.log(this.pic)
-
-                      if (this.lineChart != null) {
-                        this.check = 0;
-                        this.lineChart.destroy();
-                      }
-
-                      this.check = 1;
-                      this.lineChart = new chart_js__WEBPACK_IMPORTED_MODULE_2__["Chart"]('lineChart', {
-                        type: 'line',
-                        data: {
-                          labels: labelx,
-                          datasets: [{
-                            label: "Solar Irradiance",
-                            data: labely,
-                            fill: false,
-                            lineTension: 0.2,
-                            borderColor: "red",
-                            borderWidth: 1
-                          }]
-                        },
-                        options: {
-                          title: {
-                            text: "Solar Irradiance" + " Chart",
-                            display: true
-                          }
-                        },
-                        scales: {
-                          yAxes: [{
-                            ticks: {
-                              beginAtZero: true
-                            }
-                          }]
-                        }
-                      });
-                      this.lineChart2 = new chart_js__WEBPACK_IMPORTED_MODULE_2__["Chart"]('lineChart2', {
-                        type: 'line',
-                        data: {
-                          labels: labelx,
-                          datasets: [{
-                            label: 'Temperature',
-                            data: labely2,
-                            fill: false,
-                            lineTension: 0.2,
-                            borderColor: "blue",
-                            borderWidth: 1
-                          }]
-                        },
-                        options: {
-                          title: {
-                            text: "Temperature Chart",
-                            display: true
-                          }
-                        },
-                        scales: {
-                          yAxes: [{
-                            ticks: {
-                              beginAtZero: true
-                            }
-                          }]
-                        }
-                      });
-                      this.lineChart3 = new chart_js__WEBPACK_IMPORTED_MODULE_2__["Chart"]('lineChart3', {
-                        type: 'line',
-                        data: {
-                          labels: labelx,
-                          datasets: [{
-                            label: 'Humidity',
-                            data: labely3,
-                            fill: false,
-                            lineTension: 0.2,
-                            borderColor: "blue",
-                            borderWidth: 1
-                          }]
-                        },
-                        options: {
-                          title: {
-                            text: "Humidity Chart",
-                            display: true
-                          }
-                        },
-                        scales: {
-                          yAxes: [{
-                            ticks: {
-                              beginAtZero: true
-                            }
-                          }]
-                        }
-                      });
-                      this.Loading = false;
-
-                    case 34:
-                    case "end":
-                      return _context13.stop();
-                  }
-                }
-              }, _callee13, this);
-            }));
-          }); // console.log(this.item)
-        }
-      }, {
-        key: "onPer",
-        value: function onPer(percent) {
-          var _this19 = this;
-
-          console.log('here');
-          this.hourE = percent;
-          console.log(this.hourE);
-          this.Loading = true;
-          var postda = {
-            building: this.name,
-            block: this.block,
-            date: this.date1,
-            month: this.month1,
-            year: this.year1,
-            date2: this.date2,
-            month2: this.month2,
-            year2: this.year2,
-            hour: this.hourS,
-            hour2: this.hourE
-          };
-          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph', postda).subscribe(function (data) {
+          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph2', postda).subscribe(function (data) {
             return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this19, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee14() {
               var labelx, labely, labely2, labely3, dae, er, index, volt, tem, hum, hour, datee, year, dat, month, datw, year1, dat1, month1, fileTitle;
               return regeneratorRuntime.wrap(function _callee14$(_context14) {
@@ -6535,7 +6502,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       console.log(labelx);
                       datee = this.date1;
                       console.log(datee);
-                      year = this.year1 - 543;
+                      year = this.year1;
                       dat = this.date1;
 
                       if (dat < 10) {
@@ -6551,7 +6518,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                       datw = this.date2;
                       console.log(datw);
-                      year1 = this.year2 - 543;
+                      year1 = this.year2;
                       dat1 = this.date2;
 
                       if (dat1 < 10) {
@@ -6665,6 +6632,193 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }, _callee14, this);
             }));
           }); // console.log(this.item)
+        }
+      }, {
+        key: "onPer",
+        value: function onPer(percent) {
+          var _this20 = this;
+
+          console.log('here');
+          this.hourE = percent;
+          console.log(this.hourE);
+          this.Loading = true;
+          var postda = {
+            building: this.name,
+            block: this.block,
+            date: ('0' + this.date1).slice(-2).toString(),
+            month: ('0' + this.month1).slice(-2).toString(),
+            year: this.year1.toString(),
+            date2: ('0' + this.date2).slice(-2).toString(),
+            month2: ('0' + this.month2).slice(-2).toString(),
+            year2: this.year2.toString(),
+            hour: ('0' + this.hourS).slice(-2).toString(),
+            hour2: ('0' + this.hourE).slice(-2).toString()
+          };
+          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph2', postda).subscribe(function (data) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this20, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee15() {
+              var labelx, labely, labely2, labely3, dae, er, index, volt, tem, hum, hour, datee, year, dat, month, datw, year1, dat1, month1, fileTitle;
+              return regeneratorRuntime.wrap(function _callee15$(_context15) {
+                while (1) {
+                  switch (_context15.prev = _context15.next) {
+                    case 0:
+                      // var dae = data[0]['create']
+                      this.item = data;
+                      labelx = [];
+                      labely = [];
+                      labely2 = [];
+                      labely3 = []; // console.log(data[0]['result'][0][this.nameen])
+
+                      dae = data[0]['result'];
+                      er = new Date(dae);
+                      console.log(er.getHours());
+
+                      for (index = 0; index < data.length; index++) {
+                        dae = data[index]['result'][0]["DateTime"]; // var er = new Date(dae)
+
+                        volt = data[index]['result'][0]["Pyranometer"];
+                        tem = data[index]['result'][0]["Temperature"];
+                        hum = data[index]['result'][0]["Humidity"]; // console.log(volt)
+
+                        hour = er.getHours().toString() + ":" + er.getMinutes().toString();
+                        labelx.push(dae);
+                        labely.push(volt);
+                        labely2.push(tem);
+                        labely3.push(hum); // console.log(hour)
+                      }
+
+                      console.log(labelx);
+                      datee = this.date1;
+                      console.log(datee);
+                      year = this.year1;
+                      dat = this.date1;
+
+                      if (dat < 10) {
+                        dat = "0" + dat;
+                      }
+
+                      month = this.month1;
+                      console.log(month);
+
+                      if (month < 10) {
+                        month = "0" + month;
+                      }
+
+                      datw = this.date2;
+                      console.log(datw);
+                      year1 = this.year2;
+                      dat1 = this.date2;
+
+                      if (dat1 < 10) {
+                        dat1 = "0" + dat1;
+                      }
+
+                      month1 = this.month2;
+                      console.log(month1);
+
+                      if (month1 < 10) {
+                        month1 = "0" + month1;
+                      }
+
+                      fileTitle = String(year) + String(month) + String(dat) + "_" + String(year1) + String(month1) + String(dat1) + "_enviroment" + ".png";
+                      this.downloa = fileTitle; // console.log(this.pic)
+
+                      if (this.lineChart != null) {
+                        this.check = 0;
+                        this.lineChart.destroy();
+                      }
+
+                      this.check = 1;
+                      this.lineChart = new chart_js__WEBPACK_IMPORTED_MODULE_2__["Chart"]('lineChart', {
+                        type: 'line',
+                        data: {
+                          labels: labelx,
+                          datasets: [{
+                            label: "Solar Irradiance",
+                            data: labely,
+                            fill: false,
+                            lineTension: 0.2,
+                            borderColor: "red",
+                            borderWidth: 1
+                          }]
+                        },
+                        options: {
+                          title: {
+                            text: "Solar Irradiance" + " Chart",
+                            display: true
+                          }
+                        },
+                        scales: {
+                          yAxes: [{
+                            ticks: {
+                              beginAtZero: true
+                            }
+                          }]
+                        }
+                      });
+                      this.lineChart2 = new chart_js__WEBPACK_IMPORTED_MODULE_2__["Chart"]('lineChart2', {
+                        type: 'line',
+                        data: {
+                          labels: labelx,
+                          datasets: [{
+                            label: 'Temperature',
+                            data: labely2,
+                            fill: false,
+                            lineTension: 0.2,
+                            borderColor: "blue",
+                            borderWidth: 1
+                          }]
+                        },
+                        options: {
+                          title: {
+                            text: "Temperature Chart",
+                            display: true
+                          }
+                        },
+                        scales: {
+                          yAxes: [{
+                            ticks: {
+                              beginAtZero: true
+                            }
+                          }]
+                        }
+                      });
+                      this.lineChart3 = new chart_js__WEBPACK_IMPORTED_MODULE_2__["Chart"]('lineChart3', {
+                        type: 'line',
+                        data: {
+                          labels: labelx,
+                          datasets: [{
+                            label: 'Humidity',
+                            data: labely3,
+                            fill: false,
+                            lineTension: 0.2,
+                            borderColor: "blue",
+                            borderWidth: 1
+                          }]
+                        },
+                        options: {
+                          title: {
+                            text: "Humidity Chart",
+                            display: true
+                          }
+                        },
+                        scales: {
+                          yAxes: [{
+                            ticks: {
+                              beginAtZero: true
+                            }
+                          }]
+                        }
+                      });
+                      this.Loading = false;
+
+                    case 34:
+                    case "end":
+                      return _context15.stop();
+                  }
+                }
+              }, _callee15, this);
+            }));
+          }); // console.log(this.item)
         } //  canvas  = document.getElementById("lineChart");
 
       }, {
@@ -6694,8 +6848,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           // document.body.appendChild(a);
           // a.href = myCan.toDataURL();
 
-        } //------------------- history ----------------------//
-
+        }
       }, {
         key: "hdownload_csv",
         value: function hdownload_csv() {
@@ -6716,9 +6869,83 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           hiddenElement.click();
         }
       }, {
+        key: "pageCh",
+        value: function pageCh(el) {
+          var _this21 = this;
+
+          this.Loading = true;
+          var to = 0;
+          var duration = 1000;
+          var start = el.scrollTop,
+              change = to - start,
+              currentTime = 0,
+              increment = 20;
+
+          var easeInOutQuad = function easeInOutQuad(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+          };
+
+          var animateScroll = function animateScroll() {
+            currentTime += increment;
+            var val = easeInOutQuad(currentTime, start, change, duration);
+            el.scrollTop = val;
+
+            if (currentTime < duration) {
+              setTimeout(animateScroll, increment);
+            }
+          };
+
+          animateScroll(); // rest = 
+
+          var postda = {
+            building: this.name,
+            block: this.block,
+            date: ('0' + this.hdate1).slice(-2).toString(),
+            month: ('0' + this.hmonth1).slice(-2).toString(),
+            year: this.hyear1.toString(),
+            date2: ('0' + this.hdate2).slice(-2).toString(),
+            month2: ('0' + this.hmonth2).slice(-2).toString(),
+            year2: this.hyear2.toString(),
+            hour: ('0' + this.hhourS).slice(-2).toString(),
+            hour2: ('0' + this.hhourE).slice(-2).toString(),
+            page: this.page
+          };
+          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate2', postda).subscribe(function (data) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this21, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee16() {
+              var a;
+              return regeneratorRuntime.wrap(function _callee16$(_context16) {
+                while (1) {
+                  switch (_context16.prev = _context16.next) {
+                    case 0:
+                      a = [];
+                      console.log(data); // var z = this.bubble_Sort(data)
+                      // for (const iterator of data) {
+                      //   var dae = iterator['create']
+                      //   var er = new Date(dae)
+                      //   console.log(er.toLocaleDateString())
+                      // }
+
+                      a.push(data);
+                      this.hitem = a[0]['data'];
+                      this.hcheck = 1;
+                      this.Loading = false;
+
+                    case 6:
+                    case "end":
+                      return _context16.stop();
+                  }
+                }
+              }, _callee16, this);
+            }));
+          });
+        }
+      }, {
         key: "haddDate",
         value: function haddDate(event) {
-          var _this20 = this;
+          var _this22 = this;
 
           var date = event.value;
           var nw = new Date();
@@ -6726,9 +6953,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.hdate1 = date.getDate();
           this.hmonth1 = date.getMonth() + 1;
-          this.hyear1 = date.getFullYear() + 543;
+          this.hyear1 = date.getFullYear();
           var noe = this.hdate2.toString() + this.hmonth2.toString() + this.hyear2.toString();
-          var eon = nw.getDate().toString() + (nw.getMonth() + 1).toString() + (nw.getFullYear() + 543).toString();
+          var eon = nw.getDate().toString() + (nw.getMonth() + 1).toString() + nw.getFullYear().toString();
 
           if (this.hdate2 == this.hdate1 && noe != eon) {
             this.htimeshow = true;
@@ -6743,33 +6970,34 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             var postda = {
               building: this.name,
               block: this.block,
-              date: this.hdate1,
-              month: this.hmonth1,
-              year: this.hyear1,
-              date2: this.hdate2,
-              month2: this.hmonth2,
-              year2: this.hyear2,
-              hour: this.hhourS,
-              hour2: this.hhourE
+              date: ('0' + this.hdate1).slice(-2).toString(),
+              month: ('0' + this.hmonth1).slice(-2).toString(),
+              year: this.hyear1.toString(),
+              date2: ('0' + this.hdate2).slice(-2).toString(),
+              month2: ('0' + this.hmonth2).slice(-2).toString(),
+              year2: this.hyear2.toString(),
+              hour: ('0' + this.hhourS).slice(-2).toString(),
+              hour2: ('0' + this.hhourE).slice(-2).toString(),
+              page: 1
             };
-            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe(function (data) {
-              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this20, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee15() {
-                var a, z;
-                return regeneratorRuntime.wrap(function _callee15$(_context15) {
+            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate2', postda).subscribe(function (data) {
+              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this22, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee17() {
+                var a;
+                return regeneratorRuntime.wrap(function _callee17$(_context17) {
                   while (1) {
-                    switch (_context15.prev = _context15.next) {
+                    switch (_context17.prev = _context17.next) {
                       case 0:
                         a = [];
-                        console.log(data);
-                        z = this.bubble_Sort(data); // for (const iterator of data) {
+                        console.log(data); // for (const iterator of data) {
                         //   var dae = iterator['create']
                         //   var er = new Date(dae)
                         //   console.log(er.toLocaleDateString())
                         // }
 
-                        a.push(z);
+                        a.push(data);
                         console.log(a);
-                        this.hitem = a[0];
+                        this.colsize = a[0]['size'];
+                        this.hitem = a[0]['data'];
                         this.hcheck = 1; //  console.log(data)
                         //  this.item = data
 
@@ -6777,10 +7005,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                       case 8:
                       case "end":
-                        return _context15.stop();
+                        return _context17.stop();
                     }
                   }
-                }, _callee15, this);
+                }, _callee17, this);
               }));
             });
           } else {//end
@@ -6789,7 +7017,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "haddD",
         value: function haddD(event) {
-          var _this21 = this;
+          var _this23 = this;
 
           var date = event.value;
           var nw = new Date();
@@ -6797,9 +7025,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           console.log(date);
           this.hdate2 = date.getDate();
           this.hmonth2 = date.getMonth() + 1;
-          this.hyear2 = date.getFullYear() + 543;
+          this.hyear2 = date.getFullYear();
           var noe = this.hdate2.toString() + this.hmonth2.toString() + this.hyear2.toString();
-          var eon = nw.getDate().toString() + (nw.getMonth() + 1).toString() + (nw.getFullYear() + 543).toString();
+          var eon = nw.getDate().toString() + (nw.getMonth() + 1).toString() + nw.getFullYear().toString();
 
           if (this.hdate2 == this.hdate1 && noe != eon) {
             this.htimeshow = true;
@@ -6814,32 +7042,33 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             var postda = {
               building: this.name,
               block: this.block,
-              date: this.hdate1,
-              month: this.hmonth1,
-              year: this.hyear1,
-              date2: this.hdate2,
-              month2: this.hmonth2,
-              year2: this.hyear2,
-              hour: this.hhourS,
-              hour2: this.hhourE
+              date: ('0' + this.hdate1).slice(-2).toString(),
+              month: ('0' + this.hmonth1).slice(-2).toString(),
+              year: this.hyear1.toString(),
+              date2: ('0' + this.hdate2).slice(-2).toString(),
+              month2: ('0' + this.hmonth2).slice(-2).toString(),
+              year2: this.hyear2.toString(),
+              hour: ('0' + this.hhourS).slice(-2).toString(),
+              hour2: ('0' + this.hhourE).slice(-2).toString(),
+              page: 1
             };
-            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe(function (data) {
-              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this21, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee16() {
-                var a, z;
-                return regeneratorRuntime.wrap(function _callee16$(_context16) {
+            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate2', postda).subscribe(function (data) {
+              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this23, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee18() {
+                var a;
+                return regeneratorRuntime.wrap(function _callee18$(_context18) {
                   while (1) {
-                    switch (_context16.prev = _context16.next) {
+                    switch (_context18.prev = _context18.next) {
                       case 0:
-                        a = [];
-                        z = this.bubble_Sort(data); // for (const iterator of data) {
+                        a = []; // for (const iterator of data) {
                         //   var dae = iterator['create']
                         //   var er = new Date(dae)
                         //   console.log(er.toLocaleDateString())
                         // }
 
-                        a.push(z);
+                        a.push(data);
                         console.log(a);
-                        this.hitem = a[0];
+                        this.colsize = a[0]['size'];
+                        this.hitem = a[0]['data'];
                         this.hcheck = 1; //  console.log(data)
                         //  this.item = data
 
@@ -6847,10 +7076,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                       case 7:
                       case "end":
-                        return _context16.stop();
+                        return _context18.stop();
                     }
                   }
-                }, _callee16, this);
+                }, _callee18, this);
               }));
             });
           } else {//end
@@ -6917,7 +7146,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "hexportCsv",
         value: function hexportCsv() {
-          var _this22 = this;
+          var _this24 = this;
 
           var header = {
             DateTime: 'DateTime',
@@ -6962,7 +7191,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           itemNotFormat.forEach(function (item) {
             itemFomat.push({
               DateTime: item['result'][0]['DateTime'],
-              Tit: item['result'][0][_this22.nameen]
+              Tit: item['result'][0][_this24.nameen]
             });
           });
           this.exportCSVFile(header, itemFomat, fileTitle);
@@ -6970,7 +7199,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "honPercentChange",
         value: function honPercentChange(percent) {
-          var _this23 = this;
+          var _this25 = this;
 
           console.log('here');
           this.hourS = percent;
@@ -6979,38 +7208,39 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var postda = {
             building: this.name,
             block: this.block,
-            date: this.hdate1,
-            month: this.hmonth1,
-            year: this.hyear1,
-            date2: this.hdate2,
-            month2: this.hmonth2,
-            year2: this.hyear2,
-            hour: this.hhourS,
-            hour2: this.hhourE
+            date: ('0' + this.hdate1).slice(-2).toString(),
+            month: ('0' + this.hmonth1).slice(-2).toString(),
+            year: this.year1.toString(),
+            date2: ('0' + this.hdate2).slice(-2).toString(),
+            month2: ('0' + this.hmonth2).slice(-2).toString(),
+            year2: this.hyear2.toString(),
+            hour: ('0' + this.hhourS).slice(-2).toString(),
+            hour2: ('0' + this.hhourE).slice(-2).toString(),
+            page: this.page
           };
           this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this23, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee17() {
-              return regeneratorRuntime.wrap(function _callee17$(_context17) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this25, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee19() {
+              return regeneratorRuntime.wrap(function _callee19$(_context19) {
                 while (1) {
-                  switch (_context17.prev = _context17.next) {
+                  switch (_context19.prev = _context19.next) {
                     case 0:
                       // var dae = data[0]['create']
-                      this.hitem = data;
+                      this.hitem = data['data'];
                       this.Loading = false;
 
                     case 2:
                     case "end":
-                      return _context17.stop();
+                      return _context19.stop();
                   }
                 }
-              }, _callee17, this);
+              }, _callee19, this);
             }));
           });
         }
       }, {
         key: "honPer",
         value: function honPer(percent) {
-          var _this24 = this;
+          var _this26 = this;
 
           console.log('here');
           this.hhourE = percent;
@@ -7019,31 +7249,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var postda = {
             building: this.name,
             block: this.block,
-            date: this.hdate1,
-            month: this.hmonth1,
-            year: this.hyear1,
-            date2: this.hdate2,
-            month2: this.hmonth2,
-            year2: this.hyear2,
-            hour: this.hhourS,
-            hour2: this.hhourE
+            date: ('0' + this.hdate1).slice(-2).toString(),
+            month: ('0' + this.hmonth1).slice(-2).toString(),
+            year: this.year1.toString(),
+            date2: ('0' + this.hdate2).slice(-2).toString(),
+            month2: ('0' + this.hmonth2).slice(-2).toString(),
+            year2: this.year2.toString(),
+            hour: ('0' + this.hhourS).slice(-2).toString(),
+            hour2: ('0' + this.hhourE).slice(-2).toString(),
+            page: this.page
           };
           this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this24, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee18() {
-              return regeneratorRuntime.wrap(function _callee18$(_context18) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this26, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee20() {
+              return regeneratorRuntime.wrap(function _callee20$(_context20) {
                 while (1) {
-                  switch (_context18.prev = _context18.next) {
+                  switch (_context20.prev = _context20.next) {
                     case 0:
                       // var dae = data[0]['create']
-                      this.hitem = data;
+                      this.hitem = data['data'];
                       this.Loading = false;
 
                     case 2:
                     case "end":
-                      return _context18.stop();
+                      return _context20.stop();
                   }
                 }
-              }, _callee18, this);
+              }, _callee20, this);
             }));
           });
         }
@@ -7105,7 +7336,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["app-enviroment"]],
       decls: 120,
       vars: 22,
-      consts: [[1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "rgba(104, 104, 104, 0.413)"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler", 3, "click"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse", 3, "ngClass"], [1, "navbar-nav", "mr-auto", "mt-2", "mt-lg-0"], [1, "nav-item", "active"], ["href", "#", 1, "nav-link"], [1, "sr-only"], ["href", "#/selecm", 1, "nav-link"], [1, "nav-item", "dropdown"], ["id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "true", 1, "nav-link", "dropdown-toggle"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "click"], ["href", "#/envi", 1, "nav-link"], [2, "background-color", "black", "width", "100vw", "height", "2px"], ["class", "spinner-grow text-dark test", "role", "status", 4, "ngIf"], ["class", "spinner-grow text-dark test1", "role", "status", 4, "ngIf"], ["class", "spinner-grow text-dark test2", "role", "status", 4, "ngIf"], [2, "margin-left", "1vw", "margin-top", "1vh"], ["align", "center", 2, "margin-top", "0px"], ["src", "../../assets/osis.png", 2, "width", "150px"], ["src", "https://firebasestorage.googleapis.com/v0/b/solarpower-466f6.appspot.com/o/m.png?alt=media&token=3b4af2de-cd57-41f3-ab2d-28bde512a2d5", 2, "width", "250px", "margin-bottom", "30px"], ["src", "../../assets/nu.png", 2, "width", "150px"], ["src", "https://firebasestorage.googleapis.com/v0/b/solarpower-466f6.appspot.com/o/j.png?alt=media&token=cce5938e-ae9d-4973-9b9b-9c2a41be6cad", 2, "width", "250px"], ["align", "center", 2, "width", "100vw", "margin-top", "3vh"], [2, "font-size", "30px"], [1, "block_1"], [2, "margin-top", "60px", "border-width", "10px", "border", "solid", "font-size", "30px"], [1, "block_2"], [1, "bloc"], [1, "row", 2, "justify-content", "space-around"], ["appearance", "fill", 2, "width", "15vw"], ["matInput", "", 3, "matDatepicker", "max", "dateInput"], ["matSuffix", "", 3, "for"], ["picker", ""], ["pick", ""], ["class", "row", "style", "justify-content: space-around;", "align", "center", 4, "ngIf"], [1, "row", 2, "width", "95vw", "justify-content", "space-around"], ["id", "xxx", 1, "chart"], ["id", "lineChart"], [3, "click"], ["id", "line", 1, "chart"], ["id", "lineChart2"], ["href", "#", 3, "click"], ["id", "lineChart3"], ["align", "center"], ["align", "center", 1, "block_11"], [1, "row", "block_2", 2, "width", "95vw"], [1, "row", "bloc"], ["matInput", "", 3, "matDatepicker", "dateInput"], ["pic", ""], ["pi", ""], ["class", "row", "style", "justify-content: space-around;margin-top: 2vh;", "align", "center", 4, "ngIf"], ["class", "btn btn-outline-primary my-element", "style", "height: 10vh;", 3, "click", 4, "ngIf"], ["align", "center", 4, "ngIf"], ["role", "status", 1, "spinner-grow", "text-dark", "test"], [1, "sr-only", "load"], ["role", "status", 1, "spinner-grow", "text-dark", "test1"], ["role", "status", 1, "spinner-grow", "text-dark", "test2"], ["align", "center", 1, "row", 2, "justify-content", "space-around"], [1, "row"], [1, "form-control", 2, "width", "4vw", "margin-left", "10px", 3, "change"], ["mySelect", ""], [3, "value", 4, "ngFor", "ngForOf"], [2, "font-size", "15px", "margin-top", "13px"], ["mySelec", ""], [3, "value", "selected", 4, "ngFor", "ngForOf"], [3, "value"], [3, "value", "selected"], ["align", "center", 1, "row", 2, "justify-content", "space-around", "margin-top", "2vh"], [2, "margin-left", "5vw"], [1, "btn", "btn-outline-primary", "my-element", 2, "height", "10vh", 3, "click"], [1, "scroo"], [1, "table", "ca_3", 2, "margin-top", "0px"], ["scope", "col"], ["scope", "col", 4, "ngIf"], [4, "ngFor", "ngForOf"], ["scope", "row"], [4, "ngIf"]],
+      consts: [[1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "rgba(104, 104, 104, 0.413)"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler", 3, "click"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse", 3, "ngClass"], [1, "navbar-nav", "mr-auto", "mt-2", "mt-lg-0"], [1, "nav-item", "active"], ["href", "#", 1, "nav-link"], [1, "sr-only"], ["href", "#/selecm", 1, "nav-link"], [1, "nav-item", "dropdown"], ["id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "true", 1, "nav-link", "dropdown-toggle"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "click"], ["href", "#/envi", 1, "nav-link"], [2, "background-color", "black", "width", "100vw", "height", "2px"], ["class", "spinner-grow text-dark test", "role", "status", 4, "ngIf"], ["class", "spinner-grow text-dark test1", "role", "status", 4, "ngIf"], ["class", "spinner-grow text-dark test2", "role", "status", 4, "ngIf"], [2, "margin-left", "1vw", "margin-top", "1vh"], ["align", "center", 2, "margin-top", "0px"], ["src", "../../assets/osis.png", 2, "width", "150px"], ["src", "../../assets/m.png", 2, "width", "250px", "margin-bottom", "30px"], ["src", "../../assets/nu.png", 2, "width", "150px"], ["src", "../../assets/j.png", 2, "width", "250px"], ["align", "center", 2, "width", "100vw", "margin-top", "3vh"], [2, "font-size", "30px"], [1, "block_1"], [2, "margin-top", "60px", "border-width", "10px", "border", "solid", "font-size", "30px"], [1, "block_2"], [1, "bloc"], [1, "row", 2, "justify-content", "space-around"], ["appearance", "fill", 2, "width", "15vw"], ["matInput", "", 3, "matDatepicker", "max", "dateInput"], ["matSuffix", "", 3, "for"], ["picker", ""], ["pick", ""], ["class", "row", "style", "justify-content: space-around;", "align", "center", 4, "ngIf"], [1, "row", 2, "width", "95vw", "justify-content", "space-around"], ["id", "xxx", 1, "chart"], ["id", "lineChart"], [3, "click"], ["id", "line", 1, "chart"], ["id", "lineChart2"], ["href", "#", 3, "click"], ["id", "lineChart3"], ["align", "center"], ["align", "center", 1, "block_11"], [1, "row", "block_2", 2, "width", "95vw"], [1, "row", "bloc"], ["matInput", "", 3, "matDatepicker", "dateInput"], ["pic", ""], ["pi", ""], ["class", "row", "style", "justify-content: space-around;margin-top: 2vh;", "align", "center", 4, "ngIf"], ["class", "btn btn-outline-primary my-element", "style", "height: 10vh;", 3, "click", 4, "ngIf"], ["align", "center", 4, "ngIf"], ["role", "status", 1, "spinner-grow", "text-dark", "test"], [1, "sr-only", "load"], ["role", "status", 1, "spinner-grow", "text-dark", "test1"], ["role", "status", 1, "spinner-grow", "text-dark", "test2"], ["align", "center", 1, "row", 2, "justify-content", "space-around"], [1, "row"], [1, "form-control", 2, "width", "4vw", "margin-left", "10px", 3, "change"], ["mySelect", ""], [3, "value", 4, "ngFor", "ngForOf"], [2, "font-size", "15px", "margin-top", "13px"], ["mySelec", ""], [3, "value", "selected", 4, "ngFor", "ngForOf"], [3, "value"], [3, "value", "selected"], ["align", "center", 1, "row", 2, "justify-content", "space-around", "margin-top", "2vh"], [2, "margin-left", "5vw"], [1, "btn", "btn-outline-primary", "my-element", 2, "height", "10vh", 3, "click"], [1, "scroo"], ["container", ""], [1, "table", "ca_3", 2, "margin-top", "0px"], ["scope", "col"], ["scope", "col", 4, "ngIf"], [4, "ngFor", "ngForOf"], [3, "collectionSize", "page", "pageSize", "maxSize", "boundaryLinks", "pageChange"], ["scope", "row"], [4, "ngIf"]],
       template: function EnviromentComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "html");
@@ -7524,7 +7755,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](119, EnviromentComponent_div_119_Template, 12, 5, "div", 54);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](119, EnviromentComponent_div_119_Template, 14, 10, "div", 54);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -7613,8 +7844,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.hcheck == 1);
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerToggle"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatSuffix"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepicker"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgForOf"]],
-      styles: ["html[_ngcontent-%COMP%], body[_ngcontent-%COMP%] {\n  background-size: cover;\n  width: 100vw;\n  height: 100vh;\n}\n\n.ca_1[_ngcontent-%COMP%] {\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  width: 15vw;\n  margin-left: 1vw;\n  margin-right: 1vw;\n}\n\n.block_1[_ngcontent-%COMP%] {\n  width: 95vw;\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  height: 60vw;\n  margin-top: 5vh;\n}\n\n.block_11[_ngcontent-%COMP%] {\n  width: 95vw;\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  height: 25vh;\n  margin-top: 5vh;\n}\n\n.fon_1[_ngcontent-%COMP%] {\n  margin-top: 1vh;\n}\n\n.block_2[_ngcontent-%COMP%] {\n  justify-content: space-around;\n  margin-top: 30px;\n}\n\n.bloc[_ngcontent-%COMP%] {\n  width: 95vw;\n  height: 30vh;\n  justify-content: space-around;\n}\n\n.bloc2[_ngcontent-%COMP%] {\n  width: 40vw;\n  height: 45vh;\n}\n\n.mat-form-field[_ngcontent-%COMP%] {\n  width: 35vw;\n}\n\n.test[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 50vw;\n  top: 50vh;\n}\n\n.test1[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 45vw;\n  top: 50vh;\n}\n\n.test2[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 55vw;\n  top: 50vh;\n}\n\n.scroo[_ngcontent-%COMP%] {\n  width: 90vw;\n  height: 42vh;\n  overflow-y: scroll;\n}\n\n.chart[_ngcontent-%COMP%] {\n  width: 40vw;\n}\n\n@media only screen and (max-width: 900px) {\n  .ca_1[_ngcontent-%COMP%] {\n    width: 30vw;\n  }\n\n  .bloc[_ngcontent-%COMP%] {\n    width: 90vw;\n  }\n\n  .bloc2[_ngcontent-%COMP%] {\n    width: 100vw;\n    height: 50vh;\n  }\n\n  .block_1[_ngcontent-%COMP%] {\n    width: 95vw;\n    background-color: white;\n    height: 60vh;\n    margin-top: 5vh;\n  }\n\n  .chart[_ngcontent-%COMP%] {\n    width: 90vw;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYXRpbnlhL0Rlc2t0b3AvU29sYXJjZWxsL0VuZXJneS9zcmMvYXBwL2Vudmlyb21lbnQvZW52aXJvbWVudC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvZW52aXJvbWVudC9lbnZpcm9tZW50LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBR0ksc0JBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtBQ0FKOztBREdBO0VBQ0ksdUJBQUE7RUFFQSw0RUFBQTtFQUNBLFdBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0FDREo7O0FESUE7RUFDSSxXQUFBO0VBQ0EsdUJBQUE7RUFDQSw0RUFBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0FDREo7O0FES0E7RUFDSSxXQUFBO0VBQ0EsdUJBQUE7RUFDQSw0RUFBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0FDRko7O0FETUE7RUFHSSxlQUFBO0FDTEo7O0FEUUE7RUFDSSw2QkFBQTtFQUNBLGdCQUFBO0FDTEo7O0FEUUE7RUFDSSxXQUFBO0VBQ0EsWUFBQTtFQUNBLDZCQUFBO0FDTEo7O0FEUUE7RUFDSSxXQUFBO0VBQ0EsWUFBQTtBQ0xKOztBRFNBO0VBQ0ksV0FBQTtBQ05KOztBRFVBO0VBQ0ksZUFBQTtFQUNBLFVBQUE7RUFDQSxTQUFBO0FDUEo7O0FEVUE7RUFDSSxlQUFBO0VBQ0EsVUFBQTtFQUNBLFNBQUE7QUNQSjs7QURVQTtFQUNJLGVBQUE7RUFDQSxVQUFBO0VBQ0EsU0FBQTtBQ1BKOztBRFVBO0VBRUksV0FBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtBQ1JKOztBRFVFO0VBQ0ksV0FBQTtBQ1BOOztBRFVFO0VBQ0U7SUFDSSxXQUFBO0VDUE47O0VEU0k7SUFDSSxXQUFBO0VDTlI7O0VEUUk7SUFDRSxZQUFBO0lBQ0EsWUFBQTtFQ0xOOztFRFFFO0lBQ0ksV0FBQTtJQUNBLHVCQUFBO0lBQ0EsWUFBQTtJQUNBLGVBQUE7RUNMTjs7RURRRTtJQUNJLFdBQUE7RUNMTjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvZW52aXJvbWVudC9lbnZpcm9tZW50LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaHRtbCxib2R5e1xuICAgIC8vIGJhY2tncm91bmQtY29sb3I6ICMxNzE3MTc7XG4gICAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgd2lkdGg6IDEwMHZ3O1xuICAgIGhlaWdodDogMTAwdmg7XG59XG5cbi5jYV8xe1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIC8vIGJvcmRlci1yYWRpdXM6IDEwMHB4O1xuICAgIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gICAgd2lkdGg6IDE1dnc7XG4gICAgbWFyZ2luLWxlZnQ6IDF2dztcbiAgICBtYXJnaW4tcmlnaHQ6IDF2dztcbn1cblxuLmJsb2NrXzF7XG4gICAgd2lkdGg6IDk1dnc7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgICBoZWlnaHQ6IDYwdnc7XG4gICAgbWFyZ2luLXRvcDogNXZoO1xuICAgIC8vIGJvcmRlci1yYWRpdXM6IDUwcHg7XG59XG5cbi5ibG9ja18xMXtcbiAgICB3aWR0aDogOTV2dztcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICAgIGhlaWdodDogMjV2aDtcbiAgICBtYXJnaW4tdG9wOiA1dmg7XG4gICAgLy8gYm9yZGVyLXJhZGl1czogNTBweDtcbn1cblxuLmZvbl8xe1xuICAgIC8vIG1hcmdpbi1sZWZ0OiAxdnc7XG4gICAgLy8gbWFyZ2luLXJpZ2h0OiAyLjV2dztcbiAgICBtYXJnaW4tdG9wOiAxdmg7XG4gIH1cblxuLmJsb2NrXzJ7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICAgbWFyZ2luLXRvcDogMzBweDtcbn1cblxuLmJsb2N7XG4gICAgd2lkdGg6IDk1dnc7XG4gICAgaGVpZ2h0OiAzMHZoO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xufVxuXG4uYmxvYzJ7XG4gICAgd2lkdGg6IDQwdnc7XG4gICAgaGVpZ2h0OiA0NXZoO1xuICAgIC8vIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xufVxuXG4ubWF0LWZvcm0tZmllbGR7XG4gICAgd2lkdGg6IDM1dnc7XG4gICAgLy8gaGVpZ2h0OiAwcHg7XG59XG5cbi50ZXN0e1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBsZWZ0OiA1MHZ3O1xuICAgIHRvcDogNTB2aDtcbn1cblxuLnRlc3Qxe1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBsZWZ0OiA0NXZ3O1xuICAgIHRvcDogNTB2aDtcbn1cblxuLnRlc3Qye1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBsZWZ0OiA1NXZ3O1xuICAgIHRvcDogNTB2aDtcbn1cblxuLnNjcm9ve1xuICAgIC8vIG1hcmdpbi10b3A6IC0xMHB4O1xuICAgIHdpZHRoOiA5MHZ3O1xuICAgIGhlaWdodDogNDJ2aDtcbiAgICBvdmVyZmxvdy15OiBzY3JvbGw7XG4gIH1cbiAgLmNoYXJ0e1xuICAgICAgd2lkdGg6IDQwdnc7XG4gIH1cblxuICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDkwMHB4KXtcbiAgICAuY2FfMXtcbiAgICAgICAgd2lkdGg6IDMwdnc7XG4gICAgICB9XG4gICAgICAuYmxvY3tcbiAgICAgICAgICB3aWR0aDogOTB2dztcbiAgICAgIH1cbiAgICAgIC5ibG9jMntcbiAgICAgICAgd2lkdGg6IDEwMHZ3O1xuICAgICAgICBoZWlnaHQ6IDUwdmg7XG4gICAgICAgIC8vIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIH1cbiAgICAuYmxvY2tfMXtcbiAgICAgICAgd2lkdGg6IDk1dnc7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgICAgICBoZWlnaHQ6IDYwdmg7XG4gICAgICAgIG1hcmdpbi10b3A6IDV2aDtcbiAgICAgICAgLy8gYm9yZGVyLXJhZGl1czogNTBweDtcbiAgICB9XG4gICAgLmNoYXJ0e1xuICAgICAgICB3aWR0aDogOTB2dztcbiAgICB9XG4gIH0iLCJodG1sLCBib2R5IHtcbiAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG59XG5cbi5jYV8xIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gIHdpZHRoOiAxNXZ3O1xuICBtYXJnaW4tbGVmdDogMXZ3O1xuICBtYXJnaW4tcmlnaHQ6IDF2dztcbn1cblxuLmJsb2NrXzEge1xuICB3aWR0aDogOTV2dztcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gIGhlaWdodDogNjB2dztcbiAgbWFyZ2luLXRvcDogNXZoO1xufVxuXG4uYmxvY2tfMTEge1xuICB3aWR0aDogOTV2dztcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gIGhlaWdodDogMjV2aDtcbiAgbWFyZ2luLXRvcDogNXZoO1xufVxuXG4uZm9uXzEge1xuICBtYXJnaW4tdG9wOiAxdmg7XG59XG5cbi5ibG9ja18yIHtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gIG1hcmdpbi10b3A6IDMwcHg7XG59XG5cbi5ibG9jIHtcbiAgd2lkdGg6IDk1dnc7XG4gIGhlaWdodDogMzB2aDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG59XG5cbi5ibG9jMiB7XG4gIHdpZHRoOiA0MHZ3O1xuICBoZWlnaHQ6IDQ1dmg7XG59XG5cbi5tYXQtZm9ybS1maWVsZCB7XG4gIHdpZHRoOiAzNXZ3O1xufVxuXG4udGVzdCB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgbGVmdDogNTB2dztcbiAgdG9wOiA1MHZoO1xufVxuXG4udGVzdDEge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGxlZnQ6IDQ1dnc7XG4gIHRvcDogNTB2aDtcbn1cblxuLnRlc3QyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBsZWZ0OiA1NXZ3O1xuICB0b3A6IDUwdmg7XG59XG5cbi5zY3JvbyB7XG4gIHdpZHRoOiA5MHZ3O1xuICBoZWlnaHQ6IDQydmg7XG4gIG92ZXJmbG93LXk6IHNjcm9sbDtcbn1cblxuLmNoYXJ0IHtcbiAgd2lkdGg6IDQwdnc7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTAwcHgpIHtcbiAgLmNhXzEge1xuICAgIHdpZHRoOiAzMHZ3O1xuICB9XG5cbiAgLmJsb2Mge1xuICAgIHdpZHRoOiA5MHZ3O1xuICB9XG5cbiAgLmJsb2MyIHtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiA1MHZoO1xuICB9XG5cbiAgLmJsb2NrXzEge1xuICAgIHdpZHRoOiA5NXZ3O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGhlaWdodDogNjB2aDtcbiAgICBtYXJnaW4tdG9wOiA1dmg7XG4gIH1cblxuICAuY2hhcnQge1xuICAgIHdpZHRoOiA5MHZ3O1xuICB9XG59Il19 */"]
+      directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbNavbar"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_8__["MatInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_9__["MatDatepickerInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_9__["MatDatepickerToggle"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__["MatSuffix"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_9__["MatDatepicker"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgForOf"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbPagination"]],
+      styles: ["html[_ngcontent-%COMP%], body[_ngcontent-%COMP%] {\n  background-size: cover;\n  width: 100vw;\n  height: 100vh;\n}\n\n.ca_1[_ngcontent-%COMP%] {\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  width: 15vw;\n  margin-left: 1vw;\n  margin-right: 1vw;\n}\n\n.block_1[_ngcontent-%COMP%] {\n  width: 95vw;\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  height: 60vw;\n  margin-top: 5vh;\n}\n\n.block_11[_ngcontent-%COMP%] {\n  width: 95vw;\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  height: 25vh;\n  margin-top: 5vh;\n}\n\n.fon_1[_ngcontent-%COMP%] {\n  margin-top: 1vh;\n}\n\n.block_2[_ngcontent-%COMP%] {\n  justify-content: space-around;\n  margin-top: 30px;\n}\n\n.bloc[_ngcontent-%COMP%] {\n  width: 95vw;\n  height: 30vh;\n  justify-content: space-around;\n}\n\n.bloc2[_ngcontent-%COMP%] {\n  width: 40vw;\n  height: 45vh;\n}\n\n.mat-form-field[_ngcontent-%COMP%] {\n  width: 35vw;\n}\n\n.test[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 50vw;\n  top: 50vh;\n}\n\n.test1[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 45vw;\n  top: 50vh;\n}\n\n.test2[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 55vw;\n  top: 50vh;\n}\n\n.scroo[_ngcontent-%COMP%] {\n  width: 90vw;\n  height: 42vh;\n  overflow-y: scroll;\n}\n\n.chart[_ngcontent-%COMP%] {\n  width: 40vw;\n}\n\n@media only screen and (max-width: 654px) {\n  .ca_1[_ngcontent-%COMP%] {\n    width: 30vw;\n  }\n\n  .bloc[_ngcontent-%COMP%] {\n    width: 90vw;\n  }\n\n  .bloc2[_ngcontent-%COMP%] {\n    width: 100vw;\n    height: 50vh;\n  }\n\n  .block_1[_ngcontent-%COMP%] {\n    width: 95vw;\n    background-color: white;\n    height: 150vh;\n    margin-top: 5vh;\n  }\n\n  .chart[_ngcontent-%COMP%] {\n    width: 70vw;\n    height: 50vh;\n  }\n}\n\n@media only screen and (max-width: 1200px) {\n  .ca_1[_ngcontent-%COMP%] {\n    width: 30vw;\n  }\n\n  .bloc[_ngcontent-%COMP%] {\n    width: 90vw;\n  }\n\n  .bloc2[_ngcontent-%COMP%] {\n    width: 100vw;\n    height: 50vh;\n  }\n\n  .block_1[_ngcontent-%COMP%] {\n    width: 95vw;\n    background-color: white;\n    height: 210vh;\n    margin-top: 5vh;\n  }\n\n  .chart[_ngcontent-%COMP%] {\n    width: 70vw;\n    height: 60vh;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYXRpbnlhL0Rlc2t0b3AvU29sYXJjZWxsL0VuZXJneS9zcmMvYXBwL2Vudmlyb21lbnQvZW52aXJvbWVudC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvZW52aXJvbWVudC9lbnZpcm9tZW50LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBR0ksc0JBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtBQ0FKOztBREdBO0VBQ0ksdUJBQUE7RUFFQSw0RUFBQTtFQUNBLFdBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0FDREo7O0FESUE7RUFDSSxXQUFBO0VBQ0EsdUJBQUE7RUFDQSw0RUFBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0FDREo7O0FES0E7RUFDSSxXQUFBO0VBQ0EsdUJBQUE7RUFDQSw0RUFBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0FDRko7O0FETUE7RUFHSSxlQUFBO0FDTEo7O0FEUUE7RUFDSSw2QkFBQTtFQUNBLGdCQUFBO0FDTEo7O0FEUUE7RUFDSSxXQUFBO0VBQ0EsWUFBQTtFQUNBLDZCQUFBO0FDTEo7O0FEUUE7RUFDSSxXQUFBO0VBQ0EsWUFBQTtBQ0xKOztBRFNBO0VBQ0ksV0FBQTtBQ05KOztBRFVBO0VBQ0ksZUFBQTtFQUNBLFVBQUE7RUFDQSxTQUFBO0FDUEo7O0FEVUE7RUFDSSxlQUFBO0VBQ0EsVUFBQTtFQUNBLFNBQUE7QUNQSjs7QURVQTtFQUNJLGVBQUE7RUFDQSxVQUFBO0VBQ0EsU0FBQTtBQ1BKOztBRFVBO0VBRUksV0FBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtBQ1JKOztBRFVFO0VBQ0ksV0FBQTtBQ1BOOztBRFVFO0VBQ0U7SUFDSSxXQUFBO0VDUE47O0VEU0k7SUFDSSxXQUFBO0VDTlI7O0VEUUk7SUFDRSxZQUFBO0lBQ0EsWUFBQTtFQ0xOOztFRFFFO0lBQ0ksV0FBQTtJQUNBLHVCQUFBO0lBQ0EsYUFBQTtJQUNBLGVBQUE7RUNMTjs7RURRRTtJQUNJLFdBQUE7SUFDQSxZQUFBO0VDTE47QUFDRjs7QURRRTtFQUNFO0lBQ0ksV0FBQTtFQ05OOztFRFFJO0lBQ0ksV0FBQTtFQ0xSOztFRE9JO0lBQ0UsWUFBQTtJQUNBLFlBQUE7RUNKTjs7RURPRTtJQUNJLFdBQUE7SUFDQSx1QkFBQTtJQUNBLGFBQUE7SUFDQSxlQUFBO0VDSk47O0VET0U7SUFDSSxXQUFBO0lBQ0EsWUFBQTtFQ0pOO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9lbnZpcm9tZW50L2Vudmlyb21lbnQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJodG1sLGJvZHl7XG4gICAgLy8gYmFja2dyb3VuZC1jb2xvcjogIzE3MTcxNztcbiAgICAtd2Via2l0LWJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuLmNhXzF7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgLy8gYm9yZGVyLXJhZGl1czogMTAwcHg7XG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgICB3aWR0aDogMTV2dztcbiAgICBtYXJnaW4tbGVmdDogMXZ3O1xuICAgIG1hcmdpbi1yaWdodDogMXZ3O1xufVxuXG4uYmxvY2tfMXtcbiAgICB3aWR0aDogOTV2dztcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICAgIGhlaWdodDogNjB2dztcbiAgICBtYXJnaW4tdG9wOiA1dmg7XG4gICAgLy8gYm9yZGVyLXJhZGl1czogNTBweDtcbn1cblxuLmJsb2NrXzExe1xuICAgIHdpZHRoOiA5NXZ3O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gICAgaGVpZ2h0OiAyNXZoO1xuICAgIG1hcmdpbi10b3A6IDV2aDtcbiAgICAvLyBib3JkZXItcmFkaXVzOiA1MHB4O1xufVxuXG4uZm9uXzF7XG4gICAgLy8gbWFyZ2luLWxlZnQ6IDF2dztcbiAgICAvLyBtYXJnaW4tcmlnaHQ6IDIuNXZ3O1xuICAgIG1hcmdpbi10b3A6IDF2aDtcbiAgfVxuXG4uYmxvY2tfMntcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgICBtYXJnaW4tdG9wOiAzMHB4O1xufVxuXG4uYmxvY3tcbiAgICB3aWR0aDogOTV2dztcbiAgICBoZWlnaHQ6IDMwdmg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG59XG5cbi5ibG9jMntcbiAgICB3aWR0aDogNDB2dztcbiAgICBoZWlnaHQ6IDQ1dmg7XG4gICAgLy8ganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG59XG5cbi5tYXQtZm9ybS1maWVsZHtcbiAgICB3aWR0aDogMzV2dztcbiAgICAvLyBoZWlnaHQ6IDBweDtcbn1cblxuLnRlc3R7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGxlZnQ6IDUwdnc7XG4gICAgdG9wOiA1MHZoO1xufVxuXG4udGVzdDF7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGxlZnQ6IDQ1dnc7XG4gICAgdG9wOiA1MHZoO1xufVxuXG4udGVzdDJ7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGxlZnQ6IDU1dnc7XG4gICAgdG9wOiA1MHZoO1xufVxuXG4uc2Nyb297XG4gICAgLy8gbWFyZ2luLXRvcDogLTEwcHg7XG4gICAgd2lkdGg6IDkwdnc7XG4gICAgaGVpZ2h0OiA0MnZoO1xuICAgIG92ZXJmbG93LXk6IHNjcm9sbDtcbiAgfVxuICAuY2hhcnR7XG4gICAgICB3aWR0aDogNDB2dztcbiAgfVxuXG4gIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNjU0cHgpe1xuICAgIC5jYV8xe1xuICAgICAgICB3aWR0aDogMzB2dztcbiAgICAgIH1cbiAgICAgIC5ibG9je1xuICAgICAgICAgIHdpZHRoOiA5MHZ3O1xuICAgICAgfVxuICAgICAgLmJsb2Mye1xuICAgICAgICB3aWR0aDogMTAwdnc7XG4gICAgICAgIGhlaWdodDogNTB2aDtcbiAgICAgICAgLy8ganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICAgfVxuICAgIC5ibG9ja18xe1xuICAgICAgICB3aWR0aDogOTV2dztcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgICAgIGhlaWdodDogMTUwdmg7XG4gICAgICAgIG1hcmdpbi10b3A6IDV2aDtcbiAgICAgICAgLy8gYm9yZGVyLXJhZGl1czogNTBweDtcbiAgICB9XG4gICAgLmNoYXJ0e1xuICAgICAgICB3aWR0aDogNzB2dztcbiAgICAgICAgaGVpZ2h0OiA1MHZoO1xuICAgIH1cbiAgfVxuXG4gIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogMTIwMHB4KXtcbiAgICAuY2FfMXtcbiAgICAgICAgd2lkdGg6IDMwdnc7XG4gICAgICB9XG4gICAgICAuYmxvY3tcbiAgICAgICAgICB3aWR0aDogOTB2dztcbiAgICAgIH1cbiAgICAgIC5ibG9jMntcbiAgICAgICAgd2lkdGg6IDEwMHZ3O1xuICAgICAgICBoZWlnaHQ6IDUwdmg7XG4gICAgICAgIC8vIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIH1cbiAgICAuYmxvY2tfMXtcbiAgICAgICAgd2lkdGg6IDk1dnc7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgICAgICBoZWlnaHQ6IDIxMHZoO1xuICAgICAgICBtYXJnaW4tdG9wOiA1dmg7XG4gICAgICAgIC8vIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgfVxuICAgIC5jaGFydHtcbiAgICAgICAgd2lkdGg6IDcwdnc7XG4gICAgICAgIGhlaWdodDogNjB2aDtcbiAgICB9XG4gIH0iLCJodG1sLCBib2R5IHtcbiAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG59XG5cbi5jYV8xIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gIHdpZHRoOiAxNXZ3O1xuICBtYXJnaW4tbGVmdDogMXZ3O1xuICBtYXJnaW4tcmlnaHQ6IDF2dztcbn1cblxuLmJsb2NrXzEge1xuICB3aWR0aDogOTV2dztcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gIGhlaWdodDogNjB2dztcbiAgbWFyZ2luLXRvcDogNXZoO1xufVxuXG4uYmxvY2tfMTEge1xuICB3aWR0aDogOTV2dztcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gIGhlaWdodDogMjV2aDtcbiAgbWFyZ2luLXRvcDogNXZoO1xufVxuXG4uZm9uXzEge1xuICBtYXJnaW4tdG9wOiAxdmg7XG59XG5cbi5ibG9ja18yIHtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gIG1hcmdpbi10b3A6IDMwcHg7XG59XG5cbi5ibG9jIHtcbiAgd2lkdGg6IDk1dnc7XG4gIGhlaWdodDogMzB2aDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG59XG5cbi5ibG9jMiB7XG4gIHdpZHRoOiA0MHZ3O1xuICBoZWlnaHQ6IDQ1dmg7XG59XG5cbi5tYXQtZm9ybS1maWVsZCB7XG4gIHdpZHRoOiAzNXZ3O1xufVxuXG4udGVzdCB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgbGVmdDogNTB2dztcbiAgdG9wOiA1MHZoO1xufVxuXG4udGVzdDEge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGxlZnQ6IDQ1dnc7XG4gIHRvcDogNTB2aDtcbn1cblxuLnRlc3QyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBsZWZ0OiA1NXZ3O1xuICB0b3A6IDUwdmg7XG59XG5cbi5zY3JvbyB7XG4gIHdpZHRoOiA5MHZ3O1xuICBoZWlnaHQ6IDQydmg7XG4gIG92ZXJmbG93LXk6IHNjcm9sbDtcbn1cblxuLmNoYXJ0IHtcbiAgd2lkdGg6IDQwdnc7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNjU0cHgpIHtcbiAgLmNhXzEge1xuICAgIHdpZHRoOiAzMHZ3O1xuICB9XG5cbiAgLmJsb2Mge1xuICAgIHdpZHRoOiA5MHZ3O1xuICB9XG5cbiAgLmJsb2MyIHtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiA1MHZoO1xuICB9XG5cbiAgLmJsb2NrXzEge1xuICAgIHdpZHRoOiA5NXZ3O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGhlaWdodDogMTUwdmg7XG4gICAgbWFyZ2luLXRvcDogNXZoO1xuICB9XG5cbiAgLmNoYXJ0IHtcbiAgICB3aWR0aDogNzB2dztcbiAgICBoZWlnaHQ6IDUwdmg7XG4gIH1cbn1cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogMTIwMHB4KSB7XG4gIC5jYV8xIHtcbiAgICB3aWR0aDogMzB2dztcbiAgfVxuXG4gIC5ibG9jIHtcbiAgICB3aWR0aDogOTB2dztcbiAgfVxuXG4gIC5ibG9jMiB7XG4gICAgd2lkdGg6IDEwMHZ3O1xuICAgIGhlaWdodDogNTB2aDtcbiAgfVxuXG4gIC5ibG9ja18xIHtcbiAgICB3aWR0aDogOTV2dztcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBoZWlnaHQ6IDIxMHZoO1xuICAgIG1hcmdpbi10b3A6IDV2aDtcbiAgfVxuXG4gIC5jaGFydCB7XG4gICAgd2lkdGg6IDcwdnc7XG4gICAgaGVpZ2h0OiA2MHZoO1xuICB9XG59Il19 */"]
     });
     /*@__PURE__*/
 
@@ -7694,25 +7925,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @ng-bootstrap/ng-bootstrap */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
     /* harmony import */
 
 
-    var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @angular/material/form-field */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/form-field.js");
     /* harmony import */
 
 
-    var _angular_material_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _angular_material_input__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! @angular/material/input */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/input.js");
     /* harmony import */
 
 
-    var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! @angular/material/datepicker */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/datepicker.js");
 
@@ -7892,7 +8129,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var GraphComponent = /*#__PURE__*/function () {
       function GraphComponent(router, api) {
-        var _this25 = this;
+        var _this27 = this;
 
         _classCallCheck(this, GraphComponent);
 
@@ -7903,7 +8140,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.number = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
         this.numbere = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
         this.hourS = 0;
-        this.hourE = 24;
+        this.hourE = 23;
         this.timeshow = false;
         this.myCanvas = document.querySelector("#lineChart");
         this.navbarOpen = false;
@@ -7922,7 +8159,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         setInterval(function () {
           var wmo = new Date();
-          _this25.now = wmo.toLocaleString();
+          _this27.now = wmo.toLocaleString();
         });
       } //-------------------------
 
@@ -8019,13 +8256,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addDate",
         value: function addDate(event) {
-          var _this26 = this;
+          var _this28 = this;
 
           var date = event.value; //  console.log(this.date.getDate())
 
           this.date1 = date.getDate();
           this.month1 = date.getMonth() + 1;
-          this.year1 = date.getFullYear() + 543; //  var all = this.date1 + this.month1 + this.year1
+          this.year1 = date.getFullYear(); //  var all = this.date1 + this.month1 + this.year1
 
           if (this.date2 == this.date1) {
             this.timeshow = true;
@@ -8039,31 +8276,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             var postda = {
               building: this.name,
               block: this.block,
-              date: this.date1,
-              month: this.month1,
-              year: this.year1,
-              date2: this.date2,
-              month2: this.month2,
-              year2: this.year2,
-              hour: this.hourS,
-              hour2: this.hourE
+              date: ('0' + this.date1).slice(-2).toString(),
+              month: ('0' + this.month1).slice(-2).toString(),
+              year: this.year1.toString(),
+              date2: ('0' + this.date2).slice(-2).toString(),
+              month2: ('0' + this.month2).slice(-2).toString(),
+              year2: this.year2.toString(),
+              hour: ('0' + this.hourS).slice(-2).toString(),
+              hour2: ('0' + this.hourE).slice(-2).toString()
             };
-            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph', postda).subscribe(function (data) {
-              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this26, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee19() {
-                return regeneratorRuntime.wrap(function _callee19$(_context19) {
+            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph2', postda).subscribe(function (data) {
+              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this28, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee21() {
+                return regeneratorRuntime.wrap(function _callee21$(_context21) {
                   while (1) {
-                    switch (_context19.prev = _context19.next) {
+                    switch (_context21.prev = _context21.next) {
                       case 0:
                         // var dae = data[0]['create']
                         this.item = data;
+                        this.volt();
                         this.Loading = false;
 
-                      case 2:
+                      case 3:
                       case "end":
-                        return _context19.stop();
+                        return _context21.stop();
                     }
                   }
-                }, _callee19, this);
+                }, _callee21, this);
               }));
             });
           } else {//end
@@ -8072,14 +8310,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addD",
         value: function addD(event) {
-          var _this27 = this;
+          var _this29 = this;
 
           var date = event.value;
           var nw = new Date(); // console.log(this.date.getDate())
 
           this.date2 = date.getDate();
           this.month2 = date.getMonth() + 1;
-          this.year2 = date.getFullYear() + 543;
+          this.year2 = date.getFullYear();
           var noe = this.date2.toString() + this.month2.toString() + this.year2.toString();
           var eon = nw.getDate().toString() + (nw.getMonth() + 1).toString() + (nw.getFullYear() + 543).toString();
 
@@ -8096,31 +8334,33 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             var postda = {
               building: this.name,
               block: this.block,
-              date: this.date1,
-              month: this.month1,
-              year: this.year1,
-              date2: this.date2,
-              month2: this.month2,
-              year2: this.year2,
-              hour: this.hourS,
-              hour2: this.hourE
+              date: ('0' + this.date1).slice(-2).toString(),
+              month: ('0' + this.month1).slice(-2).toString(),
+              year: this.year1.toString(),
+              date2: ('0' + this.date2).slice(-2).toString(),
+              month2: ('0' + this.month2).slice(-2).toString(),
+              year2: this.year2.toString(),
+              hour: ('0' + this.hourS).slice(-2).toString(),
+              hour2: ('0' + this.hourE).slice(-2).toString()
             };
-            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph', postda).subscribe(function (data) {
-              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this27, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee20() {
-                return regeneratorRuntime.wrap(function _callee20$(_context20) {
+            console.log(postda);
+            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph2', postda).subscribe(function (data) {
+              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this29, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee22() {
+                return regeneratorRuntime.wrap(function _callee22$(_context22) {
                   while (1) {
-                    switch (_context20.prev = _context20.next) {
+                    switch (_context22.prev = _context22.next) {
                       case 0:
                         console.log(data);
                         this.item = data;
+                        this.volt();
                         this.Loading = false;
 
-                      case 3:
+                      case 4:
                       case "end":
-                        return _context20.stop();
+                        return _context22.stop();
                     }
                   }
-                }, _callee20, this);
+                }, _callee22, this);
               }));
             });
           } else {//end
@@ -8918,7 +9158,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "onPercentChange",
         value: function onPercentChange(percent) {
-          var _this28 = this;
+          var _this30 = this;
 
           console.log('here');
           this.hourS = percent;
@@ -8927,20 +9167,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var postda = {
             building: this.name,
             block: this.block,
-            date: this.date1,
-            month: this.month1,
-            year: this.year1,
-            date2: this.date2,
-            month2: this.month2,
-            year2: this.year2,
-            hour: this.hourS,
-            hour2: this.hourE
+            date: ('0' + this.date1).slice(-2).toString(),
+            month: ('0' + this.month1).slice(-2).toString(),
+            year: this.year1.toString(),
+            date2: ('0' + this.date2).slice(-2).toString(),
+            month2: ('0' + this.month2).slice(-2).toString(),
+            year2: this.year2.toString(),
+            hour: ('0' + this.hourS).slice(-2).toString(),
+            hour2: ('0' + this.hourE).slice(-2).toString()
           };
-          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph', postda).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this28, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee21() {
-              return regeneratorRuntime.wrap(function _callee21$(_context21) {
+          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph2', postda).subscribe(function (data) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this30, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee23() {
+              return regeneratorRuntime.wrap(function _callee23$(_context23) {
                 while (1) {
-                  switch (_context21.prev = _context21.next) {
+                  switch (_context23.prev = _context23.next) {
                     case 0:
                       // var dae = data[0]['create']
                       this.item = data;
@@ -8948,17 +9188,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                     case 2:
                     case "end":
-                      return _context21.stop();
+                      return _context23.stop();
                   }
                 }
-              }, _callee21, this);
+              }, _callee23, this);
             }));
           });
         }
       }, {
         key: "onPer",
         value: function onPer(percent) {
-          var _this29 = this;
+          var _this31 = this;
 
           console.log('here');
           this.hourE = percent;
@@ -8967,20 +9207,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var postda = {
             building: this.name,
             block: this.block,
-            date: this.date1,
-            month: this.month1,
-            year: this.year1,
-            date2: this.date2,
-            month2: this.month2,
-            year2: this.year2,
-            hour: this.hourS,
-            hour2: this.hourE
+            date: ('0' + this.date1).slice(-2).toString(),
+            month: ('0' + this.month1).slice(-2).toString(),
+            year: this.year1.toString(),
+            date2: ('0' + this.date2).slice(-2).toString(),
+            month2: ('0' + this.month2).slice(-2).toString(),
+            year2: this.year2.toString(),
+            hour: ('0' + this.hourS).slice(-2).toString(),
+            hour2: ('0' + this.hourE).slice(-2).toString()
           };
-          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph', postda).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this29, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee22() {
-              return regeneratorRuntime.wrap(function _callee22$(_context22) {
+          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph2', postda).subscribe(function (data) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this31, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee24() {
+              return regeneratorRuntime.wrap(function _callee24$(_context24) {
                 while (1) {
-                  switch (_context22.prev = _context22.next) {
+                  switch (_context24.prev = _context24.next) {
                     case 0:
                       // var dae = data[0]['create']
                       this.item = data;
@@ -8988,10 +9228,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                     case 2:
                     case "end":
-                      return _context22.stop();
+                      return _context24.stop();
                   }
                 }
-              }, _callee22, this);
+              }, _callee24, this);
             }));
           });
         }
@@ -9025,7 +9265,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["app-graph"]],
       decls: 122,
       vars: 17,
-      consts: [[1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "rgba(104, 104, 104, 0.413)"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler", 3, "click"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse", 3, "ngClass"], [1, "navbar-nav", "mr-auto", "mt-2", "mt-lg-0"], [1, "nav-item", "active"], ["href", "#", 1, "nav-link"], [1, "sr-only"], ["href", "#/selecm", 1, "nav-link"], [1, "nav-item", "dropdown"], ["id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "true", 1, "nav-link", "dropdown-toggle"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "click"], ["href", "#/envi", 1, "nav-link"], [2, "background-color", "black", "width", "100vw", "height", "2px"], ["class", "spinner-grow text-dark test", "role", "status", 4, "ngIf"], ["class", "spinner-grow text-dark test1", "role", "status", 4, "ngIf"], ["class", "spinner-grow text-dark test2", "role", "status", 4, "ngIf"], [2, "margin-left", "1vw", "margin-top", "1vh"], ["align", "center", 2, "margin-top", "0px"], ["src", "../../assets/osis.png", 2, "width", "150px"], ["src", "https://firebasestorage.googleapis.com/v0/b/solarpower-466f6.appspot.com/o/m.png?alt=media&token=3b4af2de-cd57-41f3-ab2d-28bde512a2d5", 2, "width", "250px", "margin-bottom", "30px"], ["src", "../../assets/nu.png", 2, "width", "150px"], ["src", "https://firebasestorage.googleapis.com/v0/b/solarpower-466f6.appspot.com/o/j.png?alt=media&token=cce5938e-ae9d-4973-9b9b-9c2a41be6cad", 2, "width", "250px"], ["align", "center", 2, "width", "100vw", "margin-top", "3vh"], [2, "font-size", "30px"], [2, "margin-top", "20px"], ["type", "button", 1, "btn", "ca_1", 3, "click"], ["src", "../../assets/das.png", 2, "width", "4vw"], [1, "fon_1"], ["type", "button", 1, "btn", "ca_1"], ["src", "../../assets/graphp.png", 2, "width", "4vw"], ["src", "../../assets/hist.png", 2, "width", "4vw"], [1, "block_1"], [2, "margin-top", "60px", "border-width", "10px", "border", "solid", "font-size", "30px"], [1, "row", "block_2"], [1, "bloc"], [1, "row", 2, "justify-content", "space-around"], ["appearance", "fill", 2, "width", "15vw"], ["matInput", "", 3, "matDatepicker", "max", "dateInput"], ["matSuffix", "", 3, "for"], ["picker", ""], ["pick", ""], ["class", "row", "style", "justify-content: space-around;", "align", "center", 4, "ngIf"], [2, "margin-top", "3vh"], ["type", "button", 1, "btn", "ca_1", 2, "width", "100px", 3, "click"], [2, "margin-top", "10px"], [1, "bloc2"], [1, "chart"], ["id", "lineChart"], ["href", "#", 3, "click"], ["role", "status", 1, "spinner-grow", "text-dark", "test"], ["role", "status", 1, "spinner-grow", "text-dark", "test1"], ["role", "status", 1, "spinner-grow", "text-dark", "test2"], ["align", "center", 1, "row", 2, "justify-content", "space-around"], [1, "row"], [1, "form-control", 2, "width", "4vw", "margin-left", "10px", 3, "change"], ["mySelect", ""], [3, "value", 4, "ngFor", "ngForOf"], [2, "font-size", "15px", "margin-top", "13px"], ["mySelec", ""], [3, "value", "selected", 4, "ngFor", "ngForOf"], [3, "value"], [3, "value", "selected"]],
+      consts: [[1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "rgba(104, 104, 104, 0.413)"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler", 3, "click"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse", 3, "ngClass"], [1, "navbar-nav", "mr-auto", "mt-2", "mt-lg-0"], [1, "nav-item", "active"], ["href", "#", 1, "nav-link"], [1, "sr-only"], ["href", "#/selecm", 1, "nav-link"], [1, "nav-item", "dropdown"], ["id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "true", 1, "nav-link", "dropdown-toggle"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "click"], ["href", "#/envi", 1, "nav-link"], [2, "background-color", "black", "width", "100vw", "height", "2px"], ["class", "spinner-grow text-dark test", "role", "status", 4, "ngIf"], ["class", "spinner-grow text-dark test1", "role", "status", 4, "ngIf"], ["class", "spinner-grow text-dark test2", "role", "status", 4, "ngIf"], [2, "margin-left", "1vw", "margin-top", "1vh"], ["align", "center", 2, "margin-top", "0px"], ["src", "../../assets/osis.png", 2, "width", "150px"], ["src", "../../assets/m.png", 2, "width", "250px", "margin-bottom", "30px"], ["src", "../../assets/nu.png", 2, "width", "150px"], ["src", "../../assets/j.png", 2, "width", "250px"], ["align", "center", 2, "width", "100vw", "margin-top", "3vh"], [2, "font-size", "30px"], [2, "margin-top", "20px"], ["type", "button", 1, "btn", "ca_1", 3, "click"], ["src", "../../assets/das.png", 2, "width", "4vw"], [1, "fon_1"], ["type", "button", 1, "btn", "ca_1"], ["src", "../../assets/graphp.png", 2, "width", "4vw"], ["src", "../../assets/hist.png", 2, "width", "4vw"], [1, "block_1"], [2, "margin-top", "60px", "border-width", "10px", "border", "solid", "font-size", "30px"], [1, "row", "block_2"], [1, "bloc"], [1, "row", 2, "justify-content", "space-around"], ["appearance", "fill", 2, "width", "15vw"], ["matInput", "", 3, "matDatepicker", "max", "dateInput"], ["matSuffix", "", 3, "for"], ["picker", ""], ["pick", ""], ["class", "row", "style", "justify-content: space-around;", "align", "center", 4, "ngIf"], [2, "margin-top", "3vh"], ["type", "button", 1, "btn", "ca_1", 2, "width", "100px", 3, "click"], [2, "margin-top", "10px"], [1, "bloc2"], [1, "chart"], ["id", "lineChart"], ["href", "#", 3, "click"], ["role", "status", 1, "spinner-grow", "text-dark", "test"], ["role", "status", 1, "spinner-grow", "text-dark", "test1"], ["role", "status", 1, "spinner-grow", "text-dark", "test2"], ["align", "center", 1, "row", 2, "justify-content", "space-around"], [1, "row"], [1, "form-control", 2, "width", "7vw", "margin-left", "10px", 3, "change"], ["mySelect", ""], [3, "value", 4, "ngFor", "ngForOf"], [2, "font-size", "15px", "margin-top", "13px"], ["mySelec", ""], [3, "value", "selected", 4, "ngFor", "ngForOf"], [3, "value"], [3, "value", "selected"]],
       template: function GraphComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "html");
@@ -9545,8 +9785,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.timeshow);
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerToggle"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatSuffix"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepicker"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgForOf"]],
-      styles: ["html[_ngcontent-%COMP%], body[_ngcontent-%COMP%] {\n  background-size: cover;\n  width: 100vw;\n  height: 100vh;\n}\n\n.ca_1[_ngcontent-%COMP%] {\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  width: 15vw;\n  margin-left: 1vw;\n  margin-right: 1vw;\n}\n\n.block_1[_ngcontent-%COMP%] {\n  width: 95vw;\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  height: 50vh;\n  margin-top: 5vh;\n}\n\n.fon_1[_ngcontent-%COMP%] {\n  margin-top: 1vh;\n}\n\n.block_2[_ngcontent-%COMP%] {\n  justify-content: space-around;\n  margin-top: 30px;\n}\n\n.bloc[_ngcontent-%COMP%] {\n  width: 40vw;\n  height: 45vh;\n  justify-content: space-around;\n}\n\n.bloc2[_ngcontent-%COMP%] {\n  width: 40vw;\n  height: 45vh;\n}\n\n.mat-form-field[_ngcontent-%COMP%] {\n  width: 35vw;\n}\n\n.test[_ngcontent-%COMP%] {\n  position: absolute;\n  left: 50vw;\n  top: 50vh;\n}\n\n.test1[_ngcontent-%COMP%] {\n  position: absolute;\n  left: 45vw;\n  top: 50vh;\n}\n\n.test2[_ngcontent-%COMP%] {\n  position: absolute;\n  left: 55vw;\n  top: 50vh;\n}\n\n.scroo[_ngcontent-%COMP%] {\n  margin-top: -10px;\n  width: 90vw;\n  height: 42vh;\n  overflow-y: scroll;\n}\n\n.chart[_ngcontent-%COMP%] {\n  width: 40vw;\n}\n\n@media only screen and (max-width: 900px) {\n  .ca_1[_ngcontent-%COMP%] {\n    width: 30vw;\n  }\n\n  .bloc[_ngcontent-%COMP%] {\n    width: 90vw;\n  }\n\n  .bloc2[_ngcontent-%COMP%] {\n    width: 100vw;\n    height: 50vh;\n  }\n\n  .block_1[_ngcontent-%COMP%] {\n    width: 95vw;\n    background-color: white;\n    height: 100vh;\n    margin-top: 5vh;\n  }\n\n  .chart[_ngcontent-%COMP%] {\n    width: 95vw;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYXRpbnlhL0Rlc2t0b3AvU29sYXJjZWxsL0VuZXJneS9zcmMvYXBwL2dyYXBoL2dyYXBoLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9ncmFwaC9ncmFwaC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUdJLHNCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7QUNBSjs7QURHQTtFQUNJLHVCQUFBO0VBRUEsNEVBQUE7RUFDQSxXQUFBO0VBQ0EsZ0JBQUE7RUFDQSxpQkFBQTtBQ0RKOztBRElBO0VBQ0ksV0FBQTtFQUNBLHVCQUFBO0VBQ0EsNEVBQUE7RUFDQSxZQUFBO0VBQ0EsZUFBQTtBQ0RKOztBREtBO0VBR0ksZUFBQTtBQ0pKOztBRE9BO0VBQ0ksNkJBQUE7RUFDQSxnQkFBQTtBQ0pKOztBRE9BO0VBQ0ksV0FBQTtFQUNBLFlBQUE7RUFDQSw2QkFBQTtBQ0pKOztBRE9BO0VBQ0ksV0FBQTtFQUNBLFlBQUE7QUNKSjs7QURRQTtFQUNJLFdBQUE7QUNMSjs7QURTQTtFQUNJLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLFNBQUE7QUNOSjs7QURTQTtFQUNJLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLFNBQUE7QUNOSjs7QURTQTtFQUNJLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLFNBQUE7QUNOSjs7QURTQTtFQUNJLGlCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtBQ05KOztBRFFFO0VBQ0ksV0FBQTtBQ0xOOztBRFFFO0VBQ0U7SUFDSSxXQUFBO0VDTE47O0VET0k7SUFDSSxXQUFBO0VDSlI7O0VETUk7SUFDRSxZQUFBO0lBQ0EsWUFBQTtFQ0hOOztFRE1FO0lBQ0ksV0FBQTtJQUNBLHVCQUFBO0lBQ0EsYUFBQTtJQUNBLGVBQUE7RUNITjs7RURNRTtJQUNJLFdBQUE7RUNITjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvZ3JhcGgvZ3JhcGguY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJodG1sLGJvZHl7XG4gICAgLy8gYmFja2dyb3VuZC1jb2xvcjogIzE3MTcxNztcbiAgICAtd2Via2l0LWJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuLmNhXzF7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgLy8gYm9yZGVyLXJhZGl1czogMTAwcHg7XG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgICB3aWR0aDogMTV2dztcbiAgICBtYXJnaW4tbGVmdDogMXZ3O1xuICAgIG1hcmdpbi1yaWdodDogMXZ3O1xufVxuXG4uYmxvY2tfMXtcbiAgICB3aWR0aDogOTV2dztcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICAgIGhlaWdodDogNTB2aDtcbiAgICBtYXJnaW4tdG9wOiA1dmg7XG4gICAgLy8gYm9yZGVyLXJhZGl1czogNTBweDtcbn1cblxuLmZvbl8xe1xuICAgIC8vIG1hcmdpbi1sZWZ0OiAxdnc7XG4gICAgLy8gbWFyZ2luLXJpZ2h0OiAyLjV2dztcbiAgICBtYXJnaW4tdG9wOiAxdmg7XG4gIH1cblxuLmJsb2NrXzJ7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICAgbWFyZ2luLXRvcDogMzBweDtcbn1cblxuLmJsb2N7XG4gICAgd2lkdGg6IDQwdnc7XG4gICAgaGVpZ2h0OiA0NXZoO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xufVxuXG4uYmxvYzJ7XG4gICAgd2lkdGg6IDQwdnc7XG4gICAgaGVpZ2h0OiA0NXZoO1xuICAgIC8vIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xufVxuXG4ubWF0LWZvcm0tZmllbGR7XG4gICAgd2lkdGg6IDM1dnc7XG4gICAgLy8gaGVpZ2h0OiAwcHg7XG59XG5cbi50ZXN0e1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBsZWZ0OiA1MHZ3O1xuICAgIHRvcDogNTB2aDtcbn1cblxuLnRlc3Qxe1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBsZWZ0OiA0NXZ3O1xuICAgIHRvcDogNTB2aDtcbn1cblxuLnRlc3Qye1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBsZWZ0OiA1NXZ3O1xuICAgIHRvcDogNTB2aDtcbn1cblxuLnNjcm9ve1xuICAgIG1hcmdpbi10b3A6IC0xMHB4O1xuICAgIHdpZHRoOiA5MHZ3O1xuICAgIGhlaWdodDogNDJ2aDtcbiAgICBvdmVyZmxvdy15OiBzY3JvbGw7XG4gIH1cbiAgLmNoYXJ0e1xuICAgICAgd2lkdGg6IDQwdnc7XG4gIH1cblxuICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDkwMHB4KXtcbiAgICAuY2FfMXtcbiAgICAgICAgd2lkdGg6IDMwdnc7XG4gICAgICB9XG4gICAgICAuYmxvY3tcbiAgICAgICAgICB3aWR0aDogOTB2dztcbiAgICAgIH1cbiAgICAgIC5ibG9jMntcbiAgICAgICAgd2lkdGg6IDEwMHZ3O1xuICAgICAgICBoZWlnaHQ6IDUwdmg7XG4gICAgICAgIC8vIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIH1cbiAgICAuYmxvY2tfMXtcbiAgICAgICAgd2lkdGg6IDk1dnc7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgICAgICBoZWlnaHQ6IDEwMHZoO1xuICAgICAgICBtYXJnaW4tdG9wOiA1dmg7XG4gICAgICAgIC8vIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgfVxuICAgIC5jaGFydHtcbiAgICAgICAgd2lkdGg6IDk1dnc7XG4gICAgfVxuICB9IiwiaHRtbCwgYm9keSB7XG4gIC13ZWJraXQtYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xufVxuXG4uY2FfMSB7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICB3aWR0aDogMTV2dztcbiAgbWFyZ2luLWxlZnQ6IDF2dztcbiAgbWFyZ2luLXJpZ2h0OiAxdnc7XG59XG5cbi5ibG9ja18xIHtcbiAgd2lkdGg6IDk1dnc7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICBoZWlnaHQ6IDUwdmg7XG4gIG1hcmdpbi10b3A6IDV2aDtcbn1cblxuLmZvbl8xIHtcbiAgbWFyZ2luLXRvcDogMXZoO1xufVxuXG4uYmxvY2tfMiB7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICBtYXJnaW4tdG9wOiAzMHB4O1xufVxuXG4uYmxvYyB7XG4gIHdpZHRoOiA0MHZ3O1xuICBoZWlnaHQ6IDQ1dmg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xufVxuXG4uYmxvYzIge1xuICB3aWR0aDogNDB2dztcbiAgaGVpZ2h0OiA0NXZoO1xufVxuXG4ubWF0LWZvcm0tZmllbGQge1xuICB3aWR0aDogMzV2dztcbn1cblxuLnRlc3Qge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGxlZnQ6IDUwdnc7XG4gIHRvcDogNTB2aDtcbn1cblxuLnRlc3QxIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBsZWZ0OiA0NXZ3O1xuICB0b3A6IDUwdmg7XG59XG5cbi50ZXN0MiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogNTV2dztcbiAgdG9wOiA1MHZoO1xufVxuXG4uc2Nyb28ge1xuICBtYXJnaW4tdG9wOiAtMTBweDtcbiAgd2lkdGg6IDkwdnc7XG4gIGhlaWdodDogNDJ2aDtcbiAgb3ZlcmZsb3cteTogc2Nyb2xsO1xufVxuXG4uY2hhcnQge1xuICB3aWR0aDogNDB2dztcbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA5MDBweCkge1xuICAuY2FfMSB7XG4gICAgd2lkdGg6IDMwdnc7XG4gIH1cblxuICAuYmxvYyB7XG4gICAgd2lkdGg6IDkwdnc7XG4gIH1cblxuICAuYmxvYzIge1xuICAgIHdpZHRoOiAxMDB2dztcbiAgICBoZWlnaHQ6IDUwdmg7XG4gIH1cblxuICAuYmxvY2tfMSB7XG4gICAgd2lkdGg6IDk1dnc7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbiAgICBtYXJnaW4tdG9wOiA1dmg7XG4gIH1cblxuICAuY2hhcnQge1xuICAgIHdpZHRoOiA5NXZ3O1xuICB9XG59Il19 */"]
+      directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbNavbar"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_8__["MatInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_9__["MatDatepickerInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_9__["MatDatepickerToggle"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__["MatSuffix"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_9__["MatDatepicker"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgForOf"]],
+      styles: ["html[_ngcontent-%COMP%], body[_ngcontent-%COMP%] {\n  background-size: cover;\n  width: 100vw;\n  height: 100vh;\n}\n\n.ca_1[_ngcontent-%COMP%] {\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  width: 15vw;\n  margin-left: 1vw;\n  margin-right: 1vw;\n}\n\n.block_1[_ngcontent-%COMP%] {\n  width: 95vw;\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  height: 60vh;\n  margin-top: 5vh;\n}\n\n.fon_1[_ngcontent-%COMP%] {\n  margin-top: 1vh;\n}\n\n.block_2[_ngcontent-%COMP%] {\n  justify-content: space-around;\n  margin-top: 30px;\n}\n\n.bloc[_ngcontent-%COMP%] {\n  width: 40vw;\n  height: 45vh;\n  justify-content: space-around;\n}\n\n.bloc2[_ngcontent-%COMP%] {\n  width: 40vw;\n  height: 45vh;\n}\n\n.mat-form-field[_ngcontent-%COMP%] {\n  width: 35vw;\n}\n\n.test[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 50vw;\n  top: 50vh;\n}\n\n.test1[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 45vw;\n  top: 50vh;\n}\n\n.test2[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 55vw;\n  top: 50vh;\n}\n\n.scroo[_ngcontent-%COMP%] {\n  margin-top: -10px;\n  width: 90vw;\n  height: 42vh;\n  overflow-y: scroll;\n}\n\n.chart[_ngcontent-%COMP%] {\n  width: 40vw;\n}\n\n@media only screen and (max-width: 900px) {\n  .ca_1[_ngcontent-%COMP%] {\n    width: 30vw;\n  }\n\n  .bloc[_ngcontent-%COMP%] {\n    width: 90vw;\n  }\n\n  .bloc2[_ngcontent-%COMP%] {\n    width: 100vw;\n    height: 900vh;\n  }\n\n  .block_1[_ngcontent-%COMP%] {\n    width: 95vw;\n    background-color: white;\n    height: 100vh;\n    margin-top: 5vh;\n  }\n\n  .chart[_ngcontent-%COMP%] {\n    width: 95vw;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYXRpbnlhL0Rlc2t0b3AvU29sYXJjZWxsL0VuZXJneS9zcmMvYXBwL2dyYXBoL2dyYXBoLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9ncmFwaC9ncmFwaC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUdJLHNCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7QUNBSjs7QURHQTtFQUNJLHVCQUFBO0VBRUEsNEVBQUE7RUFDQSxXQUFBO0VBQ0EsZ0JBQUE7RUFDQSxpQkFBQTtBQ0RKOztBRElBO0VBQ0ksV0FBQTtFQUNBLHVCQUFBO0VBQ0EsNEVBQUE7RUFDQSxZQUFBO0VBQ0EsZUFBQTtBQ0RKOztBREtBO0VBR0ksZUFBQTtBQ0pKOztBRE9BO0VBQ0ksNkJBQUE7RUFDQSxnQkFBQTtBQ0pKOztBRE9BO0VBQ0ksV0FBQTtFQUNBLFlBQUE7RUFDQSw2QkFBQTtBQ0pKOztBRE9BO0VBQ0ksV0FBQTtFQUNBLFlBQUE7QUNKSjs7QURRQTtFQUNJLFdBQUE7QUNMSjs7QURTQTtFQUNJLGVBQUE7RUFDQSxVQUFBO0VBQ0EsU0FBQTtBQ05KOztBRFNBO0VBQ0ksZUFBQTtFQUNBLFVBQUE7RUFDQSxTQUFBO0FDTko7O0FEU0E7RUFDSSxlQUFBO0VBQ0EsVUFBQTtFQUNBLFNBQUE7QUNOSjs7QURTQTtFQUNJLGlCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtBQ05KOztBRFFFO0VBQ0ksV0FBQTtBQ0xOOztBRFFFO0VBQ0U7SUFDSSxXQUFBO0VDTE47O0VET0k7SUFDSSxXQUFBO0VDSlI7O0VET0k7SUFDRSxZQUFBO0lBQ0EsYUFBQTtFQ0pOOztFRE9FO0lBQ0ksV0FBQTtJQUNBLHVCQUFBO0lBQ0EsYUFBQTtJQUNBLGVBQUE7RUNKTjs7RURPRTtJQUNJLFdBQUE7RUNKTjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvZ3JhcGgvZ3JhcGguY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJodG1sLGJvZHl7XG4gICAgLy8gYmFja2dyb3VuZC1jb2xvcjogIzE3MTcxNztcbiAgICAtd2Via2l0LWJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuLmNhXzF7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgLy8gYm9yZGVyLXJhZGl1czogMTAwcHg7XG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgICB3aWR0aDogMTV2dztcbiAgICBtYXJnaW4tbGVmdDogMXZ3O1xuICAgIG1hcmdpbi1yaWdodDogMXZ3O1xufVxuXG4uYmxvY2tfMXtcbiAgICB3aWR0aDogOTV2dztcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICAgIGhlaWdodDogNjB2aDtcbiAgICBtYXJnaW4tdG9wOiA1dmg7XG4gICAgLy8gYm9yZGVyLXJhZGl1czogNTBweDtcbn1cblxuLmZvbl8xe1xuICAgIC8vIG1hcmdpbi1sZWZ0OiAxdnc7XG4gICAgLy8gbWFyZ2luLXJpZ2h0OiAyLjV2dztcbiAgICBtYXJnaW4tdG9wOiAxdmg7XG4gIH1cblxuLmJsb2NrXzJ7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICAgbWFyZ2luLXRvcDogMzBweDtcbn1cblxuLmJsb2N7XG4gICAgd2lkdGg6IDQwdnc7XG4gICAgaGVpZ2h0OiA0NXZoO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xufVxuXG4uYmxvYzJ7XG4gICAgd2lkdGg6IDQwdnc7XG4gICAgaGVpZ2h0OiA0NXZoO1xuICAgIC8vIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xufVxuXG4ubWF0LWZvcm0tZmllbGR7XG4gICAgd2lkdGg6IDM1dnc7XG4gICAgLy8gaGVpZ2h0OiAwcHg7XG59XG5cbi50ZXN0e1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBsZWZ0OiA1MHZ3O1xuICAgIHRvcDogNTB2aDtcbn1cblxuLnRlc3Qxe1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBsZWZ0OiA0NXZ3O1xuICAgIHRvcDogNTB2aDtcbn1cblxuLnRlc3Qye1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBsZWZ0OiA1NXZ3O1xuICAgIHRvcDogNTB2aDtcbn1cblxuLnNjcm9ve1xuICAgIG1hcmdpbi10b3A6IC0xMHB4O1xuICAgIHdpZHRoOiA5MHZ3O1xuICAgIGhlaWdodDogNDJ2aDtcbiAgICBvdmVyZmxvdy15OiBzY3JvbGw7XG4gIH1cbiAgLmNoYXJ0e1xuICAgICAgd2lkdGg6IDQwdnc7XG4gIH1cblxuICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDkwMHB4KXtcbiAgICAuY2FfMXtcbiAgICAgICAgd2lkdGg6IDMwdnc7XG4gICAgICB9XG4gICAgICAuYmxvY3tcbiAgICAgICAgICB3aWR0aDogOTB2dztcbiAgICAgICAgICBcbiAgICAgIH1cbiAgICAgIC5ibG9jMntcbiAgICAgICAgd2lkdGg6IDEwMHZ3O1xuICAgICAgICBoZWlnaHQ6IDkwMHZoO1xuICAgICAgICAvLyBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgICB9XG4gICAgLmJsb2NrXzF7XG4gICAgICAgIHdpZHRoOiA5NXZ3O1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICAgICAgaGVpZ2h0OiAxMDB2aDtcbiAgICAgICAgbWFyZ2luLXRvcDogNXZoO1xuICAgICAgICAvLyBib3JkZXItcmFkaXVzOiA1MHB4O1xuICAgIH1cbiAgICAuY2hhcnR7XG4gICAgICAgIHdpZHRoOiA5NXZ3O1xuICAgIH1cbiAgfSIsImh0bWwsIGJvZHkge1xuICAtd2Via2l0LWJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuLmNhXzEge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgd2lkdGg6IDE1dnc7XG4gIG1hcmdpbi1sZWZ0OiAxdnc7XG4gIG1hcmdpbi1yaWdodDogMXZ3O1xufVxuXG4uYmxvY2tfMSB7XG4gIHdpZHRoOiA5NXZ3O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgaGVpZ2h0OiA2MHZoO1xuICBtYXJnaW4tdG9wOiA1dmg7XG59XG5cbi5mb25fMSB7XG4gIG1hcmdpbi10b3A6IDF2aDtcbn1cblxuLmJsb2NrXzIge1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgbWFyZ2luLXRvcDogMzBweDtcbn1cblxuLmJsb2Mge1xuICB3aWR0aDogNDB2dztcbiAgaGVpZ2h0OiA0NXZoO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbn1cblxuLmJsb2MyIHtcbiAgd2lkdGg6IDQwdnc7XG4gIGhlaWdodDogNDV2aDtcbn1cblxuLm1hdC1mb3JtLWZpZWxkIHtcbiAgd2lkdGg6IDM1dnc7XG59XG5cbi50ZXN0IHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBsZWZ0OiA1MHZ3O1xuICB0b3A6IDUwdmg7XG59XG5cbi50ZXN0MSB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgbGVmdDogNDV2dztcbiAgdG9wOiA1MHZoO1xufVxuXG4udGVzdDIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGxlZnQ6IDU1dnc7XG4gIHRvcDogNTB2aDtcbn1cblxuLnNjcm9vIHtcbiAgbWFyZ2luLXRvcDogLTEwcHg7XG4gIHdpZHRoOiA5MHZ3O1xuICBoZWlnaHQ6IDQydmg7XG4gIG92ZXJmbG93LXk6IHNjcm9sbDtcbn1cblxuLmNoYXJ0IHtcbiAgd2lkdGg6IDQwdnc7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTAwcHgpIHtcbiAgLmNhXzEge1xuICAgIHdpZHRoOiAzMHZ3O1xuICB9XG5cbiAgLmJsb2Mge1xuICAgIHdpZHRoOiA5MHZ3O1xuICB9XG5cbiAgLmJsb2MyIHtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiA5MDB2aDtcbiAgfVxuXG4gIC5ibG9ja18xIHtcbiAgICB3aWR0aDogOTV2dztcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBoZWlnaHQ6IDEwMHZoO1xuICAgIG1hcmdpbi10b3A6IDV2aDtcbiAgfVxuXG4gIC5jaGFydCB7XG4gICAgd2lkdGg6IDk1dnc7XG4gIH1cbn0iXX0= */"]
     });
     /*@__PURE__*/
 
@@ -9626,25 +9866,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @ng-bootstrap/ng-bootstrap */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
     /* harmony import */
 
 
-    var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @angular/material/form-field */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/form-field.js");
     /* harmony import */
 
 
-    var _angular_material_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _angular_material_input__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! @angular/material/input */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/input.js");
     /* harmony import */
 
 
-    var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
     /*! @angular/material/datepicker */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/datepicker.js");
 
@@ -9656,7 +9902,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var GraphfourComponent = /*#__PURE__*/function () {
       function GraphfourComponent(route, api) {
-        var _this30 = this;
+        var _this32 = this;
 
         _classCallCheck(this, GraphfourComponent);
 
@@ -9682,7 +9928,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         setInterval(function () {
           var wmo = new Date();
-          _this30.now = wmo.toLocaleString();
+          _this32.now = wmo.toLocaleString();
         });
       }
 
@@ -9811,7 +10057,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addDate",
         value: function addDate(event) {
-          var _this31 = this;
+          var _this33 = this;
 
           this.date = event.value;
           console.log(this.date.getDate());
@@ -9824,11 +10070,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             year: this.date.getFullYear() + 543
           };
           this.api.postData('http://www.mesfia.eng.nu.ac.th/history', postda).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this31, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee23() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this33, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee25() {
               var a, check, iterator, dae, er;
-              return regeneratorRuntime.wrap(function _callee23$(_context23) {
+              return regeneratorRuntime.wrap(function _callee25$(_context25) {
                 while (1) {
-                  switch (_context23.prev = _context23.next) {
+                  switch (_context25.prev = _context25.next) {
                     case 0:
                       // var dae = data[0]['create']
                       a = [];
@@ -9854,10 +10100,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                     case 7:
                     case "end":
-                      return _context23.stop();
+                      return _context25.stop();
                   }
                 }
-              }, _callee23, this);
+              }, _callee25, this);
             }));
           });
         }
@@ -10317,7 +10563,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("for", _r0);
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_5__["NgClass"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerToggle"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatSuffix"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepicker"]],
+      directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_5__["NgbNavbar"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgClass"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_8__["MatInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_9__["MatDatepickerInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_9__["MatDatepickerToggle"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__["MatSuffix"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_9__["MatDatepicker"]],
       styles: ["html[_ngcontent-%COMP%], body[_ngcontent-%COMP%], footer[_ngcontent-%COMP%] {\n  background-size: cover;\n  width: max;\n  height: 100vh;\n}\n\n.ca_1[_ngcontent-%COMP%] {\n  justify-content: space-around;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  margin-top: 2vh;\n  width: 40vw;\n  color: black;\n}\n\n.ca_2[_ngcontent-%COMP%] {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  width: 40vw;\n  color: black;\n  height: 35vh;\n  margin-top: 2vh;\n  margin-bottom: 2vh;\n}\n\n.ca_3[_ngcontent-%COMP%] {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  width: 95vw;\n}\n\n.topw[_ngcontent-%COMP%] {\n  margin-top: 2vh;\n  margin-right: 6vw;\n}\n\n.hei[_ngcontent-%COMP%] {\n  height: 40vh;\n}\n\n@media only screen and (max-width: 900px) {\n  .ca_1[_ngcontent-%COMP%] {\n    justify-content: space-around;\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n    margin-top: 2vh;\n    width: 100vw;\n    color: black;\n  }\n\n  canvas[_ngcontent-%COMP%] {\n    height: 50vh;\n    width: 100vw;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYXRpbnlhL0Rlc2t0b3AvU29sYXJjZWxsL0VuZXJneS9zcmMvYXBwL2dyYXBoZm91ci9ncmFwaGZvdXIuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2dyYXBoZm91ci9ncmFwaGZvdXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFHSSxzQkFBQTtFQUNBLFVBQUE7RUFDQSxhQUFBO0FDQUo7O0FER0E7RUFDSSw2QkFBQTtFQUNBLDRFQUFBO0VBQ0EsZUFBQTtFQUdBLFdBQUE7RUFDQSxZQUFBO0FDRko7O0FES0E7RUFFSSw0RUFBQTtFQUNBLFdBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtFQUVBLGVBQUE7RUFDQSxrQkFBQTtBQ0pKOztBRE9BO0VBRUksNEVBQUE7RUFDQSxXQUFBO0FDTEo7O0FEUUE7RUFDSSxlQUFBO0VBQ0EsaUJBQUE7QUNMSjs7QURVQTtFQUNJLFlBQUE7QUNQSjs7QURjQTtFQUNJO0lBQ0ksNkJBQUE7SUFDQSw0RUFBQTtJQUNBLGVBQUE7SUFHQSxZQUFBO0lBQ0EsWUFBQTtFQ2JOOztFRGVFO0lBQ0ksWUFBQTtJQUNBLFlBQUE7RUNaTjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvZ3JhcGhmb3VyL2dyYXBoZm91ci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImh0bWwsYm9keSxmb290ZXJ7XG4gICAgLy8gYmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50KHRvIHJpZ2h0LCAjQTMyODJBICwgI0QwOEY5MCk7XG4gICAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgd2lkdGg6IG1heDtcbiAgICBoZWlnaHQ6IDEwMHZoO1xufVxuXG4uY2FfMXtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICAgIG1hcmdpbi10b3A6IDJ2aDtcbiAgICAvLyBib3JkZXItcmFkaXVzOiAzNXB4O1xuICAgIC8vIGhlaWdodDogdmg7XG4gICAgd2lkdGg6IDQwdnc7XG4gICAgY29sb3I6IGJsYWNrO1xufVxuXG4uY2FfMntcbiAgICAvLyBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQoIzg5MDcwNywgI0YwOUQ5RCk7XG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgICB3aWR0aDogNDB2dztcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgaGVpZ2h0OiAzNXZoO1xuICAgIC8vIGJvcmRlci1yYWRpdXM6IDgwcHg7XG4gICAgbWFyZ2luLXRvcDogMnZoO1xuICAgIG1hcmdpbi1ib3R0b206IDJ2aDtcbn1cblxuLmNhXzN7XG4gICAgLy8gYmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50KCM4OTA3MDcsICNGMDlEOUQpO1xuICAgIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gICAgd2lkdGg6IDk1dnc7XG59XG5cbi50b3B3e1xuICAgIG1hcmdpbi10b3A6IDJ2aDtcbiAgICBtYXJnaW4tcmlnaHQ6IDZ2dztcbiAgICAvLyB3aWR0aDogMTAwdnc7XG4gICAgLy8ganVzdGlmeS1jb250ZW50OiA7XG59XG5cbi5oZWl7XG4gICAgaGVpZ2h0OiA0MHZoO1xufVxuXG4vLyBjYW52YXN7XG4vLyAgICAgaGVpZ2h0OiA1MHZoO1xuLy8gfVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDkwMHB4KXtcbiAgICAuY2FfMXtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICAgICAgIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gICAgICAgIG1hcmdpbi10b3A6IDJ2aDtcbiAgICAgICAgLy8gYm9yZGVyLXJhZGl1czogMzVweDtcbiAgICAgICAgLy8gaGVpZ2h0OiA1MHZoO1xuICAgICAgICB3aWR0aDogMTAwdnc7XG4gICAgICAgIGNvbG9yOiBibGFjaztcbiAgICB9XG4gICAgY2FudmFze1xuICAgICAgICBoZWlnaHQ6IDUwdmg7XG4gICAgICAgIHdpZHRoOiAxMDB2dztcbiAgICB9XG59IiwiaHRtbCwgYm9keSwgZm9vdGVyIHtcbiAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICB3aWR0aDogbWF4O1xuICBoZWlnaHQ6IDEwMHZoO1xufVxuXG4uY2FfMSB7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICBtYXJnaW4tdG9wOiAydmg7XG4gIHdpZHRoOiA0MHZ3O1xuICBjb2xvcjogYmxhY2s7XG59XG5cbi5jYV8yIHtcbiAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgd2lkdGg6IDQwdnc7XG4gIGNvbG9yOiBibGFjaztcbiAgaGVpZ2h0OiAzNXZoO1xuICBtYXJnaW4tdG9wOiAydmg7XG4gIG1hcmdpbi1ib3R0b206IDJ2aDtcbn1cblxuLmNhXzMge1xuICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICB3aWR0aDogOTV2dztcbn1cblxuLnRvcHcge1xuICBtYXJnaW4tdG9wOiAydmg7XG4gIG1hcmdpbi1yaWdodDogNnZ3O1xufVxuXG4uaGVpIHtcbiAgaGVpZ2h0OiA0MHZoO1xufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDkwMHB4KSB7XG4gIC5jYV8xIHtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICAgIG1hcmdpbi10b3A6IDJ2aDtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgY29sb3I6IGJsYWNrO1xuICB9XG5cbiAgY2FudmFzIHtcbiAgICBoZWlnaHQ6IDUwdmg7XG4gICAgd2lkdGg6IDEwMHZ3O1xuICB9XG59Il19 */"]
     });
     /*@__PURE__*/
@@ -10388,25 +10634,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @ng-bootstrap/ng-bootstrap */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
     /* harmony import */
 
 
-    var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/material/form-field */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/form-field.js");
     /* harmony import */
 
 
-    var _angular_material_input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _angular_material_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @angular/material/input */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/input.js");
     /* harmony import */
 
 
-    var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! @angular/material/datepicker */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/datepicker.js");
 
@@ -10602,7 +10854,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "tr");
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "td", 64);
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "td", 65);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](2);
 
@@ -10832,6 +11084,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     function HistoryComponent_div_93_Template(rf, ctx) {
       if (rf & 1) {
+        var _r23 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
+
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "div", 32);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](1, "div", 60);
@@ -10982,6 +11236,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](50, "ngb-pagination", 64);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("pageChange", function HistoryComponent_div_93_Template_ngb_pagination_pageChange_50_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r23);
+
+          var ctx_r22 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+
+          return ctx_r22.page = $event;
+        })("pageChange", function HistoryComponent_div_93_Template_ngb_pagination_pageChange_50_listener($event) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵrestoreView"](_r23);
+
+          var ctx_r24 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
+
+          return ctx_r24.pageCh($event);
+        });
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -10993,6 +11265,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](49);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx_r7.item);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
+
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("collectionSize", ctx_r7.colsize)("page", ctx_r7.page)("pageSize", 50)("maxSize", 5)("boundaryLinks", true);
       }
     }
 
@@ -11014,14 +11290,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.timeshow = false;
         this.Loading = false;
         this.hourS = 0;
-        this.hourE = 24;
+        this.hourE = 23;
+        this.page = 1;
         this.navbarOpen = false;
       }
 
       _createClass(HistoryComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this32 = this;
+          var _this34 = this;
 
           try {
             this.main = localStorage.getItem('meter');
@@ -11036,7 +11313,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           setInterval(function () {
             var wmo = new Date();
-            _this32.now = wmo.toLocaleString();
+            _this34.now = wmo.toLocaleString();
           });
         }
       }, {
@@ -11066,7 +11343,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addDate",
         value: function addDate(event) {
-          var _this33 = this;
+          var _this35 = this;
 
           var date = event.value;
           var nw = new Date(); // var nw = new Date()
@@ -11074,7 +11351,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.date1 = date.getDate();
           this.month1 = date.getMonth() + 1;
-          this.year1 = date.getFullYear() + 543;
+          this.year1 = date.getFullYear();
           var noe = this.date2.toString() + this.month2.toString() + this.year2.toString();
           var eon = nw.getDate().toString() + (nw.getMonth() + 1).toString() + (nw.getFullYear() + 543).toString();
 
@@ -11088,47 +11365,51 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           if (this.date1) {
             this.Loading = true; // rest = 
 
+            this.page = 1;
             var postda = {
               building: this.name,
               block: this.block,
-              date: this.date1,
-              month: this.month1,
-              year: this.year1,
-              date2: this.date2,
-              month2: this.month2,
-              year2: this.year2,
-              hour: this.hourS,
-              hour2: this.hourE
+              date: ('0' + this.date1).slice(-2).toString(),
+              month: ('0' + this.month1).slice(-2).toString(),
+              year: this.year1.toString(),
+              date2: ('0' + this.date2).slice(-2).toString(),
+              month2: ('0' + this.month2).slice(-2).toString(),
+              year2: this.year2.toString(),
+              hour: ('0' + this.hourS).slice(-2).toString(),
+              hour2: ('0' + this.hourE).slice(-2).toString(),
+              page: this.page
             };
-            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe(function (data) {
-              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this33, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee24() {
-                var a, z;
-                return regeneratorRuntime.wrap(function _callee24$(_context24) {
+            console.log(postda);
+            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate2', postda).subscribe(function (data) {
+              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this35, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee26() {
+                var a;
+                return regeneratorRuntime.wrap(function _callee26$(_context26) {
                   while (1) {
-                    switch (_context24.prev = _context24.next) {
+                    switch (_context26.prev = _context26.next) {
                       case 0:
                         a = [];
-                        console.log(data);
-                        z = this.bubble_Sort(data); // for (const iterator of data) {
+                        console.log(data); // var z = this.bubble_Sort(data)
+                        // for (const iterator of data) {
                         //   var dae = iterator['create']
                         //   var er = new Date(dae)
                         //   console.log(er.toLocaleDateString())
                         // }
 
-                        a.push(z);
-                        console.log(a);
-                        this.item = a[0];
+                        a.push(data); // console.log(a)
+
+                        this.item = a[0]['data'];
+                        this.colsize = a[0]['size'];
                         this.check = 1; //  console.log(data)
                         //  this.item = data
 
                         this.Loading = false;
 
-                      case 8:
+                      case 7:
                       case "end":
-                        return _context24.stop();
+                        return _context26.stop();
                     }
                   }
-                }, _callee24, this);
+                }, _callee26, this);
               }));
             });
           } else {//end
@@ -11137,7 +11418,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addD",
         value: function addD(event) {
-          var _this34 = this;
+          var _this36 = this;
 
           var date = event.value;
           var nw = new Date(); // var nw = new Date()
@@ -11145,7 +11426,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.date2 = date.getDate();
           this.month2 = date.getMonth() + 1;
-          this.year2 = date.getFullYear() + 543;
+          this.year2 = date.getFullYear();
           var noe = this.date2.toString() + this.month2.toString() + this.year2.toString();
           var eon = nw.getDate().toString() + (nw.getMonth() + 1).toString() + (nw.getFullYear() + 543).toString();
 
@@ -11157,29 +11438,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
           if (this.date1) {
-            this.Loading = true; // rest = 
+            this.Loading = true; //  rest = 
 
+            this.page = 1;
             var postda = {
               building: this.name,
               block: this.block,
-              date: this.date1,
-              month: this.month1,
-              year: this.year1,
-              date2: this.date2,
-              month2: this.month2,
-              year2: this.year2,
-              hour: this.hourS,
-              hour2: this.hourE
+              date: ('0' + this.date1).slice(-2).toString(),
+              month: ('0' + this.month1).slice(-2).toString(),
+              year: this.year1.toString(),
+              date2: ('0' + this.date2).slice(-2).toString(),
+              month2: ('0' + this.month2).slice(-2).toString(),
+              year2: this.year2.toString(),
+              hour: ('0' + this.hourS).slice(-2).toString(),
+              hour2: ('0' + this.hourE).slice(-2).toString(),
+              page: this.page
             };
-            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe(function (data) {
-              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this34, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee25() {
+            console.log(postda);
+            this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate2', postda).subscribe(function (data) {
+              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this36, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee27() {
                 var a, z;
-                return regeneratorRuntime.wrap(function _callee25$(_context25) {
+                return regeneratorRuntime.wrap(function _callee27$(_context27) {
                   while (1) {
-                    switch (_context25.prev = _context25.next) {
+                    switch (_context27.prev = _context27.next) {
                       case 0:
                         a = [];
-                        z = this.bubble_Sort(data); // for (const iterator of data) {
+                        z = data; // for (const iterator of data) {
                         //   var dae = iterator['create']
                         //   var er = new Date(dae)
                         //   console.log(er.toLocaleDateString())
@@ -11187,18 +11471,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                         a.push(z);
                         console.log(a);
-                        this.item = a[0];
+                        this.item = a[0]['data'];
+                        this.colsize = a[0]['size'];
                         this.check = 1; //  console.log(data)
                         //  this.item = data
 
                         this.Loading = false;
 
-                      case 7:
+                      case 8:
                       case "end":
-                        return _context25.stop();
+                        return _context27.stop();
                     }
                   }
-                }, _callee25, this);
+                }, _callee27, this);
               }));
             });
           } else {//end
@@ -11368,7 +11653,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "onPercentChange",
         value: function onPercentChange(percent) {
-          var _this35 = this;
+          var _this37 = this;
 
           console.log('here');
           this.hourS = percent;
@@ -11386,11 +11671,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             hour: this.hourS,
             hour2: this.hourE
           };
-          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this35, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee26() {
-              return regeneratorRuntime.wrap(function _callee26$(_context26) {
+          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate2', postda).subscribe(function (data) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this37, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee28() {
+              return regeneratorRuntime.wrap(function _callee28$(_context28) {
                 while (1) {
-                  switch (_context26.prev = _context26.next) {
+                  switch (_context28.prev = _context28.next) {
                     case 0:
                       // var dae = data[0]['create']
                       this.item = data;
@@ -11398,17 +11683,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                     case 2:
                     case "end":
-                      return _context26.stop();
+                      return _context28.stop();
                   }
                 }
-              }, _callee26, this);
+              }, _callee28, this);
             }));
           });
         }
       }, {
         key: "onPer",
         value: function onPer(percent) {
-          var _this36 = this;
+          var _this38 = this;
 
           console.log('here');
           this.hourE = percent;
@@ -11427,10 +11712,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             hour2: this.hourE
           };
           this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this36, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee27() {
-              return regeneratorRuntime.wrap(function _callee27$(_context27) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this38, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee29() {
+              return regeneratorRuntime.wrap(function _callee29$(_context29) {
                 while (1) {
-                  switch (_context27.prev = _context27.next) {
+                  switch (_context29.prev = _context29.next) {
                     case 0:
                       // var dae = data[0]['create']
                       this.item = data;
@@ -11438,10 +11723,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                     case 2:
                     case "end":
-                      return _context27.stop();
+                      return _context29.stop();
                   }
                 }
-              }, _callee27, this);
+              }, _callee29, this);
             }));
           });
         }
@@ -11541,6 +11826,68 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.route.navigate(["detail"]);
         }
+      }, {
+        key: "pageCh",
+        value: function pageCh(event) {
+          var _this39 = this;
+
+          this.Loading = true;
+          var scrollToTop = window.setInterval(function () {
+            var pos = window.pageYOffset;
+
+            if (pos > 0) {
+              window.scrollTo(0, pos - 20); // how far to scroll on each step
+            } else {
+              window.clearInterval(scrollToTop);
+            }
+          }, 10); // rest = 
+
+          var postda = {
+            building: this.name,
+            block: this.block,
+            date: ('0' + this.date1).slice(-2).toString(),
+            month: ('0' + this.month1).slice(-2).toString(),
+            year: this.year1.toString(),
+            date2: ('0' + this.date2).slice(-2).toString(),
+            month2: ('0' + this.month2).slice(-2).toString(),
+            year2: this.year2.toString(),
+            hour: ('0' + this.hourS).slice(-2).toString(),
+            hour2: ('0' + this.hourE).slice(-2).toString(),
+            page: this.page
+          };
+          this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate2', postda).subscribe(function (data) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this39, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee30() {
+              var a;
+              return regeneratorRuntime.wrap(function _callee30$(_context30) {
+                while (1) {
+                  switch (_context30.prev = _context30.next) {
+                    case 0:
+                      a = [];
+                      console.log(data); // var z = this.bubble_Sort(data)
+                      // for (const iterator of data) {
+                      //   var dae = iterator['create']
+                      //   var er = new Date(dae)
+                      //   console.log(er.toLocaleDateString())
+                      // }
+
+                      a.push(data); // console.log(a)
+
+                      this.item = a[0]['data']; // this.colsize = a[0]['size']
+
+                      this.check = 1; //  console.log(data)
+                      //  this.item = data
+
+                      this.Loading = false;
+
+                    case 6:
+                    case "end":
+                      return _context30.stop();
+                  }
+                }
+              }, _callee30, this);
+            }));
+          });
+        }
       }]);
 
       return HistoryComponent;
@@ -11555,7 +11902,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["app-history"]],
       decls: 94,
       vars: 17,
-      consts: [[1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "rgba(104, 104, 104, 0.413)"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler", 3, "click"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse", 3, "ngClass"], [1, "navbar-nav", "mr-auto", "mt-2", "mt-lg-0"], [1, "nav-item", "active"], ["href", "#", 1, "nav-link"], [1, "sr-only"], ["href", "#/selecm", 1, "nav-link"], [1, "nav-item", "dropdown"], ["id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "true", 1, "nav-link", "dropdown-toggle"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "click"], ["href", "#/envi", 1, "nav-link"], [2, "background-color", "black", "width", "100vw", "height", "2px"], ["class", "spinner-grow text-dark test", "role", "status", 4, "ngIf"], ["class", "spinner-grow text-dark test1", "role", "status", 4, "ngIf"], ["class", "spinner-grow text-dark test2", "role", "status", 4, "ngIf"], [2, "margin-left", "1vw", "margin-top", "1vh"], ["align", "center", 2, "margin-top", "0px"], ["src", "../../assets/osis.png", 2, "width", "150px"], ["src", "https://firebasestorage.googleapis.com/v0/b/solarpower-466f6.appspot.com/o/m.png?alt=media&token=3b4af2de-cd57-41f3-ab2d-28bde512a2d5", 2, "width", "250px", "margin-bottom", "30px"], ["src", "../../assets/nu.png", 2, "width", "150px"], ["src", "https://firebasestorage.googleapis.com/v0/b/solarpower-466f6.appspot.com/o/j.png?alt=media&token=cce5938e-ae9d-4973-9b9b-9c2a41be6cad", 2, "width", "250px"], ["align", "center", 2, "width", "100vw", "margin-top", "2vh", "font-size", "30px"], [2, "margin-top", "20px"], ["type", "button", 1, "btn", "ca_1", 3, "click"], ["src", "../../assets/das.png", 2, "width", "4vw"], [1, "fon_1"], ["src", "../../assets/graphp.png", 2, "width", "4vw"], ["type", "button", 1, "btn", "ca_1"], ["src", "../../assets/hist.png", 2, "width", "4vw"], ["align", "center"], ["align", "center", 1, "block_1"], [2, "margin-top", "60px", "border-width", "10px", "border", "solid", "font-size", "30px"], [1, "row", "block_2"], [1, "row", "bloc"], ["appearance", "fill", 2, "width", "15vw"], ["matInput", "", 3, "matDatepicker", "dateInput"], ["matSuffix", "", 3, "for"], ["picker", ""], ["picke", ""], ["class", "row", "style", "justify-content: space-around;margin-top: 2vh;", "align", "center", 4, "ngIf"], ["class", "btn btn-outline-primary my-element", 3, "click", 4, "ngIf"], ["align", "center", 4, "ngIf"], ["role", "status", 1, "spinner-grow", "text-dark", "test"], ["role", "status", 1, "spinner-grow", "text-dark", "test1"], ["role", "status", 1, "spinner-grow", "text-dark", "test2"], ["align", "center", 1, "row", 2, "justify-content", "space-around", "margin-top", "2vh"], [1, "row"], [1, "form-control", 2, "width", "4vw", "margin-left", "10px", 3, "change"], ["mySelect", ""], [3, "value", 4, "ngFor", "ngForOf"], [2, "font-size", "15px", "margin-top", "13px"], [2, "margin-left", "5vw"], ["mySelec", ""], [3, "value", "selected", 4, "ngFor", "ngForOf"], [3, "value"], [3, "value", "selected"], [1, "btn", "btn-outline-primary", "my-element", 3, "click"], [1, "scroo"], [1, "table", "ca_3", 2, "margin-top", "50px"], ["scope", "col"], [4, "ngFor", "ngForOf"], ["scope", "row"]],
+      consts: [[1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "rgba(104, 104, 104, 0.413)"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler", 3, "click"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse", 3, "ngClass"], [1, "navbar-nav", "mr-auto", "mt-2", "mt-lg-0"], [1, "nav-item", "active"], ["href", "#", 1, "nav-link"], [1, "sr-only"], ["href", "#/selecm", 1, "nav-link"], [1, "nav-item", "dropdown"], ["id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "true", 1, "nav-link", "dropdown-toggle"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "click"], ["href", "#/envi", 1, "nav-link"], [2, "background-color", "black", "width", "100vw", "height", "2px"], ["class", "spinner-grow text-dark test", "role", "status", 4, "ngIf"], ["class", "spinner-grow text-dark test1", "role", "status", 4, "ngIf"], ["class", "spinner-grow text-dark test2", "role", "status", 4, "ngIf"], [2, "margin-left", "1vw", "margin-top", "1vh"], ["align", "center", 2, "margin-top", "0px"], ["src", "../../assets/osis.png", 2, "width", "150px"], ["src", "../../assets/m.png", 2, "width", "250px", "margin-bottom", "30px"], ["src", "../../assets/nu.png", 2, "width", "150px"], ["src", "../../assets/j.png", 2, "width", "250px"], ["align", "center", 2, "width", "100vw", "margin-top", "2vh", "font-size", "30px"], [2, "margin-top", "20px"], ["type", "button", 1, "btn", "ca_1", 3, "click"], ["src", "../../assets/das.png", 2, "width", "4vw"], [1, "fon_1"], ["src", "../../assets/graphp.png", 2, "width", "4vw"], ["type", "button", 1, "btn", "ca_1"], ["src", "../../assets/hist.png", 2, "width", "4vw"], ["align", "center"], ["align", "center", 1, "block_1"], [2, "margin-top", "60px", "border-width", "10px", "border", "solid", "font-size", "30px"], [1, "row", "block_2"], [1, "row", "bloc"], ["appearance", "fill", 2, "width", "15vw"], ["matInput", "", 3, "matDatepicker", "dateInput"], ["matSuffix", "", 3, "for"], ["picker", ""], ["picke", ""], ["class", "row", "style", "justify-content: space-around;margin-top: 2vh;", "align", "center", 4, "ngIf"], ["class", "btn btn-outline-primary my-element", 3, "click", 4, "ngIf"], ["align", "center", 4, "ngIf"], ["role", "status", 1, "spinner-grow", "text-dark", "test"], ["role", "status", 1, "spinner-grow", "text-dark", "test1"], ["role", "status", 1, "spinner-grow", "text-dark", "test2"], ["align", "center", 1, "row", 2, "justify-content", "space-around", "margin-top", "2vh"], [1, "row"], [1, "form-control", 2, "width", "6vw", "margin-left", "10px", 3, "change"], ["mySelect", ""], [3, "value", 4, "ngFor", "ngForOf"], [2, "font-size", "15px", "margin-top", "13px"], [2, "margin-left", "5vw"], ["mySelec", ""], [3, "value", "selected", 4, "ngFor", "ngForOf"], [3, "value"], [3, "value", "selected"], [1, "btn", "btn-outline-primary", "my-element", 3, "click"], [1, "scroo"], [1, "table", "ca_3", 2, "margin-top", "50px"], ["scope", "col"], [4, "ngFor", "ngForOf"], [3, "collectionSize", "page", "pageSize", "maxSize", "boundaryLinks", "pageChange"], ["scope", "row"]],
       template: function HistoryComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "html");
@@ -11884,7 +12231,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](93, HistoryComponent_div_93_Template, 50, 1, "div", 44);
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtemplate"](93, HistoryComponent_div_93_Template, 51, 6, "div", 44);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11953,8 +12300,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngIf", ctx.check == 1);
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_6__["MatInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_7__["MatDatepickerInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_7__["MatDatepickerToggle"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__["MatSuffix"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_7__["MatDatepicker"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"]],
-      styles: ["html[_ngcontent-%COMP%], body[_ngcontent-%COMP%] {\n  background-size: cover;\n  width: 100vw;\n  height: 100vh;\n}\n\n.ca_1[_ngcontent-%COMP%] {\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  width: 15vw;\n  margin-left: 1vw;\n  margin-right: 1vw;\n}\n\n.block_1[_ngcontent-%COMP%] {\n  width: 95vw;\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  height: 30vh;\n  margin-top: 5vh;\n}\n\n.test[_ngcontent-%COMP%] {\n  position: absolute;\n  left: 50vw;\n  top: 50vh;\n}\n\n.test1[_ngcontent-%COMP%] {\n  position: absolute;\n  left: 45vw;\n  top: 50vh;\n}\n\n.test2[_ngcontent-%COMP%] {\n  position: absolute;\n  left: 55vw;\n  top: 50vh;\n}\n\n.block_2[_ngcontent-%COMP%] {\n  justify-content: space-around;\n  margin-top: 30px;\n}\n\n.bloc[_ngcontent-%COMP%] {\n  width: 40vw;\n  justify-content: space-around;\n}\n\n.bloc2[_ngcontent-%COMP%] {\n  width: 40vw;\n}\n\n.mat-form-field[_ngcontent-%COMP%] {\n  width: 35vw;\n}\n\n.my-element[_ngcontent-%COMP%] {\n  display: inline-block;\n  margin: 0 0.5rem;\n  -webkit-animation: pulse;\n          animation: pulse;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n  -webkit-animation-duration: 2s;\n          animation-duration: 2s;\n  -webkit-animation-delay: 1s;\n          animation-delay: 1s;\n  border-radius: 20px;\n  width: 10vw;\n  height: 5vh;\n}\n\n.fon_1[_ngcontent-%COMP%] {\n  margin-top: 1vh;\n}\n\n.ca_3[_ngcontent-%COMP%] {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  width: 95vw;\n}\n\n.scroo[_ngcontent-%COMP%] {\n  width: 90vw;\n  overflow-x: scroll;\n}\n\n@media only screen and (max-width: 900px) {\n  .ca_1[_ngcontent-%COMP%] {\n    width: 30vw;\n  }\n\n  .block_1[_ngcontent-%COMP%] {\n    width: 95vw;\n    background-color: white;\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n    height: 25vh;\n    margin-top: 5vh;\n  }\n\n  .my-element[_ngcontent-%COMP%] {\n    width: 45vw;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYXRpbnlhL0Rlc2t0b3AvU29sYXJjZWxsL0VuZXJneS9zcmMvYXBwL2hpc3RvcnkvaGlzdG9yeS5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvaGlzdG9yeS9oaXN0b3J5LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBR0ksc0JBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtBQ0FKOztBREdBO0VBQ0ksdUJBQUE7RUFFQSw0RUFBQTtFQUNBLFdBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0FDREo7O0FESUE7RUFDSSxXQUFBO0VBQ0EsdUJBQUE7RUFDQSw0RUFBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0FDREo7O0FES0E7RUFDSSxrQkFBQTtFQUNBLFVBQUE7RUFDQSxTQUFBO0FDRko7O0FES0E7RUFDSSxrQkFBQTtFQUNBLFVBQUE7RUFDQSxTQUFBO0FDRko7O0FES0E7RUFDSSxrQkFBQTtFQUNBLFVBQUE7RUFDQSxTQUFBO0FDRko7O0FES0E7RUFDSSw2QkFBQTtFQUNBLGdCQUFBO0FDRko7O0FES0E7RUFDSSxXQUFBO0VBRUEsNkJBQUE7QUNISjs7QURNQTtFQUNJLFdBQUE7QUNISjs7QURRQTtFQUNJLFdBQUE7QUNMSjs7QURTQTtFQUNJLHFCQUFBO0VBQ0EsZ0JBQUE7RUFDQSx3QkFBQTtVQUFBLGdCQUFBO0VBQ0EsMkNBQUE7VUFBQSxtQ0FBQTtFQUNBLDhCQUFBO1VBQUEsc0JBQUE7RUFDQSwyQkFBQTtVQUFBLG1CQUFBO0VBQ0EsbUJBQUE7RUFDQSxXQUFBO0VBQ0EsV0FBQTtBQ05KOztBRFNBO0VBR0ksZUFBQTtBQ1JKOztBRFdBO0VBRUksNEVBQUE7RUFDQSxXQUFBO0FDVEo7O0FEWUE7RUFFSSxXQUFBO0VBRUEsa0JBQUE7QUNYSjs7QURjRTtFQUNFO0lBQ0ksV0FBQTtFQ1hOOztFRGNJO0lBQ0UsV0FBQTtJQUNBLHVCQUFBO0lBQ0EsNEVBQUE7SUFDQSxZQUFBO0lBQ0EsZUFBQTtFQ1hOOztFRGNFO0lBQ0ksV0FBQTtFQ1hOO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9oaXN0b3J5L2hpc3RvcnkuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJodG1sLGJvZHl7XG4gICAgLy8gYmFja2dyb3VuZC1jb2xvcjogIzE3MTcxNztcbiAgICAtd2Via2l0LWJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuLmNhXzF7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgLy8gYm9yZGVyLXJhZGl1czogMTAwcHg7XG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgICB3aWR0aDogMTV2dztcbiAgICBtYXJnaW4tbGVmdDogMXZ3O1xuICAgIG1hcmdpbi1yaWdodDogMXZ3O1xufVxuXG4uYmxvY2tfMXtcbiAgICB3aWR0aDogOTV2dztcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICAgIGhlaWdodDogMzB2aDtcbiAgICBtYXJnaW4tdG9wOiA1dmg7XG4gICAgLy8gYm9yZGVyLXJhZGl1czogNTBweDtcbn1cblxuLnRlc3R7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGxlZnQ6IDUwdnc7XG4gICAgdG9wOiA1MHZoO1xufVxuXG4udGVzdDF7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGxlZnQ6IDQ1dnc7XG4gICAgdG9wOiA1MHZoO1xufVxuXG4udGVzdDJ7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGxlZnQ6IDU1dnc7XG4gICAgdG9wOiA1MHZoO1xufVxuXG4uYmxvY2tfMntcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgICBtYXJnaW4tdG9wOiAzMHB4O1xufVxuXG4uYmxvY3tcbiAgICB3aWR0aDogNDB2dztcbiAgICAvLyBoZWlnaHQ6IDQ1dmg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG59XG5cbi5ibG9jMntcbiAgICB3aWR0aDogNDB2dztcbiAgICAvLyBoZWlnaHQ6IDQ1dmg7XG4gICAgLy8ganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG59XG5cbi5tYXQtZm9ybS1maWVsZHtcbiAgICB3aWR0aDogMzV2dztcbiAgICAvLyBoZWlnaHQ6IDBweDtcbn1cbi8vIGJvcmRlci1yYWRpdXM6IDIwcHg7d2lkdGg6IDEwdnc7aGVpZ2h0OiA1dmg7XG4ubXktZWxlbWVudHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgbWFyZ2luOiAwIDAuNXJlbTtcbiAgICBhbmltYXRpb246IHB1bHNlO1xuICAgIGFuaW1hdGlvbi1pdGVyYXRpb24tY291bnQ6IGluZmluaXRlO1xuICAgIGFuaW1hdGlvbi1kdXJhdGlvbjogMnM7XG4gICAgYW5pbWF0aW9uLWRlbGF5OiAxcztcbiAgICBib3JkZXItcmFkaXVzOiAyMHB4O1xuICAgIHdpZHRoOiAxMHZ3O1xuICAgIGhlaWdodDogNXZoO1xufVxuXG4uZm9uXzF7XG4gICAgLy8gbWFyZ2luLWxlZnQ6IDF2dztcbiAgICAvLyBtYXJnaW4tcmlnaHQ6IDIuNXZ3O1xuICAgIG1hcmdpbi10b3A6IDF2aDtcbiAgfVxuXG4uY2FfM3tcbiAgICAvLyBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQoIzg5MDcwNywgI0YwOUQ5RCk7XG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgICB3aWR0aDogOTV2dztcbn1cblxuLnNjcm9ve1xuICAgIC8vIG1hcmdpbi10b3A6IC0xMHB4O1xuICAgIHdpZHRoOiA5MHZ3O1xuICAgIC8vIGhlaWdodDogNDJ2aDtcbiAgICBvdmVyZmxvdy14OiBzY3JvbGw7XG4gIH1cblxuICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDkwMHB4KXtcbiAgICAuY2FfMXtcbiAgICAgICAgd2lkdGg6IDMwdnc7XG4gICAgICB9XG5cbiAgICAgIC5ibG9ja18xe1xuICAgICAgICB3aWR0aDogOTV2dztcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgICAgIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gICAgICAgIGhlaWdodDogMjV2aDtcbiAgICAgICAgbWFyZ2luLXRvcDogNXZoO1xuICAgICAgICAvLyBib3JkZXItcmFkaXVzOiA1MHB4O1xuICAgIH1cbiAgICAubXktZWxlbWVudHtcbiAgICAgICAgd2lkdGg6IDQ1dnc7XG4gICAgfVxuICB9IiwiaHRtbCwgYm9keSB7XG4gIC13ZWJraXQtYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xufVxuXG4uY2FfMSB7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICB3aWR0aDogMTV2dztcbiAgbWFyZ2luLWxlZnQ6IDF2dztcbiAgbWFyZ2luLXJpZ2h0OiAxdnc7XG59XG5cbi5ibG9ja18xIHtcbiAgd2lkdGg6IDk1dnc7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICBoZWlnaHQ6IDMwdmg7XG4gIG1hcmdpbi10b3A6IDV2aDtcbn1cblxuLnRlc3Qge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGxlZnQ6IDUwdnc7XG4gIHRvcDogNTB2aDtcbn1cblxuLnRlc3QxIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBsZWZ0OiA0NXZ3O1xuICB0b3A6IDUwdmg7XG59XG5cbi50ZXN0MiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogNTV2dztcbiAgdG9wOiA1MHZoO1xufVxuXG4uYmxvY2tfMiB7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICBtYXJnaW4tdG9wOiAzMHB4O1xufVxuXG4uYmxvYyB7XG4gIHdpZHRoOiA0MHZ3O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbn1cblxuLmJsb2MyIHtcbiAgd2lkdGg6IDQwdnc7XG59XG5cbi5tYXQtZm9ybS1maWVsZCB7XG4gIHdpZHRoOiAzNXZ3O1xufVxuXG4ubXktZWxlbWVudCB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgbWFyZ2luOiAwIDAuNXJlbTtcbiAgYW5pbWF0aW9uOiBwdWxzZTtcbiAgYW5pbWF0aW9uLWl0ZXJhdGlvbi1jb3VudDogaW5maW5pdGU7XG4gIGFuaW1hdGlvbi1kdXJhdGlvbjogMnM7XG4gIGFuaW1hdGlvbi1kZWxheTogMXM7XG4gIGJvcmRlci1yYWRpdXM6IDIwcHg7XG4gIHdpZHRoOiAxMHZ3O1xuICBoZWlnaHQ6IDV2aDtcbn1cblxuLmZvbl8xIHtcbiAgbWFyZ2luLXRvcDogMXZoO1xufVxuXG4uY2FfMyB7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gIHdpZHRoOiA5NXZ3O1xufVxuXG4uc2Nyb28ge1xuICB3aWR0aDogOTB2dztcbiAgb3ZlcmZsb3cteDogc2Nyb2xsO1xufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDkwMHB4KSB7XG4gIC5jYV8xIHtcbiAgICB3aWR0aDogMzB2dztcbiAgfVxuXG4gIC5ibG9ja18xIHtcbiAgICB3aWR0aDogOTV2dztcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICAgIGhlaWdodDogMjV2aDtcbiAgICBtYXJnaW4tdG9wOiA1dmg7XG4gIH1cblxuICAubXktZWxlbWVudCB7XG4gICAgd2lkdGg6IDQ1dnc7XG4gIH1cbn0iXX0= */"]
+      directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbNavbar"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerToggle"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatSuffix"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepicker"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgForOf"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbPagination"]],
+      styles: ["html[_ngcontent-%COMP%], body[_ngcontent-%COMP%] {\n  background-size: cover;\n  width: 100vw;\n  height: 100vh;\n}\n\n.ca_1[_ngcontent-%COMP%] {\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  width: 15vw;\n  margin-left: 1vw;\n  margin-right: 1vw;\n}\n\n.block_1[_ngcontent-%COMP%] {\n  width: 95vw;\n  background-color: white;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  height: 30vh;\n  margin-top: 5vh;\n}\n\n.test[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 50vw;\n  top: 50vh;\n}\n\n.test1[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 45vw;\n  top: 50vh;\n}\n\n.test2[_ngcontent-%COMP%] {\n  position: fixed;\n  left: 55vw;\n  top: 50vh;\n}\n\n.block_2[_ngcontent-%COMP%] {\n  justify-content: space-around;\n  margin-top: 30px;\n}\n\n.bloc[_ngcontent-%COMP%] {\n  width: 40vw;\n  justify-content: space-around;\n}\n\n.bloc2[_ngcontent-%COMP%] {\n  width: 40vw;\n}\n\n.mat-form-field[_ngcontent-%COMP%] {\n  width: 35vw;\n}\n\n.my-element[_ngcontent-%COMP%] {\n  display: inline-block;\n  margin: 0 0.5rem;\n  -webkit-animation: pulse;\n          animation: pulse;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n  -webkit-animation-duration: 2s;\n          animation-duration: 2s;\n  -webkit-animation-delay: 1s;\n          animation-delay: 1s;\n  border-radius: 20px;\n  width: 10vw;\n  height: 5vh;\n}\n\n.fon_1[_ngcontent-%COMP%] {\n  margin-top: 1vh;\n}\n\n.ca_3[_ngcontent-%COMP%] {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  width: 95vw;\n}\n\n.scroo[_ngcontent-%COMP%] {\n  width: 90vw;\n  overflow-x: scroll;\n}\n\n@media only screen and (max-width: 900px) {\n  .ca_1[_ngcontent-%COMP%] {\n    width: 30vw;\n  }\n\n  .block_1[_ngcontent-%COMP%] {\n    width: 95vw;\n    background-color: white;\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n    height: 25vh;\n    margin-top: 5vh;\n  }\n\n  .my-element[_ngcontent-%COMP%] {\n    width: 45vw;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYXRpbnlhL0Rlc2t0b3AvU29sYXJjZWxsL0VuZXJneS9zcmMvYXBwL2hpc3RvcnkvaGlzdG9yeS5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvaGlzdG9yeS9oaXN0b3J5LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBR0ksc0JBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtBQ0FKOztBREdBO0VBQ0ksdUJBQUE7RUFFQSw0RUFBQTtFQUNBLFdBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0FDREo7O0FESUE7RUFDSSxXQUFBO0VBQ0EsdUJBQUE7RUFDQSw0RUFBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0FDREo7O0FES0E7RUFDSSxlQUFBO0VBQ0EsVUFBQTtFQUNBLFNBQUE7QUNGSjs7QURLQTtFQUNJLGVBQUE7RUFDQSxVQUFBO0VBQ0EsU0FBQTtBQ0ZKOztBREtBO0VBQ0ksZUFBQTtFQUNBLFVBQUE7RUFDQSxTQUFBO0FDRko7O0FES0E7RUFDSSw2QkFBQTtFQUNBLGdCQUFBO0FDRko7O0FES0E7RUFDSSxXQUFBO0VBRUEsNkJBQUE7QUNISjs7QURNQTtFQUNJLFdBQUE7QUNISjs7QURRQTtFQUNJLFdBQUE7QUNMSjs7QURTQTtFQUNJLHFCQUFBO0VBQ0EsZ0JBQUE7RUFDQSx3QkFBQTtVQUFBLGdCQUFBO0VBQ0EsMkNBQUE7VUFBQSxtQ0FBQTtFQUNBLDhCQUFBO1VBQUEsc0JBQUE7RUFDQSwyQkFBQTtVQUFBLG1CQUFBO0VBQ0EsbUJBQUE7RUFDQSxXQUFBO0VBQ0EsV0FBQTtBQ05KOztBRFNBO0VBR0ksZUFBQTtBQ1JKOztBRFdBO0VBRUksNEVBQUE7RUFDQSxXQUFBO0FDVEo7O0FEWUE7RUFFSSxXQUFBO0VBRUEsa0JBQUE7QUNYSjs7QURjRTtFQUNFO0lBQ0ksV0FBQTtFQ1hOOztFRGNJO0lBQ0UsV0FBQTtJQUNBLHVCQUFBO0lBQ0EsNEVBQUE7SUFDQSxZQUFBO0lBQ0EsZUFBQTtFQ1hOOztFRGNFO0lBQ0ksV0FBQTtFQ1hOO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9oaXN0b3J5L2hpc3RvcnkuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJodG1sLGJvZHl7XG4gICAgLy8gYmFja2dyb3VuZC1jb2xvcjogIzE3MTcxNztcbiAgICAtd2Via2l0LWJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuLmNhXzF7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgLy8gYm9yZGVyLXJhZGl1czogMTAwcHg7XG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgICB3aWR0aDogMTV2dztcbiAgICBtYXJnaW4tbGVmdDogMXZ3O1xuICAgIG1hcmdpbi1yaWdodDogMXZ3O1xufVxuXG4uYmxvY2tfMXtcbiAgICB3aWR0aDogOTV2dztcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICAgIGhlaWdodDogMzB2aDtcbiAgICBtYXJnaW4tdG9wOiA1dmg7XG4gICAgLy8gYm9yZGVyLXJhZGl1czogNTBweDtcbn1cblxuLnRlc3R7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGxlZnQ6IDUwdnc7XG4gICAgdG9wOiA1MHZoO1xufVxuXG4udGVzdDF7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGxlZnQ6IDQ1dnc7XG4gICAgdG9wOiA1MHZoO1xufVxuXG4udGVzdDJ7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGxlZnQ6IDU1dnc7XG4gICAgdG9wOiA1MHZoO1xufVxuXG4uYmxvY2tfMntcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgICBtYXJnaW4tdG9wOiAzMHB4O1xufVxuXG4uYmxvY3tcbiAgICB3aWR0aDogNDB2dztcbiAgICAvLyBoZWlnaHQ6IDQ1dmg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG59XG5cbi5ibG9jMntcbiAgICB3aWR0aDogNDB2dztcbiAgICAvLyBoZWlnaHQ6IDQ1dmg7XG4gICAgLy8ganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG59XG5cbi5tYXQtZm9ybS1maWVsZHtcbiAgICB3aWR0aDogMzV2dztcbiAgICAvLyBoZWlnaHQ6IDBweDtcbn1cbi8vIGJvcmRlci1yYWRpdXM6IDIwcHg7d2lkdGg6IDEwdnc7aGVpZ2h0OiA1dmg7XG4ubXktZWxlbWVudHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgbWFyZ2luOiAwIDAuNXJlbTtcbiAgICBhbmltYXRpb246IHB1bHNlO1xuICAgIGFuaW1hdGlvbi1pdGVyYXRpb24tY291bnQ6IGluZmluaXRlO1xuICAgIGFuaW1hdGlvbi1kdXJhdGlvbjogMnM7XG4gICAgYW5pbWF0aW9uLWRlbGF5OiAxcztcbiAgICBib3JkZXItcmFkaXVzOiAyMHB4O1xuICAgIHdpZHRoOiAxMHZ3O1xuICAgIGhlaWdodDogNXZoO1xufVxuXG4uZm9uXzF7XG4gICAgLy8gbWFyZ2luLWxlZnQ6IDF2dztcbiAgICAvLyBtYXJnaW4tcmlnaHQ6IDIuNXZ3O1xuICAgIG1hcmdpbi10b3A6IDF2aDtcbiAgfVxuXG4uY2FfM3tcbiAgICAvLyBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQoIzg5MDcwNywgI0YwOUQ5RCk7XG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgICB3aWR0aDogOTV2dztcbn1cblxuLnNjcm9ve1xuICAgIC8vIG1hcmdpbi10b3A6IC0xMHB4O1xuICAgIHdpZHRoOiA5MHZ3O1xuICAgIC8vIGhlaWdodDogNDJ2aDtcbiAgICBvdmVyZmxvdy14OiBzY3JvbGw7XG4gIH1cblxuICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDkwMHB4KXtcbiAgICAuY2FfMXtcbiAgICAgICAgd2lkdGg6IDMwdnc7XG4gICAgICB9XG5cbiAgICAgIC5ibG9ja18xe1xuICAgICAgICB3aWR0aDogOTV2dztcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgICAgIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gICAgICAgIGhlaWdodDogMjV2aDtcbiAgICAgICAgbWFyZ2luLXRvcDogNXZoO1xuICAgICAgICAvLyBib3JkZXItcmFkaXVzOiA1MHB4O1xuICAgIH1cbiAgICAubXktZWxlbWVudHtcbiAgICAgICAgd2lkdGg6IDQ1dnc7XG4gICAgfVxuICB9IiwiaHRtbCwgYm9keSB7XG4gIC13ZWJraXQtYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xufVxuXG4uY2FfMSB7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICB3aWR0aDogMTV2dztcbiAgbWFyZ2luLWxlZnQ6IDF2dztcbiAgbWFyZ2luLXJpZ2h0OiAxdnc7XG59XG5cbi5ibG9ja18xIHtcbiAgd2lkdGg6IDk1dnc7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICBoZWlnaHQ6IDMwdmg7XG4gIG1hcmdpbi10b3A6IDV2aDtcbn1cblxuLnRlc3Qge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGxlZnQ6IDUwdnc7XG4gIHRvcDogNTB2aDtcbn1cblxuLnRlc3QxIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBsZWZ0OiA0NXZ3O1xuICB0b3A6IDUwdmg7XG59XG5cbi50ZXN0MiB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgbGVmdDogNTV2dztcbiAgdG9wOiA1MHZoO1xufVxuXG4uYmxvY2tfMiB7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICBtYXJnaW4tdG9wOiAzMHB4O1xufVxuXG4uYmxvYyB7XG4gIHdpZHRoOiA0MHZ3O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbn1cblxuLmJsb2MyIHtcbiAgd2lkdGg6IDQwdnc7XG59XG5cbi5tYXQtZm9ybS1maWVsZCB7XG4gIHdpZHRoOiAzNXZ3O1xufVxuXG4ubXktZWxlbWVudCB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgbWFyZ2luOiAwIDAuNXJlbTtcbiAgYW5pbWF0aW9uOiBwdWxzZTtcbiAgYW5pbWF0aW9uLWl0ZXJhdGlvbi1jb3VudDogaW5maW5pdGU7XG4gIGFuaW1hdGlvbi1kdXJhdGlvbjogMnM7XG4gIGFuaW1hdGlvbi1kZWxheTogMXM7XG4gIGJvcmRlci1yYWRpdXM6IDIwcHg7XG4gIHdpZHRoOiAxMHZ3O1xuICBoZWlnaHQ6IDV2aDtcbn1cblxuLmZvbl8xIHtcbiAgbWFyZ2luLXRvcDogMXZoO1xufVxuXG4uY2FfMyB7XG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gIHdpZHRoOiA5NXZ3O1xufVxuXG4uc2Nyb28ge1xuICB3aWR0aDogOTB2dztcbiAgb3ZlcmZsb3cteDogc2Nyb2xsO1xufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDkwMHB4KSB7XG4gIC5jYV8xIHtcbiAgICB3aWR0aDogMzB2dztcbiAgfVxuXG4gIC5ibG9ja18xIHtcbiAgICB3aWR0aDogOTV2dztcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICAgIGhlaWdodDogMjV2aDtcbiAgICBtYXJnaW4tdG9wOiA1dmg7XG4gIH1cblxuICAubXktZWxlbWVudCB7XG4gICAgd2lkdGg6IDQ1dnc7XG4gIH1cbn0iXX0= */"]
     });
     /*@__PURE__*/
 
@@ -12024,25 +12371,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @ng-bootstrap/ng-bootstrap */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
     /* harmony import */
 
 
-    var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/material/form-field */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/form-field.js");
     /* harmony import */
 
 
-    var _angular_material_input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _angular_material_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @angular/material/input */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/input.js");
     /* harmony import */
 
 
-    var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! @angular/material/datepicker */
     "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/datepicker.js");
 
@@ -12136,7 +12489,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var LogfourComponent = /*#__PURE__*/function () {
       function LogfourComponent(route, api) {
-        var _this37 = this;
+        var _this40 = this;
 
         _classCallCheck(this, LogfourComponent);
 
@@ -12159,7 +12512,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         setInterval(function () {
           var wmo = new Date();
-          _this37.now = wmo.toLocaleString();
+          _this40.now = wmo.toLocaleString();
         });
       }
 
@@ -12179,7 +12532,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addDate",
         value: function addDate(event) {
-          var _this38 = this;
+          var _this41 = this;
 
           this.date = event.value;
           console.log(this.date.getDate());
@@ -12191,11 +12544,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             year: this.date.getFullYear() + 543
           };
           this.api.postData('http://www.mesfia.eng.nu.ac.th/history', postda).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this38, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee28() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this41, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee31() {
               var a, check;
-              return regeneratorRuntime.wrap(function _callee28$(_context28) {
+              return regeneratorRuntime.wrap(function _callee31$(_context31) {
                 while (1) {
-                  switch (_context28.prev = _context28.next) {
+                  switch (_context31.prev = _context31.next) {
                     case 0:
                       // var dae = data[0]['create']
                       a = [];
@@ -12206,10 +12559,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                     case 5:
                     case "end":
-                      return _context28.stop();
+                      return _context31.stop();
                   }
                 }
-              }, _callee28, this);
+              }, _callee31, this);
             }));
           });
         }
@@ -12672,7 +13025,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.item);
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgClass"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_6__["MatInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_7__["MatDatepickerInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_7__["MatDatepickerToggle"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_5__["MatSuffix"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_7__["MatDatepicker"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"]],
+      directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbNavbar"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgClass"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatFormField"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatLabel"], _angular_material_input__WEBPACK_IMPORTED_MODULE_7__["MatInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerInput"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepickerToggle"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_6__["MatSuffix"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_8__["MatDatepicker"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgForOf"]],
       styles: [".my-element[_ngcontent-%COMP%] {\n  display: inline-block;\n  margin: 0 0.5rem;\n  -webkit-animation: pulse;\n          animation: pulse;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n  -webkit-animation-duration: 2s;\n          animation-duration: 2s;\n  -webkit-animation-delay: 1s;\n          animation-delay: 1s;\n  border-radius: 20px;\n  width: 10vw;\n  height: 5vh;\n}\n\n@media only screen and (max-width: 900px) {\n  .scroo[_ngcontent-%COMP%] {\n    width: 100vw;\n    overflow-x: scroll;\n  }\n\n  .my-element[_ngcontent-%COMP%] {\n    display: inline-block;\n    margin: 0 0.5rem;\n    -webkit-animation: pulse;\n            animation: pulse;\n    -webkit-animation-iteration-count: infinite;\n            animation-iteration-count: infinite;\n    -webkit-animation-duration: 2s;\n            animation-duration: 2s;\n    -webkit-animation-delay: 1s;\n            animation-delay: 1s;\n    border-radius: 20px;\n    width: 20vw;\n    height: 5vh;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYXRpbnlhL0Rlc2t0b3AvU29sYXJjZWxsL0VuZXJneS9zcmMvYXBwL2xvZ2ZvdXIvbG9nZm91ci5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvbG9nZm91ci9sb2dmb3VyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0kscUJBQUE7RUFDQSxnQkFBQTtFQUNBLHdCQUFBO1VBQUEsZ0JBQUE7RUFDQSwyQ0FBQTtVQUFBLG1DQUFBO0VBQ0EsOEJBQUE7VUFBQSxzQkFBQTtFQUNBLDJCQUFBO1VBQUEsbUJBQUE7RUFDQSxtQkFBQTtFQUNBLFdBQUE7RUFDQSxXQUFBO0FDQUo7O0FER0E7RUFDSTtJQUVJLFlBQUE7SUFFQSxrQkFBQTtFQ0ZOOztFREtJO0lBQ0UscUJBQUE7SUFDQSxnQkFBQTtJQUNBLHdCQUFBO1lBQUEsZ0JBQUE7SUFDQSwyQ0FBQTtZQUFBLG1DQUFBO0lBQ0EsOEJBQUE7WUFBQSxzQkFBQTtJQUNBLDJCQUFBO1lBQUEsbUJBQUE7SUFDQSxtQkFBQTtJQUNBLFdBQUE7SUFDQSxXQUFBO0VDRk47QUFDRiIsImZpbGUiOiJzcmMvYXBwL2xvZ2ZvdXIvbG9nZm91ci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIHN0eWxlPVwiYm9yZGVyLXJhZGl1czogMjBweDt3aWR0aDogMTB2dztoZWlnaHQ6IDV2aDtcIiBcbi5teS1lbGVtZW50e1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBtYXJnaW46IDAgMC41cmVtO1xuICAgIGFuaW1hdGlvbjogcHVsc2U7XG4gICAgYW5pbWF0aW9uLWl0ZXJhdGlvbi1jb3VudDogaW5maW5pdGU7XG4gICAgYW5pbWF0aW9uLWR1cmF0aW9uOiAycztcbiAgICBhbmltYXRpb24tZGVsYXk6IDFzO1xuICAgIGJvcmRlci1yYWRpdXM6IDIwcHg7XG4gICAgd2lkdGg6IDEwdnc7XG4gICAgaGVpZ2h0OiA1dmg7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTAwcHgpe1xuICAgIC5zY3Jvb3tcbiAgICAgICAgLy8gbWFyZ2luLXRvcDogLTEwcHg7XG4gICAgICAgIHdpZHRoOiAxMDB2dztcbiAgICAgICAgLy8gaGVpZ2h0OiA0MnZoO1xuICAgICAgICBvdmVyZmxvdy14OiBzY3JvbGw7XG4gICAgICB9XG5cbiAgICAgIC5teS1lbGVtZW50e1xuICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgICAgIG1hcmdpbjogMCAwLjVyZW07XG4gICAgICAgIGFuaW1hdGlvbjogcHVsc2U7XG4gICAgICAgIGFuaW1hdGlvbi1pdGVyYXRpb24tY291bnQ6IGluZmluaXRlO1xuICAgICAgICBhbmltYXRpb24tZHVyYXRpb246IDJzO1xuICAgICAgICBhbmltYXRpb24tZGVsYXk6IDFzO1xuICAgICAgICBib3JkZXItcmFkaXVzOiAyMHB4O1xuICAgICAgICB3aWR0aDogMjB2dztcbiAgICAgICAgaGVpZ2h0OiA1dmg7XG4gICAgfVxuICB9IiwiLm15LWVsZW1lbnQge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIG1hcmdpbjogMCAwLjVyZW07XG4gIGFuaW1hdGlvbjogcHVsc2U7XG4gIGFuaW1hdGlvbi1pdGVyYXRpb24tY291bnQ6IGluZmluaXRlO1xuICBhbmltYXRpb24tZHVyYXRpb246IDJzO1xuICBhbmltYXRpb24tZGVsYXk6IDFzO1xuICBib3JkZXItcmFkaXVzOiAyMHB4O1xuICB3aWR0aDogMTB2dztcbiAgaGVpZ2h0OiA1dmg7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTAwcHgpIHtcbiAgLnNjcm9vIHtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgb3ZlcmZsb3cteDogc2Nyb2xsO1xuICB9XG5cbiAgLm15LWVsZW1lbnQge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBtYXJnaW46IDAgMC41cmVtO1xuICAgIGFuaW1hdGlvbjogcHVsc2U7XG4gICAgYW5pbWF0aW9uLWl0ZXJhdGlvbi1jb3VudDogaW5maW5pdGU7XG4gICAgYW5pbWF0aW9uLWR1cmF0aW9uOiAycztcbiAgICBhbmltYXRpb24tZGVsYXk6IDFzO1xuICAgIGJvcmRlci1yYWRpdXM6IDIwcHg7XG4gICAgd2lkdGg6IDIwdnc7XG4gICAgaGVpZ2h0OiA1dmg7XG4gIH1cbn0iXX0= */"]
     });
     /*@__PURE__*/
@@ -12722,6 +13075,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @ng-bootstrap/ng-bootstrap */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
 
     var LoginComponent = /*#__PURE__*/function () {
       function LoginComponent() {
@@ -12839,6 +13198,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
       },
+      directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NgbNavbar"]],
       styles: ["@charset \"UTF-8\";\nhtml[_ngcontent-%COMP%], body[_ngcontent-%COMP%] {\n  background-color: #171717;\n  background-size: cover;\n  width: 100vw;\n  height: 100vh;\n}\n*[_ngcontent-%COMP%] {\n  margin: 0px;\n  padding: 0px;\n  box-sizing: border-box;\n}\nbody[_ngcontent-%COMP%], html[_ngcontent-%COMP%] {\n  height: 100%;\n  font-family: Ubuntu-Regular, sans-serif;\n}\n\na[_ngcontent-%COMP%] {\n  font-family: Ubuntu-Regular;\n  font-size: 14px;\n  line-height: 1.7;\n  color: #666666;\n  margin: 0px;\n  transition: all 0.4s;\n  -webkit-transition: all 0.4s;\n  -o-transition: all 0.4s;\n  -moz-transition: all 0.4s;\n}\na[_ngcontent-%COMP%]:focus {\n  outline: none !important;\n}\na[_ngcontent-%COMP%]:hover {\n  text-decoration: none;\n  color: #fff;\n}\n\nh1[_ngcontent-%COMP%], h2[_ngcontent-%COMP%], h3[_ngcontent-%COMP%], h4[_ngcontent-%COMP%], h5[_ngcontent-%COMP%], h6[_ngcontent-%COMP%] {\n  margin: 0px;\n}\np[_ngcontent-%COMP%] {\n  font-family: Ubuntu-Regular;\n  font-size: 14px;\n  line-height: 1.7;\n  color: #666666;\n  margin: 0px;\n}\nul[_ngcontent-%COMP%], li[_ngcontent-%COMP%] {\n  margin: 0px;\n  list-style-type: none;\n}\n\ninput[_ngcontent-%COMP%] {\n  outline: none;\n  border: none;\n}\ntextarea[_ngcontent-%COMP%] {\n  outline: none;\n  border: none;\n}\ntextarea[_ngcontent-%COMP%]:focus, input[_ngcontent-%COMP%]:focus {\n  border-color: transparent !important;\n}\ninput[_ngcontent-%COMP%]:focus::-webkit-input-placeholder {\n  color: transparent;\n}\ninput[_ngcontent-%COMP%]:focus:-moz-placeholder {\n  color: transparent;\n}\ninput[_ngcontent-%COMP%]:focus::-moz-placeholder {\n  color: transparent;\n}\ninput[_ngcontent-%COMP%]:focus:-ms-input-placeholder {\n  color: transparent;\n}\ntextarea[_ngcontent-%COMP%]:focus::-webkit-input-placeholder {\n  color: transparent;\n}\ntextarea[_ngcontent-%COMP%]:focus:-moz-placeholder {\n  color: transparent;\n}\ntextarea[_ngcontent-%COMP%]:focus::-moz-placeholder {\n  color: transparent;\n}\ntextarea[_ngcontent-%COMP%]:focus:-ms-input-placeholder {\n  color: transparent;\n}\ninput[_ngcontent-%COMP%]::-webkit-input-placeholder {\n  color: #555555;\n}\ninput[_ngcontent-%COMP%]:-moz-placeholder {\n  color: #555555;\n}\ninput[_ngcontent-%COMP%]::-moz-placeholder {\n  color: #555555;\n}\ninput[_ngcontent-%COMP%]:-ms-input-placeholder {\n  color: #555555;\n}\ntextarea[_ngcontent-%COMP%]::-webkit-input-placeholder {\n  color: #555555;\n}\ntextarea[_ngcontent-%COMP%]:-moz-placeholder {\n  color: #555555;\n}\ntextarea[_ngcontent-%COMP%]::-moz-placeholder {\n  color: #555555;\n}\ntextarea[_ngcontent-%COMP%]:-ms-input-placeholder {\n  color: #555555;\n}\nlabel[_ngcontent-%COMP%] {\n  margin: 0;\n  display: block;\n}\n\nbutton[_ngcontent-%COMP%] {\n  outline: none !important;\n  border: none;\n  background: transparent;\n}\nbutton[_ngcontent-%COMP%]:hover {\n  cursor: pointer;\n}\niframe[_ngcontent-%COMP%] {\n  border: none !important;\n}\n\n.txt1[_ngcontent-%COMP%] {\n  font-family: Poppins-Regular;\n  font-size: 13px;\n  color: #e5e5e5;\n  line-height: 1.5;\n}\n\n.limiter[_ngcontent-%COMP%] {\n  margin: 0 auto;\n}\n.container-login100[_ngcontent-%COMP%] {\n  width: 100%;\n  min-height: 100vh;\n  display: -ms-flexbox;\n  flex-wrap: wrap;\n  justify-content: center;\n  padding: 15px;\n  padding-top: 70px;\n  background-repeat: no-repeat;\n  background-position: center;\n  background-size: cover;\n  position: relative;\n  z-index: 1;\n}\n.container-login100[_ngcontent-%COMP%]::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  z-index: -1;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: rgba(0, 0, 0, 0.65);\n}\n.wrap-login100[_ngcontent-%COMP%] {\n  width: 390px;\n  border-radius: 10px;\n  overflow: hidden;\n  background: transparent;\n}\n\n.login100-form[_ngcontent-%COMP%] {\n  width: 100%;\n  border-radius: 10px;\n  background-color: #fff;\n}\n.login100-form-logo[_ngcontent-%COMP%] {\n  font-size: 60px;\n  color: #333333;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 120px;\n  height: 120px;\n  border-radius: 50%;\n  background-color: #fff;\n  margin: 0 auto;\n}\n.login100-form-title[_ngcontent-%COMP%] {\n  font-family: Ubuntu-Bold;\n  font-size: 28px;\n  color: #fff;\n  line-height: 1.2;\n  text-align: center;\n  text-transform: uppercase;\n  display: block;\n}\n\n.wrap-input100[_ngcontent-%COMP%] {\n  width: 100%;\n  position: relative;\n  border-bottom: 1px solid #e6e6e6;\n  padding: 29px 0;\n}\n.input100[_ngcontent-%COMP%] {\n  font-family: Ubuntu-Regular;\n  font-size: 20px;\n  color: #555555;\n  line-height: 1.2;\n  display: block;\n  width: 100%;\n  height: 50px;\n  background: transparent;\n  padding: 0 10px 0 80px;\n  transition: all 0.4s;\n}\n\n.focus-input100[_ngcontent-%COMP%] {\n  position: absolute;\n  display: block;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  pointer-events: none;\n}\n.focus-input100[_ngcontent-%COMP%]::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  bottom: -1px;\n  left: 0;\n  width: 0;\n  height: 1px;\n  transition: all 0.4s;\n  background: #000000;\n}\n.focus-input100[_ngcontent-%COMP%]::after {\n  font-family: Linearicons-Free;\n  font-size: 18px;\n  color: #999999;\n  content: attr(data-placeholder);\n  display: block;\n  width: 100%;\n  position: absolute;\n  top: 40px;\n  left: 35px;\n  transition: all 0.4s;\n}\n.input100[_ngcontent-%COMP%]:focus {\n  padding-left: 60px;\n}\n.input100[_ngcontent-%COMP%]:focus    + .focus-input100[_ngcontent-%COMP%]::after {\n  left: 23px;\n  color: #000000;\n}\n.input100[_ngcontent-%COMP%]:focus    + .focus-input100[_ngcontent-%COMP%]::before {\n  width: 100%;\n}\n.has-val.input100[_ngcontent-%COMP%]    + .focus-input100[_ngcontent-%COMP%]::after {\n  left: 23px;\n  color: #000000;\n}\n.has-val.input100[_ngcontent-%COMP%]    + .focus-input100[_ngcontent-%COMP%]::before {\n  width: 100%;\n}\n.has-val.input100[_ngcontent-%COMP%] {\n  padding-left: 60px;\n}\n\n.container-login100-form-btn[_ngcontent-%COMP%] {\n  width: 100%;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n}\n.login100-form-btn[_ngcontent-%COMP%] {\n  font-family: Ubuntu-Bold;\n  font-size: 18px;\n  color: #fff;\n  line-height: 1.2;\n  text-transform: uppercase;\n  margin-top: 20px;\n  margin-bottom: 20px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  padding: 0 20px;\n  min-width: 160px;\n  height: 42px;\n  border-radius: 21px;\n  background: black;\n  position: relative;\n  z-index: 1;\n  transition: all 0.4s;\n}\n.login100-form-btn[_ngcontent-%COMP%]::before {\n  content: \"\";\n  display: block;\n  position: absolute;\n  z-index: -1;\n  width: 100%;\n  height: 100%;\n  border-radius: 21px;\n  background-color: #555555;\n  top: 0;\n  left: 0;\n  opacity: 0;\n  transition: all 0.4s;\n}\n.login100-form-btn[_ngcontent-%COMP%]:hover {\n  background-color: transparent;\n}\n.login100-form-btn[_ngcontent-%COMP%]:hover:before {\n  opacity: 1;\n}\n\n.validate-input[_ngcontent-%COMP%] {\n  position: relative;\n}\n.alert-validate[_ngcontent-%COMP%]::before {\n  content: attr(data-validate);\n  position: absolute;\n  max-width: 70%;\n  background-color: #fff;\n  border: 1px solid #000000;\n  border-radius: 2px;\n  padding: 4px 25px 4px 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  right: 10px;\n  pointer-events: none;\n  font-family: Ubuntu-Bold;\n  color: #000000;\n  font-size: 13px;\n  line-height: 1.4;\n  text-align: left;\n  visibility: hidden;\n  opacity: 0;\n  transition: opacity 0.4s;\n}\n.alert-validate[_ngcontent-%COMP%]::after {\n  content: \"\uF12A\";\n  font-family: FontAwesome;\n  font-size: 16px;\n  color: #000000;\n  display: block;\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  right: 15px;\n}\n.alert-validate[_ngcontent-%COMP%]:hover:before {\n  visibility: visible;\n  opacity: 1;\n}\n@media (max-width: 992px) {\n  .alert-validate[_ngcontent-%COMP%]::before {\n    visibility: visible;\n    opacity: 1;\n  }\n}\n.my-element[_ngcontent-%COMP%] {\n  display: inline-block;\n  margin: 0 0.5rem;\n  -webkit-animation: fadeInDown;\n          animation: fadeInDown;\n  \n  -webkit-animation-duration: 2s;\n          animation-duration: 2s;\n  \n}\n.my-element2[_ngcontent-%COMP%] {\n  -webkit-animation: fadeInUp;\n          animation: fadeInUp;\n  \n  -webkit-animation-duration: 2s;\n          animation-duration: 2s;\n  \n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LnNjc3MiLCIvVXNlcnMvcGF0aW55YS9EZXNrdG9wL1NvbGFyY2VsbC9FbmVyZ3kvc3JjL2FwcC9sb2dpbi9sb2dpbi5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxnQkFBZ0I7QUNBaEI7RUFDSSx5QkFBQTtFQUVBLHNCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7QURFSjtBQ0NFO0VBQ0ksV0FBQTtFQUNBLFlBQUE7RUFDQSxzQkFBQTtBREVOO0FDQ0U7RUFDSSxZQUFBO0VBQ0EsdUNBQUE7QURFTjtBQ0NFLGdEQUFBO0FBQ0E7RUFDSSwyQkFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLGNBQUE7RUFDQSxXQUFBO0VBQ0Esb0JBQUE7RUFDQSw0QkFBQTtFQUNGLHVCQUFBO0VBQ0EseUJBQUE7QURFSjtBQ0NFO0VBQ0ksd0JBQUE7QURFTjtBQ0NFO0VBQ0kscUJBQUE7RUFDRixXQUFBO0FERUo7QUNDRSxnREFBQTtBQUNBO0VBQ0ksV0FBQTtBREVOO0FDQ0U7RUFDSSwyQkFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLGNBQUE7RUFDQSxXQUFBO0FERU47QUNDRTtFQUNJLFdBQUE7RUFDQSxxQkFBQTtBREVOO0FDRUUsZ0RBQUE7QUFDQTtFQUNJLGFBQUE7RUFDQSxZQUFBO0FEQ047QUNFRTtFQUNFLGFBQUE7RUFDQSxZQUFBO0FEQ0o7QUNFRTtFQUNFLG9DQUFBO0FEQ0o7QUNFRTtFQUF5QyxrQkFBQTtBREUzQztBQ0RFO0VBQStCLGtCQUFBO0FES2pDO0FDSkU7RUFBZ0Msa0JBQUE7QURRbEM7QUNQRTtFQUFvQyxrQkFBQTtBRFd0QztBQ1RFO0VBQTRDLGtCQUFBO0FEYTlDO0FDWkU7RUFBa0Msa0JBQUE7QURnQnBDO0FDZkU7RUFBbUMsa0JBQUE7QURtQnJDO0FDbEJFO0VBQXVDLGtCQUFBO0FEc0J6QztBQ3BCRTtFQUFtQyxjQUFBO0FEd0JyQztBQ3ZCRTtFQUF5QixjQUFBO0FEMkIzQjtBQzFCRTtFQUEwQixjQUFBO0FEOEI1QjtBQzdCRTtFQUE4QixjQUFBO0FEaUNoQztBQy9CRTtFQUFzQyxjQUFBO0FEbUN4QztBQ2xDRTtFQUE0QixjQUFBO0FEc0M5QjtBQ3JDRTtFQUE2QixjQUFBO0FEeUMvQjtBQ3hDRTtFQUFpQyxjQUFBO0FENENuQztBQzFDRTtFQUNFLFNBQUE7RUFDQSxjQUFBO0FENkNKO0FDMUNFLGdEQUFBO0FBQ0E7RUFDSSx3QkFBQTtFQUNBLFlBQUE7RUFDQSx1QkFBQTtBRDZDTjtBQzFDRTtFQUNJLGVBQUE7QUQ2Q047QUMxQ0U7RUFDSSx1QkFBQTtBRDZDTjtBQ3pDRTtZQUFBO0FBRUE7RUFDRSw0QkFBQTtFQUNBLGVBQUE7RUFDQSxjQUFBO0VBQ0EsZ0JBQUE7QUQ0Q0o7QUN4Q0U7VUFBQTtBQUdBO0VBRUUsY0FBQTtBRHlDSjtBQ3RDRTtFQUNFLFdBQUE7RUFDQSxpQkFBQTtFQUlBLG9CQUFBO0VBRUEsZUFBQTtFQUNBLHVCQUFBO0VBRUEsYUFBQTtFQUNBLGlCQUFBO0VBQ0EsNEJBQUE7RUFDQSwyQkFBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7RUFDQSxVQUFBO0FEdUNKO0FDcENFO0VBQ0UsV0FBQTtFQUNBLGNBQUE7RUFDQSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLE1BQUE7RUFDQSxPQUFBO0VBQ0EscUNBQUE7QUR1Q0o7QUNwQ0U7RUFDRSxZQUFBO0VBQ0EsbUJBQUE7RUFDQSxnQkFBQTtFQUVBLHVCQUFBO0FEc0NKO0FDbENFO1NBQUE7QUFHQTtFQUNFLFdBQUE7RUFDQSxtQkFBQTtFQUNBLHNCQUFBO0FEb0NKO0FDakNFO0VBQ0UsZUFBQTtFQUNBLGNBQUE7RUFNQSxhQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtFQUNBLFlBQUE7RUFDQSxhQUFBO0VBQ0Esa0JBQUE7RUFDQSxzQkFBQTtFQUNBLGNBQUE7QURtQ0o7QUNoQ0U7RUFDRSx3QkFBQTtFQUNBLGVBQUE7RUFDQSxXQUFBO0VBQ0EsZ0JBQUE7RUFDQSxrQkFBQTtFQUNBLHlCQUFBO0VBRUEsY0FBQTtBRGtDSjtBQzlCRTtVQUFBO0FBR0E7RUFDRSxXQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQ0FBQTtFQUNBLGVBQUE7QURnQ0o7QUM3QkU7RUFDRSwyQkFBQTtFQUNBLGVBQUE7RUFDQSxjQUFBO0VBQ0EsZ0JBQUE7RUFFQSxjQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSx1QkFBQTtFQUNBLHNCQUFBO0VBSUEsb0JBQUE7QUQrQko7QUM1QkUsZ0RBQUE7QUFDQTtFQUNFLGtCQUFBO0VBQ0EsY0FBQTtFQUNBLFdBQUE7RUFDQSxZQUFBO0VBQ0EsTUFBQTtFQUNBLE9BQUE7RUFDQSxvQkFBQTtBRCtCSjtBQzVCRTtFQUNFLFdBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQ0EsT0FBQTtFQUNBLFFBQUE7RUFDQSxXQUFBO0VBS0Esb0JBQUE7RUFFQSxtQkFBQTtBRDZCSjtBQzFCRTtFQUNFLDZCQUFBO0VBQ0EsZUFBQTtFQUNBLGNBQUE7RUFFQSwrQkFBQTtFQUNBLGNBQUE7RUFDQSxXQUFBO0VBQ0Esa0JBQUE7RUFDQSxTQUFBO0VBQ0EsVUFBQTtFQU1BLG9CQUFBO0FEMEJKO0FDdkJFO0VBQ0Usa0JBQUE7QUQwQko7QUN2QkU7RUFDRSxVQUFBO0VBQ0EsY0FBQTtBRDBCSjtBQ3ZCRTtFQUNFLFdBQUE7QUQwQko7QUN2QkU7RUFDRSxVQUFBO0VBQ0EsY0FBQTtBRDBCSjtBQ3ZCRTtFQUNFLFdBQUE7QUQwQko7QUN2QkU7RUFDRSxrQkFBQTtBRDBCSjtBQ3RCRTtXQUFBO0FBRUE7RUFDRSxXQUFBO0VBS0EsYUFBQTtFQUNBLGVBQUE7RUFDQSx1QkFBQTtBRHlCSjtBQ3RCRTtFQUNFLHdCQUFBO0VBQ0EsZUFBQTtFQUNBLFdBQUE7RUFDQSxnQkFBQTtFQUNBLHlCQUFBO0VBRUEsZ0JBQUE7RUFDQSxtQkFBQTtFQUtBLGFBQUE7RUFDQSx1QkFBQTtFQUNBLG1CQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0VBQ0EsWUFBQTtFQUNBLG1CQUFBO0VBRUEsaUJBQUE7RUFDQSxrQkFBQTtFQUNBLFVBQUE7RUFLQSxvQkFBQTtBRHNCSjtBQ25CRTtFQUNFLFdBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxXQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxtQkFBQTtFQUNBLHlCQUFBO0VBQ0EsTUFBQTtFQUNBLE9BQUE7RUFDQSxVQUFBO0VBS0Esb0JBQUE7QURxQko7QUNsQkU7RUFDRSw2QkFBQTtBRHFCSjtBQ2xCRTtFQUNFLFVBQUE7QURxQko7QUNoQkU7bUJBQUE7QUFHQTtFQUNFLGtCQUFBO0FEa0JKO0FDZkU7RUFDRSw0QkFBQTtFQUNBLGtCQUFBO0VBQ0EsY0FBQTtFQUNBLHNCQUFBO0VBQ0EseUJBQUE7RUFDQSxrQkFBQTtFQUNBLDBCQUFBO0VBQ0EsUUFBQTtFQUtBLDJCQUFBO0VBQ0EsV0FBQTtFQUNBLG9CQUFBO0VBRUEsd0JBQUE7RUFDQSxjQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0VBQ0EsZ0JBQUE7RUFFQSxrQkFBQTtFQUNBLFVBQUE7RUFLQSx3QkFBQTtBRGVKO0FDWkU7RUFDRSxZQUFBO0VBQ0Esd0JBQUE7RUFDQSxlQUFBO0VBQ0EsY0FBQTtFQUVBLGNBQUE7RUFDQSxrQkFBQTtFQUNBLFFBQUE7RUFLQSwyQkFBQTtFQUNBLFdBQUE7QURjSjtBQ1hFO0VBQ0UsbUJBQUE7RUFDQSxVQUFBO0FEY0o7QUNYRTtFQUNFO0lBQ0UsbUJBQUE7SUFDQSxVQUFBO0VEY0o7QUFDRjtBQ1hFO0VBQ0UscUJBQUE7RUFDQSxnQkFBQTtFQUVBLDZCQUFBO1VBQUEscUJBQUE7RUFBdUIsZ0VBQUE7RUFDdkIsOEJBQUE7VUFBQSxzQkFBQTtFQUF3QixvQ0FBQTtBRGM1QjtBQ1hFO0VBR0UsMkJBQUE7VUFBQSxtQkFBQTtFQUFxQixnRUFBQTtFQUNyQiw4QkFBQTtVQUFBLHNCQUFBO0VBQXdCLG9DQUFBO0FEYzVCIiwiZmlsZSI6InNyYy9hcHAvbG9naW4vbG9naW4uY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAY2hhcnNldCBcIlVURi04XCI7XG5odG1sLCBib2R5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzE3MTcxNztcbiAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG59XG5cbioge1xuICBtYXJnaW46IDBweDtcbiAgcGFkZGluZzogMHB4O1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xufVxuXG5ib2R5LCBodG1sIHtcbiAgaGVpZ2h0OiAxMDAlO1xuICBmb250LWZhbWlseTogVWJ1bnR1LVJlZ3VsYXIsIHNhbnMtc2VyaWY7XG59XG5cbi8qLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKi9cbmEge1xuICBmb250LWZhbWlseTogVWJ1bnR1LVJlZ3VsYXI7XG4gIGZvbnQtc2l6ZTogMTRweDtcbiAgbGluZS1oZWlnaHQ6IDEuNztcbiAgY29sb3I6ICM2NjY2NjY7XG4gIG1hcmdpbjogMHB4O1xuICB0cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgLXdlYmtpdC10cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgLW8tdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gIC1tb3otdHJhbnNpdGlvbjogYWxsIDAuNHM7XG59XG5cbmE6Zm9jdXMge1xuICBvdXRsaW5lOiBub25lICFpbXBvcnRhbnQ7XG59XG5cbmE6aG92ZXIge1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gIGNvbG9yOiAjZmZmO1xufVxuXG4vKi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXG5oMSwgaDIsIGgzLCBoNCwgaDUsIGg2IHtcbiAgbWFyZ2luOiAwcHg7XG59XG5cbnAge1xuICBmb250LWZhbWlseTogVWJ1bnR1LVJlZ3VsYXI7XG4gIGZvbnQtc2l6ZTogMTRweDtcbiAgbGluZS1oZWlnaHQ6IDEuNztcbiAgY29sb3I6ICM2NjY2NjY7XG4gIG1hcmdpbjogMHB4O1xufVxuXG51bCwgbGkge1xuICBtYXJnaW46IDBweDtcbiAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xufVxuXG4vKi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXG5pbnB1dCB7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJvcmRlcjogbm9uZTtcbn1cblxudGV4dGFyZWEge1xuICBvdXRsaW5lOiBub25lO1xuICBib3JkZXI6IG5vbmU7XG59XG5cbnRleHRhcmVhOmZvY3VzLCBpbnB1dDpmb2N1cyB7XG4gIGJvcmRlci1jb2xvcjogdHJhbnNwYXJlbnQgIWltcG9ydGFudDtcbn1cblxuaW5wdXQ6Zm9jdXM6Oi13ZWJraXQtaW5wdXQtcGxhY2Vob2xkZXIge1xuICBjb2xvcjogdHJhbnNwYXJlbnQ7XG59XG5cbmlucHV0OmZvY3VzOi1tb3otcGxhY2Vob2xkZXIge1xuICBjb2xvcjogdHJhbnNwYXJlbnQ7XG59XG5cbmlucHV0OmZvY3VzOjotbW96LXBsYWNlaG9sZGVyIHtcbiAgY29sb3I6IHRyYW5zcGFyZW50O1xufVxuXG5pbnB1dDpmb2N1czotbXMtaW5wdXQtcGxhY2Vob2xkZXIge1xuICBjb2xvcjogdHJhbnNwYXJlbnQ7XG59XG5cbnRleHRhcmVhOmZvY3VzOjotd2Via2l0LWlucHV0LXBsYWNlaG9sZGVyIHtcbiAgY29sb3I6IHRyYW5zcGFyZW50O1xufVxuXG50ZXh0YXJlYTpmb2N1czotbW96LXBsYWNlaG9sZGVyIHtcbiAgY29sb3I6IHRyYW5zcGFyZW50O1xufVxuXG50ZXh0YXJlYTpmb2N1czo6LW1vei1wbGFjZWhvbGRlciB7XG4gIGNvbG9yOiB0cmFuc3BhcmVudDtcbn1cblxudGV4dGFyZWE6Zm9jdXM6LW1zLWlucHV0LXBsYWNlaG9sZGVyIHtcbiAgY29sb3I6IHRyYW5zcGFyZW50O1xufVxuXG5pbnB1dDo6LXdlYmtpdC1pbnB1dC1wbGFjZWhvbGRlciB7XG4gIGNvbG9yOiAjNTU1NTU1O1xufVxuXG5pbnB1dDotbW96LXBsYWNlaG9sZGVyIHtcbiAgY29sb3I6ICM1NTU1NTU7XG59XG5cbmlucHV0OjotbW96LXBsYWNlaG9sZGVyIHtcbiAgY29sb3I6ICM1NTU1NTU7XG59XG5cbmlucHV0Oi1tcy1pbnB1dC1wbGFjZWhvbGRlciB7XG4gIGNvbG9yOiAjNTU1NTU1O1xufVxuXG50ZXh0YXJlYTo6LXdlYmtpdC1pbnB1dC1wbGFjZWhvbGRlciB7XG4gIGNvbG9yOiAjNTU1NTU1O1xufVxuXG50ZXh0YXJlYTotbW96LXBsYWNlaG9sZGVyIHtcbiAgY29sb3I6ICM1NTU1NTU7XG59XG5cbnRleHRhcmVhOjotbW96LXBsYWNlaG9sZGVyIHtcbiAgY29sb3I6ICM1NTU1NTU7XG59XG5cbnRleHRhcmVhOi1tcy1pbnB1dC1wbGFjZWhvbGRlciB7XG4gIGNvbG9yOiAjNTU1NTU1O1xufVxuXG5sYWJlbCB7XG4gIG1hcmdpbjogMDtcbiAgZGlzcGxheTogYmxvY2s7XG59XG5cbi8qLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKi9cbmJ1dHRvbiB7XG4gIG91dGxpbmU6IG5vbmUgIWltcG9ydGFudDtcbiAgYm9yZGVyOiBub25lO1xuICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbn1cblxuYnV0dG9uOmhvdmVyIHtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG5pZnJhbWUge1xuICBib3JkZXI6IG5vbmUgIWltcG9ydGFudDtcbn1cblxuLyovLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy9cblsgVXRpbGl0eSBdKi9cbi50eHQxIHtcbiAgZm9udC1mYW1pbHk6IFBvcHBpbnMtUmVndWxhcjtcbiAgZm9udC1zaXplOiAxM3B4O1xuICBjb2xvcjogI2U1ZTVlNTtcbiAgbGluZS1oZWlnaHQ6IDEuNTtcbn1cblxuLyovLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy9cblsgbG9naW4gXSovXG4ubGltaXRlciB7XG4gIG1hcmdpbjogMCBhdXRvO1xufVxuXG4uY29udGFpbmVyLWxvZ2luMTAwIHtcbiAgd2lkdGg6IDEwMCU7XG4gIG1pbi1oZWlnaHQ6IDEwMHZoO1xuICBkaXNwbGF5OiAtd2Via2l0LWJveDtcbiAgZGlzcGxheTogLXdlYmtpdC1mbGV4O1xuICBkaXNwbGF5OiAtbW96LWJveDtcbiAgZGlzcGxheTogLW1zLWZsZXhib3g7XG4gIGZsZXgtd3JhcDogd3JhcDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIHBhZGRpbmc6IDE1cHg7XG4gIHBhZGRpbmctdG9wOiA3MHB4O1xuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgei1pbmRleDogMTtcbn1cblxuLmNvbnRhaW5lci1sb2dpbjEwMDo6YmVmb3JlIHtcbiAgY29udGVudDogXCJcIjtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgei1pbmRleDogLTE7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjY1KTtcbn1cblxuLndyYXAtbG9naW4xMDAge1xuICB3aWR0aDogMzkwcHg7XG4gIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xufVxuXG4vKi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuWyBGb3JtIF0qL1xuLmxvZ2luMTAwLWZvcm0ge1xuICB3aWR0aDogMTAwJTtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcbn1cblxuLmxvZ2luMTAwLWZvcm0tbG9nbyB7XG4gIGZvbnQtc2l6ZTogNjBweDtcbiAgY29sb3I6ICMzMzMzMzM7XG4gIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICBkaXNwbGF5OiAtd2Via2l0LWZsZXg7XG4gIGRpc3BsYXk6IC1tb3otYm94O1xuICBkaXNwbGF5OiAtbXMtZmxleGJveDtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHdpZHRoOiAxMjBweDtcbiAgaGVpZ2h0OiAxMjBweDtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmO1xuICBtYXJnaW46IDAgYXV0bztcbn1cblxuLmxvZ2luMTAwLWZvcm0tdGl0bGUge1xuICBmb250LWZhbWlseTogVWJ1bnR1LUJvbGQ7XG4gIGZvbnQtc2l6ZTogMjhweDtcbiAgY29sb3I6ICNmZmY7XG4gIGxpbmUtaGVpZ2h0OiAxLjI7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgZGlzcGxheTogYmxvY2s7XG59XG5cbi8qLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG5bIElucHV0IF0qL1xuLndyYXAtaW5wdXQxMDAge1xuICB3aWR0aDogMTAwJTtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2U2ZTZlNjtcbiAgcGFkZGluZzogMjlweCAwO1xufVxuXG4uaW5wdXQxMDAge1xuICBmb250LWZhbWlseTogVWJ1bnR1LVJlZ3VsYXI7XG4gIGZvbnQtc2l6ZTogMjBweDtcbiAgY29sb3I6ICM1NTU1NTU7XG4gIGxpbmUtaGVpZ2h0OiAxLjI7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiA1MHB4O1xuICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbiAgcGFkZGluZzogMCAxMHB4IDAgODBweDtcbiAgLXdlYmtpdC10cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgLW8tdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gIC1tb3otdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gIHRyYW5zaXRpb246IGFsbCAwLjRzO1xufVxuXG4vKi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXG4uZm9jdXMtaW5wdXQxMDAge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG4gIHBvaW50ZXItZXZlbnRzOiBub25lO1xufVxuXG4uZm9jdXMtaW5wdXQxMDA6OmJlZm9yZSB7XG4gIGNvbnRlbnQ6IFwiXCI7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGJvdHRvbTogLTFweDtcbiAgbGVmdDogMDtcbiAgd2lkdGg6IDA7XG4gIGhlaWdodDogMXB4O1xuICAtd2Via2l0LXRyYW5zaXRpb246IGFsbCAwLjRzO1xuICAtby10cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgLW1vei10cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gIGJhY2tncm91bmQ6ICMwMDAwMDA7XG59XG5cbi5mb2N1cy1pbnB1dDEwMDo6YWZ0ZXIge1xuICBmb250LWZhbWlseTogTGluZWFyaWNvbnMtRnJlZTtcbiAgZm9udC1zaXplOiAxOHB4O1xuICBjb2xvcjogIzk5OTk5OTtcbiAgY29udGVudDogYXR0cihkYXRhLXBsYWNlaG9sZGVyKTtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHdpZHRoOiAxMDAlO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNDBweDtcbiAgbGVmdDogMzVweDtcbiAgLXdlYmtpdC10cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgLW8tdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gIC1tb3otdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gIHRyYW5zaXRpb246IGFsbCAwLjRzO1xufVxuXG4uaW5wdXQxMDA6Zm9jdXMge1xuICBwYWRkaW5nLWxlZnQ6IDYwcHg7XG59XG5cbi5pbnB1dDEwMDpmb2N1cyArIC5mb2N1cy1pbnB1dDEwMDo6YWZ0ZXIge1xuICBsZWZ0OiAyM3B4O1xuICBjb2xvcjogIzAwMDAwMDtcbn1cblxuLmlucHV0MTAwOmZvY3VzICsgLmZvY3VzLWlucHV0MTAwOjpiZWZvcmUge1xuICB3aWR0aDogMTAwJTtcbn1cblxuLmhhcy12YWwuaW5wdXQxMDAgKyAuZm9jdXMtaW5wdXQxMDA6OmFmdGVyIHtcbiAgbGVmdDogMjNweDtcbiAgY29sb3I6ICMwMDAwMDA7XG59XG5cbi5oYXMtdmFsLmlucHV0MTAwICsgLmZvY3VzLWlucHV0MTAwOjpiZWZvcmUge1xuICB3aWR0aDogMTAwJTtcbn1cblxuLmhhcy12YWwuaW5wdXQxMDAge1xuICBwYWRkaW5nLWxlZnQ6IDYwcHg7XG59XG5cbi8qLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG5bIEJ1dHRvbiBdKi9cbi5jb250YWluZXItbG9naW4xMDAtZm9ybS1idG4ge1xuICB3aWR0aDogMTAwJTtcbiAgZGlzcGxheTogLXdlYmtpdC1ib3g7XG4gIGRpc3BsYXk6IC13ZWJraXQtZmxleDtcbiAgZGlzcGxheTogLW1vei1ib3g7XG4gIGRpc3BsYXk6IC1tcy1mbGV4Ym94O1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LXdyYXA6IHdyYXA7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG4ubG9naW4xMDAtZm9ybS1idG4ge1xuICBmb250LWZhbWlseTogVWJ1bnR1LUJvbGQ7XG4gIGZvbnQtc2l6ZTogMThweDtcbiAgY29sb3I6ICNmZmY7XG4gIGxpbmUtaGVpZ2h0OiAxLjI7XG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gIG1hcmdpbi10b3A6IDIwcHg7XG4gIG1hcmdpbi1ib3R0b206IDIwcHg7XG4gIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICBkaXNwbGF5OiAtd2Via2l0LWZsZXg7XG4gIGRpc3BsYXk6IC1tb3otYm94O1xuICBkaXNwbGF5OiAtbXMtZmxleGJveDtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHBhZGRpbmc6IDAgMjBweDtcbiAgbWluLXdpZHRoOiAxNjBweDtcbiAgaGVpZ2h0OiA0MnB4O1xuICBib3JkZXItcmFkaXVzOiAyMXB4O1xuICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB6LWluZGV4OiAxO1xuICAtd2Via2l0LXRyYW5zaXRpb246IGFsbCAwLjRzO1xuICAtby10cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgLW1vei10cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgdHJhbnNpdGlvbjogYWxsIDAuNHM7XG59XG5cbi5sb2dpbjEwMC1mb3JtLWJ0bjo6YmVmb3JlIHtcbiAgY29udGVudDogXCJcIjtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgei1pbmRleDogLTE7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIGJvcmRlci1yYWRpdXM6IDIxcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICM1NTU1NTU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgb3BhY2l0eTogMDtcbiAgLXdlYmtpdC10cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgLW8tdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gIC1tb3otdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gIHRyYW5zaXRpb246IGFsbCAwLjRzO1xufVxuXG4ubG9naW4xMDAtZm9ybS1idG46aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbn1cblxuLmxvZ2luMTAwLWZvcm0tYnRuOmhvdmVyOmJlZm9yZSB7XG4gIG9wYWNpdHk6IDE7XG59XG5cbi8qLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG5bIEFsZXJ0IHZhbGlkYXRlIF0qL1xuLnZhbGlkYXRlLWlucHV0IHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xufVxuXG4uYWxlcnQtdmFsaWRhdGU6OmJlZm9yZSB7XG4gIGNvbnRlbnQ6IGF0dHIoZGF0YS12YWxpZGF0ZSk7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbWF4LXdpZHRoOiA3MCU7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG4gIGJvcmRlcjogMXB4IHNvbGlkICMwMDAwMDA7XG4gIGJvcmRlci1yYWRpdXM6IDJweDtcbiAgcGFkZGluZzogNHB4IDI1cHggNHB4IDEwcHg7XG4gIHRvcDogNTAlO1xuICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcbiAgLW1vei10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XG4gIC1tcy10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XG4gIC1vLXRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xuICByaWdodDogMTBweDtcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gIGZvbnQtZmFtaWx5OiBVYnVudHUtQm9sZDtcbiAgY29sb3I6ICMwMDAwMDA7XG4gIGZvbnQtc2l6ZTogMTNweDtcbiAgbGluZS1oZWlnaHQ6IDEuNDtcbiAgdGV4dC1hbGlnbjogbGVmdDtcbiAgdmlzaWJpbGl0eTogaGlkZGVuO1xuICBvcGFjaXR5OiAwO1xuICAtd2Via2l0LXRyYW5zaXRpb246IG9wYWNpdHkgMC40cztcbiAgLW8tdHJhbnNpdGlvbjogb3BhY2l0eSAwLjRzO1xuICAtbW96LXRyYW5zaXRpb246IG9wYWNpdHkgMC40cztcbiAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjRzO1xufVxuXG4uYWxlcnQtdmFsaWRhdGU6OmFmdGVyIHtcbiAgY29udGVudDogXCLvhKpcIjtcbiAgZm9udC1mYW1pbHk6IEZvbnRBd2Vzb21lO1xuICBmb250LXNpemU6IDE2cHg7XG4gIGNvbG9yOiAjMDAwMDAwO1xuICBkaXNwbGF5OiBibG9jaztcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDUwJTtcbiAgLXdlYmtpdC10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XG4gIC1tb3otdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xuICAtbXMtdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xuICAtby10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcbiAgcmlnaHQ6IDE1cHg7XG59XG5cbi5hbGVydC12YWxpZGF0ZTpob3ZlcjpiZWZvcmUge1xuICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICBvcGFjaXR5OiAxO1xufVxuXG5AbWVkaWEgKG1heC13aWR0aDogOTkycHgpIHtcbiAgLmFsZXJ0LXZhbGlkYXRlOjpiZWZvcmUge1xuICAgIHZpc2liaWxpdHk6IHZpc2libGU7XG4gICAgb3BhY2l0eTogMTtcbiAgfVxufVxuLm15LWVsZW1lbnQge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIG1hcmdpbjogMCAwLjVyZW07XG4gIGFuaW1hdGlvbjogZmFkZUluRG93bjtcbiAgLyogcmVmZXJyaW5nIGRpcmVjdGx5IHRvIHRoZSBhbmltYXRpb24ncyBAa2V5ZnJhbWUgZGVjbGFyYXRpb24gKi9cbiAgYW5pbWF0aW9uLWR1cmF0aW9uOiAycztcbiAgLyogZG9uJ3QgZm9yZ2V0IHRvIHNldCBhIGR1cmF0aW9uISAqL1xufVxuXG4ubXktZWxlbWVudDIge1xuICBhbmltYXRpb246IGZhZGVJblVwO1xuICAvKiByZWZlcnJpbmcgZGlyZWN0bHkgdG8gdGhlIGFuaW1hdGlvbidzIEBrZXlmcmFtZSBkZWNsYXJhdGlvbiAqL1xuICBhbmltYXRpb24tZHVyYXRpb246IDJzO1xuICAvKiBkb24ndCBmb3JnZXQgdG8gc2V0IGEgZHVyYXRpb24hICovXG59IiwiaHRtbCxib2R5e1xuICAgIGJhY2tncm91bmQtY29sb3I6IzE3MTcxNztcbiAgICAtd2Via2l0LWJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbn1cbiAgXG4gICoge1xuICAgICAgbWFyZ2luOiAwcHg7IFxuICAgICAgcGFkZGluZzogMHB4OyBcbiAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIH1cbiAgXG4gIGJvZHksIGh0bWwge1xuICAgICAgaGVpZ2h0OiAxMDAlO1xuICAgICAgZm9udC1mYW1pbHk6IFVidW50dS1SZWd1bGFyLCBzYW5zLXNlcmlmO1xuICB9XG4gIFxuICAvKi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXG4gIGEge1xuICAgICAgZm9udC1mYW1pbHk6IFVidW50dS1SZWd1bGFyO1xuICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgbGluZS1oZWlnaHQ6IDEuNztcbiAgICAgIGNvbG9yOiAjNjY2NjY2O1xuICAgICAgbWFyZ2luOiAwcHg7XG4gICAgICB0cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgICAgIC13ZWJraXQtdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gICAgLW8tdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gICAgLW1vei10cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgfVxuICBcbiAgYTpmb2N1cyB7XG4gICAgICBvdXRsaW5lOiBub25lICFpbXBvcnRhbnQ7XG4gIH1cbiAgXG4gIGE6aG92ZXIge1xuICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgIGNvbG9yOiAjZmZmO1xuICB9XG4gIFxuICAvKi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXG4gIGgxLGgyLGgzLGg0LGg1LGg2IHtcbiAgICAgIG1hcmdpbjogMHB4O1xuICB9XG4gIFxuICBwIHtcbiAgICAgIGZvbnQtZmFtaWx5OiBVYnVudHUtUmVndWxhcjtcbiAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgIGxpbmUtaGVpZ2h0OiAxLjc7XG4gICAgICBjb2xvcjogIzY2NjY2NjtcbiAgICAgIG1hcmdpbjogMHB4O1xuICB9XG4gIFxuICB1bCwgbGkge1xuICAgICAgbWFyZ2luOiAwcHg7XG4gICAgICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XG4gIH1cbiAgXG4gIFxuICAvKi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXG4gIGlucHV0IHtcbiAgICAgIG91dGxpbmU6IG5vbmU7XG4gICAgICBib3JkZXI6IG5vbmU7XG4gIH1cbiAgXG4gIHRleHRhcmVhIHtcbiAgICBvdXRsaW5lOiBub25lO1xuICAgIGJvcmRlcjogbm9uZTtcbiAgfVxuICBcbiAgdGV4dGFyZWE6Zm9jdXMsIGlucHV0OmZvY3VzIHtcbiAgICBib3JkZXItY29sb3I6IHRyYW5zcGFyZW50ICFpbXBvcnRhbnQ7XG4gIH1cbiAgXG4gIGlucHV0OmZvY3VzOjotd2Via2l0LWlucHV0LXBsYWNlaG9sZGVyIHsgY29sb3I6dHJhbnNwYXJlbnQ7IH1cbiAgaW5wdXQ6Zm9jdXM6LW1vei1wbGFjZWhvbGRlciB7IGNvbG9yOnRyYW5zcGFyZW50OyB9XG4gIGlucHV0OmZvY3VzOjotbW96LXBsYWNlaG9sZGVyIHsgY29sb3I6dHJhbnNwYXJlbnQ7IH1cbiAgaW5wdXQ6Zm9jdXM6LW1zLWlucHV0LXBsYWNlaG9sZGVyIHsgY29sb3I6dHJhbnNwYXJlbnQ7IH1cbiAgXG4gIHRleHRhcmVhOmZvY3VzOjotd2Via2l0LWlucHV0LXBsYWNlaG9sZGVyIHsgY29sb3I6dHJhbnNwYXJlbnQ7IH1cbiAgdGV4dGFyZWE6Zm9jdXM6LW1vei1wbGFjZWhvbGRlciB7IGNvbG9yOnRyYW5zcGFyZW50OyB9XG4gIHRleHRhcmVhOmZvY3VzOjotbW96LXBsYWNlaG9sZGVyIHsgY29sb3I6dHJhbnNwYXJlbnQ7IH1cbiAgdGV4dGFyZWE6Zm9jdXM6LW1zLWlucHV0LXBsYWNlaG9sZGVyIHsgY29sb3I6dHJhbnNwYXJlbnQ7IH1cbiAgXG4gIGlucHV0Ojotd2Via2l0LWlucHV0LXBsYWNlaG9sZGVyIHsgY29sb3I6ICM1NTU1NTU7fVxuICBpbnB1dDotbW96LXBsYWNlaG9sZGVyIHsgY29sb3I6ICM1NTU1NTU7fVxuICBpbnB1dDo6LW1vei1wbGFjZWhvbGRlciB7IGNvbG9yOiAjNTU1NTU1O31cbiAgaW5wdXQ6LW1zLWlucHV0LXBsYWNlaG9sZGVyIHsgY29sb3I6ICM1NTU1NTU7fVxuICBcbiAgdGV4dGFyZWE6Oi13ZWJraXQtaW5wdXQtcGxhY2Vob2xkZXIgeyBjb2xvcjogIzU1NTU1NTt9XG4gIHRleHRhcmVhOi1tb3otcGxhY2Vob2xkZXIgeyBjb2xvcjogIzU1NTU1NTt9XG4gIHRleHRhcmVhOjotbW96LXBsYWNlaG9sZGVyIHsgY29sb3I6ICM1NTU1NTU7fVxuICB0ZXh0YXJlYTotbXMtaW5wdXQtcGxhY2Vob2xkZXIgeyBjb2xvcjogIzU1NTU1NTt9XG4gIFxuICBsYWJlbCB7XG4gICAgbWFyZ2luOiAwO1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICB9XG4gIFxuICAvKi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXG4gIGJ1dHRvbiB7XG4gICAgICBvdXRsaW5lOiBub25lICFpbXBvcnRhbnQ7XG4gICAgICBib3JkZXI6IG5vbmU7XG4gICAgICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbiAgfVxuICBcbiAgYnV0dG9uOmhvdmVyIHtcbiAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgfVxuICBcbiAgaWZyYW1lIHtcbiAgICAgIGJvcmRlcjogbm9uZSAhaW1wb3J0YW50O1xuICB9XG4gIFxuICBcbiAgLyovLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy9cbiAgWyBVdGlsaXR5IF0qL1xuICAudHh0MSB7XG4gICAgZm9udC1mYW1pbHk6IFBvcHBpbnMtUmVndWxhcjtcbiAgICBmb250LXNpemU6IDEzcHg7XG4gICAgY29sb3I6ICNlNWU1ZTU7XG4gICAgbGluZS1oZWlnaHQ6IDEuNTtcbiAgfVxuICBcbiAgXG4gIC8qLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vXG4gIFsgbG9naW4gXSovXG4gIFxuICAubGltaXRlciB7XG4gICAgXG4gICAgbWFyZ2luOiAwIGF1dG87XG4gIH1cbiAgXG4gIC5jb250YWluZXItbG9naW4xMDAge1xuICAgIHdpZHRoOiAxMDAlOyAgXG4gICAgbWluLWhlaWdodDogMTAwdmg7XG4gICAgZGlzcGxheTogLXdlYmtpdC1ib3g7XG4gICAgZGlzcGxheTogLXdlYmtpdC1mbGV4O1xuICAgIGRpc3BsYXk6IC1tb3otYm94O1xuICAgIGRpc3BsYXk6IC1tcy1mbGV4Ym94O1xuICAgIC8vIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC13cmFwOiB3cmFwO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIC8vIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgcGFkZGluZzogMTVweDtcbiAgICBwYWRkaW5nLXRvcDogNzBweDtcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICB6LWluZGV4OiAxOyAgXG4gIH1cbiAgXG4gIC5jb250YWluZXItbG9naW4xMDA6OmJlZm9yZSB7XG4gICAgY29udGVudDogXCJcIjtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgei1pbmRleDogLTE7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIHRvcDogMDtcbiAgICBsZWZ0OiAwO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwwLDAsMC42NSk7XG4gIH1cbiAgXG4gIC53cmFwLWxvZ2luMTAwIHtcbiAgICB3aWR0aDogMzkwcHg7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICBcbiAgICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbiAgfVxuICBcbiAgXG4gIC8qLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4gIFsgRm9ybSBdKi9cbiAgXG4gIC5sb2dpbjEwMC1mb3JtIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG4gIH1cbiAgXG4gIC5sb2dpbjEwMC1mb3JtLWxvZ28ge1xuICAgIGZvbnQtc2l6ZTogNjBweDsgXG4gICAgY29sb3I6ICMzMzMzMzM7XG4gIFxuICAgIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICAgIGRpc3BsYXk6IC13ZWJraXQtZmxleDtcbiAgICBkaXNwbGF5OiAtbW96LWJveDtcbiAgICBkaXNwbGF5OiAtbXMtZmxleGJveDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgd2lkdGg6IDEyMHB4O1xuICAgIGhlaWdodDogMTIwcHg7XG4gICAgYm9yZGVyLXJhZGl1czogNTAlO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG4gICAgbWFyZ2luOiAwIGF1dG87XG4gIH1cbiAgXG4gIC5sb2dpbjEwMC1mb3JtLXRpdGxlIHtcbiAgICBmb250LWZhbWlseTogVWJ1bnR1LUJvbGQ7XG4gICAgZm9udC1zaXplOiAyOHB4O1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIGxpbmUtaGVpZ2h0OiAxLjI7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gIFxuICAgIGRpc3BsYXk6IGJsb2NrO1xuICB9XG4gIFxuICBcbiAgLyotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbiAgWyBJbnB1dCBdKi9cbiAgXG4gIC53cmFwLWlucHV0MTAwIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNlNmU2ZTY7XG4gICAgcGFkZGluZzogMjlweCAwO1xuICB9XG4gIFxuICAuaW5wdXQxMDAge1xuICAgIGZvbnQtZmFtaWx5OiBVYnVudHUtUmVndWxhcjtcbiAgICBmb250LXNpemU6IDIwcHg7XG4gICAgY29sb3I6ICM1NTU1NTU7XG4gICAgbGluZS1oZWlnaHQ6IDEuMjtcbiAgXG4gICAgZGlzcGxheTogYmxvY2s7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiA1MHB4O1xuICAgIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xuICAgIHBhZGRpbmc6IDAgMTBweCAwIDgwcHg7XG4gICAgLXdlYmtpdC10cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgICAtby10cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgICAtbW96LXRyYW5zaXRpb246IGFsbCAwLjRzO1xuICAgIHRyYW5zaXRpb246IGFsbCAwLjRzO1xuICB9XG4gIFxuICAvKi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovIFxuICAuZm9jdXMtaW5wdXQxMDAge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgdG9wOiAwO1xuICAgIGxlZnQ6IDA7XG4gICAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gIH1cbiAgXG4gIC5mb2N1cy1pbnB1dDEwMDo6YmVmb3JlIHtcbiAgICBjb250ZW50OiBcIlwiO1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBib3R0b206IC0xcHg7XG4gICAgbGVmdDogMDtcbiAgICB3aWR0aDogMDtcbiAgICBoZWlnaHQ6IDFweDtcbiAgXG4gICAgLXdlYmtpdC10cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgICAtby10cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgICAtbW96LXRyYW5zaXRpb246IGFsbCAwLjRzO1xuICAgIHRyYW5zaXRpb246IGFsbCAwLjRzO1xuICBcbiAgICBiYWNrZ3JvdW5kOiAjMDAwMDAwO1xuICB9XG4gIFxuICAuZm9jdXMtaW5wdXQxMDA6OmFmdGVyIHtcbiAgICBmb250LWZhbWlseTogTGluZWFyaWNvbnMtRnJlZTtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgY29sb3I6ICM5OTk5OTk7XG4gIFxuICAgIGNvbnRlbnQ6IGF0dHIoZGF0YS1wbGFjZWhvbGRlcik7XG4gICAgZGlzcGxheTogYmxvY2s7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogNDBweDtcbiAgICBsZWZ0OiAzNXB4O1xuICAgXG4gIFxuICAgIC13ZWJraXQtdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gICAgLW8tdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gICAgLW1vei10cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgfVxuICBcbiAgLmlucHV0MTAwOmZvY3VzIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDYwcHg7XG4gIH1cbiAgXG4gIC5pbnB1dDEwMDpmb2N1cyArIC5mb2N1cy1pbnB1dDEwMDo6YWZ0ZXIge1xuICAgIGxlZnQ6IDIzcHg7XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gIH1cbiAgXG4gIC5pbnB1dDEwMDpmb2N1cyArIC5mb2N1cy1pbnB1dDEwMDo6YmVmb3JlIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfVxuICBcbiAgLmhhcy12YWwuaW5wdXQxMDAgKyAuZm9jdXMtaW5wdXQxMDA6OmFmdGVyIHtcbiAgICBsZWZ0OiAyM3B4O1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICB9XG4gIFxuICAuaGFzLXZhbC5pbnB1dDEwMCArIC5mb2N1cy1pbnB1dDEwMDo6YmVmb3JlIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfVxuICBcbiAgLmhhcy12YWwuaW5wdXQxMDAge1xuICAgIHBhZGRpbmctbGVmdDogNjBweDtcbiAgfVxuICBcbiAgXG4gIC8qLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tXG4gIFsgQnV0dG9uIF0qL1xuICAuY29udGFpbmVyLWxvZ2luMTAwLWZvcm0tYnRuIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBkaXNwbGF5OiAtd2Via2l0LWJveDtcbiAgICBkaXNwbGF5OiAtd2Via2l0LWZsZXg7XG4gICAgZGlzcGxheTogLW1vei1ib3g7XG4gICAgZGlzcGxheTogLW1zLWZsZXhib3g7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LXdyYXA6IHdyYXA7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIH1cbiAgXG4gIC5sb2dpbjEwMC1mb3JtLWJ0biB7XG4gICAgZm9udC1mYW1pbHk6IFVidW50dS1Cb2xkO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBjb2xvcjogI2ZmZjtcbiAgICBsaW5lLWhlaWdodDogMS4yO1xuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gICAgXG4gICAgbWFyZ2luLXRvcDogMjBweDtcbiAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xuICAgIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICAgIGRpc3BsYXk6IC13ZWJraXQtZmxleDtcbiAgICBkaXNwbGF5OiAtbW96LWJveDtcbiAgICBkaXNwbGF5OiAtbXMtZmxleGJveDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgcGFkZGluZzogMCAyMHB4O1xuICAgIG1pbi13aWR0aDogMTYwcHg7XG4gICAgaGVpZ2h0OiA0MnB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDIxcHg7XG4gIFxuICAgIGJhY2tncm91bmQ6IGJsYWNrO1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICB6LWluZGV4OiAxO1xuICBcbiAgICAtd2Via2l0LXRyYW5zaXRpb246IGFsbCAwLjRzO1xuICAgIC1vLXRyYW5zaXRpb246IGFsbCAwLjRzO1xuICAgIC1tb3otdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gICAgdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gIH1cbiAgXG4gIC5sb2dpbjEwMC1mb3JtLWJ0bjo6YmVmb3JlIHtcbiAgICBjb250ZW50OiBcIlwiO1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB6LWluZGV4OiAtMTtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgYm9yZGVyLXJhZGl1czogMjFweDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjNTU1NTU1O1xuICAgIHRvcDogMDtcbiAgICBsZWZ0OiAwO1xuICAgIG9wYWNpdHk6IDA7XG4gIFxuICAgIC13ZWJraXQtdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gICAgLW8tdHJhbnNpdGlvbjogYWxsIDAuNHM7XG4gICAgLW1vei10cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC40cztcbiAgfVxuICBcbiAgLmxvZ2luMTAwLWZvcm0tYnRuOmhvdmVyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAgfVxuICBcbiAgLmxvZ2luMTAwLWZvcm0tYnRuOmhvdmVyOmJlZm9yZSB7XG4gICAgb3BhY2l0eTogMTtcbiAgfVxuICBcbiAgXG4gIFxuICAvKi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuICBbIEFsZXJ0IHZhbGlkYXRlIF0qL1xuICBcbiAgLnZhbGlkYXRlLWlucHV0IHtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIH1cbiAgXG4gIC5hbGVydC12YWxpZGF0ZTo6YmVmb3JlIHtcbiAgICBjb250ZW50OiBhdHRyKGRhdGEtdmFsaWRhdGUpO1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBtYXgtd2lkdGg6IDcwJTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICMwMDAwMDA7XG4gICAgYm9yZGVyLXJhZGl1czogMnB4O1xuICAgIHBhZGRpbmc6IDRweCAyNXB4IDRweCAxMHB4O1xuICAgIHRvcDogNTAlO1xuICAgIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xuICAgIC1tb3otdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xuICAgIC1tcy10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XG4gICAgLW8tdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcbiAgICByaWdodDogMTBweDtcbiAgICBwb2ludGVyLWV2ZW50czogbm9uZTtcbiAgXG4gICAgZm9udC1mYW1pbHk6IFVidW50dS1Cb2xkO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGZvbnQtc2l6ZTogMTNweDtcbiAgICBsaW5lLWhlaWdodDogMS40O1xuICAgIHRleHQtYWxpZ246IGxlZnQ7XG4gIFxuICAgIHZpc2liaWxpdHk6IGhpZGRlbjtcbiAgICBvcGFjaXR5OiAwO1xuICBcbiAgICAtd2Via2l0LXRyYW5zaXRpb246IG9wYWNpdHkgMC40cztcbiAgICAtby10cmFuc2l0aW9uOiBvcGFjaXR5IDAuNHM7XG4gICAgLW1vei10cmFuc2l0aW9uOiBvcGFjaXR5IDAuNHM7XG4gICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjRzO1xuICB9XG4gIFxuICAuYWxlcnQtdmFsaWRhdGU6OmFmdGVyIHtcbiAgICBjb250ZW50OiBcIlxcZjEyYVwiO1xuICAgIGZvbnQtZmFtaWx5OiBGb250QXdlc29tZTtcbiAgICBmb250LXNpemU6IDE2cHg7XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gIFxuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDUwJTtcbiAgICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcbiAgICAtbW96LXRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcbiAgICAtbXMtdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xuICAgIC1vLXRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XG4gICAgcmlnaHQ6IDE1cHg7XG4gIH1cbiAgXG4gIC5hbGVydC12YWxpZGF0ZTpob3ZlcjpiZWZvcmUge1xuICAgIHZpc2liaWxpdHk6IHZpc2libGU7XG4gICAgb3BhY2l0eTogMTtcbiAgfVxuICBcbiAgQG1lZGlhIChtYXgtd2lkdGg6IDk5MnB4KSB7XG4gICAgLmFsZXJ0LXZhbGlkYXRlOjpiZWZvcmUge1xuICAgICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcbiAgICAgIG9wYWNpdHk6IDE7XG4gICAgfVxuICB9XG4gIFxuICAubXktZWxlbWVudCB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIG1hcmdpbjogMCAwLjVyZW07XG4gIFxuICAgIGFuaW1hdGlvbjogZmFkZUluRG93bjsgLyogcmVmZXJyaW5nIGRpcmVjdGx5IHRvIHRoZSBhbmltYXRpb24ncyBAa2V5ZnJhbWUgZGVjbGFyYXRpb24gKi9cbiAgICBhbmltYXRpb24tZHVyYXRpb246IDJzOyAvKiBkb24ndCBmb3JnZXQgdG8gc2V0IGEgZHVyYXRpb24hICovXG4gIH1cblxuICAubXktZWxlbWVudDIge1xuICAgXG4gIFxuICAgIGFuaW1hdGlvbjogZmFkZUluVXA7IC8qIHJlZmVycmluZyBkaXJlY3RseSB0byB0aGUgYW5pbWF0aW9uJ3MgQGtleWZyYW1lIGRlY2xhcmF0aW9uICovXG4gICAgYW5pbWF0aW9uLWR1cmF0aW9uOiAyczsgLyogZG9uJ3QgZm9yZ2V0IHRvIHNldCBhIGR1cmF0aW9uISAqL1xuICB9Il19 */"]
     });
     /*@__PURE__*/
@@ -12905,7 +13265,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @ng-bootstrap/ng-bootstrap */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
@@ -12984,15 +13350,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MainComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this39 = this;
+          var _this42 = this;
 
           this.api.getData('http://www.mesfia.eng.nu.ac.th/building').subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this39, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee29() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this42, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee32() {
               var name, pic, _iterator, _step, iterator;
 
-              return regeneratorRuntime.wrap(function _callee29$(_context29) {
+              return regeneratorRuntime.wrap(function _callee32$(_context32) {
                 while (1) {
-                  switch (_context29.prev = _context29.next) {
+                  switch (_context32.prev = _context32.next) {
                     case 0:
                       // let build = []
                       name = [];
@@ -13006,7 +13372,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                           // build.push(iterator)
                           if (iterator == "USIS") {
                             name.push("USIS");
-                            pic.push("https://firebasestorage.googleapis.com/v0/b/solarpower-466f6.appspot.com/o/1569482799604.jpg?alt=media&token=56c778a4-aded-44db-af80-5447501ae603");
+                            pic.push("../../assets/1569482799604.jpg");
                           } else {
                             name.push("NONE");
                             pic.push('');
@@ -13018,26 +13384,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                         _iterator.f();
                       }
 
-                      _context29.next = 6;
+                      _context32.next = 6;
                       return pic;
 
                     case 6:
-                      this.pici = _context29.sent;
-                      _context29.next = 9;
+                      this.pici = _context32.sent;
+                      _context32.next = 9;
                       return name;
 
                     case 9:
-                      this.item = _context29.sent;
+                      this.item = _context32.sent;
                       this.loading = false;
                       console.log(this.item);
                       console.log(this.pici);
 
                     case 13:
                     case "end":
-                      return _context29.stop();
+                      return _context32.stop();
                   }
                 }
-              }, _callee29, this);
+              }, _callee32, this);
             }));
           });
         }
@@ -13065,7 +13431,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["app-main"]],
       decls: 17,
       vars: 1,
-      consts: [["rel", "stylesheet", "href", "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"], [1, "navbar", "navbar-light", 2, "background-color", "rgb(104,104,104,0.413)"], [2, "background-color", "black", "width", "100vw", "height", "2px"], [2, "width", "100vw"], [1, "row", 2, "justify-content", "space-around", "width", "100vw"], ["class", "card ca_1", 4, "ngFor", "ngForOf"], ["align", "center", 2, "margin-top", "50px", "justify-content", "space-around"], ["src", "../../assets/osis.png", 2, "width", "200px"], ["src", "https://firebasestorage.googleapis.com/v0/b/solarpower-466f6.appspot.com/o/m.png?alt=media&token=3b4af2de-cd57-41f3-ab2d-28bde512a2d5", 2, "width", "400px", "margin-bottom", "50px"], ["src", "../../assets/nu.png", 2, "width", "200px"], ["align", "center"], ["src", "https://firebasestorage.googleapis.com/v0/b/solarpower-466f6.appspot.com/o/j.png?alt=media&token=cce5938e-ae9d-4973-9b9b-9c2a41be6cad", 2, "width", "300px"], [1, "card", "ca_1"], [1, "card-img-top", "img", 3, "src"], ["align", "center", 1, "card-body"], [1, "card-title"], [1, "btn", "btn-outline-primary", "my-element", 2, "border-radius", "20px", 3, "click"]],
+      consts: [["rel", "stylesheet", "href", "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"], [1, "navbar", "navbar-light", 2, "background-color", "rgb(104,104,104,0.413)"], [2, "background-color", "black", "width", "100vw", "height", "2px"], [2, "width", "100vw"], [1, "row", 2, "justify-content", "space-around", "width", "100vw"], ["class", "card ca_1", 4, "ngFor", "ngForOf"], ["align", "center", 2, "margin-top", "50px", "justify-content", "space-around"], ["src", "../../assets/osis.png", 2, "width", "200px"], ["src", "../../assets/m.png", 2, "width", "400px", "margin-bottom", "50px"], ["src", "../../assets/nu.png", 2, "width", "200px"], ["align", "center"], ["src", "../../assets/j.png", 2, "width", "300px"], [1, "card", "ca_1"], [1, "card-img-top", "img", 3, "src"], ["align", "center", 1, "card-body"], [1, "card-title"], [1, "btn", "btn-outline-primary", "my-element", 2, "border-radius", "20px", 3, "click"]],
       template: function MainComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "html");
@@ -13127,7 +13493,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.item);
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_4__["NgForOf"]],
+      directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbNavbar"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgForOf"]],
       styles: ["html[_ngcontent-%COMP%], body[_ngcontent-%COMP%] {\n  background-size: cover;\n  width: 100vw;\n  height: 100vh;\n}\n\n.my-element[_ngcontent-%COMP%] {\n  display: inline-block;\n  margin: 0 0.5rem;\n  -webkit-animation: pulse;\n          animation: pulse;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n  -webkit-animation-duration: 2s;\n          animation-duration: 2s;\n  -webkit-animation-delay: 1s;\n          animation-delay: 1s;\n}\n\n.ca_1[_ngcontent-%COMP%] {\n  width: 20vw;\n  margin-left: 2vw;\n  margin-right: 2vw;\n  margin-top: 50px;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n}\n\n.img[_ngcontent-%COMP%] {\n  width: 16vw;\n  height: 14vw;\n  border-radius: 5px;\n  margin-top: 1vw;\n  margin-left: 2vw;\n}\n\n@media only screen and (max-width: 900px) {\n  .ca_1[_ngcontent-%COMP%] {\n    width: 90vw;\n    margin-left: 10vw;\n  }\n\n  .img[_ngcontent-%COMP%] {\n    width: 84vw;\n    height: 25vh;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYXRpbnlhL0Rlc2t0b3AvU29sYXJjZWxsL0VuZXJneS9zcmMvYXBwL21haW4vbWFpbi5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvbWFpbi9tYWluLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBR0ksc0JBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtBQ0FKOztBREdBO0VBQ0kscUJBQUE7RUFDQSxnQkFBQTtFQUNBLHdCQUFBO1VBQUEsZ0JBQUE7RUFDQSwyQ0FBQTtVQUFBLG1DQUFBO0VBQ0EsOEJBQUE7VUFBQSxzQkFBQTtFQUNBLDJCQUFBO1VBQUEsbUJBQUE7QUNBSjs7QURJQTtFQUNJLFdBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsZ0JBQUE7RUFDQSw0RUFBQTtBQ0RKOztBREtBO0VBQ0ksV0FBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtBQ0ZKOztBREtBO0VBQ0k7SUFDSSxXQUFBO0lBQ0EsaUJBQUE7RUNGTjs7RURLRTtJQUNJLFdBQUE7SUFDQSxZQUFBO0VDRk47QUFDRiIsImZpbGUiOiJzcmMvYXBwL21haW4vbWFpbi5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImh0bWwsYm9keXtcbiAgICAvLyBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQodG8gcmlnaHQsICNBMzI4MkEgLCAjRDA4RjkwKTtcbiAgICAtd2Via2l0LWJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuLm15LWVsZW1lbnR7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIG1hcmdpbjogMCAwLjVyZW07XG4gICAgYW5pbWF0aW9uOiBwdWxzZTtcbiAgICBhbmltYXRpb24taXRlcmF0aW9uLWNvdW50OiBpbmZpbml0ZTtcbiAgICBhbmltYXRpb24tZHVyYXRpb246IDJzO1xuICAgIGFuaW1hdGlvbi1kZWxheTogMXM7XG59XG4vLyB3aWR0aDogMjB2dzttYXJnaW4tbGVmdDogMnZ3O21hcmdpbi1yaWdodDogMnZ3OyAgXG4vLyBtYXJnaW4tdG9wOiA1MHB4O2JveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4uY2FfMXtcbiAgICB3aWR0aDogMjB2dztcbiAgICBtYXJnaW4tbGVmdDogMnZ3O1xuICAgIG1hcmdpbi1yaWdodDogMnZ3O1xuICAgIG1hcmdpbi10b3A6IDUwcHg7XG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbn1cblxuLy8gd2lkdGg6IDE2dnc7IGhlaWdodDogMTR2dzsgYm9yZGVyLXJhZGl1czogNXB4OyBtYXJnaW4tdG9wOiAxdnc7bWFyZ2luLWxlZnQ6IDJ2dztcbi5pbWd7XG4gICAgd2lkdGg6IDE2dnc7XG4gICAgaGVpZ2h0OiAxNHZ3O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBtYXJnaW4tdG9wOiAxdnc7XG4gICAgbWFyZ2luLWxlZnQ6IDJ2dztcbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA5MDBweCkge1xuICAgIC5jYV8xe1xuICAgICAgICB3aWR0aDogOTB2dztcbiAgICAgICAgbWFyZ2luLWxlZnQ6IDEwdnc7XG4gICAgICAgIC8vIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIH1cbiAgICAuaW1ne1xuICAgICAgICB3aWR0aDogODR2dztcbiAgICAgICAgaGVpZ2h0OiAyNXZoO1xuICAgIH1cbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLWhlaWdodDogMTAwMHB4KXtcbiAgXG59IiwiaHRtbCwgYm9keSB7XG4gIC13ZWJraXQtYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xufVxuXG4ubXktZWxlbWVudCB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgbWFyZ2luOiAwIDAuNXJlbTtcbiAgYW5pbWF0aW9uOiBwdWxzZTtcbiAgYW5pbWF0aW9uLWl0ZXJhdGlvbi1jb3VudDogaW5maW5pdGU7XG4gIGFuaW1hdGlvbi1kdXJhdGlvbjogMnM7XG4gIGFuaW1hdGlvbi1kZWxheTogMXM7XG59XG5cbi5jYV8xIHtcbiAgd2lkdGg6IDIwdnc7XG4gIG1hcmdpbi1sZWZ0OiAydnc7XG4gIG1hcmdpbi1yaWdodDogMnZ3O1xuICBtYXJnaW4tdG9wOiA1MHB4O1xuICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xufVxuXG4uaW1nIHtcbiAgd2lkdGg6IDE2dnc7XG4gIGhlaWdodDogMTR2dztcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBtYXJnaW4tdG9wOiAxdnc7XG4gIG1hcmdpbi1sZWZ0OiAydnc7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogOTAwcHgpIHtcbiAgLmNhXzEge1xuICAgIHdpZHRoOiA5MHZ3O1xuICAgIG1hcmdpbi1sZWZ0OiAxMHZ3O1xuICB9XG5cbiAgLmltZyB7XG4gICAgd2lkdGg6IDg0dnc7XG4gICAgaGVpZ2h0OiAyNXZoO1xuICB9XG59Il19 */"]
     });
     /*@__PURE__*/
@@ -13177,6 +13543,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @ng-bootstrap/ng-bootstrap */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
 
     var SelecComponent = /*#__PURE__*/function () {
       function SelecComponent() {
@@ -13266,6 +13638,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
       },
+      directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NgbNavbar"]],
       styles: ["html[_ngcontent-%COMP%], body[_ngcontent-%COMP%] {\n  background-color: #171717;\n  background-size: cover;\n  width: 100vw;\n  height: 100vh;\n}\n\n.m[_ngcontent-%COMP%] {\n  -webkit-animation-name: pulse;\n          animation-name: pulse;\n  -webkit-animation-duration: 2s;\n          animation-duration: 2s;\n  -webkit-animation-delay: 2;\n          animation-delay: 2;\n  -webkit-animation-iteration-count: infinite;\n          animation-iteration-count: infinite;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYXRpbnlhL0Rlc2t0b3AvU29sYXJjZWxsL0VuZXJneS9zcmMvYXBwL3NlbGVjL3NlbGVjLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9zZWxlYy9zZWxlYy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLHlCQUFBO0VBRUEsc0JBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtBQ0NKOztBREVBO0VBQ0ksNkJBQUE7VUFBQSxxQkFBQTtFQUNBLDhCQUFBO1VBQUEsc0JBQUE7RUFDQSwwQkFBQTtVQUFBLGtCQUFBO0VBQ0EsMkNBQUE7VUFBQSxtQ0FBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvc2VsZWMvc2VsZWMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJodG1sLGJvZHl7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzE3MTcxNztcbiAgICAtd2Via2l0LWJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuLm17XG4gICAgYW5pbWF0aW9uLW5hbWU6IHB1bHNlO1xuICAgIGFuaW1hdGlvbi1kdXJhdGlvbjogMnM7XG4gICAgYW5pbWF0aW9uLWRlbGF5OiAyO1xuICAgIGFuaW1hdGlvbi1pdGVyYXRpb24tY291bnQ6IGluZmluaXRlO1xufSIsImh0bWwsIGJvZHkge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMTcxNzE3O1xuICAtd2Via2l0LWJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuLm0ge1xuICBhbmltYXRpb24tbmFtZTogcHVsc2U7XG4gIGFuaW1hdGlvbi1kdXJhdGlvbjogMnM7XG4gIGFuaW1hdGlvbi1kZWxheTogMjtcbiAgYW5pbWF0aW9uLWl0ZXJhdGlvbi1jb3VudDogaW5maW5pdGU7XG59Il19 */"]
     });
     /*@__PURE__*/
@@ -13352,7 +13725,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! @ng-bootstrap/ng-bootstrap */
+    "./node_modules/@ng-bootstrap/ng-bootstrap/__ivy_ngcc__/fesm2015/ng-bootstrap.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
@@ -13549,7 +13928,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var SelecmiterComponent = /*#__PURE__*/function () {
       function SelecmiterComponent(router, api) {
-        var _this40 = this;
+        var _this43 = this;
 
         _classCallCheck(this, SelecmiterComponent);
 
@@ -13563,8 +13942,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.navbarOpen = false;
         setInterval(function () {
           var wnow = new Date();
-          _this40.now = wnow.toLocaleString();
-          console.log(_this40.now.toLocaleString());
+          _this43.now = wnow.toLocaleString(); // console.log(this.now.toLocaleString())
         }, 1); // try {
         //   this.dae = JSON.parse(localStorage.getItem('name'))
         //   this.main = this.dae.name
@@ -13576,7 +13954,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelecmiterComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this41 = this;
+          var _this44 = this;
 
           try {
             this.dae = JSON.parse(localStorage.getItem('name'));
@@ -13599,16 +13977,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             building: this.main
           };
           this.api.postData('http://www.mesfia.eng.nu.ac.th/meter', postda).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this41, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee30() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this44, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee33() {
               var _index;
 
-              return regeneratorRuntime.wrap(function _callee30$(_context30) {
+              return regeneratorRuntime.wrap(function _callee33$(_context33) {
                 while (1) {
-                  switch (_context30.prev = _context30.next) {
+                  switch (_context33.prev = _context33.next) {
                     case 0:
                       this.count = data.count;
 
-                      for (_index = 0; _index < this.count; _index++) {
+                      for (_index = 0; _index < this.count - 1; _index++) {
                         this.datt.push([]);
                       }
 
@@ -13616,10 +13994,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                     case 3:
                     case "end":
-                      return _context30.stop();
+                      return _context33.stop();
                   }
                 }
-              }, _callee30, this);
+              }, _callee33, this);
             }));
           });
           var postd = {
@@ -13630,12 +14008,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             date: "1"
           };
           this.api.postData('http://www.mesfia.eng.nu.ac.th/energy', postd).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this41, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee31() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this44, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee34() {
               var _iterator2, _step2, iterator, i;
 
-              return regeneratorRuntime.wrap(function _callee31$(_context31) {
+              return regeneratorRuntime.wrap(function _callee34$(_context34) {
                 while (1) {
-                  switch (_context31.prev = _context31.next) {
+                  switch (_context34.prev = _context34.next) {
                     case 0:
                       _iterator2 = _createForOfIteratorHelper(data);
 
@@ -13650,211 +14028,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                         _iterator2.f();
                       }
 
-                      _context31.t0 = regeneratorRuntime.keys(this.energy_block_1);
-
-                    case 3:
-                      if ((_context31.t1 = _context31.t0()).done) {
-                        _context31.next = 12;
-                        break;
-                      }
-
-                      i = _context31.t1.value;
-
-                      if (!(i == "0")) {
-                        _context31.next = 9;
-                        break;
-                      }
-
-                      return _context31.abrupt("continue", 3);
-
-                    case 9:
-                      this.sum1 += this.energy_block_1[i];
-
-                    case 10:
-                      _context31.next = 3;
-                      break;
-
-                    case 12:
-                      this.chart1();
-
-                    case 13:
-                    case "end":
-                      return _context31.stop();
-                  }
-                }
-              }, _callee31, this);
-            }));
-          });
-          var pos = {
-            building: "usis",
-            block: "7",
-            year: this.number[0],
-            month: "1",
-            date: "1"
-          };
-          this.api.postData('http://www.mesfia.eng.nu.ac.th/energy', pos).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this41, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee32() {
-              var _iterator3, _step3, iterator, i;
-
-              return regeneratorRuntime.wrap(function _callee32$(_context32) {
-                while (1) {
-                  switch (_context32.prev = _context32.next) {
-                    case 0:
-                      _iterator3 = _createForOfIteratorHelper(data);
-
-                      try {
-                        for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-                          iterator = _step3.value;
-                          this.energy_block_2 = data[0];
-                        }
-                      } catch (err) {
-                        _iterator3.e(err);
-                      } finally {
-                        _iterator3.f();
-                      }
-
-                      _context32.t0 = regeneratorRuntime.keys(this.energy_block_2);
-
-                    case 3:
-                      if ((_context32.t1 = _context32.t0()).done) {
-                        _context32.next = 12;
-                        break;
-                      }
-
-                      i = _context32.t1.value;
-
-                      if (!(i == "0")) {
-                        _context32.next = 9;
-                        break;
-                      }
-
-                      return _context32.abrupt("continue", 3);
-
-                    case 9:
-                      this.sum2 += this.energy_block_2[i];
-
-                    case 10:
-                      _context32.next = 3;
-                      break;
-
-                    case 12:
-                      this.chart2();
-
-                    case 13:
-                    case "end":
-                      return _context32.stop();
-                  }
-                }
-              }, _callee32, this);
-            }));
-          }); // this.chart1()
-        }
-      }, {
-        key: "toggleNavbar",
-        value: function toggleNavbar() {
-          this.navbarOpen = !this.navbarOpen;
-        }
-      }, {
-        key: "onPercentChange",
-        value: function onPercentChange(percent) {
-          var _this42 = this;
-
-          console.log('here');
-          this.yearry = percent;
-          console.log(percent + 1); //  this.Loading = true;
-
-          var postd = {
-            building: "usis",
-            block: "1",
-            year: percent,
-            month: "1",
-            date: "1"
-          };
-          this.api.postData('http://www.mesfia.eng.nu.ac.th/energy', postd).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this42, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee33() {
-              var _iterator4, _step4, iterator, i;
-
-              return regeneratorRuntime.wrap(function _callee33$(_context33) {
-                while (1) {
-                  switch (_context33.prev = _context33.next) {
-                    case 0:
-                      _iterator4 = _createForOfIteratorHelper(data);
-
-                      try {
-                        for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
-                          iterator = _step4.value;
-                          this.energy_block_1 = data[0];
-                        }
-                      } catch (err) {
-                        _iterator4.e(err);
-                      } finally {
-                        _iterator4.f();
-                      }
-
-                      _context33.t0 = regeneratorRuntime.keys(this.energy_block_1);
-
-                    case 3:
-                      if ((_context33.t1 = _context33.t0()).done) {
-                        _context33.next = 12;
-                        break;
-                      }
-
-                      i = _context33.t1.value;
-
-                      if (!(i == "0")) {
-                        _context33.next = 9;
-                        break;
-                      }
-
-                      return _context33.abrupt("continue", 3);
-
-                    case 9:
-                      this.sum1 += this.energy_block_1[i];
-
-                    case 10:
-                      _context33.next = 3;
-                      break;
-
-                    case 12:
-                      this.chart1();
-
-                    case 13:
-                    case "end":
-                      return _context33.stop();
-                  }
-                }
-              }, _callee33, this);
-            }));
-          });
-          var pos = {
-            building: "usis",
-            block: "7",
-            year: percent,
-            month: "1",
-            date: "1"
-          };
-          this.api.postData('http://www.mesfia.eng.nu.ac.th/energy', pos).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this42, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee34() {
-              var _iterator5, _step5, iterator, i;
-
-              return regeneratorRuntime.wrap(function _callee34$(_context34) {
-                while (1) {
-                  switch (_context34.prev = _context34.next) {
-                    case 0:
-                      _iterator5 = _createForOfIteratorHelper(data);
-
-                      try {
-                        for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
-                          iterator = _step5.value;
-                          this.energy_block_2 = data[0];
-                        }
-                      } catch (err) {
-                        _iterator5.e(err);
-                      } finally {
-                        _iterator5.f();
-                      }
-
-                      _context34.t0 = regeneratorRuntime.keys(this.energy_block_2);
+                      _context34.t0 = regeneratorRuntime.keys(this.energy_block_1);
 
                     case 3:
                       if ((_context34.t1 = _context34.t0()).done) {
@@ -13872,14 +14046,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       return _context34.abrupt("continue", 3);
 
                     case 9:
-                      this.sum2 += this.energy_block_2[i];
+                      this.sum1 += this.energy_block_1[i];
 
                     case 10:
                       _context34.next = 3;
                       break;
 
                     case 12:
-                      this.chart2();
+                      this.chart1();
 
                     case 13:
                     case "end":
@@ -13887,6 +14061,210 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   }
                 }
               }, _callee34, this);
+            }));
+          });
+          var pos = {
+            building: "usis",
+            block: "7",
+            year: this.number[0],
+            month: "1",
+            date: "1"
+          };
+          this.api.postData('http://www.mesfia.eng.nu.ac.th/energy', pos).subscribe(function (data) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this44, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee35() {
+              var _iterator3, _step3, iterator, i;
+
+              return regeneratorRuntime.wrap(function _callee35$(_context35) {
+                while (1) {
+                  switch (_context35.prev = _context35.next) {
+                    case 0:
+                      _iterator3 = _createForOfIteratorHelper(data);
+
+                      try {
+                        for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+                          iterator = _step3.value;
+                          this.energy_block_2 = data[0];
+                        }
+                      } catch (err) {
+                        _iterator3.e(err);
+                      } finally {
+                        _iterator3.f();
+                      }
+
+                      _context35.t0 = regeneratorRuntime.keys(this.energy_block_2);
+
+                    case 3:
+                      if ((_context35.t1 = _context35.t0()).done) {
+                        _context35.next = 12;
+                        break;
+                      }
+
+                      i = _context35.t1.value;
+
+                      if (!(i == "0")) {
+                        _context35.next = 9;
+                        break;
+                      }
+
+                      return _context35.abrupt("continue", 3);
+
+                    case 9:
+                      this.sum2 += this.energy_block_2[i];
+
+                    case 10:
+                      _context35.next = 3;
+                      break;
+
+                    case 12:
+                      this.chart2();
+
+                    case 13:
+                    case "end":
+                      return _context35.stop();
+                  }
+                }
+              }, _callee35, this);
+            }));
+          }); // this.chart1()
+        }
+      }, {
+        key: "toggleNavbar",
+        value: function toggleNavbar() {
+          this.navbarOpen = !this.navbarOpen;
+        }
+      }, {
+        key: "onPercentChange",
+        value: function onPercentChange(percent) {
+          var _this45 = this;
+
+          console.log('here');
+          this.yearry = percent;
+          console.log(percent + 1); //  this.Loading = true;
+
+          var postd = {
+            building: "usis",
+            block: "1",
+            year: percent,
+            month: "1",
+            date: "1"
+          };
+          this.api.postData('http://www.mesfia.eng.nu.ac.th/energy', postd).subscribe(function (data) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this45, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee36() {
+              var _iterator4, _step4, iterator, i;
+
+              return regeneratorRuntime.wrap(function _callee36$(_context36) {
+                while (1) {
+                  switch (_context36.prev = _context36.next) {
+                    case 0:
+                      _iterator4 = _createForOfIteratorHelper(data);
+
+                      try {
+                        for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
+                          iterator = _step4.value;
+                          this.energy_block_1 = data[0];
+                        }
+                      } catch (err) {
+                        _iterator4.e(err);
+                      } finally {
+                        _iterator4.f();
+                      }
+
+                      _context36.t0 = regeneratorRuntime.keys(this.energy_block_1);
+
+                    case 3:
+                      if ((_context36.t1 = _context36.t0()).done) {
+                        _context36.next = 12;
+                        break;
+                      }
+
+                      i = _context36.t1.value;
+
+                      if (!(i == "0")) {
+                        _context36.next = 9;
+                        break;
+                      }
+
+                      return _context36.abrupt("continue", 3);
+
+                    case 9:
+                      this.sum1 += this.energy_block_1[i];
+
+                    case 10:
+                      _context36.next = 3;
+                      break;
+
+                    case 12:
+                      this.chart1();
+
+                    case 13:
+                    case "end":
+                      return _context36.stop();
+                  }
+                }
+              }, _callee36, this);
+            }));
+          });
+          var pos = {
+            building: "usis",
+            block: "7",
+            year: percent,
+            month: "1",
+            date: "1"
+          };
+          this.api.postData('http://www.mesfia.eng.nu.ac.th/energy', pos).subscribe(function (data) {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this45, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee37() {
+              var _iterator5, _step5, iterator, i;
+
+              return regeneratorRuntime.wrap(function _callee37$(_context37) {
+                while (1) {
+                  switch (_context37.prev = _context37.next) {
+                    case 0:
+                      _iterator5 = _createForOfIteratorHelper(data);
+
+                      try {
+                        for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
+                          iterator = _step5.value;
+                          this.energy_block_2 = data[0];
+                        }
+                      } catch (err) {
+                        _iterator5.e(err);
+                      } finally {
+                        _iterator5.f();
+                      }
+
+                      _context37.t0 = regeneratorRuntime.keys(this.energy_block_2);
+
+                    case 3:
+                      if ((_context37.t1 = _context37.t0()).done) {
+                        _context37.next = 12;
+                        break;
+                      }
+
+                      i = _context37.t1.value;
+
+                      if (!(i == "0")) {
+                        _context37.next = 9;
+                        break;
+                      }
+
+                      return _context37.abrupt("continue", 3);
+
+                    case 9:
+                      this.sum2 += this.energy_block_2[i];
+
+                    case 10:
+                      _context37.next = 3;
+                      break;
+
+                    case 12:
+                      this.chart2();
+
+                    case 13:
+                    case "end":
+                      return _context37.stop();
+                  }
+                }
+              }, _callee37, this);
             }));
           });
         }
@@ -14060,232 +14438,269 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getdata",
         value: function getdata() {
-          return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee35() {
-            var _this43 = this;
+          return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee38() {
+            var _this46 = this;
 
             var socket;
-            return regeneratorRuntime.wrap(function _callee35$(_context35) {
+            return regeneratorRuntime.wrap(function _callee38$(_context38) {
               while (1) {
-                switch (_context35.prev = _context35.next) {
+                switch (_context38.prev = _context38.next) {
                   case 0:
                     socket = socket_io_client__WEBPACK_IMPORTED_MODULE_3__('http://www.mesfia.eng.nu.ac.th');
-                    socket.on(this.main.toLowerCase() + 1, function (response) {
+                    socket.on('usis0', function (response) {
+                      // console.log(response);
+                      _this46.py = response.data[0].result[0]["Pyranometer"];
+                      _this46.tem = response.data[0].result[0]["Temperature"];
+                      _this46.hum = response.data[0].result[0]["Humidity"];
+                    });
+                    _context38.next = 4;
+                    return socket.on(this.main.toLowerCase() + 1, function (response) {
+                      // console.log(response);
                       var rest = [];
-                      var v0 = response.data.result[0]["Volt_1"];
-                      var a0 = response.data.result[0]["Current_1"];
-                      var p0 = response.data.result[0]["Power_1"];
-                      var v1 = response.data.result[0]["Volt_2"];
-                      var a1 = response.data.result[0]["Current_2"];
-                      var p1 = response.data.result[0]["Power_2"];
-                      var v2 = response.data.result[0]["Volt_3"];
-                      var a2 = response.data.result[0]["Current_3"];
-                      var p2 = response.data.result[0]["Power_3"];
-                      var powerto = response.data.result[0]["PowerSum"];
+                      var v0 = response.data[0].result[0]["Volt_1"];
+                      var a0 = response.data[0].result[0]["Current_1"];
+                      var p0 = response.data[0].result[0]["Power_1"];
+                      var v1 = response.data[0].result[0]["Volt_2"];
+                      var a1 = response.data[0].result[0]["Current_2"];
+                      var p1 = response.data[0].result[0]["Power_2"];
+                      var v2 = response.data[0].result[0]["Volt_3"];
+                      var a2 = response.data[0].result[0]["Current_3"];
+                      var p2 = response.data[0].result[0]["Power_3"];
+                      var powerto = response.data[0].result[0]["PowerSum"];
                       rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
 
-                      if (_this43.count >= 1) {
-                        _this43.datt[0] = rest;
-                        console.log(_this43.datt);
+                      if (_this46.count >= 1) {
+                        _this46.datt[0] = rest; // console.log(response)
+
+                        console.log('meter01_ok');
                       }
 
-                      _this43.f = response.data.result[0]["Frequency"];
-                      _this43.py = response.data.result[0]["Pyranometer"];
-                      _this43.tem = response.data.result[0]["Temperature"];
-                      _this43.hum = response.data.result[0]["Humidity"];
+                      _this46.f = response.data[0].result[0]["Frequency"];
                     });
-                    socket.on(this.main.toLowerCase() + 2, function (response) {
+
+                  case 4:
+                    _context38.next = 6;
+                    return socket.on(this.main.toLowerCase() + 2, function (response) {
+                      // console.log(response);
                       var rest = [];
-                      var v0 = response.data.result[0]["Volt_1"];
-                      var a0 = response.data.result[0]["Current_1"];
-                      var p0 = response.data.result[0]["Power_1"];
-                      var v1 = response.data.result[0]["Volt_2"];
-                      var a1 = response.data.result[0]["Current_2"];
-                      var p1 = response.data.result[0]["Power_2"];
-                      var v2 = response.data.result[0]["Volt_3"];
-                      var a2 = response.data.result[0]["Current_3"];
-                      var p2 = response.data.result[0]["Power_3"];
-                      var powerto = response.data.result[0]["PowerSum"];
+                      var v0 = response.data[0].result[0]["Volt_1"];
+                      var a0 = response.data[0].result[0]["Current_1"];
+                      var p0 = response.data[0].result[0]["Power_1"];
+                      var v1 = response.data[0].result[0]["Volt_2"];
+                      var a1 = response.data[0].result[0]["Current_2"];
+                      var p1 = response.data[0].result[0]["Power_2"];
+                      var v2 = response.data[0].result[0]["Volt_3"];
+                      var a2 = response.data[0].result[0]["Current_3"];
+                      var p2 = response.data[0].result[0]["Power_3"];
+                      var powerto = response.data[0].result[0]["PowerSum"];
                       rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
 
-                      if (_this43.count >= 1) {
-                        _this43.datt[1] = rest;
-                        console.log(_this43.datt);
-                      }
-
-                      _this43.f = response.data.result[0]["Frequency"];
-                      _this43.py = response.data.result[0]["Pyranometer"];
-                      _this43.tem = response.data.result[0]["Temperature"];
-                      _this43.hum = response.data.result[0]["Humidity"];
-                    });
-                    socket.on(this.main.toLowerCase() + 3, function (response) {
-                      var rest = [];
-                      var v0 = response.data.result[0]["Volt_1"];
-                      var a0 = response.data.result[0]["Current_1"];
-                      var p0 = response.data.result[0]["Power_1"];
-                      var v1 = response.data.result[0]["Volt_2"];
-                      var a1 = response.data.result[0]["Current_2"];
-                      var p1 = response.data.result[0]["Power_2"];
-                      var v2 = response.data.result[0]["Volt_3"];
-                      var a2 = response.data.result[0]["Current_3"];
-                      var p2 = response.data.result[0]["Power_3"];
-                      var powerto = response.data.result[0]["PowerSum"];
-                      rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
-
-                      if (_this43.count >= 2) {
-                        _this43.datt[2] = rest;
+                      if (_this46.count >= 1) {
+                        _this46.datt[1] = rest;
+                        console.log('meter02_ok');
                       }
                     });
-                    socket.on(this.main.toLowerCase() + 4, function (response) {
+
+                  case 6:
+                    _context38.next = 8;
+                    return socket.on(this.main.toLowerCase() + 3, function (response) {
                       var rest = [];
-                      var v0 = response.data.result[0]["Volt_1"];
-                      var a0 = response.data.result[0]["Current_1"];
-                      var p0 = response.data.result[0]["Power_1"];
-                      var v1 = response.data.result[0]["Volt_2"];
-                      var a1 = response.data.result[0]["Current_2"];
-                      var p1 = response.data.result[0]["Power_2"];
-                      var v2 = response.data.result[0]["Volt_3"];
-                      var a2 = response.data.result[0]["Current_3"];
-                      var p2 = response.data.result[0]["Power_3"];
-                      var powerto = response.data.result[0]["PowerSum"];
+                      var v0 = response.data[0].result[0]["Volt_1"];
+                      var a0 = response.data[0].result[0]["Current_1"];
+                      var p0 = response.data[0].result[0]["Power_1"];
+                      var v1 = response.data[0].result[0]["Volt_2"];
+                      var a1 = response.data[0].result[0]["Current_2"];
+                      var p1 = response.data[0].result[0]["Power_2"];
+                      var v2 = response.data[0].result[0]["Volt_3"];
+                      var a2 = response.data[0].result[0]["Current_3"];
+                      var p2 = response.data[0].result[0]["Power_3"];
+                      var powerto = response.data[0].result[0]["PowerSum"];
                       rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
 
-                      if (_this43.count >= 3) {
-                        _this43.datt[3] = rest;
+                      if (_this46.count >= 2) {
+                        _this46.datt[2] = rest;
+                        console.log('meter03_ok');
                       }
                     });
-                    socket.on(this.main.toLowerCase() + 5, function (response) {
+
+                  case 8:
+                    _context38.next = 10;
+                    return socket.on(this.main.toLowerCase() + 4, function (response) {
                       var rest = [];
-                      var v0 = response.data.result[0]["Volt_1"];
-                      var a0 = response.data.result[0]["Current_1"];
-                      var p0 = response.data.result[0]["Power_1"];
-                      var v1 = response.data.result[0]["Volt_2"];
-                      var a1 = response.data.result[0]["Current_2"];
-                      var p1 = response.data.result[0]["Power_2"];
-                      var v2 = response.data.result[0]["Volt_3"];
-                      var a2 = response.data.result[0]["Current_3"];
-                      var p2 = response.data.result[0]["Power_3"];
-                      var powerto = response.data.result[0]["PowerSum"];
+                      var v0 = response.data[0].result[0]["Volt_1"];
+                      var a0 = response.data[0].result[0]["Current_1"];
+                      var p0 = response.data[0].result[0]["Power_1"];
+                      var v1 = response.data[0].result[0]["Volt_2"];
+                      var a1 = response.data[0].result[0]["Current_2"];
+                      var p1 = response.data[0].result[0]["Power_2"];
+                      var v2 = response.data[0].result[0]["Volt_3"];
+                      var a2 = response.data[0].result[0]["Current_3"];
+                      var p2 = response.data[0].result[0]["Power_3"];
+                      var powerto = response.data[0].result[0]["PowerSum"];
                       rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
 
-                      if (_this43.count >= 4) {
-                        _this43.datt[4] = rest;
+                      if (_this46.count >= 3) {
+                        _this46.datt[3] = rest;
+                        console.log('meter04_ok');
                       }
                     });
-                    socket.on(this.main.toLowerCase() + 6, function (response) {
+
+                  case 10:
+                    _context38.next = 12;
+                    return socket.on(this.main.toLowerCase() + 5, function (response) {
                       var rest = [];
-                      var v0 = response.data.result[0]["Volt_1"];
-                      var a0 = response.data.result[0]["Current_1"];
-                      var p0 = response.data.result[0]["Power_1"];
-                      var v1 = response.data.result[0]["Volt_2"];
-                      var a1 = response.data.result[0]["Current_2"];
-                      var p1 = response.data.result[0]["Power_2"];
-                      var v2 = response.data.result[0]["Volt_3"];
-                      var a2 = response.data.result[0]["Current_3"];
-                      var p2 = response.data.result[0]["Power_3"];
-                      var powerto = response.data.result[0]["PowerSum"];
+                      var v0 = response.data[0].result[0]["Volt_1"];
+                      var a0 = response.data[0].result[0]["Current_1"];
+                      var p0 = response.data[0].result[0]["Power_1"];
+                      var v1 = response.data[0].result[0]["Volt_2"];
+                      var a1 = response.data[0].result[0]["Current_2"];
+                      var p1 = response.data[0].result[0]["Power_2"];
+                      var v2 = response.data[0].result[0]["Volt_3"];
+                      var a2 = response.data[0].result[0]["Current_3"];
+                      var p2 = response.data[0].result[0]["Power_3"];
+                      var powerto = response.data[0].result[0]["PowerSum"];
                       rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
 
-                      if (_this43.count >= 5) {
-                        _this43.datt[5] = rest;
-                      }
-                    });
-                    socket.on(this.main.toLowerCase() + 7, function (response) {
-                      var rest = [];
-                      var v0 = response.data.result[0]["Volt_1"];
-                      var a0 = response.data.result[0]["Current_1"];
-                      var p0 = response.data.result[0]["Power_1"];
-                      var v1 = response.data.result[0]["Volt_2"];
-                      var a1 = response.data.result[0]["Current_2"];
-                      var p1 = response.data.result[0]["Power_2"];
-                      var v2 = response.data.result[0]["Volt_3"];
-                      var a2 = response.data.result[0]["Current_3"];
-                      var p2 = response.data.result[0]["Power_3"];
-                      var powerto = response.data.result[0]["PowerSum"];
-                      rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
-
-                      if (_this43.count >= 6) {
-                        _this43.datt[6] = rest;
-                      }
-                    });
-                    socket.on(this.main.toLowerCase() + 8, function (response) {
-                      var rest = [];
-                      var v0 = response.data.result[0]["Volt_1"];
-                      var a0 = response.data.result[0]["Current_1"];
-                      var p0 = response.data.result[0]["Power_1"];
-                      var v1 = response.data.result[0]["Volt_2"];
-                      var a1 = response.data.result[0]["Current_2"];
-                      var p1 = response.data.result[0]["Power_2"];
-                      var v2 = response.data.result[0]["Volt_3"];
-                      var a2 = response.data.result[0]["Current_3"];
-                      var p2 = response.data.result[0]["Power_3"];
-                      var powerto = response.data.result[0]["PowerSum"];
-                      rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
-
-                      if (_this43.count >= 7) {
-                        _this43.datt[7] = rest;
-                      }
-                    });
-                    socket.on(this.main.toLowerCase() + 9, function (response) {
-                      var rest = [];
-                      var v0 = response.data.result[0]["Volt_1"];
-                      var a0 = response.data.result[0]["Current_1"];
-                      var p0 = response.data.result[0]["Power_1"];
-                      var v1 = response.data.result[0]["Volt_2"];
-                      var a1 = response.data.result[0]["Current_2"];
-                      var p1 = response.data.result[0]["Power_2"];
-                      var v2 = response.data.result[0]["Volt_3"];
-                      var a2 = response.data.result[0]["Current_3"];
-                      var p2 = response.data.result[0]["Power_3"];
-                      var powerto = response.data.result[0]["PowerSum"];
-                      rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
-
-                      if (_this43.count >= 8) {
-                        _this43.datt[8] = rest;
-                      }
-                    });
-                    socket.on(this.main.toLowerCase() + 10, function (response) {
-                      var rest = [];
-                      var v0 = response.data.result[0]["Volt_1"];
-                      var a0 = response.data.result[0]["Current_1"];
-                      var p0 = response.data.result[0]["Power_1"];
-                      var v1 = response.data.result[0]["Volt_2"];
-                      var a1 = response.data.result[0]["Current_2"];
-                      var p1 = response.data.result[0]["Power_2"];
-                      var v2 = response.data.result[0]["Volt_3"];
-                      var a2 = response.data.result[0]["Current_3"];
-                      var p2 = response.data.result[0]["Power_3"];
-                      var powerto = response.data.result[0]["PowerSum"];
-                      rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
-
-                      if (_this43.count >= 9) {
-                        _this43.datt[9] = rest;
-                      }
-                    });
-                    socket.on(this.main.toLowerCase() + 11, function (response) {
-                      var rest = [];
-                      var v0 = response.data.result[0]["Volt_1"];
-                      var a0 = response.data.result[0]["Current_1"];
-                      var p0 = response.data.result[0]["Power_1"];
-                      var v1 = response.data.result[0]["Volt_2"];
-                      var a1 = response.data.result[0]["Current_2"];
-                      var p1 = response.data.result[0]["Power_2"];
-                      var v2 = response.data.result[0]["Volt_3"];
-                      var a2 = response.data.result[0]["Current_3"];
-                      var p2 = response.data.result[0]["Power_3"];
-                      var powerto = response.data.result[0]["PowerSum"];
-                      rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
-
-                      if (_this43.count >= 10) {
-                        _this43.datt[10] = rest;
+                      if (_this46.count >= 4) {
+                        _this46.datt[4] = rest;
+                        console.log('meter05_ok');
                       }
                     });
 
                   case 12:
+                    _context38.next = 14;
+                    return socket.on(this.main.toLowerCase() + 6, function (response) {
+                      var rest = [];
+                      var v0 = response.data[0].result[0]["Volt_1"];
+                      var a0 = response.data[0].result[0]["Current_1"];
+                      var p0 = response.data[0].result[0]["Power_1"];
+                      var v1 = response.data[0].result[0]["Volt_2"];
+                      var a1 = response.data[0].result[0]["Current_2"];
+                      var p1 = response.data[0].result[0]["Power_2"];
+                      var v2 = response.data[0].result[0]["Volt_3"];
+                      var a2 = response.data[0].result[0]["Current_3"];
+                      var p2 = response.data[0].result[0]["Power_3"];
+                      var powerto = response.data[0].result[0]["PowerSum"];
+                      rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
+
+                      if (_this46.count >= 5) {
+                        _this46.datt[5] = rest;
+                        console.log('meter06_ok');
+                      }
+                    });
+
+                  case 14:
+                    _context38.next = 16;
+                    return socket.on(this.main.toLowerCase() + 7, function (response) {
+                      var rest = [];
+                      var v0 = response.data[0].result[0]["Volt_1"];
+                      var a0 = response.data[0].result[0]["Current_1"];
+                      var p0 = response.data[0].result[0]["Power_1"];
+                      var v1 = response.data[0].result[0]["Volt_2"];
+                      var a1 = response.data[0].result[0]["Current_2"];
+                      var p1 = response.data[0].result[0]["Power_2"];
+                      var v2 = response.data[0].result[0]["Volt_3"];
+                      var a2 = response.data[0].result[0]["Current_3"];
+                      var p2 = response.data[0].result[0]["Power_3"];
+                      var powerto = response.data[0].result[0]["PowerSum"];
+                      rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
+
+                      if (_this46.count >= 6) {
+                        _this46.datt[6] = rest;
+                        console.log('meter07_ok');
+                      }
+                    });
+
+                  case 16:
+                    _context38.next = 18;
+                    return socket.on(this.main.toLowerCase() + 8, function (response) {
+                      var rest = [];
+                      var v0 = response.data[0].result[0]["Volt_1"];
+                      var a0 = response.data[0].result[0]["Current_1"];
+                      var p0 = response.data[0].result[0]["Power_1"];
+                      var v1 = response.data[0].result[0]["Volt_2"];
+                      var a1 = response.data[0].result[0]["Current_2"];
+                      var p1 = response.data[0].result[0]["Power_2"];
+                      var v2 = response.data[0].result[0]["Volt_3"];
+                      var a2 = response.data[0].result[0]["Current_3"];
+                      var p2 = response.data[0].result[0]["Power_3"];
+                      var powerto = response.data[0].result[0]["PowerSum"];
+                      rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
+
+                      if (_this46.count >= 7) {
+                        _this46.datt[7] = rest;
+                        console.log('meter08_ok');
+                      }
+                    });
+
+                  case 18:
+                    _context38.next = 20;
+                    return socket.on(this.main.toLowerCase() + 9, function (response) {
+                      var rest = [];
+                      var v0 = response.data[0].result[0]["Volt_1"];
+                      var a0 = response.data[0].result[0]["Current_1"];
+                      var p0 = response.data[0].result[0]["Power_1"];
+                      var v1 = response.data[0].result[0]["Volt_2"];
+                      var a1 = response.data[0].result[0]["Current_2"];
+                      var p1 = response.data[0].result[0]["Power_2"];
+                      var v2 = response.data[0].result[0]["Volt_3"];
+                      var a2 = response.data[0].result[0]["Current_3"];
+                      var p2 = response.data[0].result[0]["Power_3"];
+                      var powerto = response.data[0].result[0]["PowerSum"];
+                      rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
+
+                      if (_this46.count >= 8) {
+                        _this46.datt[8] = rest;
+                      }
+                    });
+
+                  case 20:
+                    _context38.next = 22;
+                    return socket.on(this.main.toLowerCase() + 10, function (response) {
+                      var rest = [];
+                      var v0 = response.data[0].result[0]["Volt_1"];
+                      var a0 = response.data[0].result[0]["Current_1"];
+                      var p0 = response.data[0].result[0]["Power_1"];
+                      var v1 = response.data[0].result[0]["Volt_2"];
+                      var a1 = response.data[0].result[0]["Current_2"];
+                      var p1 = response.data[0].result[0]["Power_2"];
+                      var v2 = response.data[0].result[0]["Volt_3"];
+                      var a2 = response.data[0].result[0]["Current_3"];
+                      var p2 = response.data[0].result[0]["Power_3"];
+                      var powerto = response.data[0].result[0]["PowerSum"];
+                      rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
+
+                      if (_this46.count >= 9) {
+                        _this46.datt[9] = rest;
+                      }
+                    });
+
+                  case 22:
+                    socket.on(this.main.toLowerCase() + 11, function (response) {
+                      var rest = [];
+                      var v0 = response.data[0].result[0]["Volt_1"];
+                      var a0 = response.data[0].result[0]["Current_1"];
+                      var p0 = response.data[0].result[0]["Power_1"];
+                      var v1 = response.data[0].result[0]["Volt_2"];
+                      var a1 = response.data[0].result[0]["Current_2"];
+                      var p1 = response.data[0].result[0]["Power_2"];
+                      var v2 = response.data[0].result[0]["Volt_3"];
+                      var a2 = response.data[0].result[0]["Current_3"];
+                      var p2 = response.data[0].result[0]["Power_3"];
+                      var powerto = response.data[0].result[0]["PowerSum"];
+                      rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
+
+                      if (_this46.count >= 10) {
+                        _this46.datt[10] = rest;
+                      }
+                    });
+
+                  case 23:
                   case "end":
-                    return _context35.stop();
+                    return _context38.stop();
                 }
               }
-            }, _callee35, this);
+            }, _callee38, this);
           }));
         }
       }, {
@@ -14379,7 +14794,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             if (key == "0") {
               continue;
             } else {
-              if (this.energy_block_1[key] == 0 || this.energy_block_2[key] == 0) {
+              if (this.energy_block_1[key] == 0 && this.energy_block_2[key] == 0) {
                 itemFomat.push({
                   month: month[key],
                   consum: "",
@@ -14421,7 +14836,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       selectors: [["app-selecmiter"]],
       decls: 157,
       vars: 15,
-      consts: [["rel", "stylesheet", "href", "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"], [1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "rgba(104, 104, 104, 0.413)"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler", 3, "click"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse", 3, "ngClass"], [1, "navbar-nav", "mr-auto", "mt-2", "mt-lg-0"], [1, "nav-item", "active"], ["href", "#", 1, "nav-link"], [1, "sr-only"], ["href", "#/selecm", 1, "nav-link"], [1, "nav-item", "dropdown"], ["id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "true", 1, "nav-link", "dropdown-toggle"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "click"], ["href", "#/envi", 1, "nav-link"], [2, "width", "100vw", "background-color", "black", "height", "2px"], ["align", "center", 2, "margin-top", "50px"], ["src", "../../assets/osis.png", 2, "width", "150px"], ["src", "https://firebasestorage.googleapis.com/v0/b/solarpower-466f6.appspot.com/o/m.png?alt=media&token=3b4af2de-cd57-41f3-ab2d-28bde512a2d5", 2, "width", "250px", "margin-bottom", "30px"], ["src", "../../assets/nu.png", 2, "width", "150px"], ["src", "https://firebasestorage.googleapis.com/v0/b/solarpower-466f6.appspot.com/o/j.png?alt=media&token=cce5938e-ae9d-4973-9b9b-9c2a41be6cad", 2, "width", "250px"], [2, "width", "100vw"], ["align", "right", 1, "topw"], [2, "margin-right", "1vw"], [1, "row", 2, "justify-content", "space-around", "width", "100vw"], ["align", "center", 1, "card", "ca_1"], [1, "row", "ca_4"], [1, "btn", "btn-outline-primary", "my-element", 2, "border-radius", "20px", "width", "10vw", "position", "absolute", "right", "2px", 3, "click"], [1, "row", 2, "justify-content", "space-around"], ["src", "../../assets/images.png", "width", "30px", "height", "30px", 2, "margin-top", "4px"], [2, "margin-top", "5px"], ["src", "../../assets/download.png", "width", "30px", "height", "30px", 2, "margin-top", "4px"], ["src", "../../assets/download(1).png", "width", "25px", "height", "40px", 2, "margin-top", "4px"], ["src", "../../assets/humi.png", "width", "30px", "height", "30px", 2, "margin-top", "4px"], ["class", "system", 4, "ngIf"], ["align", "center", 4, "ngIf"], [1, "scroo"], ["align", "center", 1, "table", "ca_3", 2, "margin-top", "50px"], ["scope", "col"], [4, "ngFor", "ngForOf"], ["align", "center", 1, "row", 2, "justify-content", "center"], [1, "column", "energy_box1"], [2, "font-size", "40px", "color", "rgb(0, 132, 255)", "margin-top", "5vh"], [1, "energy_box1"], [1, "energy_chart"], ["id", "lineC"], ["id", "lineC2"], [2, "width", "100vw", "height", "5vh", "margin-top", "3vh"], [1, "form-control", 2, "width", "5vw", "position", "absolute", "right", "0px", "margin-right", "6vw", 3, "change"], ["mySelect", ""], [3, "value", 4, "ngFor", "ngForOf"], [1, "btn", "btn-outline-primary", "my-element", 2, "position", "absolute", "right", "0px", "margin-right", "15vw", 3, "click"], [1, "system"], ["align", "center"], ["src", "../../assets/Meter_location.png", "width", "90%"], ["scope", "row"], [1, "btn", "btn-outline-primary", "my-element", 2, "border-radius", "20px", 3, "click"], [3, "value"]],
+      consts: [["rel", "stylesheet", "href", "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"], [1, "navbar", "navbar-expand-lg", "navbar-light", 2, "background-color", "rgba(104, 104, 104, 0.413)"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler", 3, "click"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse", 3, "ngClass"], [1, "navbar-nav", "mr-auto", "mt-2", "mt-lg-0"], [1, "nav-item", "active"], ["href", "#", 1, "nav-link"], [1, "sr-only"], ["href", "#/selecm", 1, "nav-link"], [1, "nav-item", "dropdown"], ["id", "navbarDropdown", "role", "button", "data-toggle", "dropdown", "aria-haspopup", "true", "aria-expanded", "true", 1, "nav-link", "dropdown-toggle"], ["aria-labelledby", "navbarDropdown", 1, "dropdown-menu"], [1, "dropdown-item", 3, "click"], ["href", "#/envi", 1, "nav-link"], [2, "width", "100vw", "background-color", "black", "height", "2px"], ["align", "center", 2, "margin-top", "50px"], ["src", "../../assets/osis.png", 2, "width", "150px"], ["src", "../../assets/m.png", 2, "width", "250px", "margin-bottom", "30px"], ["src", "../../assets/nu.png", 2, "width", "150px"], ["src", "../../assets/j.png", 2, "width", "250px"], [2, "width", "100vw"], ["align", "right", 1, "topw"], [2, "margin-right", "1vw"], [1, "row", 2, "justify-content", "space-around", "width", "100vw"], ["align", "center", 1, "card", "ca_1"], [1, "row", "ca_4"], [1, "btn", "btn-outline-primary", "my-element", 2, "border-radius", "20px", "width", "10vw", "position", "absolute", "right", "2px", 3, "click"], [1, "row", 2, "justify-content", "space-around"], ["src", "../../assets/images.png", "width", "30px", "height", "30px", 2, "margin-top", "4px"], [2, "margin-top", "5px"], ["src", "../../assets/download.png", "width", "30px", "height", "30px", 2, "margin-top", "4px"], ["src", "../../assets/download(1).png", "width", "25px", "height", "40px", 2, "margin-top", "4px"], ["src", "../../assets/humi.png", "width", "30px", "height", "30px", 2, "margin-top", "4px"], ["class", "system", 4, "ngIf"], ["align", "center", 4, "ngIf"], [1, "scroo"], ["align", "center", 1, "table", "ca_3", 2, "margin-top", "50px"], ["scope", "col"], [4, "ngFor", "ngForOf"], ["align", "center", 1, "row", 2, "justify-content", "center"], [1, "column", "energy_box1"], [2, "font-size", "40px", "color", "rgb(0, 132, 255)", "margin-top", "5vh"], [1, "energy_box1"], [1, "energy_chart"], ["id", "lineC"], ["id", "lineC2"], [2, "width", "100vw", "height", "5vh", "margin-top", "3vh"], [1, "form-control", 2, "width", "7vw", "position", "absolute", "right", "0px", "margin-right", "6vw", 3, "change"], ["mySelect", ""], [3, "value", 4, "ngFor", "ngForOf"], [1, "btn", "btn-outline-primary", "my-element", 2, "position", "absolute", "right", "0px", "margin-right", "15vw", 3, "click"], [1, "system"], ["align", "center"], ["src", "../../assets/Meter_location.png", "width", "90%"], ["scope", "row"], [1, "btn", "btn-outline-primary", "my-element", 2, "border-radius", "20px", 3, "click"], [3, "value"]],
       template: function SelecmiterComponent_Template(rf, ctx) {
         if (rf & 1) {
           var _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵgetCurrentView"]();
@@ -15037,7 +15452,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngForOf", ctx.number);
         }
       },
-      directives: [_angular_common__WEBPACK_IMPORTED_MODULE_6__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_6__["NgForOf"]],
+      directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_6__["NgbNavbar"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgForOf"]],
       styles: ["html[_ngcontent-%COMP%], body[_ngcontent-%COMP%], footer[_ngcontent-%COMP%] {\n  background-size: cover;\n  width: max;\n  height: 100vh;\n}\n\n.ca_1[_ngcontent-%COMP%] {\n  justify-content: space-around;\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  margin-top: 2vh;\n  height: 15vh;\n  width: 40vw;\n  color: black;\n}\n\n.system[_ngcontent-%COMP%] {\n  margin-left: 3vw;\n  margin-top: 2vh;\n  margin-bottom: 2vh;\n  font-size: 30px;\n  font-weight: bold;\n}\n\n.energy_box1[_ngcontent-%COMP%] {\n  width: 30vw;\n  height: 20vh;\n  border-width: 2px;\n  border-color: black;\n  border: solid;\n  background-color: white;\n}\n\n.energy_chart[_ngcontent-%COMP%] {\n  width: 30vw;\n  height: 40vh;\n  border: solid;\n  border-color: black;\n  border-width: 2px;\n}\n\n.ca_2[_ngcontent-%COMP%] {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  width: 40vw;\n  color: black;\n  height: 35vh;\n  margin-top: 2vh;\n  margin-bottom: 2vh;\n}\n\n.ca_3[_ngcontent-%COMP%] {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n  width: 95vw;\n}\n\n.topw[_ngcontent-%COMP%] {\n  margin-top: 2vh;\n  margin-right: 6vw;\n}\n\n.ca_4[_ngcontent-%COMP%] {\n  margin: initial;\n  justify-content: center;\n}\n\n.but01[_ngcontent-%COMP%] {\n  width: 30vw;\n}\n\n.scroo[_ngcontent-%COMP%] {\n  width: 100vw;\n  overflow-x: scroll;\n}\n\n@media only screen and (max-width: 900px) {\n  .ca_1[_ngcontent-%COMP%] {\n    width: 90vw;\n    margin-left: 5vw;\n  }\n\n  .ca_3[_ngcontent-%COMP%] {\n    margin-left: 5vw;\n  }\n\n  .ca_4[_ngcontent-%COMP%] {\n    width: 90vw;\n    margin-top: 0vw;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYXRpbnlhL0Rlc2t0b3AvU29sYXJjZWxsL0VuZXJneS9zcmMvYXBwL3NlbGVjbWl0ZXIvc2VsZWNtaXRlci5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvc2VsZWNtaXRlci9zZWxlY21pdGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBR0ksc0JBQUE7RUFDQSxVQUFBO0VBQ0EsYUFBQTtBQ0FKOztBREdBO0VBQ0ksNkJBQUE7RUFDQSw0RUFBQTtFQUNBLGVBQUE7RUFFQSxZQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7QUNESjs7QURJQTtFQUNJLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0FDREo7O0FESUE7RUFDSSxXQUFBO0VBQ0EsWUFBQTtFQUNBLGlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxhQUFBO0VBQ0EsdUJBQUE7QUNESjs7QURJQTtFQUNJLFdBQUE7RUFDQSxZQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7QUNESjs7QURJQTtFQUVJLDRFQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBRUEsZUFBQTtFQUNBLGtCQUFBO0FDSEo7O0FETUE7RUFFSSw0RUFBQTtFQUNBLFdBQUE7QUNKSjs7QURPQTtFQUNJLGVBQUE7RUFDQSxpQkFBQTtBQ0pKOztBRFNBO0VBR0ksZUFBQTtFQUNBLHVCQUFBO0FDUko7O0FEV0E7RUFFSSxXQUFBO0FDVEo7O0FEWUE7RUFFSSxZQUFBO0VBRUEsa0JBQUE7QUNYSjs7QURjQTtFQUNJO0lBQ0ksV0FBQTtJQUNBLGdCQUFBO0VDWE47O0VEYUU7SUFDSSxnQkFBQTtFQ1ZOOztFRFlFO0lBQ0ksV0FBQTtJQUVBLGVBQUE7RUNWTjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvc2VsZWNtaXRlci9zZWxlY21pdGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaHRtbCxib2R5LGZvb3RlcntcbiAgICAvLyBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQodG8gcmlnaHQsICNBMzI4MkEgLCAjRDA4RjkwKTtcbiAgICAtd2Via2l0LWJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICB3aWR0aDogbWF4O1xuICAgIGhlaWdodDogMTAwdmg7XG59XG5cbi5jYV8xe1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gICAgbWFyZ2luLXRvcDogMnZoO1xuICAgIC8vIGJvcmRlci1yYWRpdXM6IDM1cHg7XG4gICAgaGVpZ2h0OiAxNXZoO1xuICAgIHdpZHRoOiA0MHZ3O1xuICAgIGNvbG9yOiBibGFjaztcbn1cblxuLnN5c3RlbXtcbiAgICBtYXJnaW4tbGVmdDogM3Z3O1xuICAgIG1hcmdpbi10b3A6IDJ2aDtcbiAgICBtYXJnaW4tYm90dG9tOiAydmg7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuXG4uZW5lcmd5X2JveDF7XG4gICAgd2lkdGg6IDMwdnc7XG4gICAgaGVpZ2h0OiAyMHZoO1xuICAgIGJvcmRlci13aWR0aDogMnB4O1xuICAgIGJvcmRlci1jb2xvcjogYmxhY2s7XG4gICAgYm9yZGVyOiBzb2xpZDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbn1cblxuLmVuZXJneV9jaGFydHtcbiAgICB3aWR0aDogMzB2dztcbiAgICBoZWlnaHQ6IDQwdmg7XG4gICAgYm9yZGVyOiBzb2xpZDtcbiAgICBib3JkZXItY29sb3I6IGJsYWNrO1xuICAgIGJvcmRlci13aWR0aDogMnB4O1xufVxuXG4uY2FfMntcbiAgICAvLyBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQoIzg5MDcwNywgI0YwOUQ5RCk7XG4gICAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgICB3aWR0aDogNDB2dztcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgaGVpZ2h0OiAzNXZoO1xuICAgIC8vIGJvcmRlci1yYWRpdXM6IDgwcHg7XG4gICAgbWFyZ2luLXRvcDogMnZoO1xuICAgIG1hcmdpbi1ib3R0b206IDJ2aDtcbn1cblxuLmNhXzN7XG4gICAgLy8gYmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50KCM4OTA3MDcsICNGMDlEOUQpO1xuICAgIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKSwgMCA2cHggMjBweCAwIHJnYmEoMCwgMCwgMCwgMC4xOSk7XG4gICAgd2lkdGg6IDk1dnc7XG59XG5cbi50b3B3e1xuICAgIG1hcmdpbi10b3A6IDJ2aDtcbiAgICBtYXJnaW4tcmlnaHQ6IDZ2dztcbiAgICAvLyB3aWR0aDogMTAwdnc7XG4gICAgLy8ganVzdGlmeS1jb250ZW50OiA7XG59XG4vLyB3aWR0aDogNDB2dzsgaGVpZ2h0OiA1dmg7IG1hcmdpbi10b3A6IDB2d1xuLmNhXzR7XG4gICAgLy8gd2lkdGg6IDQwdnc7XG4gICAgLy8gaGVpZ2h0OiA1dmg7XG4gICAgbWFyZ2luOiBpbml0aWFsO1xuICAgIGp1c3RpZnktY29udGVudDpjZW50ZXI7XG59XG5cbi5idXQwMXtcbiAgICAvLyBmbG9hdDogcmlnaHQ7XG4gICAgd2lkdGg6IDMwdnc7XG59XG5cbi5zY3Jvb3tcbiAgICAvLyBtYXJnaW4tdG9wOiAtMTBweDtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgLy8gaGVpZ2h0OiA0MnZoO1xuICAgIG92ZXJmbG93LXg6IHNjcm9sbDtcbiAgfVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDkwMHB4KXtcbiAgICAuY2FfMXtcbiAgICAgICAgd2lkdGg6IDkwdnc7XG4gICAgICAgIG1hcmdpbi1sZWZ0OiA1dnc7XG4gICAgfVxuICAgIC5jYV8ze1xuICAgICAgICBtYXJnaW4tbGVmdDogNXZ3O1xuICAgIH1cbiAgICAuY2FfNHtcbiAgICAgICAgd2lkdGg6IDkwdnc7XG4gICAgICAgIC8vIGhlaWdodDogNXZoO1xuICAgICAgICBtYXJnaW4tdG9wOiAwdnc7XG4gICAgfVxufSIsImh0bWwsIGJvZHksIGZvb3RlciB7XG4gIC13ZWJraXQtYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgd2lkdGg6IG1heDtcbiAgaGVpZ2h0OiAxMDB2aDtcbn1cblxuLmNhXzEge1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgbWFyZ2luLXRvcDogMnZoO1xuICBoZWlnaHQ6IDE1dmg7XG4gIHdpZHRoOiA0MHZ3O1xuICBjb2xvcjogYmxhY2s7XG59XG5cbi5zeXN0ZW0ge1xuICBtYXJnaW4tbGVmdDogM3Z3O1xuICBtYXJnaW4tdG9wOiAydmg7XG4gIG1hcmdpbi1ib3R0b206IDJ2aDtcbiAgZm9udC1zaXplOiAzMHB4O1xuICBmb250LXdlaWdodDogYm9sZDtcbn1cblxuLmVuZXJneV9ib3gxIHtcbiAgd2lkdGg6IDMwdnc7XG4gIGhlaWdodDogMjB2aDtcbiAgYm9yZGVyLXdpZHRoOiAycHg7XG4gIGJvcmRlci1jb2xvcjogYmxhY2s7XG4gIGJvcmRlcjogc29saWQ7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xufVxuXG4uZW5lcmd5X2NoYXJ0IHtcbiAgd2lkdGg6IDMwdnc7XG4gIGhlaWdodDogNDB2aDtcbiAgYm9yZGVyOiBzb2xpZDtcbiAgYm9yZGVyLWNvbG9yOiBibGFjaztcbiAgYm9yZGVyLXdpZHRoOiAycHg7XG59XG5cbi5jYV8yIHtcbiAgYm94LXNoYWRvdzogMCA0cHggOHB4IDAgcmdiYSgwLCAwLCAwLCAwLjIpLCAwIDZweCAyMHB4IDAgcmdiYSgwLCAwLCAwLCAwLjE5KTtcbiAgd2lkdGg6IDQwdnc7XG4gIGNvbG9yOiBibGFjaztcbiAgaGVpZ2h0OiAzNXZoO1xuICBtYXJnaW4tdG9wOiAydmg7XG4gIG1hcmdpbi1ib3R0b206IDJ2aDtcbn1cblxuLmNhXzMge1xuICBib3gtc2hhZG93OiAwIDRweCA4cHggMCByZ2JhKDAsIDAsIDAsIDAuMiksIDAgNnB4IDIwcHggMCByZ2JhKDAsIDAsIDAsIDAuMTkpO1xuICB3aWR0aDogOTV2dztcbn1cblxuLnRvcHcge1xuICBtYXJnaW4tdG9wOiAydmg7XG4gIG1hcmdpbi1yaWdodDogNnZ3O1xufVxuXG4uY2FfNCB7XG4gIG1hcmdpbjogaW5pdGlhbDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5idXQwMSB7XG4gIHdpZHRoOiAzMHZ3O1xufVxuXG4uc2Nyb28ge1xuICB3aWR0aDogMTAwdnc7XG4gIG92ZXJmbG93LXg6IHNjcm9sbDtcbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA5MDBweCkge1xuICAuY2FfMSB7XG4gICAgd2lkdGg6IDkwdnc7XG4gICAgbWFyZ2luLWxlZnQ6IDV2dztcbiAgfVxuXG4gIC5jYV8zIHtcbiAgICBtYXJnaW4tbGVmdDogNXZ3O1xuICB9XG5cbiAgLmNhXzQge1xuICAgIHdpZHRoOiA5MHZ3O1xuICAgIG1hcmdpbi10b3A6IDB2dztcbiAgfVxufSJdfQ== */"]
     });
     /*@__PURE__*/

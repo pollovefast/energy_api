@@ -46,6 +46,7 @@ io.on('connection', function (socket) {
     mongoose.connection.db.listCollections().toArray(function (err, names) {
         for (const i of names) {
             const datas = mongoose.model(i.name, FileSchema)
+
             datas.find({}, {}, { sort: { 'create': -1 } }, function (err, result) {
                 var nameda = i.name
                 // var lengthda = nameda.length
@@ -54,6 +55,7 @@ io.on('connection', function (socket) {
                     socket.emit(res, { success: true, msg: 'no data' })
                 } else {
                     // console.log(result)
+
                     socket.emit(res, { success: 'check', data: result })
                 }
             }).limit(1).catch(err => {
