@@ -206,19 +206,19 @@ app.post('/data', (req, res) => {
     var request_data = req.body;
     var count = Object.keys(req.body).length;
     var date = new Date()
+    console.log(request_data)
     var resw = [{
         building: request_data.building.toUpperCase(),
         result: [JSON.parse(request_data.result)],
         block: request_data.block,
         create: date
     }]
-
+    console.log("alaiwa")
     const File = mongoose.model(request_data.building + request_data.block, FileSchema);
-   // console.log(File)
+    console.log(File)
     if (count != 0) {
         if (request_data) {
             File.find({}, {}, { sort: { 'create': -1 } }, function (err, data) {
-                console.log(data[0].result[0]["DateTime"])
                 if (data.length < 1) {
                     console.log("ข้อมูลแรก")
                     new File({
@@ -286,6 +286,7 @@ app.post('/data', (req, res) => {
                     }
                 }
             }).limit(1).catch(err => {
+                console.log("error na ja")
                 console.log(err)
             })
         } else {
