@@ -247,6 +247,7 @@ app.post('/data', (req, res) => {
                     // console.log(data[0].create.getMinutes() + 4)
                     // console.log(date.getMinutes())
                     // console.log(date)
+                    console.log(request_data.block)
                     new File({
                         building: request_data.building.toUpperCase(),
                         result: JSON.parse(request_data.result),
@@ -270,10 +271,10 @@ app.post('/data', (req, res) => {
                     })
                 } else {
                     console.log("No_save_data")
-
+                    console.log(request_data.block)
                     // console.log(date.getMinutes())
                     // console.log(data[0].create.getMinutes() + 4)
-                    var nameupper = request_data.building.toLowerCase()
+                    var nameupper = request_data.block
                     if (JSON.parse(request_data.result).length < 1 || err) {
                         io.sockets.emit(nameupper + request_data.block, { success: true, msg: 'no data' });
                         // console.log("show_data_realtime")
