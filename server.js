@@ -89,9 +89,10 @@ app.get('/building', function (req, res) {
         var num = 0;
         for (const i of names) {
             num = 0;
-            var lenname = i.name.slice(0, i.name.length - 1)
+            var lenname = i.name.slice(0, 4)
             for (const iterator of array) {
                 if (lenname.toUpperCase() == iterator.toUpperCase()) {
+                    console.log(lenname + "====" + iterator)
                     num = 1;
                     break;
                 }
