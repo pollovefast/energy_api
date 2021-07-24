@@ -1157,7 +1157,8 @@ class DetailComponent {
             this.main = localStorage.getItem('meter');
             this.namemeter = localStorage.getItem('namemeter');
             this.name = this.main.slice(0, this.main.length - 1);
-            this.num = parseInt(this.main.slice(this.main.length - 1, this.main.length));
+            this.num = parseInt(this.main.slice(4, this.main.length));
+            console.log(this.num);
             this.detail = JSON.parse(localStorage.getItem('detail'));
             console.log(this.detail);
         }
@@ -1325,35 +1326,35 @@ DetailComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineCo
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "div", 11);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailComponent_Template_a_click_19_listener() { return ctx.test(1); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Meter01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Incoming/Main");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](21, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailComponent_Template_a_click_21_listener() { return ctx.test(2); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Meter02");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Feeder 01");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](23, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailComponent_Template_a_click_23_listener() { return ctx.test(3); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Meter03");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Feeder 02");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](25, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailComponent_Template_a_click_25_listener() { return ctx.test(4); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Meter04");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Feeder 03");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](27, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailComponent_Template_a_click_27_listener() { return ctx.test(5); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Meter05");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Feeder 04");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](29, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailComponent_Template_a_click_29_listener() { return ctx.test(6); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Meter06");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Feeder 05");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailComponent_Template_a_click_31_listener() { return ctx.test(7); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Meter07");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "On grid PV systems");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](33, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailComponent_Template_a_click_33_listener() { return ctx.test(8); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Meter08");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Hybrid PV system");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -1977,11 +1978,11 @@ class DetailenviComponent {
                 this.solar = true;
             }
             else if (this.nameen == "Temperature") {
-                this.mainname = "Solar Irradiance";
+                this.mainname = "Temperature";
                 this.tem = true;
             }
             else if (this.nameen == "Humidity") {
-                this.mainname = "Solar Irradiance";
+                this.mainname = "Humidity";
                 this.hum = true;
             }
         }
@@ -2442,45 +2443,68 @@ class DetailenviComponent {
         }
     }
     hexportCsv() {
-        var header = {
-            DateTime: 'DateTime',
-            Tit: this.mainname
-        };
-        var itemNotFormat = this.hitem;
-        var datee = this.hdate1;
-        console.log(datee);
-        var year = this.hyear1;
-        var dat = this.hdate1;
-        if (dat < 10) {
-            dat = "0" + dat;
-        }
-        var month = this.hmonth1;
-        console.log(month);
-        if (month < 10) {
-            month = "0" + month;
-        }
-        var datw = this.hdate2;
-        console.log(datw);
-        var year1 = this.hyear2;
-        var dat1 = this.hdate2;
-        if (dat1 < 10) {
-            dat1 = "0" + dat1;
-        }
-        var month1 = this.hmonth2;
-        console.log(month1);
-        if (month1 < 10) {
-            month1 = "0" + month1;
-        }
-        var fileTitle = String(year) + String(month) + String(dat) + "_" + String(year1) + String(month1) + String(dat1) + "_" + this.mainname;
-        // var fileTitle = 'solar';
-        var itemFomat = [];
-        itemNotFormat.forEach((item) => {
-            itemFomat.push({
-                DateTime: item['result'][0]['DateTime'],
-                Tit: item['result'][0][this.nameen]
-            });
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            var header = {
+                DateTime: 'DateTime',
+                Tit: this.mainname
+            };
+            let postda = {
+                building: this.name,
+                block: this.block,
+                date: ('0' + this.hdate1).slice(-2).toString(),
+                month: ('0' + this.hmonth1).slice(-2).toString(),
+                year: this.hyear1.toString(),
+                date2: ('0' + this.hdate2).slice(-2).toString(),
+                month2: ('0' + this.hmonth2).slice(-2).toString(),
+                year2: this.hyear2.toString(),
+                hour: ('0' + this.hhourS).slice(-2).toString(),
+                hour2: ('0' + this.hhourE).slice(-2).toString(),
+            };
+            var itemNotFormat;
+            this.Loading = true;
+            yield this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe((data) => Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+                var a = [];
+                yield console.log(data);
+                a.push(data);
+                itemNotFormat = a[0]['data'];
+                var datee = this.hdate1;
+                console.log(datee);
+                var year = this.hyear1;
+                var dat = this.hdate1;
+                if (dat < 10) {
+                    dat = "0" + dat;
+                }
+                var month = this.hmonth1;
+                console.log(month);
+                if (month < 10) {
+                    month = "0" + month;
+                }
+                var datw = this.hdate2;
+                console.log(datw);
+                var year1 = this.hyear2;
+                var dat1 = this.hdate2;
+                if (dat1 < 10) {
+                    dat1 = "0" + dat1;
+                }
+                var month1 = this.hmonth2;
+                console.log(month1);
+                if (month1 < 10) {
+                    month1 = "0" + month1;
+                }
+                var fileTitle = String(year) + String(month) + String(dat) + "_" + String(year1) + String(month1) + String(dat1) + "_" + this.mainname;
+                // var fileTitle = 'solar';
+                var itemFomat = [];
+                console.log(itemNotFormat);
+                itemNotFormat.forEach((item) => {
+                    itemFomat.push({
+                        DateTime: item['result'][0]['DateTime'],
+                        Tit: item['result'][0][this.nameen]
+                    });
+                });
+                this.exportCSVFile(header, itemFomat, fileTitle);
+                this.Loading = false;
+            }));
         });
-        this.exportCSVFile(header, itemFomat, fileTitle);
     }
     honPercentChange(percent) {
         console.log('here');
@@ -2521,35 +2545,35 @@ DetailenviComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "div", 11);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailenviComponent_Template_a_click_19_listener() { return ctx.test(1); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Meter01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Incoming/Main");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](21, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailenviComponent_Template_a_click_21_listener() { return ctx.test(2); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Meter02");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Feeder 01");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](23, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailenviComponent_Template_a_click_23_listener() { return ctx.test(3); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Meter03");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Feeder 02");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](25, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailenviComponent_Template_a_click_25_listener() { return ctx.test(4); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Meter04");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Feeder 03");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](27, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailenviComponent_Template_a_click_27_listener() { return ctx.test(5); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Meter05");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Feeder 04");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](29, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailenviComponent_Template_a_click_29_listener() { return ctx.test(6); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Meter06");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Feeder 05");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailenviComponent_Template_a_click_31_listener() { return ctx.test(7); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Meter07");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "On grid PV systems");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](33, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function DetailenviComponent_Template_a_click_33_listener() { return ctx.test(8); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Meter08");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Hybrid PV system");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -3669,45 +3693,72 @@ class EnviromentComponent {
         }
     }
     hexportCsv() {
-        var header = {
-            DateTime: 'DateTime',
-            Tit: this.mainname
-        };
-        var itemNotFormat = this.hitem;
-        var datee = this.hdate1;
-        console.log(datee);
-        var year = this.hyear1 - 543;
-        var dat = this.hdate1;
-        if (dat < 10) {
-            dat = "0" + dat;
-        }
-        var month = this.hmonth1;
-        console.log(month);
-        if (month < 10) {
-            month = "0" + month;
-        }
-        var datw = this.hdate2;
-        console.log(datw);
-        var year1 = this.hyear2 - 543;
-        var dat1 = this.hdate2;
-        if (dat1 < 10) {
-            dat1 = "0" + dat1;
-        }
-        var month1 = this.hmonth2;
-        console.log(month1);
-        if (month1 < 10) {
-            month1 = "0" + month1;
-        }
-        var fileTitle = String(year) + String(month) + String(dat) + "_" + String(year1) + String(month1) + String(dat1) + "_" + this.mainname;
-        // var fileTitle = 'solar';
-        var itemFomat = [];
-        itemNotFormat.forEach((item) => {
-            itemFomat.push({
-                DateTime: item['result'][0]['DateTime'],
-                Tit: item['result'][0][this.nameen]
-            });
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            var header = {
+                DateTime: 'DateTime',
+                Humidity: 'Humidity',
+                Pyranometer: 'Pyranometer',
+                Temperature: 'Temperature'
+            };
+            let postda = {
+                building: this.name,
+                block: this.block,
+                date: ('0' + this.hdate1).slice(-2).toString(),
+                month: ('0' + this.hmonth1).slice(-2).toString(),
+                year: this.hyear1.toString(),
+                date2: ('0' + this.hdate2).slice(-2).toString(),
+                month2: ('0' + this.hmonth2).slice(-2).toString(),
+                year2: this.hyear2.toString(),
+                hour: ('0' + this.hhourS).slice(-2).toString(),
+                hour2: ('0' + this.hhourE).slice(-2).toString(),
+            };
+            var itemNotFormat;
+            this.Loading = true;
+            yield this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe((data) => Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+                var a = [];
+                yield console.log(data);
+                a.push(data);
+                itemNotFormat = a[0]['data'];
+                var datee = this.hdate1;
+                console.log(datee);
+                var year = this.hyear1;
+                var dat = this.hdate1;
+                if (dat < 10) {
+                    dat = "0" + dat;
+                }
+                var month = this.hmonth1;
+                console.log(month);
+                if (month < 10) {
+                    month = "0" + month;
+                }
+                var datw = this.hdate2;
+                console.log(datw);
+                var year1 = this.hyear2;
+                var dat1 = this.hdate2;
+                if (dat1 < 10) {
+                    dat1 = "0" + dat1;
+                }
+                var month1 = this.hmonth2;
+                console.log(month1);
+                if (month1 < 10) {
+                    month1 = "0" + month1;
+                }
+                var fileTitle = String(year) + String(month) + String(dat) + "_" + String(year1) + String(month1) + String(dat1) + "_" + 'Enviroment';
+                // var fileTitle = 'solar';
+                var itemFomat = [];
+                console.log(itemNotFormat);
+                itemNotFormat.forEach((item) => {
+                    itemFomat.push({
+                        DateTime: item['result'][0]['DateTime'],
+                        Humidity: item['result'][0]['Humidity'],
+                        Pyranometer: item['result'][0]['Pyranometer'],
+                        Temperature: item['result'][0]['Temperature']
+                    });
+                });
+                this.exportCSVFile(header, itemFomat, fileTitle);
+                this.Loading = false;
+            }));
         });
-        this.exportCSVFile(header, itemFomat, fileTitle);
     }
     honPercentChange(percent) {
         console.log('here');
@@ -3748,35 +3799,35 @@ EnviromentComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "div", 11);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function EnviromentComponent_Template_a_click_19_listener() { return ctx.test(1); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Meter01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Incoming/Main");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](21, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function EnviromentComponent_Template_a_click_21_listener() { return ctx.test(2); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Meter02");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Feeder 01");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](23, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function EnviromentComponent_Template_a_click_23_listener() { return ctx.test(3); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Meter03");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Feeder 02");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](25, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function EnviromentComponent_Template_a_click_25_listener() { return ctx.test(4); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Meter04");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Feeder 03");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](27, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function EnviromentComponent_Template_a_click_27_listener() { return ctx.test(5); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Meter05");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Feeder 04");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](29, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function EnviromentComponent_Template_a_click_29_listener() { return ctx.test(6); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Meter06");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Feeder 05");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function EnviromentComponent_Template_a_click_31_listener() { return ctx.test(7); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Meter07");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "On grid PV systems");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](33, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function EnviromentComponent_Template_a_click_33_listener() { return ctx.test(8); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Meter08");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Hybrid PV system");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -5022,35 +5073,35 @@ GraphComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineCom
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "div", 11);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function GraphComponent_Template_a_click_19_listener() { return ctx.test(1); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Meter01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Incoming/Main");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](21, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function GraphComponent_Template_a_click_21_listener() { return ctx.test(2); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Meter02");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Feeder 01");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](23, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function GraphComponent_Template_a_click_23_listener() { return ctx.test(3); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Meter03");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Feeder 02");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](25, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function GraphComponent_Template_a_click_25_listener() { return ctx.test(4); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Meter04");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Feeder 03");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](27, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function GraphComponent_Template_a_click_27_listener() { return ctx.test(5); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Meter05");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Feeder 04");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](29, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function GraphComponent_Template_a_click_29_listener() { return ctx.test(6); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Meter06");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Feeder 05");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function GraphComponent_Template_a_click_31_listener() { return ctx.test(7); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Meter07");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "On grid PV systems");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](33, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function GraphComponent_Template_a_click_33_listener() { return ctx.test(8); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Meter08");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Hybrid PV system");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -5680,35 +5731,35 @@ GraphfourComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefin
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "div", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](20, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function GraphfourComponent_Template_a_click_20_listener() { return ctx.test(1); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Meter01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Incoming/Main");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](22, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function GraphfourComponent_Template_a_click_22_listener() { return ctx.test(2); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Meter02");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Feeder 01");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function GraphfourComponent_Template_a_click_24_listener() { return ctx.test(3); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Meter03");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Feeder 02");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](26, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function GraphfourComponent_Template_a_click_26_listener() { return ctx.test(4); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Meter04");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Feeder 03");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](28, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function GraphfourComponent_Template_a_click_28_listener() { return ctx.test(5); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Meter05");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Feeder 04");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](30, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function GraphfourComponent_Template_a_click_30_listener() { return ctx.test(6); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Meter06");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Feeder 05");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](32, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function GraphfourComponent_Template_a_click_32_listener() { return ctx.test(7); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "Meter07");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "On grid PV systems");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function GraphfourComponent_Template_a_click_34_listener() { return ctx.test(8); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Meter08");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Hybrid PV system");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -6280,87 +6331,109 @@ class HistoryComponent {
         }
     }
     exportCsv() {
-        var header = {
-            DateTime: 'DateTime',
-            Volt_1: 'Volt_1',
-            Volt_2: 'Volt_2',
-            Volt_3: 'Volt_3',
-            Current_1: 'Current_1',
-            Current_2: 'Current_2',
-            Current_3: 'Current_3',
-            Power_1: 'Power_1',
-            Power_2: 'Power_2',
-            Power_3: 'Power_3',
-            PF_1: 'PF_1',
-            PF_2: 'PF_2',
-            PF_3: 'PF_3',
-            VAR_1: 'VAR_1',
-            VAR_2: 'VAR_2',
-            VAR_3: 'VAR_3',
-            VA_1: 'VA_1',
-            VA_2: 'VA_2',
-            VA_3: 'VA_3',
-            Frequency: 'Frequency',
-            Energy_Ex: 'Energy_Ex',
-            Energy_Im: 'Energy_Im',
-            PowerSum: 'PowerSum'
-        };
-        var itemNotFormat = this.item;
-        var datee = this.date1;
-        console.log(datee);
-        var year = this.year1 - 543;
-        var dat = this.date1;
-        if (dat < 10) {
-            dat = "0" + dat;
-        }
-        var month = this.month1;
-        console.log(month);
-        if (month < 10) {
-            month = "0" + month;
-        }
-        var datw = this.date2;
-        console.log(datw);
-        var year1 = this.year2 - 543;
-        var dat1 = this.date2;
-        if (dat1 < 10) {
-            dat1 = "0" + dat1;
-        }
-        var month1 = this.month2;
-        console.log(month1);
-        if (month1 < 10) {
-            month1 = "0" + month1;
-        }
-        var fileTitle = String(year) + String(month) + String(dat) + "_" + String(year1) + String(month1) + String(dat1) + "_Meter" + this.num;
-        // var fileTitle = 'solar';
-        var itemFomat = [];
-        itemNotFormat.forEach((item) => {
-            itemFomat.push({
-                DateTime: item['result'][0]['DateTime'],
-                Volt_1: item['result'][0]['Volt_1'],
-                Volt_2: item['result'][0]['Volt_2'],
-                Volt_3: item['result'][0]['Volt_3'],
-                Current_1: item['result'][0]['Current_1'],
-                Current_2: item['result'][0]['Current_2'],
-                Current_3: item['result'][0]['Current_3'],
-                Power_1: item['result'][0]['Power_1'],
-                Power_2: item['result'][0]['Power_2'],
-                Power_3: item['result'][0]['Power_3'],
-                PF_1: item['result'][0]['PF_1'],
-                PF_2: item['result'][0]['PF_2'],
-                PF_3: item['result'][0]['PF_3'],
-                VAR_1: item['result'][0]['VAR_1'],
-                VAR_2: item['result'][0]['VAR_2'],
-                VAR_3: item['result'][0]['VAR_3'],
-                VA_1: item['result'][0]['VA_1'],
-                VA_2: item['result'][0]['VA_2'],
-                VA_3: item['result'][0]['VA_3'],
-                Frequency: item['result'][0]['Frequency'],
-                Energy_Ex: item['result'][0]['Energy_Ex'],
-                Energy_Im: item['result'][0]['Energy_Im'],
-                PowerSum: item['result'][0]['PowerSum']
-            });
+        return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+            var header = {
+                DateTime: 'DateTime',
+                Volt_1: 'Volt_1',
+                Volt_2: 'Volt_2',
+                Volt_3: 'Volt_3',
+                Current_1: 'Current_1',
+                Current_2: 'Current_2',
+                Current_3: 'Current_3',
+                Power_1: 'Power_1',
+                Power_2: 'Power_2',
+                Power_3: 'Power_3',
+                PF_1: 'PF_1',
+                PF_2: 'PF_2',
+                PF_3: 'PF_3',
+                VAR_1: 'VAR_1',
+                VAR_2: 'VAR_2',
+                VAR_3: 'VAR_3',
+                VA_1: 'VA_1',
+                VA_2: 'VA_2',
+                VA_3: 'VA_3',
+                Frequency: 'Frequency',
+                Energy_Ex: 'Energy_Ex',
+                Energy_Im: 'Energy_Im',
+                PowerSum: 'PowerSum'
+            };
+            let postda = {
+                building: this.name,
+                block: this.block,
+                date: ('0' + this.date1).slice(-2).toString(),
+                month: ('0' + this.month1).slice(-2).toString(),
+                year: this.year1.toString(),
+                date2: ('0' + this.date2).slice(-2).toString(),
+                month2: ('0' + this.month2).slice(-2).toString(),
+                year2: this.year2.toString(),
+                hour: ('0' + this.hourS).slice(-2).toString(),
+                hour2: ('0' + this.hourE).slice(-2).toString(),
+            };
+            var itemNotFormat;
+            this.Loading = true;
+            yield this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe((data) => Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, function* () {
+                var a = [];
+                yield console.log(data);
+                a.push(data);
+                itemNotFormat = a[0]['data'];
+                var datee = this.date1;
+                console.log(datee);
+                var year = this.year1;
+                var dat = this.date1;
+                if (dat < 10) {
+                    dat = "0" + dat;
+                }
+                var month = this.month1;
+                console.log(month);
+                if (month < 10) {
+                    month = "0" + month;
+                }
+                var datw = this.date2;
+                console.log(datw);
+                var year1 = this.year2;
+                var dat1 = this.date2;
+                if (dat1 < 10) {
+                    dat1 = "0" + dat1;
+                }
+                var month1 = this.month2;
+                console.log(month1);
+                if (month1 < 10) {
+                    month1 = "0" + month1;
+                }
+                var fileTitle = String(year) + String(month) + String(dat) + "_" + String(year1) + String(month1) + String(dat1) + "_Meter" + this.num;
+                // var fileTitle = 'solar';
+                var itemFomat = [];
+                itemNotFormat.forEach((item) => {
+                    itemFomat.push({
+                        DateTime: item['result'][0]['DateTime'],
+                        Volt_1: item['result'][0]['Volt_1'],
+                        Volt_2: item['result'][0]['Volt_2'],
+                        Volt_3: item['result'][0]['Volt_3'],
+                        Current_1: item['result'][0]['Current_1'],
+                        Current_2: item['result'][0]['Current_2'],
+                        Current_3: item['result'][0]['Current_3'],
+                        Power_1: item['result'][0]['Power_1'],
+                        Power_2: item['result'][0]['Power_2'],
+                        Power_3: item['result'][0]['Power_3'],
+                        PF_1: item['result'][0]['PF_1'],
+                        PF_2: item['result'][0]['PF_2'],
+                        PF_3: item['result'][0]['PF_3'],
+                        VAR_1: item['result'][0]['VAR_1'],
+                        VAR_2: item['result'][0]['VAR_2'],
+                        VAR_3: item['result'][0]['VAR_3'],
+                        VA_1: item['result'][0]['VA_1'],
+                        VA_2: item['result'][0]['VA_2'],
+                        VA_3: item['result'][0]['VA_3'],
+                        Frequency: item['result'][0]['Frequency'],
+                        Energy_Ex: item['result'][0]['Energy_Ex'],
+                        Energy_Im: item['result'][0]['Energy_Im'],
+                        PowerSum: item['result'][0]['PowerSum']
+                    });
+                });
+                this.exportCSVFile(header, itemFomat, fileTitle);
+                this.Loading = false;
+            }));
         });
-        this.exportCSVFile(header, itemFomat, fileTitle);
     }
     onPercentChange(percent) {
         console.log('here');
@@ -6502,35 +6575,35 @@ HistoryComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](18, "div", 11);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HistoryComponent_Template_a_click_19_listener() { return ctx.test(1); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Meter01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Incoming/Main");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](21, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HistoryComponent_Template_a_click_21_listener() { return ctx.test(2); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Meter02");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Feeder 01");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](23, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HistoryComponent_Template_a_click_23_listener() { return ctx.test(3); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Meter03");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Feeder 02");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](25, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HistoryComponent_Template_a_click_25_listener() { return ctx.test(4); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Meter04");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Feeder 03");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](27, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HistoryComponent_Template_a_click_27_listener() { return ctx.test(5); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Meter05");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Feeder 04");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](29, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HistoryComponent_Template_a_click_29_listener() { return ctx.test(6); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Meter06");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Feeder 05");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](31, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HistoryComponent_Template_a_click_31_listener() { return ctx.test(7); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Meter07");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "On grid PV systems");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](33, "a", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HistoryComponent_Template_a_click_33_listener() { return ctx.test(8); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Meter08");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Hybrid PV system");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -6959,35 +7032,35 @@ LogfourComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "div", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](20, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function LogfourComponent_Template_a_click_20_listener() { return ctx.test(1); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Meter01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Incoming/Main");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](22, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function LogfourComponent_Template_a_click_22_listener() { return ctx.test(2); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Meter02");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Feeder 01");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function LogfourComponent_Template_a_click_24_listener() { return ctx.test(3); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Meter03");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Feeder 02");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](26, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function LogfourComponent_Template_a_click_26_listener() { return ctx.test(4); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Meter04");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Feeder 03");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](28, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function LogfourComponent_Template_a_click_28_listener() { return ctx.test(5); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Meter05");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Feeder 04");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](30, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function LogfourComponent_Template_a_click_30_listener() { return ctx.test(6); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Meter06");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Feeder 05");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](32, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function LogfourComponent_Template_a_click_32_listener() { return ctx.test(7); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "Meter07");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "On grid PV systems");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function LogfourComponent_Template_a_click_34_listener() { return ctx.test(8); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Meter08");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Hybrid PV system");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
@@ -7742,6 +7815,9 @@ class SelecmiterComponent {
         else if (i == "9") {
             localStorage.setItem('namemeter', "");
         }
+        else if (i == "10") {
+            localStorage.setItem('namemeter', '');
+        }
         this.router.navigate(["detail"]);
     }
     graph() {
@@ -8118,35 +8194,35 @@ SelecmiterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](19, "div", 12);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](20, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function SelecmiterComponent_Template_a_click_20_listener() { return ctx.test(1); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Meter01");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Incoming/Main");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](22, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function SelecmiterComponent_Template_a_click_22_listener() { return ctx.test(2); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Meter02");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Feeder 01");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](24, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function SelecmiterComponent_Template_a_click_24_listener() { return ctx.test(3); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Meter03");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Feeder 02");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](26, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function SelecmiterComponent_Template_a_click_26_listener() { return ctx.test(4); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Meter04");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Feeder 03");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](28, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function SelecmiterComponent_Template_a_click_28_listener() { return ctx.test(5); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Meter05");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Feeder 04");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](30, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function SelecmiterComponent_Template_a_click_30_listener() { return ctx.test(6); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Meter06");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Feeder 05");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](32, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function SelecmiterComponent_Template_a_click_32_listener() { return ctx.test(7); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "Meter07");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "On grid PV systems");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](34, "a", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function SelecmiterComponent_Template_a_click_34_listener() { return ctx.test(8); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Meter08");
+        _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Hybrid PV system");
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();

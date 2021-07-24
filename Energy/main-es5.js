@@ -1812,7 +1812,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.main = localStorage.getItem('meter');
           this.namemeter = localStorage.getItem('namemeter');
           this.name = this.main.slice(0, this.main.length - 1);
-          this.num = parseInt(this.main.slice(this.main.length - 1, this.main.length));
+          this.num = parseInt(this.main.slice(4, this.main.length));
+          console.log(this.num);
           this.detail = JSON.parse(localStorage.getItem('detail'));
           console.log(this.detail);
         } catch (error) {
@@ -2136,7 +2137,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(1);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Meter01");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Incoming/Main");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2146,7 +2147,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(2);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Meter02");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Feeder 01");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2156,7 +2157,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(3);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Meter03");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Feeder 02");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2166,7 +2167,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(4);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Meter04");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Feeder 03");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2176,7 +2177,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(5);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Meter05");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Feeder 04");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2186,7 +2187,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(6);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Meter06");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Feeder 05");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2196,7 +2197,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(7);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Meter07");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "On grid PV systems");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2206,7 +2207,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(8);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Meter08");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Hybrid PV system");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -3504,10 +3505,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.mainname = "Solar Irradiance";
             this.solar = true;
           } else if (this.nameen == "Temperature") {
-            this.mainname = "Solar Irradiance";
+            this.mainname = "Temperature";
             this.tem = true;
           } else if (this.nameen == "Humidity") {
-            this.mainname = "Solar Irradiance";
+            this.mainname = "Humidity";
             this.hum = true;
           }
         } catch (error) {
@@ -4074,55 +4075,109 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "hexportCsv",
         value: function hexportCsv() {
-          var _this9 = this;
+          return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee7() {
+            var _this9 = this;
 
-          var header = {
-            DateTime: 'DateTime',
-            Tit: this.mainname
-          };
-          var itemNotFormat = this.hitem;
-          var datee = this.hdate1;
-          console.log(datee);
-          var year = this.hyear1;
-          var dat = this.hdate1;
+            var header, postda, itemNotFormat;
+            return regeneratorRuntime.wrap(function _callee7$(_context7) {
+              while (1) {
+                switch (_context7.prev = _context7.next) {
+                  case 0:
+                    header = {
+                      DateTime: 'DateTime',
+                      Tit: this.mainname
+                    };
+                    postda = {
+                      building: this.name,
+                      block: this.block,
+                      date: ('0' + this.hdate1).slice(-2).toString(),
+                      month: ('0' + this.hmonth1).slice(-2).toString(),
+                      year: this.hyear1.toString(),
+                      date2: ('0' + this.hdate2).slice(-2).toString(),
+                      month2: ('0' + this.hmonth2).slice(-2).toString(),
+                      year2: this.hyear2.toString(),
+                      hour: ('0' + this.hhourS).slice(-2).toString(),
+                      hour2: ('0' + this.hhourE).slice(-2).toString()
+                    };
+                    this.Loading = true;
+                    _context7.next = 5;
+                    return this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe(function (data) {
+                      return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this9, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee6() {
+                        var _this10 = this;
 
-          if (dat < 10) {
-            dat = "0" + dat;
-          }
+                        var a, datee, year, dat, month, datw, year1, dat1, month1, fileTitle, itemFomat;
+                        return regeneratorRuntime.wrap(function _callee6$(_context6) {
+                          while (1) {
+                            switch (_context6.prev = _context6.next) {
+                              case 0:
+                                a = [];
+                                _context6.next = 3;
+                                return console.log(data);
 
-          var month = this.hmonth1;
-          console.log(month);
+                              case 3:
+                                a.push(data);
+                                itemNotFormat = a[0]['data'];
+                                datee = this.hdate1;
+                                console.log(datee);
+                                year = this.hyear1;
+                                dat = this.hdate1;
 
-          if (month < 10) {
-            month = "0" + month;
-          }
+                                if (dat < 10) {
+                                  dat = "0" + dat;
+                                }
 
-          var datw = this.hdate2;
-          console.log(datw);
-          var year1 = this.hyear2;
-          var dat1 = this.hdate2;
+                                month = this.hmonth1;
+                                console.log(month);
 
-          if (dat1 < 10) {
-            dat1 = "0" + dat1;
-          }
+                                if (month < 10) {
+                                  month = "0" + month;
+                                }
 
-          var month1 = this.hmonth2;
-          console.log(month1);
+                                datw = this.hdate2;
+                                console.log(datw);
+                                year1 = this.hyear2;
+                                dat1 = this.hdate2;
 
-          if (month1 < 10) {
-            month1 = "0" + month1;
-          }
+                                if (dat1 < 10) {
+                                  dat1 = "0" + dat1;
+                                }
 
-          var fileTitle = String(year) + String(month) + String(dat) + "_" + String(year1) + String(month1) + String(dat1) + "_" + this.mainname; // var fileTitle = 'solar';
+                                month1 = this.hmonth2;
+                                console.log(month1);
 
-          var itemFomat = [];
-          itemNotFormat.forEach(function (item) {
-            itemFomat.push({
-              DateTime: item['result'][0]['DateTime'],
-              Tit: item['result'][0][_this9.nameen]
-            });
-          });
-          this.exportCSVFile(header, itemFomat, fileTitle);
+                                if (month1 < 10) {
+                                  month1 = "0" + month1;
+                                }
+
+                                fileTitle = String(year) + String(month) + String(dat) + "_" + String(year1) + String(month1) + String(dat1) + "_" + this.mainname; // var fileTitle = 'solar';
+
+                                itemFomat = [];
+                                console.log(itemNotFormat);
+                                itemNotFormat.forEach(function (item) {
+                                  itemFomat.push({
+                                    DateTime: item['result'][0]['DateTime'],
+                                    Tit: item['result'][0][_this10.nameen]
+                                  });
+                                });
+                                this.exportCSVFile(header, itemFomat, fileTitle);
+                                this.Loading = false;
+
+                              case 27:
+                              case "end":
+                                return _context6.stop();
+                            }
+                          }
+                        }, _callee6, this);
+                      }));
+                    });
+
+                  case 5:
+                  case "end":
+                    return _context7.stop();
+                }
+              }
+            }, _callee7, this);
+          }));
         }
       }, {
         key: "honPercentChange",
@@ -4213,7 +4268,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(1);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Meter01");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Incoming/Main");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4223,7 +4278,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(2);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Meter02");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Feeder 01");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4233,7 +4288,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(3);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Meter03");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Feeder 02");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4243,7 +4298,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(4);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Meter04");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Feeder 03");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4253,7 +4308,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(5);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Meter05");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Feeder 04");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4263,7 +4318,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(6);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Meter06");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Feeder 05");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4273,7 +4328,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(7);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Meter07");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "On grid PV systems");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4283,7 +4338,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(8);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Meter08");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Hybrid PV system");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -5378,7 +5433,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var EnviromentComponent = /*#__PURE__*/function () {
       function EnviromentComponent(router, api) {
-        var _this10 = this;
+        var _this11 = this;
 
         _classCallCheck(this, EnviromentComponent);
 
@@ -5431,7 +5486,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         setInterval(function () {
           var wmo = new Date();
-          _this10.now = wmo.toLocaleString();
+          _this11.now = wmo.toLocaleString();
         });
       }
 
@@ -5579,7 +5634,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "search_data_graph",
         value: function search_data_graph() {
-          var _this11 = this;
+          var _this12 = this;
 
           if (this.date2 && this.date1) {
             this.Loading = true;
@@ -5596,11 +5651,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               hour2: ('0' + this.hourE).slice(-2).toString()
             };
             this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph2', postda).subscribe(function (data) {
-              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this11, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee6() {
+              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this12, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee8() {
                 var labelx, labely, labely2, labely3, dae, er, index, volt, tem, hum, hour, datee, year, dat, month, datw, year1, dat1, month1, fileTitle;
-                return regeneratorRuntime.wrap(function _callee6$(_context6) {
+                return regeneratorRuntime.wrap(function _callee8$(_context8) {
                   while (1) {
-                    switch (_context6.prev = _context6.next) {
+                    switch (_context8.prev = _context8.next) {
                       case 0:
                         // var dae = data[0]['create']
                         this.item = data;
@@ -5754,10 +5809,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                       case 34:
                       case "end":
-                        return _context6.stop();
+                        return _context8.stop();
                     }
                   }
-                }, _callee6, this);
+                }, _callee8, this);
               }));
             }); // console.log(this.item)
           } else {//end
@@ -5884,7 +5939,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "pageCh",
         value: function pageCh(el) {
-          var _this12 = this;
+          var _this13 = this;
 
           this.Loading = true;
           var to = 0;
@@ -5927,11 +5982,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             page: this.page
           };
           this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate2', postda).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this12, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee7() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this13, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee9() {
               var a;
-              return regeneratorRuntime.wrap(function _callee7$(_context7) {
+              return regeneratorRuntime.wrap(function _callee9$(_context9) {
                 while (1) {
-                  switch (_context7.prev = _context7.next) {
+                  switch (_context9.prev = _context9.next) {
                     case 0:
                       a = [];
                       console.log(data); // var z = this.bubble_Sort(data)
@@ -5948,17 +6003,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                     case 6:
                     case "end":
-                      return _context7.stop();
+                      return _context9.stop();
                   }
                 }
-              }, _callee7, this);
+              }, _callee9, this);
             }));
           });
         }
       }, {
         key: "search_data",
         value: function search_data() {
-          var _this13 = this;
+          var _this14 = this;
 
           // check if Program have date2 and mont2 and year2 then call api
           this.page = 1;
@@ -5980,11 +6035,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               page: this.page
             };
             this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate2', postda).subscribe(function (data) {
-              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this13, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee8() {
+              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this14, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee10() {
                 var a;
-                return regeneratorRuntime.wrap(function _callee8$(_context8) {
+                return regeneratorRuntime.wrap(function _callee10$(_context10) {
                   while (1) {
-                    switch (_context8.prev = _context8.next) {
+                    switch (_context10.prev = _context10.next) {
                       case 0:
                         a = [];
                         console.log(data); // for (const iterator of data) {
@@ -6004,10 +6059,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                       case 8:
                       case "end":
-                        return _context8.stop();
+                        return _context10.stop();
                     }
                   }
-                }, _callee8, this);
+                }, _callee10, this);
               }));
             });
           } else {//end
@@ -6112,55 +6167,111 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "hexportCsv",
         value: function hexportCsv() {
-          var _this14 = this;
+          return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee12() {
+            var _this15 = this;
 
-          var header = {
-            DateTime: 'DateTime',
-            Tit: this.mainname
-          };
-          var itemNotFormat = this.hitem;
-          var datee = this.hdate1;
-          console.log(datee);
-          var year = this.hyear1 - 543;
-          var dat = this.hdate1;
+            var header, postda, itemNotFormat;
+            return regeneratorRuntime.wrap(function _callee12$(_context12) {
+              while (1) {
+                switch (_context12.prev = _context12.next) {
+                  case 0:
+                    header = {
+                      DateTime: 'DateTime',
+                      Humidity: 'Humidity',
+                      Pyranometer: 'Pyranometer',
+                      Temperature: 'Temperature'
+                    };
+                    postda = {
+                      building: this.name,
+                      block: this.block,
+                      date: ('0' + this.hdate1).slice(-2).toString(),
+                      month: ('0' + this.hmonth1).slice(-2).toString(),
+                      year: this.hyear1.toString(),
+                      date2: ('0' + this.hdate2).slice(-2).toString(),
+                      month2: ('0' + this.hmonth2).slice(-2).toString(),
+                      year2: this.hyear2.toString(),
+                      hour: ('0' + this.hhourS).slice(-2).toString(),
+                      hour2: ('0' + this.hhourE).slice(-2).toString()
+                    };
+                    this.Loading = true;
+                    _context12.next = 5;
+                    return this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe(function (data) {
+                      return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this15, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee11() {
+                        var a, datee, year, dat, month, datw, year1, dat1, month1, fileTitle, itemFomat;
+                        return regeneratorRuntime.wrap(function _callee11$(_context11) {
+                          while (1) {
+                            switch (_context11.prev = _context11.next) {
+                              case 0:
+                                a = [];
+                                _context11.next = 3;
+                                return console.log(data);
 
-          if (dat < 10) {
-            dat = "0" + dat;
-          }
+                              case 3:
+                                a.push(data);
+                                itemNotFormat = a[0]['data'];
+                                datee = this.hdate1;
+                                console.log(datee);
+                                year = this.hyear1;
+                                dat = this.hdate1;
 
-          var month = this.hmonth1;
-          console.log(month);
+                                if (dat < 10) {
+                                  dat = "0" + dat;
+                                }
 
-          if (month < 10) {
-            month = "0" + month;
-          }
+                                month = this.hmonth1;
+                                console.log(month);
 
-          var datw = this.hdate2;
-          console.log(datw);
-          var year1 = this.hyear2 - 543;
-          var dat1 = this.hdate2;
+                                if (month < 10) {
+                                  month = "0" + month;
+                                }
 
-          if (dat1 < 10) {
-            dat1 = "0" + dat1;
-          }
+                                datw = this.hdate2;
+                                console.log(datw);
+                                year1 = this.hyear2;
+                                dat1 = this.hdate2;
 
-          var month1 = this.hmonth2;
-          console.log(month1);
+                                if (dat1 < 10) {
+                                  dat1 = "0" + dat1;
+                                }
 
-          if (month1 < 10) {
-            month1 = "0" + month1;
-          }
+                                month1 = this.hmonth2;
+                                console.log(month1);
 
-          var fileTitle = String(year) + String(month) + String(dat) + "_" + String(year1) + String(month1) + String(dat1) + "_" + this.mainname; // var fileTitle = 'solar';
+                                if (month1 < 10) {
+                                  month1 = "0" + month1;
+                                }
 
-          var itemFomat = [];
-          itemNotFormat.forEach(function (item) {
-            itemFomat.push({
-              DateTime: item['result'][0]['DateTime'],
-              Tit: item['result'][0][_this14.nameen]
-            });
-          });
-          this.exportCSVFile(header, itemFomat, fileTitle);
+                                fileTitle = String(year) + String(month) + String(dat) + "_" + String(year1) + String(month1) + String(dat1) + "_" + 'Enviroment'; // var fileTitle = 'solar';
+
+                                itemFomat = [];
+                                console.log(itemNotFormat);
+                                itemNotFormat.forEach(function (item) {
+                                  itemFomat.push({
+                                    DateTime: item['result'][0]['DateTime'],
+                                    Humidity: item['result'][0]['Humidity'],
+                                    Pyranometer: item['result'][0]['Pyranometer'],
+                                    Temperature: item['result'][0]['Temperature']
+                                  });
+                                });
+                                this.exportCSVFile(header, itemFomat, fileTitle);
+                                this.Loading = false;
+
+                              case 27:
+                              case "end":
+                                return _context11.stop();
+                            }
+                          }
+                        }, _callee11, this);
+                      }));
+                    });
+
+                  case 5:
+                  case "end":
+                    return _context12.stop();
+                }
+              }
+            }, _callee12, this);
+          }));
         }
       }, {
         key: "honPercentChange",
@@ -6251,7 +6362,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(1);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Meter01");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Incoming/Main");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6261,7 +6372,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(2);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Meter02");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Feeder 01");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6271,7 +6382,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(3);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Meter03");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Feeder 02");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6281,7 +6392,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(4);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Meter04");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Feeder 03");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6291,7 +6402,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(5);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Meter05");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Feeder 04");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6301,7 +6412,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(6);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Meter06");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Feeder 05");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6311,7 +6422,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(7);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Meter07");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "On grid PV systems");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6321,7 +6432,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(8);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Meter08");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Hybrid PV system");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -7017,7 +7128,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var GraphComponent = /*#__PURE__*/function () {
       function GraphComponent(router, api) {
-        var _this15 = this;
+        var _this16 = this;
 
         _classCallCheck(this, GraphComponent);
 
@@ -7047,7 +7158,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         setInterval(function () {
           var wmo = new Date();
-          _this15.now = wmo.toLocaleString();
+          _this16.now = wmo.toLocaleString();
         });
       } //-------------------------
 
@@ -7144,7 +7255,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "search_data",
         value: function search_data() {
-          var _this16 = this;
+          var _this17 = this;
 
           if (this.date2 && this.date1) {
             this.Loading = true;
@@ -7161,10 +7272,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               hour2: ('0' + this.hourE).slice(-2).toString()
             };
             this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdateGraph2', postda).subscribe(function (data) {
-              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this16, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee9() {
-                return regeneratorRuntime.wrap(function _callee9$(_context9) {
+              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this17, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee13() {
+                return regeneratorRuntime.wrap(function _callee13$(_context13) {
                   while (1) {
-                    switch (_context9.prev = _context9.next) {
+                    switch (_context13.prev = _context13.next) {
                       case 0:
                         // var dae = data[0]['create']
                         this.item = data;
@@ -7173,10 +7284,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                       case 3:
                       case "end":
-                        return _context9.stop();
+                        return _context13.stop();
                     }
                   }
-                }, _callee9, this);
+                }, _callee13, this);
               }));
             });
           } else {//end
@@ -8109,7 +8220,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(1);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Meter01");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Incoming/Main");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8119,7 +8230,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(2);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Meter02");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Feeder 01");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8129,7 +8240,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(3);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Meter03");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Feeder 02");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8139,7 +8250,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(4);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Meter04");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Feeder 03");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8149,7 +8260,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(5);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Meter05");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Feeder 04");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8159,7 +8270,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(6);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Meter06");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Feeder 05");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8169,7 +8280,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(7);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Meter07");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "On grid PV systems");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8179,7 +8290,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(8);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Meter08");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Hybrid PV system");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8689,7 +8800,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var GraphfourComponent = /*#__PURE__*/function () {
       function GraphfourComponent(route, api) {
-        var _this17 = this;
+        var _this18 = this;
 
         _classCallCheck(this, GraphfourComponent);
 
@@ -8715,7 +8826,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         setInterval(function () {
           var wmo = new Date();
-          _this17.now = wmo.toLocaleString();
+          _this18.now = wmo.toLocaleString();
         });
       }
 
@@ -8844,7 +8955,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addDate",
         value: function addDate(event) {
-          var _this18 = this;
+          var _this19 = this;
 
           this.date = event.value;
           console.log(this.date.getDate());
@@ -8857,11 +8968,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             year: this.date.getFullYear() + 543
           };
           this.api.postData('http://www.mesfia.eng.nu.ac.th/history', postda).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this18, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee10() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this19, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee14() {
               var a, check, iterator, dae, er;
-              return regeneratorRuntime.wrap(function _callee10$(_context10) {
+              return regeneratorRuntime.wrap(function _callee14$(_context14) {
                 while (1) {
-                  switch (_context10.prev = _context10.next) {
+                  switch (_context14.prev = _context14.next) {
                     case 0:
                       // var dae = data[0]['create']
                       a = [];
@@ -8887,10 +8998,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                     case 7:
                     case "end":
-                      return _context10.stop();
+                      return _context14.stop();
                   }
                 }
-              }, _callee10, this);
+              }, _callee14, this);
             }));
           });
         }
@@ -9161,7 +9272,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(1);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Meter01");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Incoming/Main");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9171,7 +9282,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(2);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Meter02");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Feeder 01");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9181,7 +9292,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(3);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Meter03");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Feeder 02");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9191,7 +9302,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(4);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Meter04");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Feeder 03");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9201,7 +9312,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(5);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Meter05");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Feeder 04");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9211,7 +9322,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(6);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Meter06");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Feeder 05");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9221,7 +9332,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(7);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "Meter07");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "On grid PV systems");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9231,7 +9342,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(8);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Meter08");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Hybrid PV system");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -10105,7 +10216,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(HistoryComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this19 = this;
+          var _this20 = this;
 
           try {
             this.main = localStorage.getItem('meter');
@@ -10120,7 +10231,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           setInterval(function () {
             var wmo = new Date();
-            _this19.now = wmo.toLocaleString();
+            _this20.now = wmo.toLocaleString();
           });
         }
       }, {
@@ -10150,7 +10261,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "search_data",
         value: function search_data() {
-          var _this20 = this;
+          var _this21 = this;
 
           this.page = 1;
 
@@ -10172,11 +10283,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               page: this.page
             };
             this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate2', postda).subscribe(function (data) {
-              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this20, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee11() {
+              return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this21, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee15() {
                 var a;
-                return regeneratorRuntime.wrap(function _callee11$(_context11) {
+                return regeneratorRuntime.wrap(function _callee15$(_context15) {
                   while (1) {
-                    switch (_context11.prev = _context11.next) {
+                    switch (_context15.prev = _context15.next) {
                       case 0:
                         a = [];
                         console.log(data); // var z = this.bubble_Sort(data)
@@ -10197,10 +10308,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                       case 7:
                       case "end":
-                        return _context11.stop();
+                        return _context15.stop();
                     }
                   }
-                }, _callee11, this);
+                }, _callee15, this);
               }));
             });
           } else {//end
@@ -10315,95 +10426,148 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "exportCsv",
         value: function exportCsv() {
-          var header = {
-            DateTime: 'DateTime',
-            Volt_1: 'Volt_1',
-            Volt_2: 'Volt_2',
-            Volt_3: 'Volt_3',
-            Current_1: 'Current_1',
-            Current_2: 'Current_2',
-            Current_3: 'Current_3',
-            Power_1: 'Power_1',
-            Power_2: 'Power_2',
-            Power_3: 'Power_3',
-            PF_1: 'PF_1',
-            PF_2: 'PF_2',
-            PF_3: 'PF_3',
-            VAR_1: 'VAR_1',
-            VAR_2: 'VAR_2',
-            VAR_3: 'VAR_3',
-            VA_1: 'VA_1',
-            VA_2: 'VA_2',
-            VA_3: 'VA_3',
-            Frequency: 'Frequency',
-            Energy_Ex: 'Energy_Ex',
-            Energy_Im: 'Energy_Im',
-            PowerSum: 'PowerSum'
-          };
-          var itemNotFormat = this.item;
-          var datee = this.date1;
-          console.log(datee);
-          var year = this.year1 - 543;
-          var dat = this.date1;
+          return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee17() {
+            var _this22 = this;
 
-          if (dat < 10) {
-            dat = "0" + dat;
-          }
+            var header, postda, itemNotFormat;
+            return regeneratorRuntime.wrap(function _callee17$(_context17) {
+              while (1) {
+                switch (_context17.prev = _context17.next) {
+                  case 0:
+                    header = {
+                      DateTime: 'DateTime',
+                      Volt_1: 'Volt_1',
+                      Volt_2: 'Volt_2',
+                      Volt_3: 'Volt_3',
+                      Current_1: 'Current_1',
+                      Current_2: 'Current_2',
+                      Current_3: 'Current_3',
+                      Power_1: 'Power_1',
+                      Power_2: 'Power_2',
+                      Power_3: 'Power_3',
+                      PF_1: 'PF_1',
+                      PF_2: 'PF_2',
+                      PF_3: 'PF_3',
+                      VAR_1: 'VAR_1',
+                      VAR_2: 'VAR_2',
+                      VAR_3: 'VAR_3',
+                      VA_1: 'VA_1',
+                      VA_2: 'VA_2',
+                      VA_3: 'VA_3',
+                      Frequency: 'Frequency',
+                      Energy_Ex: 'Energy_Ex',
+                      Energy_Im: 'Energy_Im',
+                      PowerSum: 'PowerSum'
+                    };
+                    postda = {
+                      building: this.name,
+                      block: this.block,
+                      date: ('0' + this.date1).slice(-2).toString(),
+                      month: ('0' + this.month1).slice(-2).toString(),
+                      year: this.year1.toString(),
+                      date2: ('0' + this.date2).slice(-2).toString(),
+                      month2: ('0' + this.month2).slice(-2).toString(),
+                      year2: this.year2.toString(),
+                      hour: ('0' + this.hourS).slice(-2).toString(),
+                      hour2: ('0' + this.hourE).slice(-2).toString()
+                    };
+                    this.Loading = true;
+                    _context17.next = 5;
+                    return this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate', postda).subscribe(function (data) {
+                      return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this22, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee16() {
+                        var a, datee, year, dat, month, datw, year1, dat1, month1, fileTitle, itemFomat;
+                        return regeneratorRuntime.wrap(function _callee16$(_context16) {
+                          while (1) {
+                            switch (_context16.prev = _context16.next) {
+                              case 0:
+                                a = [];
+                                _context16.next = 3;
+                                return console.log(data);
 
-          var month = this.month1;
-          console.log(month);
+                              case 3:
+                                a.push(data);
+                                itemNotFormat = a[0]['data'];
+                                datee = this.date1;
+                                console.log(datee);
+                                year = this.year1;
+                                dat = this.date1;
 
-          if (month < 10) {
-            month = "0" + month;
-          }
+                                if (dat < 10) {
+                                  dat = "0" + dat;
+                                }
 
-          var datw = this.date2;
-          console.log(datw);
-          var year1 = this.year2 - 543;
-          var dat1 = this.date2;
+                                month = this.month1;
+                                console.log(month);
 
-          if (dat1 < 10) {
-            dat1 = "0" + dat1;
-          }
+                                if (month < 10) {
+                                  month = "0" + month;
+                                }
 
-          var month1 = this.month2;
-          console.log(month1);
+                                datw = this.date2;
+                                console.log(datw);
+                                year1 = this.year2;
+                                dat1 = this.date2;
 
-          if (month1 < 10) {
-            month1 = "0" + month1;
-          }
+                                if (dat1 < 10) {
+                                  dat1 = "0" + dat1;
+                                }
 
-          var fileTitle = String(year) + String(month) + String(dat) + "_" + String(year1) + String(month1) + String(dat1) + "_Meter" + this.num; // var fileTitle = 'solar';
+                                month1 = this.month2;
+                                console.log(month1);
 
-          var itemFomat = [];
-          itemNotFormat.forEach(function (item) {
-            itemFomat.push({
-              DateTime: item['result'][0]['DateTime'],
-              Volt_1: item['result'][0]['Volt_1'],
-              Volt_2: item['result'][0]['Volt_2'],
-              Volt_3: item['result'][0]['Volt_3'],
-              Current_1: item['result'][0]['Current_1'],
-              Current_2: item['result'][0]['Current_2'],
-              Current_3: item['result'][0]['Current_3'],
-              Power_1: item['result'][0]['Power_1'],
-              Power_2: item['result'][0]['Power_2'],
-              Power_3: item['result'][0]['Power_3'],
-              PF_1: item['result'][0]['PF_1'],
-              PF_2: item['result'][0]['PF_2'],
-              PF_3: item['result'][0]['PF_3'],
-              VAR_1: item['result'][0]['VAR_1'],
-              VAR_2: item['result'][0]['VAR_2'],
-              VAR_3: item['result'][0]['VAR_3'],
-              VA_1: item['result'][0]['VA_1'],
-              VA_2: item['result'][0]['VA_2'],
-              VA_3: item['result'][0]['VA_3'],
-              Frequency: item['result'][0]['Frequency'],
-              Energy_Ex: item['result'][0]['Energy_Ex'],
-              Energy_Im: item['result'][0]['Energy_Im'],
-              PowerSum: item['result'][0]['PowerSum']
-            });
-          });
-          this.exportCSVFile(header, itemFomat, fileTitle);
+                                if (month1 < 10) {
+                                  month1 = "0" + month1;
+                                }
+
+                                fileTitle = String(year) + String(month) + String(dat) + "_" + String(year1) + String(month1) + String(dat1) + "_Meter" + this.num; // var fileTitle = 'solar';
+
+                                itemFomat = [];
+                                itemNotFormat.forEach(function (item) {
+                                  itemFomat.push({
+                                    DateTime: item['result'][0]['DateTime'],
+                                    Volt_1: item['result'][0]['Volt_1'],
+                                    Volt_2: item['result'][0]['Volt_2'],
+                                    Volt_3: item['result'][0]['Volt_3'],
+                                    Current_1: item['result'][0]['Current_1'],
+                                    Current_2: item['result'][0]['Current_2'],
+                                    Current_3: item['result'][0]['Current_3'],
+                                    Power_1: item['result'][0]['Power_1'],
+                                    Power_2: item['result'][0]['Power_2'],
+                                    Power_3: item['result'][0]['Power_3'],
+                                    PF_1: item['result'][0]['PF_1'],
+                                    PF_2: item['result'][0]['PF_2'],
+                                    PF_3: item['result'][0]['PF_3'],
+                                    VAR_1: item['result'][0]['VAR_1'],
+                                    VAR_2: item['result'][0]['VAR_2'],
+                                    VAR_3: item['result'][0]['VAR_3'],
+                                    VA_1: item['result'][0]['VA_1'],
+                                    VA_2: item['result'][0]['VA_2'],
+                                    VA_3: item['result'][0]['VA_3'],
+                                    Frequency: item['result'][0]['Frequency'],
+                                    Energy_Ex: item['result'][0]['Energy_Ex'],
+                                    Energy_Im: item['result'][0]['Energy_Im'],
+                                    PowerSum: item['result'][0]['PowerSum']
+                                  });
+                                });
+                                this.exportCSVFile(header, itemFomat, fileTitle);
+                                this.Loading = false;
+
+                              case 26:
+                              case "end":
+                                return _context16.stop();
+                            }
+                          }
+                        }, _callee16, this);
+                      }));
+                    });
+
+                  case 5:
+                  case "end":
+                    return _context17.stop();
+                }
+              }
+            }, _callee17, this);
+          }));
         }
       }, {
         key: "onPercentChange",
@@ -10473,7 +10637,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "pageCh",
         value: function pageCh(event) {
-          var _this21 = this;
+          var _this23 = this;
 
           this.Loading = true;
           var scrollToTop = window.setInterval(function () {
@@ -10500,11 +10664,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             page: this.page
           };
           this.api.postData('http://www.mesfia.eng.nu.ac.th/dateTOdate2', postda).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this21, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee12() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this23, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee18() {
               var a;
-              return regeneratorRuntime.wrap(function _callee12$(_context12) {
+              return regeneratorRuntime.wrap(function _callee18$(_context18) {
                 while (1) {
-                  switch (_context12.prev = _context12.next) {
+                  switch (_context18.prev = _context18.next) {
                     case 0:
                       a = [];
                       console.log(data); // var z = this.bubble_Sort(data)
@@ -10525,10 +10689,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                     case 6:
                     case "end":
-                      return _context12.stop();
+                      return _context18.stop();
                   }
                 }
-              }, _callee12, this);
+              }, _callee18, this);
             }));
           });
         }
@@ -10609,7 +10773,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(1);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Meter01");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Incoming/Main");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -10619,7 +10783,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(2);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Meter02");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Feeder 01");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -10629,7 +10793,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(3);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Meter03");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Feeder 02");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -10639,7 +10803,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(4);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Meter04");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Feeder 03");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -10649,7 +10813,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(5);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Meter05");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Feeder 04");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -10659,7 +10823,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(6);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Meter06");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Feeder 05");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -10669,7 +10833,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(7);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Meter07");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "On grid PV systems");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -10679,7 +10843,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(8);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Meter08");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Hybrid PV system");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11139,7 +11303,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var LogfourComponent = /*#__PURE__*/function () {
       function LogfourComponent(route, api) {
-        var _this22 = this;
+        var _this24 = this;
 
         _classCallCheck(this, LogfourComponent);
 
@@ -11162,7 +11326,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         setInterval(function () {
           var wmo = new Date();
-          _this22.now = wmo.toLocaleString();
+          _this24.now = wmo.toLocaleString();
         });
       }
 
@@ -11182,7 +11346,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addDate",
         value: function addDate(event) {
-          var _this23 = this;
+          var _this25 = this;
 
           this.date = event.value;
           console.log(this.date.getDate());
@@ -11194,11 +11358,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             year: this.date.getFullYear() + 543
           };
           this.api.postData('http://www.mesfia.eng.nu.ac.th/history', postda).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this23, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee13() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this25, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee19() {
               var a, check;
-              return regeneratorRuntime.wrap(function _callee13$(_context13) {
+              return regeneratorRuntime.wrap(function _callee19$(_context19) {
                 while (1) {
-                  switch (_context13.prev = _context13.next) {
+                  switch (_context19.prev = _context19.next) {
                     case 0:
                       // var dae = data[0]['create']
                       a = [];
@@ -11209,10 +11373,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                     case 5:
                     case "end":
-                      return _context13.stop();
+                      return _context19.stop();
                   }
                 }
-              }, _callee13, this);
+              }, _callee19, this);
             }));
           });
         }
@@ -11444,7 +11608,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(1);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Meter01");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Incoming/Main");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11454,7 +11618,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(2);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Meter02");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Feeder 01");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11464,7 +11628,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(3);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Meter03");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Feeder 02");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11474,7 +11638,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(4);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Meter04");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Feeder 03");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11484,7 +11648,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(5);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Meter05");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Feeder 04");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11494,7 +11658,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(6);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Meter06");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Feeder 05");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11504,7 +11668,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(7);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "Meter07");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "On grid PV systems");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11514,7 +11678,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(8);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Meter08");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Hybrid PV system");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -12000,15 +12164,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MainComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this24 = this;
+          var _this26 = this;
 
           this.api.getData('http://www.mesfia.eng.nu.ac.th/building').subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this24, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee14() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this26, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee20() {
               var name, pic, _iterator, _step, iterator;
 
-              return regeneratorRuntime.wrap(function _callee14$(_context14) {
+              return regeneratorRuntime.wrap(function _callee20$(_context20) {
                 while (1) {
-                  switch (_context14.prev = _context14.next) {
+                  switch (_context20.prev = _context20.next) {
                     case 0:
                       // let build = []
                       name = [];
@@ -12034,26 +12198,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                         _iterator.f();
                       }
 
-                      _context14.next = 6;
+                      _context20.next = 6;
                       return pic;
 
                     case 6:
-                      this.pici = _context14.sent;
-                      _context14.next = 9;
+                      this.pici = _context20.sent;
+                      _context20.next = 9;
                       return name;
 
                     case 9:
-                      this.item = _context14.sent;
+                      this.item = _context20.sent;
                       this.loading = false;
                       console.log(this.item);
                       console.log(this.pici);
 
                     case 13:
                     case "end":
-                      return _context14.stop();
+                      return _context20.stop();
                   }
                 }
-              }, _callee14, this);
+              }, _callee20, this);
             }));
           });
         }
@@ -12578,7 +12742,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var SelecmiterComponent = /*#__PURE__*/function () {
       function SelecmiterComponent(router, api) {
-        var _this25 = this;
+        var _this27 = this;
 
         _classCallCheck(this, SelecmiterComponent);
 
@@ -12592,7 +12756,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.navbarOpen = false;
         setInterval(function () {
           var wnow = new Date();
-          _this25.now = wnow.toLocaleString(); // console.log(this.now.toLocaleString())
+          _this27.now = wnow.toLocaleString(); // console.log(this.now.toLocaleString())
         }, 1); // try {
         //   this.dae = JSON.parse(localStorage.getItem('name'))
         //   this.main = this.dae.name
@@ -12604,7 +12768,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelecmiterComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this26 = this;
+          var _this28 = this;
 
           try {
             this.dae = JSON.parse(localStorage.getItem('name'));
@@ -12627,13 +12791,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             building: this.main
           };
           this.api.postData('http://www.mesfia.eng.nu.ac.th/meter', postda).subscribe(function (data) {
-            _this26.count = data.count;
+            _this28.count = data.count;
 
-            for (var _index = 0; _index < _this26.count - 1; _index++) {
-              _this26.datt.push([]);
+            for (var _index = 0; _index < _this28.count - 1; _index++) {
+              _this28.datt.push([]);
             }
 
-            _this26.getdata(); // console.log(data)
+            _this28.getdata(); // console.log(data)
 
           });
           var postd = {
@@ -12650,7 +12814,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             try {
               for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
                 var iterator = _step2.value;
-                _this26.energy_block_1 = data[0];
+                _this28.energy_block_1 = data[0];
               }
             } catch (err) {
               _iterator2.e(err);
@@ -12658,15 +12822,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               _iterator2.f();
             }
 
-            for (var i in _this26.energy_block_1) {
+            for (var i in _this28.energy_block_1) {
               if (i == "0") {
                 continue;
               } else {
-                _this26.sum1 += _this26.energy_block_1[i];
+                _this28.sum1 += _this28.energy_block_1[i];
               }
             }
 
-            _this26.chart1();
+            _this28.chart1();
           });
           var pos = {
             building: "usis",
@@ -12682,7 +12846,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             try {
               for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
                 var iterator = _step3.value;
-                _this26.energy_block_2 = data[0];
+                _this28.energy_block_2 = data[0];
               }
             } catch (err) {
               _iterator3.e(err);
@@ -12690,15 +12854,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               _iterator3.f();
             }
 
-            for (var i in _this26.energy_block_2) {
+            for (var i in _this28.energy_block_2) {
               if (i == "0") {
                 continue;
               } else {
-                _this26.sum2 += _this26.energy_block_2[i];
+                _this28.sum2 += _this28.energy_block_2[i];
               }
             }
 
-            _this26.chart2();
+            _this28.chart2();
           }); // this.chart1()
         }
       }, {
@@ -12709,7 +12873,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "onPercentChange",
         value: function onPercentChange(percent) {
-          var _this27 = this;
+          var _this29 = this;
 
           console.log('here');
           this.yearry = percent;
@@ -12723,12 +12887,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             date: "1"
           };
           this.api.postData('http://www.mesfia.eng.nu.ac.th/energy', postd).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this27, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee15() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this29, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee21() {
               var _iterator4, _step4, iterator, i;
 
-              return regeneratorRuntime.wrap(function _callee15$(_context15) {
+              return regeneratorRuntime.wrap(function _callee21$(_context21) {
                 while (1) {
-                  switch (_context15.prev = _context15.next) {
+                  switch (_context21.prev = _context21.next) {
                     case 0:
                       _iterator4 = _createForOfIteratorHelper(data);
 
@@ -12743,28 +12907,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                         _iterator4.f();
                       }
 
-                      _context15.t0 = regeneratorRuntime.keys(this.energy_block_1);
+                      _context21.t0 = regeneratorRuntime.keys(this.energy_block_1);
 
                     case 3:
-                      if ((_context15.t1 = _context15.t0()).done) {
-                        _context15.next = 12;
+                      if ((_context21.t1 = _context21.t0()).done) {
+                        _context21.next = 12;
                         break;
                       }
 
-                      i = _context15.t1.value;
+                      i = _context21.t1.value;
 
                       if (!(i == "0")) {
-                        _context15.next = 9;
+                        _context21.next = 9;
                         break;
                       }
 
-                      return _context15.abrupt("continue", 3);
+                      return _context21.abrupt("continue", 3);
 
                     case 9:
                       this.sum1 += this.energy_block_1[i];
 
                     case 10:
-                      _context15.next = 3;
+                      _context21.next = 3;
                       break;
 
                     case 12:
@@ -12772,10 +12936,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                     case 13:
                     case "end":
-                      return _context15.stop();
+                      return _context21.stop();
                   }
                 }
-              }, _callee15, this);
+              }, _callee21, this);
             }));
           });
           var pos = {
@@ -12786,12 +12950,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             date: "1"
           };
           this.api.postData('http://www.mesfia.eng.nu.ac.th/energy', pos).subscribe(function (data) {
-            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this27, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee16() {
+            return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(_this29, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee22() {
               var _iterator5, _step5, iterator, i;
 
-              return regeneratorRuntime.wrap(function _callee16$(_context16) {
+              return regeneratorRuntime.wrap(function _callee22$(_context22) {
                 while (1) {
-                  switch (_context16.prev = _context16.next) {
+                  switch (_context22.prev = _context22.next) {
                     case 0:
                       _iterator5 = _createForOfIteratorHelper(data);
 
@@ -12806,28 +12970,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                         _iterator5.f();
                       }
 
-                      _context16.t0 = regeneratorRuntime.keys(this.energy_block_2);
+                      _context22.t0 = regeneratorRuntime.keys(this.energy_block_2);
 
                     case 3:
-                      if ((_context16.t1 = _context16.t0()).done) {
-                        _context16.next = 12;
+                      if ((_context22.t1 = _context22.t0()).done) {
+                        _context22.next = 12;
                         break;
                       }
 
-                      i = _context16.t1.value;
+                      i = _context22.t1.value;
 
                       if (!(i == "0")) {
-                        _context16.next = 9;
+                        _context22.next = 9;
                         break;
                       }
 
-                      return _context16.abrupt("continue", 3);
+                      return _context22.abrupt("continue", 3);
 
                     case 9:
                       this.sum2 += this.energy_block_2[i];
 
                     case 10:
-                      _context16.next = 3;
+                      _context22.next = 3;
                       break;
 
                     case 12:
@@ -12835,10 +12999,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                     case 13:
                     case "end":
-                      return _context16.stop();
+                      return _context22.stop();
                   }
                 }
-              }, _callee16, this);
+              }, _callee22, this);
             }));
           });
         }
@@ -12967,6 +13131,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             }));
           } else if (i == "9") {
             localStorage.setItem('namemeter', "");
+          } else if (i == "10") {
+            localStorage.setItem('namemeter', '');
           }
 
           this.router.navigate(["detail"]);
@@ -13012,22 +13178,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getdata",
         value: function getdata() {
-          return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee17() {
-            var _this28 = this;
+          return Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"])(this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee23() {
+            var _this30 = this;
 
             var socket;
-            return regeneratorRuntime.wrap(function _callee17$(_context17) {
+            return regeneratorRuntime.wrap(function _callee23$(_context23) {
               while (1) {
-                switch (_context17.prev = _context17.next) {
+                switch (_context23.prev = _context23.next) {
                   case 0:
                     socket = socket_io_client__WEBPACK_IMPORTED_MODULE_3__('http://www.mesfia.eng.nu.ac.th');
                     socket.on('usis0', function (response) {
                       // console.log(response);
-                      _this28.py = response.data[0].result[0]["Pyranometer"];
-                      _this28.tem = response.data[0].result[0]["Temperature"];
-                      _this28.hum = response.data[0].result[0]["Humidity"];
+                      _this30.py = response.data[0].result[0]["Pyranometer"];
+                      _this30.tem = response.data[0].result[0]["Temperature"];
+                      _this30.hum = response.data[0].result[0]["Humidity"];
                     });
-                    _context17.next = 4;
+                    _context23.next = 4;
                     return socket.on(this.main.toLowerCase() + 1, function (response) {
                       // console.log(response);
                       var rest = [];
@@ -13043,17 +13209,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       var powerto = response.data[0].result[0]["PowerSum"];
                       rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
 
-                      if (_this28.count >= 1) {
-                        _this28.datt[0] = rest; // console.log(response)
+                      if (_this30.count >= 1) {
+                        _this30.datt[0] = rest; // console.log(response)
 
                         console.log('meter01_ok');
                       }
 
-                      _this28.f = response.data[0].result[0]["Frequency"];
+                      _this30.f = response.data[0].result[0]["Frequency"];
                     });
 
                   case 4:
-                    _context17.next = 6;
+                    _context23.next = 6;
                     return socket.on(this.main.toLowerCase() + 2, function (response) {
                       // console.log(response);
                       var rest = [];
@@ -13069,14 +13235,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       var powerto = response.data[0].result[0]["PowerSum"];
                       rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
 
-                      if (_this28.count >= 1) {
-                        _this28.datt[1] = rest;
+                      if (_this30.count >= 1) {
+                        _this30.datt[1] = rest;
                         console.log('meter02_ok');
                       }
                     });
 
                   case 6:
-                    _context17.next = 8;
+                    _context23.next = 8;
                     return socket.on(this.main.toLowerCase() + 3, function (response) {
                       var rest = [];
                       var v0 = response.data[0].result[0]["Volt_1"];
@@ -13091,14 +13257,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       var powerto = response.data[0].result[0]["PowerSum"];
                       rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
 
-                      if (_this28.count >= 2) {
-                        _this28.datt[2] = rest;
+                      if (_this30.count >= 2) {
+                        _this30.datt[2] = rest;
                         console.log('meter03_ok');
                       }
                     });
 
                   case 8:
-                    _context17.next = 10;
+                    _context23.next = 10;
                     return socket.on(this.main.toLowerCase() + 4, function (response) {
                       var rest = [];
                       var v0 = response.data[0].result[0]["Volt_1"];
@@ -13113,14 +13279,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       var powerto = response.data[0].result[0]["PowerSum"];
                       rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
 
-                      if (_this28.count >= 3) {
-                        _this28.datt[3] = rest;
+                      if (_this30.count >= 3) {
+                        _this30.datt[3] = rest;
                         console.log('meter04_ok');
                       }
                     });
 
                   case 10:
-                    _context17.next = 12;
+                    _context23.next = 12;
                     return socket.on(this.main.toLowerCase() + 5, function (response) {
                       var rest = [];
                       var v0 = response.data[0].result[0]["Volt_1"];
@@ -13135,14 +13301,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       var powerto = response.data[0].result[0]["PowerSum"];
                       rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
 
-                      if (_this28.count >= 4) {
-                        _this28.datt[4] = rest;
+                      if (_this30.count >= 4) {
+                        _this30.datt[4] = rest;
                         console.log('meter05_ok');
                       }
                     });
 
                   case 12:
-                    _context17.next = 14;
+                    _context23.next = 14;
                     return socket.on(this.main.toLowerCase() + 6, function (response) {
                       var rest = [];
                       var v0 = response.data[0].result[0]["Volt_1"];
@@ -13157,14 +13323,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       var powerto = response.data[0].result[0]["PowerSum"];
                       rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
 
-                      if (_this28.count >= 5) {
-                        _this28.datt[5] = rest;
+                      if (_this30.count >= 5) {
+                        _this30.datt[5] = rest;
                         console.log('meter06_ok');
                       }
                     });
 
                   case 14:
-                    _context17.next = 16;
+                    _context23.next = 16;
                     return socket.on(this.main.toLowerCase() + 7, function (response) {
                       var rest = [];
                       var v0 = response.data[0].result[0]["Volt_1"];
@@ -13179,14 +13345,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       var powerto = response.data[0].result[0]["PowerSum"];
                       rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
 
-                      if (_this28.count >= 6) {
-                        _this28.datt[6] = rest;
+                      if (_this30.count >= 6) {
+                        _this30.datt[6] = rest;
                         console.log('meter07_ok');
                       }
                     });
 
                   case 16:
-                    _context17.next = 18;
+                    _context23.next = 18;
                     return socket.on(this.main.toLowerCase() + 8, function (response) {
                       var rest = [];
                       var v0 = response.data[0].result[0]["Volt_1"];
@@ -13201,14 +13367,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       var powerto = response.data[0].result[0]["PowerSum"];
                       rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
 
-                      if (_this28.count >= 7) {
-                        _this28.datt[7] = rest;
+                      if (_this30.count >= 7) {
+                        _this30.datt[7] = rest;
                         console.log('meter08_ok');
                       }
                     });
 
                   case 18:
-                    _context17.next = 20;
+                    _context23.next = 20;
                     return socket.on(this.main.toLowerCase() + 9, function (response) {
                       var rest = [];
                       var v0 = response.data[0].result[0]["Volt_1"];
@@ -13223,13 +13389,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       var powerto = response.data[0].result[0]["PowerSum"];
                       rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
 
-                      if (_this28.count >= 8) {
-                        _this28.datt[8] = rest;
+                      if (_this30.count >= 8) {
+                        _this30.datt[8] = rest;
                       }
                     });
 
                   case 20:
-                    _context17.next = 22;
+                    _context23.next = 22;
                     return socket.on(this.main.toLowerCase() + 10, function (response) {
                       var rest = [];
                       var v0 = response.data[0].result[0]["Volt_1"];
@@ -13244,8 +13410,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       var powerto = response.data[0].result[0]["PowerSum"];
                       rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
 
-                      if (_this28.count >= 9) {
-                        _this28.datt[9] = rest;
+                      if (_this30.count >= 9) {
+                        _this30.datt[9] = rest;
                       }
                     });
 
@@ -13264,17 +13430,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       var powerto = response.data[0].result[0]["PowerSum"];
                       rest.push(v0, v1, v2, p0, p1, p2, a0, a1, a2, powerto);
 
-                      if (_this28.count >= 10) {
-                        _this28.datt[10] = rest;
+                      if (_this30.count >= 10) {
+                        _this30.datt[10] = rest;
                       }
                     });
 
                   case 23:
                   case "end":
-                    return _context17.stop();
+                    return _context23.stop();
                 }
               }
-            }, _callee17, this);
+            }, _callee23, this);
           }));
         }
       }, {
@@ -13479,7 +13645,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(1);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Meter01");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Incoming/Main");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13489,7 +13655,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(2);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Meter02");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Feeder 01");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13499,7 +13665,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(3);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Meter03");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Feeder 02");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13509,7 +13675,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(4);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Meter04");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Feeder 03");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13519,7 +13685,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(5);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Meter05");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Feeder 04");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13529,7 +13695,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(6);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Meter06");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Feeder 05");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13539,7 +13705,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(7);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "Meter07");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "On grid PV systems");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13549,7 +13715,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(8);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Meter08");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Hybrid PV system");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
