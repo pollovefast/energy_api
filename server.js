@@ -403,85 +403,27 @@ app.post('/dateTOdate2', (req,res) => {
 
 app.post('/dateTOdate', (req, res) => {
     var request_data = req.body
-    if (request_data.length < -1) {
+    if (request_data < -1) {
         res.send({
             msg: "no request"
         })
     } else {
         const datas = mongoose.model(request_data.building.toLowerCase() + request_data.block, FileSchema)
-        console.log(request_data.building.toLowerCase() + request_data.block)
-        datas.find({}, {}, {}, function (err, result) {
-            // new Date(key.result[0]['DateTime'])
-            // result.0.DateTime
+        var date_1 = request_data.year + "-" + request_data.month + "-" + request_data.date + "T" + request_data.hour + ":00:00.000+07:00"
+        var date_2 = request_data.year2 + "-" + request_data.month2 + "-" + request_data.date2 + "T" + request_data.hour2 + ":59:59.000+07:00"
+
+        datas.find({"create": {$gte: new Date(date_1), $lte: new Date(date_2)} },{},{}, function(err,result){
             var data = []
-            // console.log()
-            var c = 0
-            var det = request_data.date + "/" + request_data.month + "/" + request_data.year
-            var det2 = request_data.date2 + "/" + request_data.month2 + "/" + request_data.year2
-            
-            var checkeuqal = request_data.date + "/" + request_data.month + "/" + request_data.year
-            var checkeuqal2 = request_data.date2 + "/" + request_data.month2 + "/" + request_data.year2
-
-            det = det.split("/")
-            det2 = det2.split("/")
-
-            // create date because check date of request === date of mongodb :)
-            var date_request_1 = new Date(det[2],det[1],det[0]);
-            var date_request_2 = new Date(det2[2],det2[1],det2[0]);
-
-            var today = new Date()
-            var now = new Date(today.getFullYear(),today.getMonth(),today.getDate())
-
-            if (now >= date_request_1 && now <= date_request_2) {
-                for (const key of result) {
-
-                    // notice variable to keep date in database
-                    let s = key.result[0]['DateTime'].split(" ")
-                    let date_b = s[0].split("/")
-                    let date_db = new Date(date_b[2],date_b[1],date_b[0])
-
-                    // if date_db euqal now then put data in dabase in data to be send
-                    if (date_db === now && key.result[0]['Power_1'] != '---') data.push(key);
-
-                }
-            }
-            else if(checkeuqal === checkeuqal2) {
-                // var reste = []
-                // console.log("date == date")
-                for (const key of result) {
-                    var s = key.result[0]['DateTime'].split(" ")
-                    let date_b = s[0].split("/")
-                    let date_db = new Date(date_b[2],date_b[1],date_b[0])
-                    var time = s[1].split(":")
-                    console.log(s[0] + "----" + det)
-                    if (date_db >= date_request_1 && date_db <= date_request_2) {
-                        console.log(time[0] + 1)
-                        console.log(request_data.hour + 1)
-                        if (time[0] >= request_data.hour && time[0] <= request_data.hour2 && key.result[0]['Power_1'] != '---') {
-                            data.push(key)
-                        }
-                    }
-                }
-            }
-            else {
-                console.log("else")
-                console.log(date_request_1 + " ---- " + date_request_2)
-                // loop data in database for put in variable array type
-                for (const keys of result) {
-
-                    // notice variable to keep date in database
-                    let s = keys.result[0]['DateTime'].split(" ")
-                    let date_b = s[0].split("/")
-                    let date_db = new Date(date_b[2],date_b[1],date_b[0])
-
-                    // check if data_db in the range of data_request_1 and data_request_2.
-                    // if data_db is in the range of the data_request_1 and request_2
-                    if (date_db >= date_request_1 && date_db <= date_request_2 && keys.result[0]['Power_1'] != '---') {
-
-                        // put data in data to be send
-                        data.push(keys)
-                    }
-                }
+            data.push(result)
+            res.status(200).send({
+                data: data[0]
+            })
+        }).catch(err => {
+            res.send({
+                msg: err
+            })
+        })
+    }
                 // for (const key of result) {
                 //     var s = key.result[0]['DateTime'].split(" ")
                 //     var de = s[0].split("/");
