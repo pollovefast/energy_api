@@ -9,7 +9,20 @@ const server = require('http').Server(app)
 const io = require('socket.io')(server);
 const path = require('path');
 const { strict } = require('assert');
-// var io = socket(server);
+
+// MQTT
+var mqtt = require('mqtt');
+var MQTT_SERVER = "10.27.50.43"
+var MQTT_PORT = "1883"
+var MQTT_USER = "monitor"
+var MQTT_PASSWORD = "1234"
+
+var client = mqtt.connect({
+    host: MQTT_SERVER,
+    port: MQTT_PORT,
+    username: MQTT_USER,
+    password: MQTT_PASSWORD
+});
 
 var option = {
     keepAlive: true,
@@ -63,8 +76,11 @@ io.on('connection', function (socket) {
             })
         }
     })
-
     socket.emit("test", { success: true })
+
+    socket.emit("mqtt",function(){
+        client.publish("monitor","{test: true}")
+    })
 
     socket.on('disconnect', function () {
         console.log('dis')
@@ -693,6 +709,40 @@ app.post('/energy',(req,res) => {
 
 app.post('/backup', function(req,res) {
     
+})
+
+app.post('/mqtt_pub', function(req,res){
+
+    const request_body = req.body
+    var truth_on,truth_off,name_monitor
+    console.log(request_body)
+    if (request_body.OnOff == true) {
+        name_monitor = "sw" + request_body.monitor.padStart(2,0) + "_on"
+    }else if(request_body.OnOff == false){
+        name_monitor = "sw" + request_body.monitor.padStart(2,0) + "_off"
+    }
+
+    client.publish("usiscontrol", name_monitor)
+
+    res.send({test: "ok"})
+})
+
+app.get("/mqtt_sub", function(req,res){
+    client.on('connect', function () {
+        // Subscribe any topic
+        console.log("MQTT Connect");
+        client.subscribe('test', function (err) {
+            if (err) {
+                console.log(err);
+            }
+        });
+    });
+    
+    // Receive Message and print on terminal
+    client.on('message', function (topic, message) {
+        // message is Buffer
+        console.log(message.toString());
+    });
 })
 
 server.listen(port, function (req, res) {
