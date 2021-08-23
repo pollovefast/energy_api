@@ -2054,17 +2054,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               detail: ["1 phase 2.5 kW Hybrid PV-Battery system : phase 1 is on-grid and phase 2 is emergency"]
             }));
           } else if (i == "9") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "AC grid Hybrid PV-Battery 10 kW (green)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
           } else if (i == "10") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "Emergency load Hybrid PV-Battery 10 kW (green)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
           } else if (i == "11") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "Isolation grid-tied PV 5 kW (red)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
@@ -2150,7 +2150,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(1);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Meter01");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Incoming/Main");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2160,7 +2160,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(2);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Meter02");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Feeder 01");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2170,7 +2170,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(3);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Meter03");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Feeder 02");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2180,7 +2180,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(4);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Meter04");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Feeder 03");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2190,7 +2190,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(5);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Meter05");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Feeder 04");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2200,7 +2200,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(6);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Meter06");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Feeder 05");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2210,7 +2210,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(7);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Meter07");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "On grid PV systems");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2220,7 +2220,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(8);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Meter08");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Hybrid PV system");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2230,7 +2230,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(9);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](36, "Meter09");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](36, "AC grid Hybrid PV-Battery");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2240,7 +2240,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(10);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, "Meter10");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, "Emergency load Hybrid PV-Battery");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -2250,7 +2250,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(11);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](40, "Meter11");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](40, "Isolation grid-tied PV");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -3613,17 +3613,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               detail: ["1 phase 2.5 kW Hybrid PV-Battery system : phase 1 is on-grid and phase 2 is emergency"]
             }));
           } else if (i == "9") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "AC grid Hybrid PV-Battery 10 kW (green)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
           } else if (i == "10") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "Emergency load Hybrid PV-Battery 10 kW (green)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
           } else if (i == "11") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "Isolation grid-tied PV 5 kW (red)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
@@ -4324,7 +4324,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(1);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Meter01");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Incoming/Main");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4334,7 +4334,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(2);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Meter02");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Feeder 01");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4344,7 +4344,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(3);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Meter03");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Feeder 02");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4354,7 +4354,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(4);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Meter04");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Feeder 03");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4364,7 +4364,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(5);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Meter05");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Feeder 04");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4374,7 +4374,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(6);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Meter06");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Feeder 05");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4384,7 +4384,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(7);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Meter07");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "On grid PV systems");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4394,7 +4394,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(8);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Meter08");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Hybrid PV system");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4404,7 +4404,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(9);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](36, "Meter09");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](36, "AC grid Hybrid PV-Battery");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4414,7 +4414,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(10);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, "Meter10");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, "Emergency load Hybrid PV-Battery");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -4424,7 +4424,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(11);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](40, "Meter11");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](40, "Isolation grid-tied PV");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -5624,17 +5624,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               detail: ["1 phase 2.5 kW Hybrid PV-Battery system : phase 1 is on-grid and phase 2 is emergency"]
             }));
           } else if (i == "9") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "AC grid Hybrid PV-Battery 10 kW (green)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
           } else if (i == "10") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "Emergency load Hybrid PV-Battery 10 kW (green)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
           } else if (i == "11") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "Isolation grid-tied PV 5 kW (red)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
@@ -6463,7 +6463,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(1);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Meter01");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Incoming/Main");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6473,7 +6473,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(2);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Meter02");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Feeder 01");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6483,7 +6483,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(3);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Meter03");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Feeder 02");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6493,7 +6493,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(4);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Meter04");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Feeder 03");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6503,7 +6503,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(5);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Meter05");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Feeder 04");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6513,7 +6513,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(6);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Meter06");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Feeder 05");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6523,7 +6523,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(7);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Meter07");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "On grid PV systems");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6533,7 +6533,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(8);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Meter08");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Hybrid PV system");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6543,7 +6543,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(9);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](36, "Meter09");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](36, "AC grid Hybrid PV-Battery");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6553,7 +6553,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(10);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, "Meter10");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, "Emergency load Hybrid PV-Battery");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -6563,7 +6563,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(11);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](40, "Meter11");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](40, "Isolation grid-tied PV");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -7342,17 +7342,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               detail: ["1 phase 2.5 kW Hybrid PV-Battery system : phase 1 is on-grid and phase 2 is emergency"]
             }));
           } else if (i == "9") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "AC grid Hybrid PV-Battery 10 kW (green)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
           } else if (i == "10") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "Emergency load Hybrid PV-Battery 10 kW (green)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
           } else if (i == "11") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "Isolation grid-tied PV 5 kW (red)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
@@ -8364,7 +8364,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(1);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Meter01");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Incoming/Main");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8374,7 +8374,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(2);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Meter02");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Feeder 01");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8384,7 +8384,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(3);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Meter03");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Feeder 02");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8394,7 +8394,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(4);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Meter04");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Feeder 03");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8404,7 +8404,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(5);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Meter05");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Feeder 04");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8414,7 +8414,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(6);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Meter06");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Feeder 05");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8424,7 +8424,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(7);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Meter07");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "On grid PV systems");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8434,7 +8434,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(8);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Meter08");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Hybrid PV system");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8444,7 +8444,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(9);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](36, "Meter09");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](36, "AC grid Hybrid PV-Battery");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8454,7 +8454,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(10);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, "Meter10");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, "Emergency load Hybrid PV-Battery");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -8464,7 +8464,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(11);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](40, "Meter11");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](40, "Isolation grid-tied PV");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9360,17 +9360,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               detail: ["1 phase 2.5 kW Hybrid PV-Battery system : phase 1 is on-grid and phase 2 is emergency"]
             }));
           } else if (i == "9") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "AC grid Hybrid PV-Battery 10 kW (green)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
           } else if (i == "10") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "Emergency load Hybrid PV-Battery 10 kW (green)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
           } else if (i == "11") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "Isolation grid-tied PV 5 kW (red)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
@@ -9459,7 +9459,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(1);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Meter01");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Incoming/Main");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9469,7 +9469,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(2);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Meter02");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Feeder 01");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9479,7 +9479,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(3);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Meter03");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Feeder 02");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9489,7 +9489,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(4);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Meter04");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Feeder 03");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9499,7 +9499,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(5);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Meter05");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Feeder 04");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9509,7 +9509,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(6);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Meter06");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Feeder 05");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9519,7 +9519,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(7);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "Meter07");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "On grid PV systems");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9529,7 +9529,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(8);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Meter08");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Hybrid PV system");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9539,7 +9539,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(9);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](37, "Meter09");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](37, "AC grid Hybrid PV-Battery");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9549,7 +9549,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(10);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](39, "Meter10");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](39, "Emergency load Hybrid PV-Battery");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -9559,7 +9559,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(11);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](41, "Meter11");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](41, "Isolation grid-tied PV");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -10846,17 +10846,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               detail: ["1 phase 2.5 kW Hybrid PV-Battery system : phase 1 is on-grid and phase 2 is emergency"]
             }));
           } else if (i == "9") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "AC grid Hybrid PV-Battery 10 kW (green)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
           } else if (i == "10") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "Emergency load Hybrid PV-Battery 10 kW (green)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
           } else if (i == "11") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "Isolation grid-tied PV 5 kW (red)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
@@ -11003,7 +11003,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(1);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Meter01");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](20, "Incoming/Main");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11013,7 +11013,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(2);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Meter02");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](22, "Feeder 01");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11023,7 +11023,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(3);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Meter03");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](24, "Feeder 02");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11033,7 +11033,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(4);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Meter04");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](26, "Feeder 03");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11043,7 +11043,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(5);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Meter05");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](28, "Feeder 04");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11053,7 +11053,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(6);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Meter06");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](30, "Feeder 05");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11063,7 +11063,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(7);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "Meter07");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](32, "On grid PV systems");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11073,7 +11073,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(8);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Meter08");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](34, "Hybrid PV system");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11083,7 +11083,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(9);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](36, "Meter09");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](36, "AC grid Hybrid PV-Battery");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11093,7 +11093,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(10);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, "Meter10");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](38, "Emergency load Hybrid PV-Battery");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11103,7 +11103,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(11);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](40, "Meter11");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](40, "Isolation grid-tied PV");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11782,17 +11782,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               detail: ["1 phase 2.5 kW Hybrid PV-Battery system : phase 1 is on-grid and phase 2 is emergency"]
             }));
           } else if (i == "9") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "AC grid Hybrid PV-Battery 10 kW (green)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
           } else if (i == "10") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "Emergency load Hybrid PV-Battery 10 kW (green)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
           } else if (i == "11") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "Isolation grid-tied PV 5 kW (red)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
@@ -11881,7 +11881,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(1);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Meter01");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Incoming/Main");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11891,7 +11891,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(2);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Meter02");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Feeder 01");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11901,7 +11901,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(3);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Meter03");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Feeder 02");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11911,7 +11911,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(4);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Meter04");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Feeder 03");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11921,7 +11921,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(5);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Meter05");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Feeder 04");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11931,7 +11931,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(6);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Meter06");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Feeder 05");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11941,7 +11941,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(7);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "Meter07");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "On grid PV systems");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11951,7 +11951,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(8);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Meter08");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Hybrid PV system");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11961,7 +11961,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(9);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](37, "Meter09");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](37, "AC grid Hybrid PV-Battery");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11971,7 +11971,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(10);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](39, "Meter10");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](39, "Emergency load Hybrid PV-Battery");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -11981,7 +11981,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(11);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](41, "Meter11");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](41, "Isolation grid-tied PV");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13371,17 +13371,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               detail: ["1 phase 2.5 kW Hybrid PV-Battery system : phase 1 is on-grid and phase 2 is emergency"]
             }));
           } else if (i == "9") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "AC grid Hybrid PV-Battery 10 kW (green)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
           } else if (i == "10") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "Emergency load Hybrid PV-Battery 10 kW (green)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
           } else if (i == "11") {
-            localStorage.setItem('namemeter', "");
+            localStorage.setItem('namemeter', "Isolation grid-tied PV 5 kW (red)");
             localStorage.setItem('detail', JSON.stringify({
               detail: [""]
             }));
@@ -13897,7 +13897,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(1);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Meter01");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](21, "Incoming/Main");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13907,7 +13907,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(2);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Meter02");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](23, "Feeder 01");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13917,7 +13917,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(3);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Meter03");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](25, "Feeder 02");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13927,7 +13927,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(4);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Meter04");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](27, "Feeder 03");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13937,7 +13937,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(5);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Meter05");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](29, "Feeder 04");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13947,7 +13947,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(6);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Meter06");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](31, "Feeder 05");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13957,7 +13957,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(7);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "Meter07");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](33, "On grid PV systems");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13967,7 +13967,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(8);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Meter08");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](35, "Hybrid PV system");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13977,7 +13977,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(9);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](37, "Meter09");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](37, "AC grid Hybrid PV-Battery");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13987,7 +13987,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(10);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](39, "Meter10");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](39, "Emergency load Hybrid PV-Battery");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
@@ -13997,7 +13997,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             return ctx.test(11);
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](41, "Meter11");
+          _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](41, "Isolation grid-tied PV");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
 
