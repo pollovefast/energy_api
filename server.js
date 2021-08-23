@@ -98,7 +98,7 @@ io.on('connection', function (socket) {
 //    res.sendfile('index.html')
 //})
 
-app.get('/', function (req, res) { res.sendfile(path.join(__dirname, 'Energy/index.html')) })
+app.get('/monitoring', function (req, res) { res.sendfile(path.join(__dirname, 'Energy/index.html')) })
 
 app.get('/controller', function (req, res) { res.sendfile(path.join(__dirname, 'build/index.html')) })
 
