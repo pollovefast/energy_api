@@ -45,8 +45,9 @@ app.use(function (req, res, next) {
 app.use(bodyPaser.json());
 app.use(bodyPaser.urlencoded({ extended: false }));
 
+app.use(express.static(path.join(__dirname, 'build')));
 app.use(express.static(path.join(__dirname, 'Energy')));
-app.use(express.static(path.join(__dirname, 'build')))
+
 
 mongoose.connect('mongodb://127.0.0.1:27017/ploy', option, () => {
     console.log('connect to mongodb')
@@ -94,9 +95,9 @@ io.on('connection', function (socket) {
 
 // })
 
-//app.get('/', function (req, res) {
-//    res.sendfile('index.html')
-//})
+app.get('/', function (req, res) {
+    res.send("Heelo")
+})
 
 app.get('/monitoring', function (req, res) { res.sendfile(path.join(__dirname, 'Energy/index.html')) })
 
