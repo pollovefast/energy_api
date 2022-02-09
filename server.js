@@ -48,7 +48,6 @@ app.use(bodyPaser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(express.static(path.join(__dirname, 'Energy')));
 
-
 mongoose.connect('mongodb://127.0.0.1:27017/ploy', option, () => {
     console.log('connect to mongodb')
 })
@@ -58,6 +57,9 @@ mongoose.connect('mongodb://127.0.0.1:27017/ploy', option, () => {
 // })
 
 io.on('connection', function (socket) {
+
+    console.log("user on")
+
     mongoose.connection.db.listCollections().toArray(function (err, names) {
         for (const i of names) {
             const datas = mongoose.model(i.name, FileSchema)
@@ -79,6 +81,11 @@ io.on('connection', function (socket) {
         }
     })
     socket.emit("test", { success: true })
+
+    socket.emit("test_1", { success: true, on_off: "off"})
+    socket.emit("test_2", { success: true, on_off: "off"})
+    socket.emit("test_3", { success: true, on_off: "off"})
+    socket.emit("test_4", { success: true, on_off: "off"})
 
     socket.emit("mqtt", function () {
         client.publish("monitor", "{test: true}")
@@ -234,7 +241,6 @@ app.post('/data', (req, res) => {
         block: request_data.block,
         create: date
     }]
-    console.log("alaiwa")
     const File = mongoose.model(request_data.building + request_data.block, FileSchema);
     console.log(File)
     if (count != 0) {
@@ -747,6 +753,29 @@ app.get("/mqtt_sub", function (req, res) {
         // message is Buffer
         console.log(message.toString());
     });
+})
+
+app.post("/test_netpie", function (req,res){
+    const request_body = req.body
+    console.log(request_body)
+    if (request_body.device == "1") {
+        console.log("device_1")
+        io.sockets.emit("test_1", { success: true, on_off: request_body.deviceChange })
+    }else if(request_body.device == "2"){
+        console.log("device_2")
+        io.sockets.emit("test_2", { success: true, on_off: request_body.deviceChange })
+    }else if(request_body.device == "3"){
+        console.log("device_3")
+        io.sockets.emit("test_3", { success: true, on_off: request_body.deviceChange })
+    }else if(request_body.device == "4"){
+        console.log("device_4")
+        io.sockets.emit("test_4", { success: true, on_off: request_body.deviceChange })
+    }
+    res.send("ok")
+})
+
+app.get("/show_test_netpie", function (req,res){
+    res.sendFile(__dirname + '/index.html');
 })
 
 server.listen(port, function (req, res) {

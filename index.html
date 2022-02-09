@@ -1,17 +1,52 @@
 <html>
     <head>
-        <p>3333</p>
+        <p>TEST_NETPIE</p>
     </head>
     <body>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" charset="utf-8"></script>
         <script type="text/javascript">
             var socket = io();
             var result = Object;
-            socket.on('EE1',function(data){
-                result = data.data.building
-                document.getElementById('idd').innerHTML += result
+            socket.on('test_1',function(data){
+                console.log(data)
+                result_2 = data.on_off
+                document.getElementById('test_1').innerHTML = result_2
+            })
+            socket.on('test_2',function(data){
+                console.log(data)
+                result_2 = data.on_off
+                document.getElementById('test_2').innerHTML = result_2
+            })
+            socket.on('test_3',function(data){
+                console.log(data)
+                result_2 = data.on_off
+                document.getElementById('test_3').innerHTML = result_2
+            })
+            socket.on('test_4',function(data){
+                console.log(data)
+                result_2 = data.on_off
+                document.getElementById('test_4').innerHTML = result_2
             })
         </script>
-        <h1 id="idd" >222</h1>
+        <div style="flex-direction: row;display: flex;">
+            <p>Device_1 &nbsp; => &nbsp;</p>
+            <p>on_off: &nbsp;</p>
+            <p id="test_1"></p>
+        </div>
+        <div style="flex-direction: row;display: flex;">
+            <p>Device_2 &nbsp; => &nbsp;</p>
+            <p>on_off: &nbsp;</p>
+            <p id="test_2"></p>
+        </div>
+        <div style="flex-direction: row;display: flex;">
+            <p>Device_3 &nbsp; => &nbsp;</p>
+            <p>on_off: &nbsp;</p>
+            <p id="test_3"></p>
+        </div>
+        <div style="flex-direction: row;display: flex;">
+            <p>Device_4 &nbsp; => &nbsp;</p>
+            <p>on_off: &nbsp;</p>
+            <p id="test_4"></p>
+        </div>
     </body>
 </html>
