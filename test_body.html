@@ -10,18 +10,18 @@
             socket.on('test_netpie_body',function(data){
                 console.log(data)
                 result_2 = data.body
-                result_3 = data.bod_parse
+                result_3 = data.body_not_json
                 document.getElementById('test_1').innerHTML = result_2
                 document.getElementById('test_2').innerHTML = result_3
             })
         </script>
         <div style="flex-direction: row;display: flex;">
-            <p>body &nbsp; => &nbsp;</p>
+            <p>body_json &nbsp; => &nbsp;</p>
             <p id="test_1"></p>
         </div>
-        <!-- <div style="flex-direction: row;display: flex;">
-            <p>All_request &nbsp; => &nbsp;</p>
+        <div style="flex-direction: row;display: flex;">
+            <p>body_not_json &nbsp; => &nbsp;</p>
             <p id="test_2"></p>
-        </div> -->
+        </div>
     </body>
 </html>

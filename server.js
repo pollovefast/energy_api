@@ -762,7 +762,7 @@ app.post("/test_netpie", function (req,res){
     // var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() || req.socket.remoteAddress
     // console.log(req.socket.remoteAddress)
     io.sockets.emit("test_ip",{ip: req.ip})
-    io.sockets.emit("test_netpie_body",{body: JSON.stringify(req.body)})
+    io.sockets.emit("test_netpie_body",{body: JSON.stringify(req.body),body_not_json: req.body})
     if (request_body.device == "1") {
         console.log("device_1")
         io.sockets.emit("test_1", { success: true, on_off: request_body.deviceChange })
