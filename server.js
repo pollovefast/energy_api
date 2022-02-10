@@ -759,9 +759,10 @@ app.get("/mqtt_sub", function (req, res) {
 app.post("/test_netpie", function (req,res){
     const request_body = req.body
     console.log(request_body)
-    var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() || req.socket.remoteAddress
-    console.log(req.socket.remoteAddress)
+    // var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() || req.socket.remoteAddress
+    // console.log(req.socket.remoteAddress)
     io.sockets.emit("test_ip",{ip: req.ip})
+    io.sockets.emit("test_netpie_body",{body: JSON.stringify(req.body)})
     if (request_body.device == "1") {
         console.log("device_1")
         io.sockets.emit("test_1", { success: true, on_off: request_body.deviceChange })
@@ -783,6 +784,18 @@ app.get("/show_test_netpie", function (req,res){
     io.sockets.emit("test_ip",{ip: req.ip})
     res.sendFile(__dirname + '/index.html');
 })
+
+app.get("/show_body_netpie", function (req,res){
+    res.sendFile(__dirname + '/test_body.html')
+})
+
+// app.post("test_netpie_body", function(req,res){
+//     io.sockets.emit("test_netpie_body",{body: req.body,all_request: req})
+//     res.send({
+//         body: req.body,
+//         all_request: req
+//     })
+// })
 
 server.listen(port, function (req, res) {
     console.log("connect port 80")
