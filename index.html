@@ -27,6 +27,11 @@
                 result_2 = data.on_off
                 document.getElementById('test_4').innerHTML = result_2
             })
+            socket.on('test_ip',function(data){
+                console.log(data)
+                result_5 = data.ip
+                document.getElementById('test_ip').innerHTML = result_5
+            })
         </script>
         <div style="flex-direction: row;display: flex;">
             <p>Device_1 &nbsp; => &nbsp;</p>
@@ -47,6 +52,11 @@
             <p>Device_4 &nbsp; => &nbsp;</p>
             <p>on_off: &nbsp;</p>
             <p id="test_4"></p>
+        </div>
+        <div style="flex-direction: row;display: flex;">
+            <p>Device_IP &nbsp; => &nbsp;</p>
+            <p>ip: &nbsp;</p>
+            <p id="test_ip"></p>
         </div>
     </body>
 </html>

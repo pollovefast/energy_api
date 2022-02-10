@@ -9,6 +9,7 @@ const server = require('http').Server(app)
 const io = require('socket.io')(server);
 const path = require('path');
 const { strict } = require('assert');
+const fs = require('fs')
 
 // MQTT
 var mqtt = require('mqtt');
@@ -758,6 +759,9 @@ app.get("/mqtt_sub", function (req, res) {
 app.post("/test_netpie", function (req,res){
     const request_body = req.body
     console.log(request_body)
+    var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() || req.socket.remoteAddress
+    console.log(req.socket.remoteAddress)
+    io.sockets.emit("test_ip",{ip: req.ip})
     if (request_body.device == "1") {
         console.log("device_1")
         io.sockets.emit("test_1", { success: true, on_off: request_body.deviceChange })
@@ -775,6 +779,8 @@ app.post("/test_netpie", function (req,res){
 })
 
 app.get("/show_test_netpie", function (req,res){
+    console.log(req.ip)
+    io.sockets.emit("test_ip",{ip: req.ip})
     res.sendFile(__dirname + '/index.html');
 })
 
