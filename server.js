@@ -779,6 +779,52 @@ app.post("/test_netpie", function (req,res){
     res.send("ok")
 })
 
+app.get("/test_netpie", function (req,res){
+    const request_body = req.body
+    console.log(request_body)
+    // var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() || req.socket.remoteAddress
+    // console.log(req.socket.remoteAddress)
+    io.sockets.emit("test_ip",{ip: req.ip})
+    io.sockets.emit("test_netpie_body",{body: JSON.stringify(req.body),body_not_json: req.body})
+    if (request_body.device == "1") {
+        console.log("device_1")
+        io.sockets.emit("test_1", { success: true, on_off: request_body.deviceChange })
+    }else if(request_body.device == "2"){
+        console.log("device_2")
+        io.sockets.emit("test_2", { success: true, on_off: request_body.deviceChange })
+    }else if(request_body.device == "3"){
+        console.log("device_3")
+        io.sockets.emit("test_3", { success: true, on_off: request_body.deviceChange })
+    }else if(request_body.device == "4"){
+        console.log("device_4")
+        io.sockets.emit("test_4", { success: true, on_off: request_body.deviceChange })
+    }
+    res.send("ok")
+})
+
+app.put("/test_netpie", function (req,res){
+    const request_body = req.body
+    console.log(request_body)
+    // var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() || req.socket.remoteAddress
+    // console.log(req.socket.remoteAddress)
+    io.sockets.emit("test_ip",{ip: req.ip})
+    io.sockets.emit("test_netpie_body",{body: JSON.stringify(req.body),body_not_json: req.body})
+    if (request_body.device == "1") {
+        console.log("device_1")
+        io.sockets.emit("test_1", { success: true, on_off: request_body.deviceChange })
+    }else if(request_body.device == "2"){
+        console.log("device_2")
+        io.sockets.emit("test_2", { success: true, on_off: request_body.deviceChange })
+    }else if(request_body.device == "3"){
+        console.log("device_3")
+        io.sockets.emit("test_3", { success: true, on_off: request_body.deviceChange })
+    }else if(request_body.device == "4"){
+        console.log("device_4")
+        io.sockets.emit("test_4", { success: true, on_off: request_body.deviceChange })
+    }
+    res.send("ok")
+})
+
 app.get("/show_test_netpie", function (req,res){
     console.log(req.ip)
     io.sockets.emit("test_ip",{ip: req.ip})
