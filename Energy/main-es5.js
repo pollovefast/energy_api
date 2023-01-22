@@ -409,7 +409,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.getsocketdata = function (da) {
           // const socket = socketIo('http://167.71.220.10:2000');
-          var socket = socket_io_client__WEBPACK_IMPORTED_MODULE_2__('http://www.mesfia.eng.nu.ac.th/');
+          var socket = socket_io_client__WEBPACK_IMPORTED_MODULE_2__('https://blynk-iot.nu.ac.th/');
           socket.on(da, function (response) {
             return _this.observer.next(response);
           });

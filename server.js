@@ -13,7 +13,7 @@ const fs = require('fs')
 
 // MQTT
 var mqtt = require('mqtt');
-var MQTT_SERVER = "10.27.50.43"
+var MQTT_SERVER = "10.27.65.7"
 var MQTT_PORT = "1883"
 var MQTT_USER = "monitor"
 var MQTT_PASSWORD = "1234"
@@ -83,10 +83,10 @@ io.on('connection', function (socket) {
     })
     socket.emit("test", { success: true })
 
-    socket.emit("test_1", { success: true, on_off: "off"})
-    socket.emit("test_2", { success: true, on_off: "off"})
-    socket.emit("test_3", { success: true, on_off: "off"})
-    socket.emit("test_4", { success: true, on_off: "off"})
+    socket.emit("test_1", { success: true, on_off: "off" })
+    socket.emit("test_2", { success: true, on_off: "off" })
+    socket.emit("test_3", { success: true, on_off: "off" })
+    socket.emit("test_4", { success: true, on_off: "off" })
 
     socket.emit("mqtt", function () {
         client.publish("monitor", "{test: true}")
@@ -404,7 +404,7 @@ app.post('/dateTOdate2', (req, res) => {
         var skip_res = 0
 
         // count data to skip data
-        datas.count({ "create": { $gte: new Date(date_1), $lte: new Date(date_2) } }, function (err, result) {
+        datas.count({ "create": { $gte: new aDate(date_1), $lte: new Date(date_2) } }, function (err, result) {
             console.log(result)
             skip_res = result
             // find doc in dbs limit 50 doc
@@ -756,82 +756,82 @@ app.get("/mqtt_sub", function (req, res) {
     });
 })
 
-app.post("/test_netpie", function (req,res){
+app.post("/test_netpie", function (req, res) {
     const request_body = req.body
     console.log(request_body)
     // var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() || req.socket.remoteAddress
     // console.log(req.socket.remoteAddress)
-    io.sockets.emit("test_ip",{ip: req.ip})
-    io.sockets.emit("test_netpie_body",{body: JSON.stringify(req.body),body_not_json: req.body})
+    io.sockets.emit("test_ip", { ip: req.ip })
+    io.sockets.emit("test_netpie_body", { body: JSON.stringify(req.body), body_not_json: req.body })
     if (request_body.device == "1") {
         console.log("device_1")
         io.sockets.emit("test_1", { success: true, on_off: request_body.deviceChange })
-    }else if(request_body.device == "2"){
+    } else if (request_body.device == "2") {
         console.log("device_2")
         io.sockets.emit("test_2", { success: true, on_off: request_body.deviceChange })
-    }else if(request_body.device == "3"){
+    } else if (request_body.device == "3") {
         console.log("device_3")
         io.sockets.emit("test_3", { success: true, on_off: request_body.deviceChange })
-    }else if(request_body.device == "4"){
+    } else if (request_body.device == "4") {
         console.log("device_4")
         io.sockets.emit("test_4", { success: true, on_off: request_body.deviceChange })
     }
     res.send("ok")
 })
 
-app.get("/test_netpie", function (req,res){
+app.get("/test_netpie", function (req, res) {
     const request_body = req.body
     console.log(request_body)
     // var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() || req.socket.remoteAddress
     // console.log(req.socket.remoteAddress)
-    io.sockets.emit("test_ip",{ip: req.ip})
-    io.sockets.emit("test_netpie_body",{body: JSON.stringify(req.body),body_not_json: req.body})
+    io.sockets.emit("test_ip", { ip: req.ip })
+    io.sockets.emit("test_netpie_body", { body: JSON.stringify(req.body), body_not_json: req.body })
     if (request_body.device == "1") {
         console.log("device_1")
         io.sockets.emit("test_1", { success: true, on_off: request_body.deviceChange })
-    }else if(request_body.device == "2"){
+    } else if (request_body.device == "2") {
         console.log("device_2")
         io.sockets.emit("test_2", { success: true, on_off: request_body.deviceChange })
-    }else if(request_body.device == "3"){
+    } else if (request_body.device == "3") {
         console.log("device_3")
         io.sockets.emit("test_3", { success: true, on_off: request_body.deviceChange })
-    }else if(request_body.device == "4"){
+    } else if (request_body.device == "4") {
         console.log("device_4")
         io.sockets.emit("test_4", { success: true, on_off: request_body.deviceChange })
     }
     res.send("ok")
 })
 
-app.put("/test_netpie", function (req,res){
+app.put("/test_netpie", function (req, res) {
     const request_body = req.body
     console.log(request_body)
     // var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() || req.socket.remoteAddress
     // console.log(req.socket.remoteAddress)
-    io.sockets.emit("test_ip",{ip: req.ip})
-    io.sockets.emit("test_netpie_body",{body: JSON.stringify(req.body),body_not_json: req.body})
+    io.sockets.emit("test_ip", { ip: req.ip })
+    io.sockets.emit("test_netpie_body", { body: JSON.stringify(req.body), body_not_json: req.body })
     if (request_body.device == "1") {
         console.log("device_1")
         io.sockets.emit("test_1", { success: true, on_off: request_body.deviceChange })
-    }else if(request_body.device == "2"){
+    } else if (request_body.device == "2") {
         console.log("device_2")
         io.sockets.emit("test_2", { success: true, on_off: request_body.deviceChange })
-    }else if(request_body.device == "3"){
+    } else if (request_body.device == "3") {
         console.log("device_3")
         io.sockets.emit("test_3", { success: true, on_off: request_body.deviceChange })
-    }else if(request_body.device == "4"){
+    } else if (request_body.device == "4") {
         console.log("device_4")
         io.sockets.emit("test_4", { success: true, on_off: request_body.deviceChange })
     }
     res.send("ok")
 })
 
-app.get("/show_test_netpie", function (req,res){
+app.get("/show_test_netpie", function (req, res) {
     console.log(req.ip)
-    io.sockets.emit("test_ip",{ip: req.ip})
+    io.sockets.emit("test_ip", { ip: req.ip })
     res.sendFile(__dirname + '/index.html');
 })
 
-app.get("/show_body_netpie", function (req,res){
+app.get("/show_body_netpie", function (req, res) {
     res.sendFile(__dirname + '/test_body.html')
 })
 

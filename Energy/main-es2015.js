@@ -348,7 +348,7 @@ class ApiService {
         this.http = http;
         this.getsocketdata = (da) => {
             // const socket = socketIo('http://167.71.220.10:2000');
-            const socket = socket_io_client__WEBPACK_IMPORTED_MODULE_2__('http://www.mesfia.eng.nu.ac.th/');
+            const socket = socket_io_client__WEBPACK_IMPORTED_MODULE_2__('https://blynk-iot.nu.ac.th/');
             socket.on(da, response => {
                 return this.observer.next(response);
             });
